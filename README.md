@@ -43,18 +43,62 @@ pages in `bundle/site/` are hand-maintained (e.g. the homepage `index.html`), so
 site-wide nav/header changes are applied by a global find/replace across
 `bundle/site/**/index.html` as well.
 
-## Deploy (current flow)
+## Deploy (git-based — current)
+
+Push to GitHub, then run one command on the VPS. The VPS pulls the repo,
+rebuilds, and promotes the new site atomically.
+
+**Every deploy (from your laptop):**
 
 ```bash
-python3 gen_deploy3.py        # writes deploy-services.sh (self-verifying bundle)
+git add -A && git commit -m "your change" && git push
 ```
 
-`deploy-services.sh` stages every file, checksums it, and only promotes to live
-if everything verifies, then `docker compose up -d`. On the VPS it runs from
-`/root/hudson`. (See project notes for the Google-Drive relay one-liner.)
+**Then on the VPS (one command):**
 
-> A cleaner future deploy: push to this repo and have the VPS `git pull` +
-> rebuild instead of shipping the packaged script.
+```bash
+cd /root/hudson-src && ./deploy.sh
+```
+
+`deploy.sh` does: `git reset --hard origin/main` → `./build.sh` →
+copy the freshly built `bundle/site` into `/root/hudson/site` (keeping the
+previous copy as `site.old` for rollback) → `docker compose up -d`. The live
+site is only replaced *after* a clean build + sanity check, so a bad push can
+never leave a half-written site.
+
+**Rollback** (if a deploy looks wrong):
+
+```bash
+rm -rf /root/hudson/site && mv /root/hudson/site.old /root/hudson/site \
+  && cd /root/hudson && docker compose up -d --force-recreate
+```
+
+### One-time VPS setup
+
+The live directory `/root/hudson` (with `docker-compose.yml` + `site/` +
+traefik routing) already exists and is left untouched. We only add a clone
+beside it:
+
+```bash
+cd /root
+git clone https://github.com/<you>/<repo>.git hudson-src
+cd hudson-src
+git config --global --add safe.directory /root/hudson-src   # if git warns
+chmod +x build.sh deploy.sh
+./deploy.sh                                                  # first git deploy
+```
+
+After that, deploying is just `git push` (laptop) + `./deploy.sh` (VPS).
+
+> **Optional — one-liner from the VPS that also pulls:** the whole thing is
+> `cd /root/hudson-src && ./deploy.sh`. If you want push-button, add a shell
+> alias on the VPS: `alias deploy='cd /root/hudson-src && ./deploy.sh'`.
+
+### Old deploy (fallback, no longer needed)
+
+`python3 gen_deploy3.py` still writes the self-verifying `deploy-services.sh`
+used by the old Google-Drive relay. Kept only as a fallback if git is ever
+unavailable on the VPS.
 
 ## Brand tokens (styles.css `:root`)
 
