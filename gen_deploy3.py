@@ -1,7 +1,7 @@
 import os, hashlib, base64
 
-BUNDLE = "/home/claude/hudson-site/bundle"
-OUT = "/home/claude/hudson-site/deploy-services.sh"
+BUNDLE = "bundle"
+OUT = "deploy-services.sh"
 
 # separate compose from site files
 compose_path = os.path.join(BUNDLE, "docker-compose.yml")

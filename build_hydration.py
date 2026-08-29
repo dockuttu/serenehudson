@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 SITE="https://hudson.serenemedspas.com"
 URL=f"{SITE}/hydration-bar/"
 
@@ -179,6 +179,6 @@ HTML=f'''<!DOCTYPE html>
 </html>
 '''
 
-os.makedirs("/home/claude/hudson-site/bundle/site/hydration-bar",exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/hydration-bar/index.html","w").write(HTML)
+os.makedirs("bundle/site/hydration-bar",exist_ok=True)
+open("bundle/site/hydration-bar/index.html","w").write(HTML)
 print("hydration-bar written:", len(HTML), "bytes;", len(DRIPS), "drips")

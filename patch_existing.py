@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import re, os
-exec(open("/home/claude/hudson-site/gen_pages.py").read().split("# import page data")[0])  # get NAV, FOOTER_TREAT_NEW, SITE, etc.
+exec(open("gen_pages.py").read().split("# import page data")[0])  # get NAV, FOOTER_TREAT_NEW, SITE, etc.
 
-SITE = "/home/claude/hudson-site/bundle/site"
+SITE = "bundle/site"
 existing = ["index.html","botox/index.html","fillers/index.html","morpheus8/index.html","weight-loss/index.html"]
 
 nav_re = re.compile(r"<header>.*?</header>", re.DOTALL)

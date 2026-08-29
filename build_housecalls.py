@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 SITE="https://hudson.serenemedspas.com"
 URL=f"{SITE}/house-calls/"
 
@@ -145,6 +145,6 @@ HTML=f'''<!DOCTYPE html>
 </html>
 '''
 
-os.makedirs("/home/claude/hudson-site/bundle/site/house-calls",exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/house-calls/index.html","w").write(HTML)
+os.makedirs("bundle/site/house-calls",exist_ok=True)
+open("bundle/site/house-calls/index.html","w").write(HTML)
 print("house-calls written:", len(HTML), "bytes;", len(COVERED), "covered ZIPs")

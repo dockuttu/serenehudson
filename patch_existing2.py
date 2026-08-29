@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import re, os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER_TREAT, areas_section, AREA_SERVED, CATEGORIES
-SITE="/home/claude/hudson-site/bundle/site"
+exec(open("common.py").read())  # NAV, FOOTER_TREAT, areas_section, AREA_SERVED, CATEGORIES
+SITE="bundle/site"
 
 nav_re=re.compile(r"<header>.*?</header>", re.DOTALL)
 foot_re=re.compile(r"<div>\s*<h4>Treatments</h4>.*?</ul>\s*</div>", re.DOTALL)

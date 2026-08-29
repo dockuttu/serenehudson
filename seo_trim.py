@@ -4,15 +4,15 @@
 # so re-running fixes any earlier awkward truncations. Build step.
 import glob, re, os
 from html import unescape
-BASE="/home/claude/hudson-site/bundle/site"
+BASE="bundle/site"
 
 # ---- originals for generated (data-driven) pages, keyed by slug ----
 ns={}
-exec(open("/home/claude/hudson-site/common.py").read(), ns)
-exec(open("/home/claude/hudson-site/pages_data.py").read(), ns)
+exec(open("common.py").read(), ns)
+exec(open("pages_data.py").read(), ns)
 ns['PAGES2']=[]; ns['PAGES3']=[]
-exec(open("/home/claude/hudson-site/pages_data_new.py").read(), ns)
-exec(open("/home/claude/hudson-site/pages_data_new2.py").read(), ns)
+exec(open("pages_data_new.py").read(), ns)
+exec(open("pages_data_new2.py").read(), ns)
 ORIG_DESC={}
 for p in ns['PAGES']+ns['PAGES2']+ns['PAGES3']:
     ORIG_DESC[p['slug']]=p['desc']

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json, html as _html
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 SITE="https://hudson.serenemedspas.com"
 
 # ---------- posts registry ----------
@@ -161,7 +161,7 @@ for p in POSTS:
 </body>
 </html>
 '''
-    d=f"/home/claude/hudson-site/bundle/site/blog/{p['slug']}"
+    d=f"bundle/site/blog/{p['slug']}"
     os.makedirs(d,exist_ok=True)
     open(d+"/index.html","w").write(HTML)
     print("post written:", p["slug"], len(HTML), "bytes")
@@ -236,6 +236,6 @@ IDX=f'''<!DOCTYPE html>
 </body>
 </html>
 '''
-os.makedirs("/home/claude/hudson-site/bundle/site/blog",exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/blog/index.html","w").write(IDX)
+os.makedirs("bundle/site/blog",exist_ok=True)
+open("bundle/site/blog/index.html","w").write(IDX)
 print("blog index written:", len(IDX), "bytes;", len(POSTS), "posts")

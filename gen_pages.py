@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # LOGO, BOOK, NAV, FOOTER, SCRIPTS, areas_section, AREA_SERVED
+exec(open("common.py").read())  # LOGO, BOOK, NAV, FOOTER, SCRIPTS, areas_section, AREA_SERVED
 
-SITE = "/home/claude/hudson-site/bundle/site"
+SITE = "bundle/site"
 
 IMG = {
  "botox":"/img/botox-inject.jpg",
@@ -229,10 +229,10 @@ def build_page(p):
         hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),consult=CONSULT_SECTION,
         ctah2=p["ctah2"],ctapara=p["ctapara"],footer=FOOTER,scripts=SCRIPTS)
 
-exec(open("/home/claude/hudson-site/pages_data.py").read())
+exec(open("pages_data.py").read())
 PAGES2=[]; PAGES3=[]
-exec(open("/home/claude/hudson-site/pages_data_new.py").read())
-exec(open("/home/claude/hudson-site/pages_data_new2.py").read())
+exec(open("pages_data_new.py").read())
+exec(open("pages_data_new2.py").read())
 SKIP={"body-contouring"}
 byslug={}
 for p in PAGES+PAGES2+PAGES3:  # later definitions override earlier by slug

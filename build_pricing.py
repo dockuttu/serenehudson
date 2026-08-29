@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 URL="https://hudson.serenemedspas.com/pricing/"
 
 def row(name, val, unit=""):
@@ -179,6 +179,6 @@ HTML=f'''<!DOCTYPE html>
 </body>
 </html>
 '''
-os.makedirs("/home/claude/hudson-site/bundle/site/pricing", exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/pricing/index.html","w").write(HTML)
+os.makedirs("bundle/site/pricing", exist_ok=True)
+open("bundle/site/pricing/index.html","w").write(HTML)
 print("pricing page written:", len(HTML), "bytes;", len(CATS), "categories")

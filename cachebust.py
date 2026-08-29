@@ -1,7 +1,7 @@
 # Append a content-hash version to every /styles.css reference so browsers
 # always fetch fresh CSS when it changes (idempotent).
 import hashlib, glob, re, os
-BASE="/home/claude/hudson-site/bundle/site"
+BASE="bundle/site"
 css=open(os.path.join(BASE,"styles.css"),"rb").read()
 h=hashlib.sha256(css).hexdigest()[:8]
 pages=set(glob.glob(os.path.join(BASE,"**","index.html"),recursive=True))|{os.path.join(BASE,"index.html")}

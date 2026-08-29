@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 SITE="https://hudson.serenemedspas.com"
 URL=f"{SITE}/shop/"
 
@@ -121,6 +121,6 @@ HTML=f'''<!DOCTYPE html>
 </html>
 '''
 
-os.makedirs("/home/claude/hudson-site/bundle/site/shop",exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/shop/index.html","w").write(HTML)
+os.makedirs("bundle/site/shop",exist_ok=True)
+open("bundle/site/shop/index.html","w").write(HTML)
 print("shop written:", len(HTML), "bytes;", len(ITEMS), "items")

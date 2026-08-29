@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json, re
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 URL="https://hudson.serenemedspas.com/before-after/"
 
 # category -> (service_link, [ (img, title, desc, link) ])
@@ -121,6 +121,6 @@ HTML=f'''<!DOCTYPE html>
 </body>
 </html>
 '''
-os.makedirs("/home/claude/hudson-site/bundle/site/before-after", exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/before-after/index.html","w").write(HTML)
+os.makedirs("bundle/site/before-after", exist_ok=True)
+open("bundle/site/before-after/index.html","w").write(HTML)
 print("gallery page written:", len(HTML), "bytes;", len(CATS), "categories")

@@ -171,7 +171,7 @@ REVIEWS_SECTION = '''<section class="tint-blush" id="reviews">
 </section>'''
 
 # ---- per-treatment aftercare ----
-exec(open("/home/claude/hudson-site/aftercare_data.py").read())  # AFTERCARE, AC_ALIAS
+exec(open("aftercare_data.py").read())  # AFTERCARE, AC_ALIAS
 def aftercare_html(slug):
     key = AC_ALIAS.get(slug)
     if not key or key not in AFTERCARE: return ""

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("/home/claude/hudson-site/common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
+exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 SITE="https://hudson.serenemedspas.com"
 URL=f"{SITE}/peptides/"
 
@@ -119,6 +119,6 @@ HTML=f'''<!DOCTYPE html>
 </html>
 '''
 
-os.makedirs("/home/claude/hudson-site/bundle/site/peptides",exist_ok=True)
-open("/home/claude/hudson-site/bundle/site/peptides/index.html","w").write(HTML)
+os.makedirs("bundle/site/peptides",exist_ok=True)
+open("bundle/site/peptides/index.html","w").write(HTML)
 print("peptides page written:", len(HTML), "bytes")
