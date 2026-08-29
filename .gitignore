@@ -1,0 +1,32 @@
+# --- Generated deploy artifacts (rebuilt by gen_deploy3.py) ---
+deploy-services.sh
+deploy-services.sh.gz
+deploy3-paste.txt
+deploy4-paste.txt
+deploy5-paste.txt
+patch-*.sh
+site.b64
+site.gz*
+hudson-bundle*.b64
+ds.gz*
+fx.gz*
+fix-menu-*.txt
+fix-styles.sh
+
+# --- Any base64 / gzip relay scratch ---
+*.b64
+*.b64w
+*.gz
+chunk_*
+dschunk_*
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+Thumbs.db

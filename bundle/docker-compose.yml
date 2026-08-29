@@ -1,0 +1,19 @@
+services:
+  hudson:
+    image: nginx:alpine
+    container_name: hudson-site
+    restart: always
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    networks:
+      - root_default
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.hudson.rule=Host(`hudson.serenemedspas.com`)"
+      - "traefik.http.routers.hudson.entrypoints=web,websecure"
+      - "traefik.http.routers.hudson.tls=true"
+      - "traefik.http.routers.hudson.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.hudson.loadbalancer.server.port=80"
+networks:
+  root_default:
+    external: true
