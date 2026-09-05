@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Serene Med Spa &#8212; Hudson Blog</title>
+  <link>https://hudson.serenemedspas.com/blog/</link>
+  <description>Physician-led aesthetics, wellness and hormone insights from Serene Med Spa.</description>
+  <language>en-us</language>
+  <atom:link href="https://hudson.serenemedspas.com/blog/feed.xml" rel="self" type="application/rss+xml"/>
+  <item>
+    <title>Signs Your Hormones May Be Out of Balance</title>
+    <link>https://hudson.serenemedspas.com/blog/hormone-optimization-signs-symptoms/</link>
+    <guid isPermaLink="true">https://hudson.serenemedspas.com/blog/hormone-optimization-signs-symptoms/</guid>
+    <pubDate>Sat, 05 Sep 2026 00:00:00 +0000</pubDate>
+    <description>Tired, foggy, or gaining weight around the middle that won’t budge? Those changes often trace back to shifting hormones. Here are the signs to watch for — and how physician-supervised hormone optimization may help.</description>
+  </item>
+  <item>
+    <title>IV Therapy for Immune Support in Hudson &amp; Barboursville</title>
+    <link>https://hudson.serenemedspas.com/blog/iv-therapy-immune-support-fall/</link>
+    <guid isPermaLink="true">https://hudson.serenemedspas.com/blog/iv-therapy-immune-support-fall/</guid>
+    <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+    <description>You can’t control the season — but you can give your body better support heading into it. Here’s how our $149 physician-led IV drips help you replenish, rehydrate, and support your immune health.</description>
+  </item>
+  <item>
+    <title>Male Lip Filler with Juvéderm Volbella</title>
+    <link>https://hudson.serenemedspas.com/blog/male-lip-filler-juvederm-volbella/</link>
+    <guid isPermaLink="true">https://hudson.serenemedspas.com/blog/male-lip-filler-juvederm-volbella/</guid>
+    <pubDate>Fri, 21 Aug 2026 00:00:00 +0000</pubDate>
+    <description>Lip filler is uncommon for men — and done well, rarer still. Here’s how I added natural volume, corrected side-to-side asymmetry, and kept a masculine lip using Juvéderm Volbella.</description>
+  </item>
+</channel>
+</rss>

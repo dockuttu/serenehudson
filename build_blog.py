@@ -317,3 +317,32 @@ IDX=f'''<!DOCTYPE html>
 os.makedirs("bundle/site/blog",exist_ok=True)
 open("bundle/site/blog/index.html","w").write(IDX)
 print("blog index written:", len(IDX), "bytes;", len(POSTS), "posts")
+
+# ---------- RSS feed (for Metricool blog auto-share) ----------
+import email.utils as _eut, datetime as _dt
+def _rfc822(d):
+    return _eut.format_datetime(_dt.datetime.strptime(d,"%Y-%m-%d").replace(tzinfo=_dt.timezone.utc))
+def _x(s):
+    return _html.escape(_html.unescape(s), quote=False)
+_items=[]
+for _p in sorted(POSTS, key=lambda x:x["date"], reverse=True):
+    _u=f"{SITE}/blog/{_p['slug']}/"
+    _items.append(
+      "  <item>\n"
+      f"    <title>{_x(_p['title'])}</title>\n"
+      f"    <link>{_u}</link>\n"
+      f"    <guid isPermaLink=\"true\">{_u}</guid>\n"
+      f"    <pubDate>{_rfc822(_p['date'])}</pubDate>\n"
+      f"    <description>{_x(_p['excerpt'])}</description>\n"
+      "  </item>")
+_feed=(
+  '<?xml version="1.0" encoding="UTF-8"?>\n'
+  '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n'
+  f"  <title>Serene Med Spa &#8212; Hudson Blog</title>\n"
+  f"  <link>{SITE}/blog/</link>\n"
+  "  <description>Physician-led aesthetics, wellness and hormone insights from Serene Med Spa.</description>\n"
+  "  <language>en-us</language>\n"
+  f"  <atom:link href=\"{SITE}/blog/feed.xml\" rel=\"self\" type=\"application/rss+xml\"/>\n"
+  + "\n".join(_items) + "\n</channel>\n</rss>\n")
+open("bundle/site/blog/feed.xml","w",encoding="utf-8").write(_feed)
+print("feed.xml written:", len(POSTS), "items")
