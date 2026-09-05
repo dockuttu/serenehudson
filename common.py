@@ -244,5 +244,6 @@ SCRIPTS = '''<script>
   (function(){var done=false;function run(){if(done)return;var s=document.querySelector('.stats');if(!s)return;var r=s.getBoundingClientRect();if(r.top<innerHeight-40&&r.bottom>0){done=true;document.querySelectorAll('.stat b[data-count]').forEach(function(el){var t=+el.getAttribute('data-count'),suf=el.getAttribute('data-suffix')||'',c=0,step=Math.max(1,Math.ceil(t/45));var iv=setInterval(function(){c+=step;if(c>=t){c=t;clearInterval(iv);}el.textContent=c+suf;},22);});}}
   addEventListener('scroll',run,{passive:true});addEventListener('load',run);run();})();
 </script>
-<script src="/popup.js" defer></script>'''
+<script src="/popup.js" defer></script>
+<script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"4fad2d9c5cf1e8aa5074457e8e5dfbdc"})});</script>'''
 print("common loaded:", len(ALL_SLUGS), "services")
