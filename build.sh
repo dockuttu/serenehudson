@@ -21,6 +21,9 @@ python3 build_hydration.py
 echo "==> SEO trim (titles <=60, descriptions <=155)"
 python3 seo_trim.py
 
+echo "==> Generating sitemap.xml (indexable pages only)"
+python3 build_sitemap.py
+
 echo "==> Cache-bust styles.css"
 python3 cachebust.py
 

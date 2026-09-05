@@ -28,6 +28,8 @@ SPECIAL_TITLES={
 # Clean, hand-written descriptions for hand-built pages whose original long
 # text is not in the data files (so they can't be sourced/re-trimmed).
 SPECIAL_DESCS={
+ "womens-sexual-wellness/index.html":"Physician-led women's sexual wellness in Hudson, Ohio — discreet, non-surgical care including the O-Shot (PRP), VTone, FormaV & Morpheus8 V. Book today.",
+ "mens-sexual-wellness/index.html":"Physician-led men's sexual wellness in Hudson, Ohio — discreet, non-surgical care including Alma Duo acoustic wave therapy & the P-Shot (PRP). Book today.",
  "index.html":"Physician-led medical spa in Hudson, Ohio — Botox, fillers, Morpheus8, EMSCULPT NEO, laser, HydraFacial, weight loss & IV wellness. Book online today.",
  "fillers/index.html":"Physician-injected dermal fillers in Hudson, Ohio — lip, cheek, jawline & under-eye filler for natural volume and definition. Book your consultation.",
  "morpheus8/index.html":"Morpheus8 RF microneedling in Hudson, Ohio at Serene Med Spa — tighten, smooth, and resurface skin on the face and body. Physician-led. Book today.",
