@@ -14,6 +14,7 @@ python3 build_blog.py
 python3 build_gallery.py
 python3 build_housecalls.py
 python3 build_hydration.py
+python3 build_rewards.py
 # NOTE: build_peptides.py is intentionally NOT run — the peptides page stays
 # hidden (noindex/unlinked) until LegitScript certification clears. To bring it
 # back later, add:  python3 build_peptides.py

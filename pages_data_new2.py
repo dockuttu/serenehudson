@@ -849,6 +849,11 @@ PAGES3 = [
  "ctapara":"Book an Ultherapy consultation with our Hudson physicians and see if the gold standard in non-invasive lifting is right for you.",
  "pricing_html":'''<section id="pricing" class="tint-blush">
   <div class="wrap">
+    <div class="ult-cred reveal">
+      <img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME" class="badge-wide">
+      <img src="/img/badges/merz-bronze-preferred.png" alt="Merz Aesthetics Bronze Preferred Partner" class="badge-round">
+      <p>Serene Med Spa is a <strong>Merz Aesthetics Bronze Preferred Partner</strong> and an authorized <strong>Ultherapy PRIME</strong> provider. Every treatment earns <a href="/xperience-rewards/">Xperience+ points</a>.</p>
+    </div>
     <div class="section-head reveal"><div class="eyebrow">Investment</div><h2>Ultherapy Pricing &mdash; Hudson</h2><p>One session, priced by the area you want to lift. Financing is available, and your consultation is always complimentary.</p></div>
     <div class="grid">
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face + Neck</h3><p><strong>$3,500</strong><br>Our signature full lift</p></div>

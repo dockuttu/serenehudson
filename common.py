@@ -113,6 +113,7 @@ FOOTER = '''<footer>
           <li>Hudson, OH 44236</li>
           <li><a href="tel:+13304605915">(330) 460-5915</a></li>
           <li><a href="%s" target="_blank" rel="noopener">Book Now</a></li>
+          <li><a href="/xperience-rewards/">Xperience+ Rewards</a></li>
           <li style="margin-top:10px;font-weight:600">Also in Barboursville, WV</li>
           <li><a href="https://serenemedspas.com/locations/huntington-barboursville-wv/">Visit our WV location &rsaquo;</a></li>
         </ul>
@@ -139,6 +140,12 @@ STICKY_BAR = '''<div class="mbar">
   <a class="mbar-book" href="%s" target="_blank" rel="noopener">Book Now</a>
 </div>''' % BOOK
 
+PARTNER_BADGES = '''<div class="partners reveal">
+      <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
+      <span title="Merz Aesthetics Bronze Preferred Partner"><img src="/img/badges/merz-bronze-preferred.png" alt="Merz Aesthetics Bronze Preferred Partner" class="badge-round" loading="lazy"></span>
+      <a href="/xperience-rewards/" title="Xperience+ Rewards Program"><img src="/img/badges/xperience-plus.png" alt="Xperience+ Rewards Program by Merz Aesthetics" class="badge-xp" loading="lazy"></a>
+    </div>'''
+
 STATS_BRANDS = '''<section class="stats">
   <div class="wrap">
     <div class="stat-row reveal">
@@ -150,6 +157,7 @@ STATS_BRANDS = '''<section class="stats">
     <div class="brands reveal">
       <span>Botox</span><span>Juv&eacute;derm</span><span>Sculptra</span><span>Morpheus8</span><span>HydraFacial</span><span>Bi&ouml;te</span>
     </div>
+    ''' + PARTNER_BADGES + '''
   </div>
 </section>'''
 
