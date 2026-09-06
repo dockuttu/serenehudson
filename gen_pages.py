@@ -142,6 +142,8 @@ TEMPLATE = '''<!DOCTYPE html>
   </div>
 </section>
 
+{pricing}
+
 {aftercare}
 
 <section id="faq">
@@ -226,7 +228,7 @@ def build_page(p):
         faqh2=p["faqh2"],faqvis=faq_visible(p["faqs"]),related=related_html(p["related"]),
         areas=areas_section(p.get("area_kw","care")),
         stats=STATS_BRANDS,reviews=REVIEWS_SECTION,results=RESULTS_SECTION,finance=FINANCE_BAND,sticky=STICKY_BAR,
-        hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),consult=CONSULT_SECTION,
+        hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),pricing=p.get("pricing_html",""),consult=CONSULT_SECTION,
         ctah2=p["ctah2"],ctapara=p["ctapara"],footer=FOOTER,scripts=SCRIPTS)
 
 exec(open("pages_data.py").read())

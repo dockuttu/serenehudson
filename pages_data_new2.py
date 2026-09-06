@@ -800,4 +800,69 @@ PAGES3 = [
  "ctah2":"Ready for clearer legs?",
  "ctapara":"Book a spider vein consultation with our Hudson physicians and fade unwanted veins.",
 },
+{
+ "slug":"ultherapy",
+ "title":"Ultherapy in Hudson, OH | Ultrasound Skin Lifting | Serene Med Spa",
+ "desc":"Ultherapy PRIME in Hudson, Ohio at Serene Med Spa — non-invasive ultrasound that lifts the brow, chin & neck and smooths the décolleté, with no downtime. Book today.",
+ "ogtitle":"Ultherapy in Hudson, OH",
+ "ogdesc":"Non-invasive ultrasound lifting of the brow, chin & neck in Hudson, Ohio. No surgery, no downtime. Book today.",
+ "proc_name":"Ultherapy",
+ "proc_alt":"Micro-Focused Ultrasound Skin Lifting",
+ "how":"Ultherapy uses micro-focused ultrasound energy to stimulate collagen deep in the skin, lifting and tightening the brow, chin, and neck and improving lines on the décolleté, guided by real-time ultrasound imaging.",
+ "body":"Brow, Chin, Neck, Décolleté",
+ "crumb":"Ultherapy",
+ "eyebrow":"Ultherapy PRIME &middot; Hudson, OH",
+ "h1":"Ultherapy in Hudson, Ohio",
+ "hero":"The FDA-cleared treatment that lifts and tightens the brow, chin, and neck using ultrasound &mdash; no surgery, no downtime, and results that build naturally over time.",
+ "trust":["FDA-Cleared Lifting","No Surgery, No Downtime","Builds Your Own Collagen","Physician-Led"],
+ "introh2":"Lift and tighten &mdash; without surgery",
+ "introlead":"Ultherapy is the gold standard in non-invasive lifting. Using micro-focused ultrasound, it stimulates your body&rsquo;s own collagen deep beneath the surface to lift the brow, chin, and neck and smooth the décolleté.",
+ "intropara":"Because Ultherapy uses ultrasound imaging, your provider can actually see the layers of tissue being treated &mdash; so energy goes precisely where it does the most good. Most people need just one session, with no downtime, and results that develop gradually over two to three months and can last a year or more.",
+ "treyebrow":"Where It Works",
+ "treh2":"What Ultherapy Lifts",
+ "cards":[
+   ("Brow","A subtle lift that opens and refreshes the eyes."),
+   ("Under the Chin","Tighten and define a softening jawline and submental area."),
+   ("Neck","Firm loose, crepey skin for a smoother, more lifted neck."),
+   ("Décolleté","Soften lines and wrinkles on the chest."),
+ ],
+ "steps":[
+   ("Consultation","We assess your skin laxity and goals to confirm Ultherapy is right for you and map your treatment areas."),
+   ("Ultrasound Imaging","Real-time imaging lets your provider see beneath the skin and target the ideal depth precisely."),
+   ("Treatment","Focused ultrasound is delivered to stimulate collagen. Most sessions take 30&ndash;90 minutes depending on the area."),
+   ("Results","Skin lifts and tightens gradually over two to three months as new collagen forms &mdash; and can last a year or more."),
+ ],
+ "whyh2":"Why choose Serene for Ultherapy in Hudson",
+ "whypara":"Ultherapy at Serene is physician-led, performed by our medical team on the advanced Ultherapy PRIME platform &mdash; the newest evolution of the gold standard in non-invasive lifting. We take the time to confirm you&rsquo;re a good candidate, set honest expectations, and deliver a natural-looking lift tailored to your face.",
+ "faqh2":"Ultherapy FAQ",
+ "faqs":[
+   ("Is Ultherapy surgery?","No. Ultherapy is completely non-invasive &mdash; no incisions and no downtime. It uses focused ultrasound to lift and tighten from within by stimulating your own collagen."),
+   ("Who is a good candidate?","Ultherapy works best for people with mild to moderate skin laxity who want a natural lift without surgery. At your consultation we&rsquo;ll assess your skin and tell you honestly whether it&rsquo;s right for you; more advanced laxity may need more than one session or a different approach."),
+   ("Does it hurt?","You may feel brief warmth or tingling as the energy is delivered &mdash; a sign that collagen-building has begun. Comfort is improved on the Ultherapy PRIME platform, and we take steps to keep you comfortable throughout."),
+   ("When will I see results?","Some lifting can appear early, but the full effect develops gradually over two to three months as your body builds new collagen. Results can last a year or more."),
+   ("How many treatments will I need?","Most people achieve their result in a single session. Depending on your skin we may suggest a touch-up, and an annual maintenance treatment helps preserve your lift."),
+   ("Is there any downtime?","No. Most people return to their day right away. You may have mild redness or slight swelling that settles quickly."),
+ ],
+ "related":["morpheus8","fillers","botox"],
+ "area_kw":"non-surgical skin lifting",
+ "ctah2":"Ready to lift and tighten &mdash; without surgery?",
+ "ctapara":"Book an Ultherapy consultation with our Hudson physicians and see if the gold standard in non-invasive lifting is right for you.",
+ "pricing_html":'''<section id="pricing" class="tint-blush">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Investment</div><h2>Ultherapy Pricing &mdash; Hudson</h2><p>One session, priced by the area you want to lift. Financing is available, and your consultation is always complimentary.</p></div>
+    <div class="grid">
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face + Neck</h3><p><strong>$3,500</strong><br>Our signature full lift</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face</h3><p><strong>$2,600</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Lower Face + Neck</h3><p><strong>$2,800</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Lower Face &middot; Jowls</h3><p><strong>$1,900</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Neck / Under-Chin</h3><p><strong>$1,600</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Brow Lift</h3><p><strong>$950</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Décolleté</h3><p><strong>$500</strong> add-on</p></div>
+    </div>
+    <div class="prose reveal" style="text-align:center;max-width:680px;margin:32px auto 0">
+      <p>&#10024; <strong>Founding Patient offer:</strong> Full Face + Neck for <strong>$2,799</strong> for our first 20 Ultherapy patients &mdash; limited time. Ask about monthly financing to spread the cost.</p>
+    </div>
+  </div>
+</section>''',
+},
 ]

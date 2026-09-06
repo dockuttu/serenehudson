@@ -12,7 +12,7 @@ CATEGORIES = [
    ("skinvive","Skinvive"), ("kybella","Kybella"), ("sculptra","Sculptra"),
  ]),
  ("Skin & Facials", [
-   ("morpheus8","Morpheus8"), ("laser-facial","Laser Facial"), ("chemical-peels","Chemical Peels"),
+   ("morpheus8","Morpheus8"), ("ultherapy","Ultherapy"), ("laser-facial","Laser Facial"), ("chemical-peels","Chemical Peels"),
    ("hydrafacial","HydraFacial"), ("diamondglow","DiamondGlow"),
    ("medical-facials","Medical Facials"), ("hyperpigmentation","Hyperpigmentation & Melasma"),
  ]),
@@ -69,7 +69,7 @@ NAV = '''<header>
       <li class="has-drop"><a href="#" onclick="return false">Locations &#9662;</a>
         <div class="mega loc-mini">
           <a href="https://hudson.serenemedspas.com/">Hudson, OH</a>
-          <a href="https://serenemedspas.com/locations/huntington-barboursville-wv/">Barboursville, WV</a>
+          <a href="https://barboursville.serenemedspas.com/">Barboursville, WV</a>
         </div>
       </li>
       <li class="has-drop"><a href="#" onclick="return false">About &#9662;</a>
@@ -200,7 +200,7 @@ HERO_MAP = {
  "botox":"botox-inject","fillers":"filler-inject","lip-filler":"lip-inject",
  "cheek-filler":"filler-inject","under-eye-filler":"filler-inject","jawline-filler":"filler-inject",
  "chin-filler":"filler-inject","skinvive":"filler-inject","kybella":"filler-inject","sculptra":"filler-inject",
- "morpheus8":"morpheus8","laser-facial":"laser","chemical-peels":"facial-2","hydrafacial":"hydrafacial",
+ "morpheus8":"morpheus8","ultherapy":"morpheus8","laser-facial":"laser","chemical-peels":"facial-2","hydrafacial":"hydrafacial",
  "diamondglow":"facial-4","medical-facials":"facial-room","hyperpigmentation":"skin-analysis",
  "laser-skin":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","emsculpt-neo":"morpheus8","evolve-x":"morpheus8","bodytite":"morpheus8",
