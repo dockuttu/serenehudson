@@ -219,7 +219,7 @@ def build_page(p):
     return TEMPLATE.format(
         title=p["title"],desc=p["desc"],url=url,ogtitle=p["ogtitle"],ogdesc=p["ogdesc"],logo=LOGO,
         proc=json.dumps(proc,ensure_ascii=False),crumbjson=json.dumps(crumb,ensure_ascii=False),
-        faq=json.dumps(faq_schema(p["faqs"]),ensure_ascii=False),book=BOOK,nav=NAV,
+        faq=json.dumps(faq_schema(p["faqs"]),ensure_ascii=False),book=book_for(p["slug"]),nav=NAV,
         crumbtext=p["crumb"],eyebrow=p["eyebrow"],h1=p["h1"],hero=p["hero"],
         t1=p["trust"][0],t2=p["trust"][1],t3=p["trust"][2],t4=p["trust"][3],
         introh2=p["introh2"],introlead=p["introlead"],intropara=p["intropara"],

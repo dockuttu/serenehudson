@@ -10,7 +10,7 @@
   }
 
   var CFG = {
-    book: "https://booking.mangomint.com/585660",
+    book: "https://booking.mangomint.com/serenemedspa?serviceId=321",
     hs: { region: "na2", portal: "242695075", form: "16625e0e-6a46-4664-98c6-2cbf264da060" },
     image: "/img/lobby.jpg",
     dismissDays: 7,      // don't re-show for this many days after close

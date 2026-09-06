@@ -1,7 +1,19 @@
 # -*- coding: utf-8 -*-
 # Shared components for all Hudson pages (nav mega-menu, footer, areas-served, schema)
 LOGO = "https://serenemedspas.com/wp-content/uploads/2024/11/Serene_Logo-1024x574.png"
-BOOK = "https://booking.mangomint.com/585660"
+# ---- Mangomint online booking: deep links to the right consultation ----
+MM = "https://booking.mangomint.com/serenemedspa?serviceId=%s"
+BOOK = MM % 321                      # Free Consultation — default "Book" everywhere
+BOOK_MAP = {
+ "ultherapy": MM % 322,             # Ultherapy Consultation
+ "medical-facials": MM % 323,       # Acne Consultation
+ "emsculpt-neo": MM % 324, "evolve-x": MM % 324, "bodytite": MM % 324, "facetite": MM % 324,
+ "forma": MM % 324, "liposuction": MM % 324, "lipomelt": MM % 324,   # Body Contouring Consultation
+ "mens-sexual-wellness": MM % 325, "womens-sexual-wellness": MM % 325,  # Sexual Wellness Consultation
+ "weight-loss": MM % 326,           # Weight Loss Consultation
+ "hormone-optimization": MM % 327,  # Hormone (Biöte) Consultation
+}
+def book_for(slug): return BOOK_MAP.get(slug, BOOK)
 
 # category -> list of (slug, label)
 CATEGORIES = [
