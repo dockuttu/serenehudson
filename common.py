@@ -12,6 +12,15 @@ BOOK_MAP = {
  "mens-sexual-wellness": MM % 325, "womens-sexual-wellness": MM % 325,  # Sexual Wellness Consultation
  "weight-loss": MM % 326,           # Weight Loss Consultation
  "hormone-optimization": MM % 327,  # Hormone (Biöte) Consultation
+ # ---- treatment services (book the treatment directly) ----
+ "botox": MM % 328,                 # Wrinkle Relaxer (Botox · Dysport · Xeomin · Daxxify)
+ "fillers": MM % 329, "lip-filler": MM % 329, "cheek-filler": MM % 329,
+ "under-eye-filler": MM % 329, "jawline-filler": MM % 329, "chin-filler": MM % 329,  # Dermal Filler
+ "skinvive": MM % 330,              # Skinvive
+ "sculptra": MM % 331,              # Sculptra
+ "kybella": MM % 332,               # Kybella (per vial)
+ "thread-lift": MM % 337,           # PDO Thread Lift
+ "spider-veins": MM % 338,          # Spider Vein Sclerotherapy
 }
 def book_for(slug): return BOOK_MAP.get(slug, BOOK)
 
