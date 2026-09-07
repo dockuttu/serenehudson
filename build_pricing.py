@@ -44,21 +44,29 @@ CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+row("Sciton BBL Heroic","$400")+
   row("Sciton Moxi","$500")+row("CoolPeel","$400")+row("Deka CO&sup2; Laser","$800")+row("Opus Plasma","$400")+
-  '<div class="sub">Laser Hair Removal &mdash; per session / package of 6 (save 10%)</div>'+
+  '<div class="sub">Laser Hair Removal (Diolaze XL &amp; Alma Harmony) &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
-  <tr><td>Upper Lip</td><td>$60</td><td>$325</td></tr>
-  <tr><td>Chin</td><td>$60</td><td>$325</td></tr>
-  <tr><td>Lip &amp; Chin</td><td>$80</td><td>$430</td></tr>
-  <tr><td>Under Arms</td><td>$90</td><td>$485</td></tr>
-  <tr><td>Face</td><td>$115</td><td>$620</td></tr>
-  <tr><td>Forearms</td><td>$115</td><td>$620</td></tr>
-  <tr><td>Back / Front of Neck</td><td>$115</td><td>$620</td></tr>
-  <tr><td>Bikini</td><td>$145</td><td>$785</td></tr>
-  <tr><td>Full Arms</td><td>$175</td><td>$945</td></tr>
-  <tr><td>Brazilian Bikini</td><td>$175</td><td>$945</td></tr>
-  <tr><td>Half Legs (lower or upper)</td><td>$175</td><td>$945</td></tr>
-  <tr><td>Back</td><td>$205</td><td>$1,105</td></tr>
-  <tr><td>Full Legs</td><td>$235</td><td>$1,270</td></tr>
+  <tr><td>Side Burns</td><td>$59</td><td>$295</td></tr>
+  <tr><td>Areola</td><td>$59</td><td>$295</td></tr>
+  <tr><td>Hands</td><td>$60</td><td>$300</td></tr>
+  <tr><td>Upper Lip</td><td>$85</td><td>$425</td></tr>
+  <tr><td>Underarms</td><td>$85</td><td>$425</td></tr>
+  <tr><td>Chin</td><td>$99</td><td>$495</td></tr>
+  <tr><td>Ears</td><td>$99</td><td>$495</td></tr>
+  <tr><td>Bikini Line</td><td>$109</td><td>$545</td></tr>
+  <tr><td>Brazilian</td><td>$139</td><td>$695</td></tr>
+  <tr><td>Full Face</td><td>$139</td><td>$695</td></tr>
+  <tr><td>Neck (+ Beard Line)</td><td>$170</td><td>$850</td></tr>
+  <tr><td>Stomach</td><td>$170</td><td>$850</td></tr>
+  <tr><td>Half Arms</td><td>$190</td><td>$950</td></tr>
+  <tr><td>Shoulders</td><td>$190</td><td>$950</td></tr>
+  <tr><td>Upper Legs</td><td>$250</td><td>$1,250</td></tr>
+  <tr><td>Lower Legs</td><td>$250</td><td>$1,250</td></tr>
+  <tr><td>Full Arms</td><td>$290</td><td>$1,450</td></tr>
+  <tr><td>Full Back</td><td>$320</td><td>$1,600</td></tr>
+  <tr><td>Chest + Abdomen</td><td>$320</td><td>$1,600</td></tr>
+  <tr><td>Full Legs</td><td>$370</td><td>$1,850</td></tr>
+  <tr><td>Full Body</td><td>$510</td><td>$2,550</td></tr>
   </tbody></table>'''))
 
 CATS.append(("Acne Clinic",
@@ -99,7 +107,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 # Offer schema (headline priced services)
 OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
  ("Morpheus8 RF",800),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
- ("Laser Hair Removal",60),("EMSCULPT Neo",750),("IV Vitamin Infusion",149),
+ ("Laser Hair Removal",59),("EMSCULPT Neo",750),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}

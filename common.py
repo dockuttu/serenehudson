@@ -20,7 +20,7 @@ BOOK_MAP = {
  "sculptra": MM % 331,              # Sculptra
  "kybella": MM % 332,               # Kybella (per vial)
  "thread-lift": MM % 337,           # PDO Thread Lift
- "spider-veins": MM % 338, "under-eye-prp": MM % 333, "kenalog": MM % 334,          # Spider Vein Sclerotherapy
+ "spider-veins": MM % 338, "under-eye-prp": MM % 333, "kenalog": MM % 334, "laser-hair-removal": MM % 339,          # Spider Vein Sclerotherapy
 }
 def book_for(slug): return BOOK_MAP.get(slug, BOOK)
 
