@@ -30,7 +30,7 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
   row("Shoulder Slimming Botox","$11","/unit")+row("Baby Botox","$220","/ 20 units")+
   sub("Collagen &amp; Biostimulators")+
   row("Sculptra","$750","/vial")+row("Skinvive","$400","/syringe")+row("Under-Eye PRP","$400")+row("Under-Eye PRF","$600")+
-  row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")))
+  row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")+row("Kenalog Steroid Injection (scar / cyst)","$75")))
 
 CATS.append(("Weight Loss &amp; Wellness",
   row("Medical Weight Loss Visit","$149","/month")+

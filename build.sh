@@ -35,3 +35,6 @@ if [ ! -s bundle/site/index.html ] || [ "$(wc -c < bundle/site/index.html)" -lt 
 fi
 
 echo "==> Build complete: $(find bundle/site -type f | wc -l) files in bundle/site/"
+
+echo "==> Page guard (nav <-> built pages <-> deep links)"
+python3 check_pages.py

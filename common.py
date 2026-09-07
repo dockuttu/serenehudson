@@ -20,7 +20,7 @@ BOOK_MAP = {
  "sculptra": MM % 331,              # Sculptra
  "kybella": MM % 332,               # Kybella (per vial)
  "thread-lift": MM % 337,           # PDO Thread Lift
- "spider-veins": MM % 338,          # Spider Vein Sclerotherapy
+ "spider-veins": MM % 338, "under-eye-prp": MM % 333, "kenalog": MM % 334,          # Spider Vein Sclerotherapy
 }
 def book_for(slug): return BOOK_MAP.get(slug, BOOK)
 
@@ -31,6 +31,7 @@ CATEGORIES = [
    ("cheek-filler","Cheek Filler"), ("under-eye-filler","Under-Eye Filler"),
    ("jawline-filler","Jawline Filler"), ("chin-filler","Chin Filler"),
    ("skinvive","Skinvive"), ("kybella","Kybella"), ("sculptra","Sculptra"),
+   ("under-eye-prp","Under-Eye PRP / PRF"), ("kenalog","Kenalog Injections"),
  ]),
  ("Skin & Facials", [
    ("morpheus8","Morpheus8"), ("ultherapy","Ultherapy"), ("laser-facial","Laser Facial"), ("chemical-peels","Chemical Peels"),
@@ -46,7 +47,7 @@ CATEGORIES = [
    ("emsculpt-neo","EMSCULPT NEO"), ("evolve-x","Evolve X"), ("bodytite","BodyTite"),
    ("facetite","FaceTite"), ("forma","Forma Skin Tightening"),
    ("liposuction","Liposuction &amp; Fat Transfer"), ("lipomelt","Lipomelt (Red Light)"),
-   ("weight-loss","Medical Weight Loss"),
+   ("weight-loss","Medical Weight Loss"), ("sculptra-bbl","Sculptra BBL"),
  ]),
  ("Regenerative &amp; Hair", [
    ("microneedling","Microneedling &amp; PRP"), ("thread-lift","PDO Thread Lift"),
@@ -234,7 +235,7 @@ HERO_MAP = {
  "laser-skin":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","emsculpt-neo":"morpheus8","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","lipomelt":"morpheus8","weight-loss":"dr-arora",
- "microneedling":"morpheus8","thread-lift":"filler-inject","prp-hair-restoration":"hair-ted",
+ "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted",
  "iv-therapy":"facial-room","peptide-therapy":"skin-analysis","hormone-optimization":"dr-arora",
  "mens-sexual-wellness":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }

@@ -232,12 +232,12 @@ def build_page(p):
         ctah2=p["ctah2"],ctapara=p["ctapara"],footer=FOOTER,scripts=SCRIPTS)
 
 exec(open("pages_data.py").read())
-PAGES2=[]; PAGES3=[]
-exec(open("pages_data_new.py").read())
-exec(open("pages_data_new2.py").read())
+PAGES2=[]; PAGES3=[]; PAGES4=[]; PAGES5=[]; PAGES6=[]
+import glob as _glob
+for _f in sorted(_glob.glob("pages_data_new*.py")): exec(open(_f).read())   # auto-load every pages_data_new*.py
 SKIP={"body-contouring"}
 byslug={}
-for p in PAGES+PAGES2+PAGES3:  # later definitions override earlier by slug
+for p in PAGES+PAGES2+PAGES3+PAGES4+PAGES5+PAGES6:  # later definitions override earlier by slug
     byslug[p["slug"]]=p
 ALL=[p for s,p in byslug.items() if s not in SKIP]
 for p in ALL:
