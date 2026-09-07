@@ -124,7 +124,7 @@ PAGES4 = [
    ("How many vials will I need?","Most patients use 10 to 20 vials over 2&ndash;3 sessions depending on their anatomy and goals. We&rsquo;ll give you an exact plan and price at your consultation."),
    ("When will I see results?","Collagen builds over 3&ndash;6 months, with improvement continuing after your final session. Early swelling gives a preview that settles within a few days."),
    ("Is there downtime?","Very little. Expect some swelling, tenderness and possible bruising for a few days. We&rsquo;ll ask you to massage the area for 5 days and avoid intense exercise for 48 hours."),
-   ("How much does it cost?","Sculptra BBL starts at $6,000 and is priced by the number of vials in your plan. A $500 deposit reserves your first session after your consultation."),
+   ("How much does it cost?","Sculptra BBL starts at $6,000 and is priced by the number of vials in your plan. We&rsquo;ll give you an exact quote at your consultation."),
  ],
  "related":["morpheus8","fillers","botox"],
  "ctah2":"Curious about a non-surgical lift?",
