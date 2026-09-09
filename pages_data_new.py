@@ -292,7 +292,7 @@ PAGES2 = [
    ("Does it hurt?","Most people find it very tolerable and describe a mild warmth. We keep you comfortable throughout."),
    ("Is it right for my skin?","We tailor laser treatments to your skin type and concerns. A consultation ensures it&rsquo;s a good, safe fit for you."),
  ],
- "related":["morpheus8","fillers","botox"],
+ "related":["harmony-bio-boost","morpheus8","fillers"],
  "ctah2":"Ready to glow?",
  "ctapara":"Book a laser facial with our Hudson team and refresh your complexion with radiant results.",
 },

@@ -3,7 +3,7 @@
 # Self-contained (inline CSS + JS), nothing is stored or transmitted. Shared by Hudson & Barboursville.
 # Usage in gen_pages.py:  exec(open("fitz_quiz.py").read())  then  quiz_html(slug, book_url)
 
-QUIZ_SLUGS = {"laser-hair-removal", "laser-skin", "photofacial", "laser-tattoo-removal",
+QUIZ_SLUGS = {"laser-hair-removal", "laser-skin", "photofacial", "harmony-bio-boost", "laser-tattoo-removal",
               "laser-facial", "hyperpigmentation", "laser-nail-fungus"}
 
 _Q = [

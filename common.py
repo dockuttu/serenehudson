@@ -39,7 +39,7 @@ CATEGORIES = [
    ("medical-facials","Medical Facials"), ("hyperpigmentation","Hyperpigmentation & Melasma"),
  ]),
  ("Laser", [
-   ("laser-skin","Laser Skin Resurfacing"), ("photofacial","Photofacial (BBL &amp; IPL)"),
+   ("laser-skin","Laser Skin Resurfacing"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","Photofacial (BBL &amp; IPL)"),
    ("laser-hair-removal","Laser Hair Removal"), ("laser-tattoo-removal","Laser Tattoo Removal"),
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),
@@ -232,7 +232,7 @@ HERO_MAP = {
  "chin-filler":"filler-inject","skinvive":"filler-inject","kybella":"filler-inject","sculptra":"filler-inject",
  "morpheus8":"morpheus8","ultherapy":"morpheus8","laser-facial":"laser","chemical-peels":"facial-2","hydrafacial":"hydrafacial",
  "diamondglow":"facial-4","medical-facials":"facial-room","hyperpigmentation":"skin-analysis",
- "laser-skin":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
+ "laser-skin":"laser","harmony-bio-boost":"skin-analysis","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","emsculpt-neo":"morpheus8","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","lipomelt":"morpheus8","weight-loss":"dr-arora",
  "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted",

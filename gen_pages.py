@@ -12,12 +12,14 @@ IMG = {
  "fillers":"/img/filler-inject.jpg",
  "morpheus8":"/img/morpheus8.jpg",
  "weight-loss":"/img/skin-analysis.jpg",
+ "harmony-bio-boost":"/img/bio-boost-card.jpg",
 }
 RELATED_META = {
  "botox":("Botox","Smooth lines with a natural finish."),
  "fillers":("Dermal Fillers","Restore volume and definition."),
  "morpheus8":("Morpheus8","Tighten and resurface skin."),
  "weight-loss":("Medical Weight Loss","Physician-supervised programs."),
+ "harmony-bio-boost":("Harmony Bio-Boost","Collagen-stimulating laser rejuvenation."),
 }
 
 def cards_html(cards):
