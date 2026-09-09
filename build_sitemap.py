@@ -9,6 +9,7 @@ for p in sorted(glob.glob(os.path.join(BASE,"**","index.html"), recursive=True))
     if re.search(r'name="robots"[^>]*content="[^"]*noindex', html, re.I):
         continue
     rel=os.path.relpath(p, BASE)
+    if rel.startswith("blog/"): continue   # blog moved to blog.serenemedspas.com
     path="" if rel=="index.html" else rel[:-len("index.html")]
     loc=SITE.rstrip("/")+"/"+path
     lastmod=datetime.date.fromtimestamp(os.path.getmtime(p)).isoformat()
