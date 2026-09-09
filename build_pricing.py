@@ -43,7 +43,7 @@ CATS.append(("Weight Loss &amp; Wellness",
 CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+row("Sciton BBL Heroic","$400")+
-  row("Sciton Moxi","$500")+row("CoolPeel","$400")+row("Deka CO&sup2; Laser","$800")+row("Opus Plasma","$400")+
+  row("Sciton Moxi","$500")+row("CoolPeel","$400")+row("Deka CO&sup2; Laser","$800")+row("Opus Plasma","$400")+sub("Ultherapy PRIME &mdash; Hudson")+row("Full Face + Neck","$3,500")+row("Full Face","$2,600")+row("Lower Face + Neck","$2,800")+row("Lower Face (Jowls)","$1,900")+row("Neck / Under-Chin","$1,600")+row("Brow Lift","$950")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub">Laser Hair Removal (Diolaze XL &amp; Alma Harmony) &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
   <tr><td>Side Burns</td><td>$59</td><td>$295</td></tr>
@@ -106,7 +106,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 
 # Offer schema (headline priced services)
 OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
- ("Morpheus8 RF",800),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
+ ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
  ("Laser Hair Removal",59),("EMSCULPT Neo",750),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
