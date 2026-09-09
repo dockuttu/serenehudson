@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import os, json
-exec(open("common.py").read())  # LOGO, BOOK, NAV, FOOTER, SCRIPTS, areas_section, AREA_SERVED
+exec(open("common.py").read())
+exec(open("fitz_quiz.py").read())  # Fitzpatrick skin-type quiz (QUIZ_SLUGS, quiz_for)  # LOGO, BOOK, NAV, FOOTER, SCRIPTS, areas_section, AREA_SERVED
 
 SITE = "bundle/site"
 
@@ -228,7 +229,7 @@ def build_page(p):
         faqh2=p["faqh2"],faqvis=faq_visible(p["faqs"]),related=related_html(p["related"]),
         areas=areas_section(p.get("area_kw","care")),
         stats=STATS_BRANDS,reviews=REVIEWS_SECTION,results=RESULTS_SECTION,finance=FINANCE_BAND,sticky=STICKY_BAR,
-        hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),pricing=p.get("pricing_html",""),consult=CONSULT_SECTION,
+        hero_img=hero_for(p["slug"]),aftercare=aftercare_html(p["slug"]),pricing=quiz_for(p["slug"],book_for(p["slug"]))+p.get("pricing_html",""),consult=CONSULT_SECTION,
         ctah2=p["ctah2"],ctapara=p["ctapara"],footer=FOOTER,scripts=SCRIPTS)
 
 exec(open("pages_data.py").read())

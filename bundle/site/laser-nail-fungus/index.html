@@ -160,6 +160,138 @@
 </section>
 
 
+<style>
+.fitz{background:#fff;border:1px solid var(--blush-deep);border-radius:22px;padding:34px 30px;box-shadow:0 18px 40px -28px rgba(63,43,61,.35);max-width:860px;margin:0 auto}
+.fitz .fz-group{margin:26px 0 8px;font-family:'Cormorant Garamond',serif;font-size:1.35rem;color:var(--plum);font-weight:600}
+.fitz .fz-q{margin:14px 0 6px;font-weight:500;color:var(--plum)}
+.fitz .fz-opts{display:flex;flex-wrap:wrap;gap:8px}
+.fitz .fz-opts label{cursor:pointer;border:1.5px solid var(--blush-deep);border-radius:30px;padding:8px 14px;font-size:.88rem;color:#5a4a54;transition:.2s;background:var(--blush)}
+.fitz .fz-opts label:hover{border-color:var(--rose)}
+.fitz .fz-opts input{position:absolute;opacity:0;width:0;height:0}
+.fitz .fz-opts input:checked+span{color:#fff}
+.fitz .fz-opts label:has(input:checked){background:var(--grad);border-color:transparent;color:#fff}
+.fitz .fz-actions{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.fitz .fz-note{font-size:.8rem;color:var(--muted);margin-top:14px}
+.fitz .fz-err{color:var(--rose-deep);font-size:.9rem;display:none;margin-top:10px}
+.fitz .fz-result{display:none;margin-top:26px;padding:26px;border-radius:18px;background:var(--mint-soft);border:1px solid #cdeee7}
+.fitz .fz-result h3{font-size:1.7rem;margin-bottom:4px}
+.fitz .fz-result .fz-sub{color:var(--muted);margin-bottom:12px}
+.fitz .fz-scale{display:flex;gap:4px;margin:14px 0 18px}
+.fitz .fz-scale span{flex:1;height:12px;border-radius:6px;opacity:.35}
+.fitz .fz-scale span.on{opacity:1;outline:2px solid var(--plum);outline-offset:2px}
+@media(max-width:600px){.fitz{padding:24px 18px}}
+</style>
+
+<section class="tint-blush" id="skin-type-quiz">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Am I a candidate?</div><h2>What&rsquo;s My Skin Type?</h2>
+      <p style="max-width:640px;margin:0 auto">Laser settings are chosen by Fitzpatrick skin type. Answer ten quick questions to see yours and which treatments suit you. Nothing is saved or sent &mdash; it stays on your screen.</p></div>
+    <form class="fitz reveal" id="fzform" onsubmit="return false">
+<div class="fz-group">Genetics</div>
+<fieldset style="border:0"><div class="fz-q">1. What best describes your eye color?</div><div class="fz-opts">
+<label><input type="radio" name="fz0" value="0"><span>Light blue / gray</span></label>
+<label><input type="radio" name="fz0" value="1"><span>Green</span></label>
+<label><input type="radio" name="fz0" value="2"><span>Blue</span></label>
+<label><input type="radio" name="fz0" value="3"><span>Brown</span></label>
+<label><input type="radio" name="fz0" value="4"><span>Dark brown</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">2. What is your natural hair color?</div><div class="fz-opts">
+<label><input type="radio" name="fz1" value="0"><span>Red</span></label>
+<label><input type="radio" name="fz1" value="1"><span>Blonde</span></label>
+<label><input type="radio" name="fz1" value="2"><span>Chestnut / dark blonde</span></label>
+<label><input type="radio" name="fz1" value="3"><span>Dark brown</span></label>
+<label><input type="radio" name="fz1" value="4"><span>Black</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">3. What is the color of your skin in non-exposed areas?</div><div class="fz-opts">
+<label><input type="radio" name="fz2" value="0"><span>White</span></label>
+<label><input type="radio" name="fz2" value="1"><span>Very pale</span></label>
+<label><input type="radio" name="fz2" value="2"><span>Pale with a beige tint</span></label>
+<label><input type="radio" name="fz2" value="3"><span>Light brown</span></label>
+<label><input type="radio" name="fz2" value="4"><span>Dark brown</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">4. Do you have freckles on unexposed areas?</div><div class="fz-opts">
+<label><input type="radio" name="fz3" value="0"><span>Many</span></label>
+<label><input type="radio" name="fz3" value="1"><span>Several</span></label>
+<label><input type="radio" name="fz3" value="2"><span>Few</span></label>
+<label><input type="radio" name="fz3" value="3"><span>Incidental</span></label>
+<label><input type="radio" name="fz3" value="4"><span>None</span></label>
+</div></fieldset>
+<div class="fz-group">Sun reaction</div>
+<fieldset style="border:0"><div class="fz-q">5. What happens when you stay in the sun?</div><div class="fz-opts">
+<label><input type="radio" name="fz4" value="0"><span>Painful redness, blistering, peeling</span></label>
+<label><input type="radio" name="fz4" value="1"><span>Blistering followed by peeling</span></label>
+<label><input type="radio" name="fz4" value="2"><span>Burns, sometimes followed by peeling</span></label>
+<label><input type="radio" name="fz4" value="3"><span>Rare burns</span></label>
+<label><input type="radio" name="fz4" value="4"><span>Never had burns</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">6. To what degree do you brown?</div><div class="fz-opts">
+<label><input type="radio" name="fz5" value="0"><span>Hardly or not at all</span></label>
+<label><input type="radio" name="fz5" value="1"><span>Light tan</span></label>
+<label><input type="radio" name="fz5" value="2"><span>Reasonable tan</span></label>
+<label><input type="radio" name="fz5" value="3"><span>Tan very easily</span></label>
+<label><input type="radio" name="fz5" value="4"><span>Turn dark brown very quickly</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">7. Do you turn brown within several hours after sun exposure?</div><div class="fz-opts">
+<label><input type="radio" name="fz6" value="0"><span>Never</span></label>
+<label><input type="radio" name="fz6" value="1"><span>Seldom</span></label>
+<label><input type="radio" name="fz6" value="2"><span>Sometimes</span></label>
+<label><input type="radio" name="fz6" value="3"><span>Often</span></label>
+<label><input type="radio" name="fz6" value="4"><span>Always</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">8. How does your face react to the sun?</div><div class="fz-opts">
+<label><input type="radio" name="fz7" value="0"><span>Very sensitive</span></label>
+<label><input type="radio" name="fz7" value="1"><span>Sensitive</span></label>
+<label><input type="radio" name="fz7" value="2"><span>Normal</span></label>
+<label><input type="radio" name="fz7" value="3"><span>Very resistant</span></label>
+<label><input type="radio" name="fz7" value="4"><span>Never had a problem</span></label>
+</div></fieldset>
+<div class="fz-group">Tanning habits</div>
+<fieldset style="border:0"><div class="fz-q">9. When did you last expose your body to the sun or artificially tan?</div><div class="fz-opts">
+<label><input type="radio" name="fz8" value="0"><span>More than 3 months ago</span></label>
+<label><input type="radio" name="fz8" value="1"><span>2–3 months ago</span></label>
+<label><input type="radio" name="fz8" value="2"><span>1–2 months ago</span></label>
+<label><input type="radio" name="fz8" value="3"><span>Less than a month ago</span></label>
+<label><input type="radio" name="fz8" value="4"><span>Less than 2 weeks ago</span></label>
+</div></fieldset>
+<fieldset style="border:0"><div class="fz-q">10. Did you expose the area to be treated to the sun?</div><div class="fz-opts">
+<label><input type="radio" name="fz9" value="0"><span>Never</span></label>
+<label><input type="radio" name="fz9" value="1"><span>Hardly ever</span></label>
+<label><input type="radio" name="fz9" value="2"><span>Sometimes</span></label>
+<label><input type="radio" name="fz9" value="3"><span>Often</span></label>
+<label><input type="radio" name="fz9" value="4"><span>Always</span></label>
+</div></fieldset>
+      <div class="fz-err" id="fzerr">Please answer every question to see your result.</div>
+      <div class="fz-actions"><button class="btn" type="button" id="fzgo">See My Skin Type</button><button class="btn btn-outline" type="button" id="fzreset">Start Over</button></div>
+      <div class="fz-result" id="fzres">
+        <div class="eyebrow">Your result</div>
+        <h3 id="fzt"></h3><div class="fz-sub" id="fzs"></div>
+        <div class="fz-scale" id="fzscale"><span style="background:#fde8dc"></span><span style="background:#f5d2b8"></span><span style="background:#d9a877"></span><span style="background:#b07a4a"></span><span style="background:#7a4f2e"></span><span style="background:#4a2f1d"></span></div>
+        <p id="fzp"></p>
+        <div class="fz-actions"><a class="btn" href="https://booking.mangomint.com/serenemedspa?serviceId=321" target="_blank" rel="noopener">Book a Consultation</a></div>
+      </div>
+      <div class="fz-note">Based on the standard Fitzpatrick questionnaire. For guidance only &mdash; your provider confirms your skin type and settings in person.</div>
+    </form>
+  </div>
+</section>
+<script>
+(function(){
+var R={"I": ["Type I &mdash; Very fair", "Always burns, never tans. Very light-sensitive skin.", "Excellent candidate for laser hair removal and light-based skin treatments (photofacial/IPL, resurfacing). We use conservative first-session settings and strict sun protection because your skin reacts strongly to light."], "II": ["Type II &mdash; Fair", "Burns easily, tans minimally.", "Excellent candidate for laser hair removal and for photofacial, resurfacing and PICO treatments. Sun avoidance for two weeks before and after each session keeps results clean and predictable."], "III": ["Type III &mdash; Light to medium", "Sometimes burns, tans gradually.", "Great candidate for the full range of laser and light treatments. Your provider will tune energy settings to your skin and may recommend a test spot for resurfacing or IPL."], "IV": ["Type IV &mdash; Olive / light brown", "Rarely burns, tans easily.", "Laser hair removal is safe and effective with the right device &mdash; our diode laser platform is designed for all skin types, including IV&ndash;VI. For skin concerns we lean on Morpheus8, RF microneedling, PICO and melanin-safe peels rather than IPL, which is not a good fit for your skin type."], "V": ["Type V &mdash; Brown", "Very rarely burns, tans very easily.", "Laser hair removal is safe and effective on our diode laser platform, which is built to treat darker skin safely. For pigment, texture or tightening, we favor Morpheus8, RF microneedling, PICO and peels formulated for melanin-rich skin; IPL/photofacial is not recommended for your skin type."], "VI": ["Type V&ndash;VI &mdash; Deep brown", "Never burns, deeply pigmented.", "Laser hair removal is safe and effective on our diode laser platform, which is built to treat darker skin safely. For pigment, texture or tightening, we favor Morpheus8, RF microneedling, PICO and peels formulated for melanin-rich skin; IPL/photofacial is not recommended for your skin type."]}, N=10;
+var go=document.getElementById('fzgo'), rs=document.getElementById('fzreset'), err=document.getElementById('fzerr'), res=document.getElementById('fzres');
+go.addEventListener('click',function(){
+  var sum=0, ok=true;
+  for(var i=0;i<N;i++){var c=document.querySelector('input[name=fz'+i+']:checked'); if(!c){ok=false;break;} sum+=parseInt(c.value,10);}
+  if(!ok){err.style.display='block';res.style.display='none';return;}
+  err.style.display='none';
+  var t = sum<=7?'I': sum<=16?'II': sum<=25?'III': sum<=30?'IV':'VI';
+  var idx = {'I':0,'II':1,'III':2,'IV':3,'V':4,'VI':5}[t];
+  document.getElementById('fzt').innerHTML=R[t][0]; document.getElementById('fzs').innerHTML=R[t][1]; document.getElementById('fzp').innerHTML=R[t][2];
+  var sp=document.querySelectorAll('#fzscale span'); for(var j=0;j<sp.length;j++){sp[j].className=(j===idx||(t==='VI'&&j===4))?'on':'';}
+  res.style.display='block'; res.scrollIntoView({behavior:'smooth',block:'nearest'});
+});
+rs.addEventListener('click',function(){document.getElementById('fzform').reset();res.style.display='none';err.style.display='none';});
+})();
+</script>
+
 
 <section class="aftercare" id="aftercare">
   <div class="wrap">
