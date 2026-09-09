@@ -32,6 +32,7 @@ def dims(path):
     except Exception: return None
     return None
 
+KNOWN = {"https://serenemedspas.com/wp-content/uploads/2024/11/Serene_Logo-1024x574.png": (1024, 574)}
 IMG = re.compile(r"<img\b[^>]*>", re.I)
 changed = 0
 for page in glob.glob(os.path.join(SITE, "**", "*.html"), recursive=True):
@@ -42,9 +43,10 @@ for page in glob.glob(os.path.join(SITE, "**", "*.html"), recursive=True):
         src = re.search(r'\bsrc="([^"]+)"', tag)
         if src and not re.search(r"\bwidth=", tag):
             s = src.group(1)
-            if s.startswith("/") and not s.startswith("//"):
+            d = KNOWN.get(s)
+            if not d and s.startswith("/") and not s.startswith("//"):
                 d = dims(os.path.join(SITE, s.lstrip("/").split("?")[0]))
-                if d: tag = tag[:-1].rstrip("/") + ' width="%d" height="%d">' % d
+            if d: tag = tag[:-1].rstrip("/") + ' width="%d" height="%d">' % d
         if n[0] > 2 and "loading=" not in tag: tag = tag[:-1].rstrip("/") + ' loading="lazy" decoding="async">'
         return tag
     html = IMG.sub(fix, html)

@@ -2,10 +2,12 @@
 JOURNAL = [
  {
   "slug": "hormone-optimization-barboursville-wv",
+  "w": 1600,
+  "h": 1067,
   "url": "https://blog.serenemedspas.com/hormone-optimization-barboursville-wv/",
   "title": "Hormone Imbalance in Barboursville &amp; Huntington: The Signs",
   "cat": "Hormone Optimization",
-  "cat_link": "/#services",
+  "cat_link": "/hormone-optimization/",
   "excerpt": "Tired, foggy, or gaining weight around the middle that won&rsquo;t budge? Those changes often trace back to shifting hormones. Here are the signs to watch for &mdash; and how physician-supervised hormone optimization may help in the Tri-State.",
   "img": "https://blog.serenemedspas.com/img/serene-front-desk.jpg",
   "img_alt": "Reception area at Serene Med Spa, a Certified Bi&ouml;te Provider serving Barboursville and Huntington, WV",
@@ -15,6 +17,8 @@ JOURNAL = [
  },
  {
   "slug": "hormone-optimization-signs-symptoms",
+  "w": 1600,
+  "h": 1067,
   "url": "https://blog.serenemedspas.com/hormone-optimization-signs-symptoms/",
   "title": "Signs Your Hormones May Be Out of Balance",
   "cat": "Hormone Optimization",
@@ -28,6 +32,8 @@ JOURNAL = [
  },
  {
   "slug": "iv-therapy-immune-support-fall",
+  "w": 622,
+  "h": 1100,
   "url": "https://blog.serenemedspas.com/iv-therapy-immune-support-fall/",
   "title": "IV Therapy for Immune Support in Hudson &amp; Barboursville",
   "cat": "IV Therapy",
@@ -41,6 +47,8 @@ JOURNAL = [
  },
  {
   "slug": "male-lip-filler-juvederm-volbella",
+  "w": 1148,
+  "h": 837,
   "url": "https://blog.serenemedspas.com/male-lip-filler-juvederm-volbella/",
   "title": "Male Lip Filler with Juv&eacute;derm Volbella",
   "cat": "Lip Filler",

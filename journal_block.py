@@ -21,8 +21,8 @@ def journal_posts_for(slug, site_loc, limit=3):
 def journal_section(slug, site_loc, limit=3):
     posts = journal_posts_for(slug, site_loc, limit)
     if not posts: return ""
-    cards = "\n".join('''      <a class="blog-card reveal" href="%s"><div class="blog-thumb"><img loading="lazy" src="%s" alt="%s"></div><div class="blog-txt"><span class="blog-tag">%s</span><h3>%s</h3><p>%s</p><span class="blog-date">%s</span></div></a>'''
-        % (p["url"], p["img"], p["img_alt"], p["cat"], p["title"], p["excerpt"], p["date_h"]) for p in posts)
+    cards = "\n".join('''      <a class="blog-card reveal" href="%s"><div class="blog-thumb"><img loading="lazy" src="%s" alt="%s" width="%s" height="%s"></div><div class="blog-txt"><span class="blog-tag">%s</span><h3>%s</h3><p>%s</p><span class="blog-date">%s</span></div></a>'''
+        % (p["url"], p["img"], p["img_alt"], p.get("w",1200), p.get("h",800), p["cat"], p["title"], p["excerpt"], p["date_h"]) for p in posts)
     return '''<section class="tint-mint" id="journal">
   <div class="wrap">
     <div class="section-head reveal"><div class="eyebrow">From the Serene Journal</div><h2>Read More From Dr. Arora</h2></div>
