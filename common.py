@@ -98,7 +98,7 @@ NAV = '''<header>
         <div class="mega loc-mini">
           <a href="/#about">About Serene</a>
           <a href="/#reviews">Reviews</a>
-          <a href="/blog/">Blog</a>
+          <a href="https://blog.serenemedspas.com/">Blog</a>
           <a href="/#consult">Contact</a>
         </div>
       </li>

@@ -38,6 +38,7 @@ mv "$LIVE/site.new" "$LIVE/site"
 
 # keep the compose file in sync if it changed in the repo
 cp -f bundle/docker-compose.yml "$LIVE/docker-compose.yml"
+cp -f bundle/nginx.conf "$LIVE/nginx.conf"
 
 echo "==> Restarting container"
 cd "$LIVE"

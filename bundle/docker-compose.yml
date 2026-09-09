@@ -5,6 +5,7 @@ services:
     restart: always
     volumes:
       - ./site:/usr/share/nginx/html:ro
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
     networks:
       - root_default
     labels:

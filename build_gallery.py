@@ -8,7 +8,7 @@ CATS = [
  ("Lip Filler", "/lip-filler/", [
    ("ba-lip-volbella.jpg", "Juv&eacute;derm Volbella &mdash; Male Lip Filler",
     "One syringe, 70/30 upper-to-lower, with symmetry corrected across all four quadrants and a softened Cupid&rsquo;s bow.",
-    "/blog/male-lip-filler-juvederm-volbella/", "Read the case"),
+    "https://blog.serenemedspas.com/male-lip-filler-juvederm-volbella/", "Read the case"),
    ("ba-lip.jpg", "Lip Filler &mdash; Natural Volume",
     "Subtle enhancement that adds fullness while keeping a natural lip shape.", "/lip-filler/", "See treatment"),
  ]),

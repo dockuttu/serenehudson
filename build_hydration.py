@@ -145,7 +145,7 @@ HTML=f'''<!DOCTYPE html>
     <div class="hb-grid">
 {cards}
     </div>
-    <p class="hb-links">See every treatment on our <a href="/pricing/">full pricing menu</a>, learn more <a href="/iv-therapy/">about IV therapy</a>, or read <a href="/blog/iv-therapy-immune-support-fall/">how IV therapy supports your wellness</a>.</p>
+    <p class="hb-links">See every treatment on our <a href="/pricing/">full pricing menu</a>, learn more <a href="/iv-therapy/">about IV therapy</a>, or read <a href="https://blog.serenemedspas.com/iv-therapy-immune-support-fall/">how IV therapy supports your wellness</a>.</p>
     <p class="hb-disclaimer">IV therapy is intended to support general wellness and hydration and is not intended to diagnose, treat, cure, or prevent any disease. Our medical team will review your suitability at your visit.</p>
   </div>
 </section>

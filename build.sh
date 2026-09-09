@@ -10,7 +10,8 @@ python3 gen_pages.py
 echo "==> Building section pages"
 python3 build_pricing.py
 python3 build_shop.py
-python3 build_blog.py
+# blog moved to blog.serenemedspas.com (repo sereneblog); old /blog/ URLs 301 via bundle/nginx.conf
+rm -rf bundle/site/blog
 python3 build_gallery.py
 python3 build_housecalls.py
 python3 build_hydration.py
