@@ -67,7 +67,7 @@ PAGES5 = [
    ("Is it safe for my skin tone?","Settings are matched to your Fitzpatrick skin type after your Alma IQ scan. Some steps are adjusted or omitted for deeper skin tones. Take the skin-type quiz on this page and we&rsquo;ll review the safest plan at your consultation."),
    ("Can I combine it with other treatments?","Yes &mdash; Bio-Boost pairs well with Botox, fillers, Skinvive, and medical-grade skincare. We&rsquo;ll sequence everything so each treatment gets the best result."),
  ],
- "related":["morpheus8","botox","fillers"],
+ "related":["opus-plasma","morpheus8","botox"],
  "pricing_html":_BB_RESULTS,
  "ctah2":"Ready to boost your skin&rsquo;s true potential?",
  "ctapara":"Book a Harmony Bio-Boost consultation with our Hudson team and start rebuilding your own collagen.",

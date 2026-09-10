@@ -13,6 +13,9 @@ IMG = {
  "morpheus8":"/img/morpheus8.jpg",
  "weight-loss":"/img/skin-analysis.jpg",
  "harmony-bio-boost":"/img/bio-boost-card.jpg",
+ "opus-plasma":"/img/opus-card.jpg",
+ "alma-ted":"/img/hair-ted.jpg",
+ "prp-hair-restoration":"/img/hair-ted.jpg",
 }
 RELATED_META = {
  "botox":("Botox","Smooth lines with a natural finish."),
@@ -20,6 +23,9 @@ RELATED_META = {
  "morpheus8":("Morpheus8","Tighten and resurface skin."),
  "weight-loss":("Medical Weight Loss","Physician-supervised programs."),
  "harmony-bio-boost":("Harmony Bio-Boost","Collagen-stimulating laser rejuvenation."),
+ "opus-plasma":("Opus Plasma","Fractional plasma resurfacing, half the downtime."),
+ "alma-ted":("Alma TED","Needle-free hair restoration."),
+ "prp-hair-restoration":("PRP Hair Restoration","Your own growth factors for fuller hair."),
 }
 
 def cards_html(cards):

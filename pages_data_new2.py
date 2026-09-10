@@ -40,7 +40,7 @@ PAGES3 = [
    ("Does it hurt?","We numb the skin as needed and keep you comfortable. Most people tolerate treatment well."),
    ("Is it safe for my skin tone?","Suitability varies by skin type and device. Your physician will evaluate your skin and choose the safest, most effective option for you."),
  ],
- "related":["harmony-bio-boost","morpheus8","fillers"],
+ "related":["opus-plasma","harmony-bio-boost","morpheus8"],
  "ctah2":"Ready for smoother, renewed skin?",
  "ctapara":"Book a laser resurfacing consultation with our Hudson physicians and get matched to the right treatment.",
 },
