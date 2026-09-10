@@ -15,6 +15,10 @@ IMG = {
  "harmony-bio-boost":"/img/bio-boost-card.jpg",
  "opus-plasma":"/img/opus-card.jpg",
  "alma-ted":"/img/hair-ted.jpg",
+ "alma-duo":"/img/duo-card.jpg",
+ "mens-sexual-wellness":"/img/dr-arora.jpg",
+ "womens-sexual-wellness":"/img/facial-room.jpg",
+ "hormone-optimization":"/img/dr-arora.jpg",
  "prp-hair-restoration":"/img/hair-ted.jpg",
 }
 RELATED_META = {
@@ -25,6 +29,10 @@ RELATED_META = {
  "harmony-bio-boost":("Harmony Bio-Boost","Collagen-stimulating laser rejuvenation."),
  "opus-plasma":("Opus Plasma","Fractional plasma resurfacing, half the downtime."),
  "alma-ted":("Alma TED","Needle-free hair restoration."),
+ "alma-duo":("Alma Duo","Painless shockwave therapy for him & her."),
+ "mens-sexual-wellness":("Men's Sexual Wellness","Discreet, physician-led options."),
+ "womens-sexual-wellness":("Women's Sexual Wellness","Restore sensation and confidence."),
+ "hormone-optimization":("Hormone Optimization","Balance energy, mood, and libido."),
  "prp-hair-restoration":("PRP Hair Restoration","Your own growth factors for fuller hair."),
 }
 
