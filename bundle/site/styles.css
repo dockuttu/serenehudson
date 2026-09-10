@@ -524,10 +524,10 @@ footer ul a:hover{color:var(--gold)}
 /* Alma technology logos */
 .tech{margin-top:30px;padding-top:26px;border-top:1px solid var(--blush-deep);text-align:center}
 .tech-label{font-family:'Jost',sans-serif;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:16px}
-.tech-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px 44px}
+.tech-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:18px 44px;max-width:860px;margin:0 auto}
 .tech-row img{width:auto;display:block;opacity:.88;transition:opacity .3s}
 .tech-row a:hover img{opacity:1}
-.device-badge{display:inline-flex;align-items:center;gap:14px;margin:-10px 0 26px;padding:10px 16px;border:1px solid var(--blush-deep);border-radius:999px;background:#fff}
+.device-badge{display:flex;width:fit-content;align-items:center;gap:14px;margin:-6px 0 24px;padding:10px 16px;border:1px solid var(--blush-deep);border-radius:999px;background:#fff}
 .device-badge span{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .device-badge img{width:auto;display:block}
 .device-badge a{display:block}
