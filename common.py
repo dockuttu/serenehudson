@@ -163,6 +163,9 @@ STICKY_BAR = '''<div class="mbar">
   <a class="mbar-book" href="%s" target="_blank" rel="noopener">Book Now</a>
 </div>''' % BOOK
 
+exec(open("tech_logos.py").read())  # Alma device logos (tech_strip / device_badge / TECH_CSS)
+TECH_STRIP = tech_strip(["alma","harmony-bio-boost","opus-plasma","alma-ted","alma-duo"])
+
 PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
       <span title="Merz Aesthetics Bronze Preferred Partner"><img src="/img/badges/merz-bronze-preferred.png" alt="Merz Aesthetics Bronze Preferred Partner" class="badge-round" loading="lazy"></span>
@@ -181,6 +184,7 @@ STATS_BRANDS = '''<section class="stats">
       <span>Botox</span><span>Juv&eacute;derm</span><span>Sculptra</span><span>Morpheus8</span><span>HydraFacial</span><span>Bi&ouml;te</span>
     </div>
     ''' + PARTNER_BADGES + '''
+    ''' + TECH_STRIP + '''
   </div>
 </section>'''
 
