@@ -170,6 +170,7 @@ PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
       <span title="Merz Aesthetics Bronze Preferred Partner"><img src="/img/badges/merz-bronze-preferred.png" alt="Merz Aesthetics Bronze Preferred Partner" class="badge-round" loading="lazy"></span>
       <a href="/xperience-rewards/" title="Xperience+ Rewards Program"><img src="/img/badges/xperience-plus.png" alt="Xperience+ Rewards Program by Merz Aesthetics" class="badge-xp" loading="lazy"></a>
+      <span title="Allergan Partner Privileges — Platinum 2026"><img src="/img/badges/allergan-platinum-2026.png" alt="Allergan Partner Privileges Platinum 2026" class="badge-app" loading="lazy" width="1440" height="480"></span>
     </div>'''
 
 STATS_BRANDS = '''<section class="stats">
