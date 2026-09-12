@@ -29,9 +29,14 @@ def tech_strip(keys, label="Our Technology"):
       <div class="tech-row">%s</div>
     </div>''' % (label, "\n        ".join(items))
 
+SEAL_IMG = '<img class="hero-seal" src="/img/badges/allergan-app-platinum-2026.png" alt="Allergan Partner Privileges — Platinum Partner 2026" width="230" height="442">'
+def hero_seal(slug, device_map):
+    """Platinum ribbon hung over the hero image on Allergan pages."""
+    return SEAL_IMG if "app-platinum" in (device_map.get(slug) or []) else ""
+
 def device_badge(slug, device_map):
     """'Powered by' badge under the hero copy. device_map: {slug: [logo keys]}"""
-    keys = device_map.get(slug)
+    keys = [k for k in (device_map.get(slug) or []) if k != "app-platinum"]
     if not keys: return ""
     imgs = []
     for k in keys:
@@ -51,5 +56,6 @@ TECH_CSS = '''
 .device-badge span{font-family:'Jost',sans-serif;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .device-badge img{width:auto;display:block}
 .device-badge a{display:block}
-@media(max-width:560px){.tech-row{gap:14px 26px}.tech-row img{max-height:30px}.device-badge{flex-wrap:wrap;gap:10px}.device-badge img{max-height:34px}}
+.svc-hero-media .hero-seal{position:absolute;top:-8px;right:26px;height:172px;width:auto;filter:drop-shadow(0 10px 18px rgba(63,43,61,.22));z-index:2}
+@media(max-width:560px){.svc-hero-media .hero-seal{height:120px;right:12px}.tech-row{gap:14px 26px}.tech-row img{max-height:30px}.device-badge{flex-wrap:wrap;gap:10px}.device-badge img{max-height:34px}}
 '''
