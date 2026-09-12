@@ -66,7 +66,10 @@ CATEGORIES = [
 ALL_SLUGS = [s for _,items in CATEGORIES for s,_ in items]
 
 # local SEO
-AREA_TOWNS = ["Hudson","Stow","Cuyahoga Falls","Twinsburg","Aurora","Streetsboro","Macedonia","Kent","Tallmadge","Northfield"]
+AREA_TOWNS = ["Hudson","Stow","Cuyahoga Falls","Twinsburg","Aurora","Streetsboro","Macedonia","Kent","Tallmadge","Northfield", "Akron", "Solon"]
+CITY_LINKS = {"Akron":"/med-spa-akron-oh/", "Stow":"/med-spa-stow-oh/", "Cuyahoga Falls":"/med-spa-cuyahoga-falls-oh/", "Twinsburg":"/med-spa-twinsburg-oh/", "Solon":"/med-spa-solon-oh/", "Aurora":"/med-spa-aurora-oh/"}
+def _area_tag(t):
+    return ('<a href="%s">%s</a>' % (CITY_LINKS[t], t)) if t in CITY_LINKS else ('<span>%s</span>' % t)
 AREA_SERVED = (
   [{"@type":"AdministrativeArea","name":n+" County, OH"} for n in ["Summit","Portage","Cuyahoga","Geauga"]] +
   [{"@type":"City","name":t+", OH"} for t in ["Hudson","Stow","Cuyahoga Falls","Twinsburg","Aurora","Streetsboro","Macedonia","Kent"]]
@@ -142,13 +145,14 @@ FOOTER = '''<footer>
         </ul>
       </div>
     </div>
+    <div class="foot-areas">Areas we serve: <a href="/med-spa-akron-oh/">Akron</a> &middot; <a href="/med-spa-stow-oh/">Stow</a> &middot; <a href="/med-spa-cuyahoga-falls-oh/">Cuyahoga Falls</a> &middot; <a href="/med-spa-twinsburg-oh/">Twinsburg</a> &middot; <a href="/med-spa-solon-oh/">Solon</a> &middot; <a href="/med-spa-aurora-oh/">Aurora</a></div>
     <div class="foot-bottom">&copy; 2026 Serene Med Spa, Hudson OH. All rights reserved.</div>
   </div>
 </footer>''' % (LOGO, FOOTER_TREAT, BOOK)
 
 def areas_section(treatment="care"):
-    tags = "".join('<span>%s</span>' % t for t in AREA_TOWNS)
-    return '''<section class="areas">
+    tags = "".join(_area_tag(t) for t in AREA_TOWNS)
+    return '''<section class="areas" id="areas">
   <div class="wrap reveal" style="text-align:center">
     <div class="eyebrow" style="justify-content:center">Proudly Serving</div>
     <h2>Hudson &amp; the Surrounding Communities</h2>

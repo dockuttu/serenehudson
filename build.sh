@@ -6,6 +6,7 @@ cd "$(dirname "$0")"
 
 echo "==> Building service pages"
 python3 gen_pages.py
+python3 build_cities.py
 
 echo "==> Building section pages"
 python3 build_pricing.py
