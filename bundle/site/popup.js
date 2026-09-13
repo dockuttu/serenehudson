@@ -1,5 +1,5 @@
 /* Serene Med Spa — New Client offer popup (self-contained, brand-styled)
-   Captures leads into the existing HubSpot form, then hands off to Mangomint booking. */
+   Captures leads into the Zoho CRM web-to-lead form, then hands off to Mangomint booking. */
 (function () {
   "use strict";
 
@@ -11,7 +11,8 @@
 
   var CFG = {
     book: "https://booking.mangomint.com/serenemedspa?serviceId=321",
-    hs: { region: "na2", portal: "242695075", form: "16625e0e-6a46-4664-98c6-2cbf264da060" },
+    zoho: { action: "https://crm.zoho.com/crm/WebToLeadForm", xnq: "29c1b6f4e6219d1e5682cd0434b1ce181ccda55241b6394ae70c33a7f83e1dfa", xmi: "139bc9e7ae4c09a2ea84b820c0c3b10459ed2d907a8c88693956f8d217af21d20ea75c0d1b75b947bf1bf59cc28d7274", ret: "https://hudson.serenemedspas.com/thank-you/" },
+    location: "Hudson, OH",
     image: "/img/lobby.jpg",
     dismissDays: 7,      // don't re-show for this many days after close
     delayMs: 7000,       // show after this long on the page...
@@ -51,6 +52,11 @@
       ".np-sub{color:#8a7b84;font-size:.96rem;margin:0 0 14px}",
       ".np-exp{display:inline-block;background:#3f2b3d;color:#fff;font-size:.78rem;letter-spacing:.04em;padding:7px 16px;border-radius:999px;margin-bottom:18px}",
       ".np-form{min-height:60px;margin:6px 0 4px;text-align:left}",
+      ".np-row{display:flex;gap:8px}",
+      ".np-in{width:100%;box-sizing:border-box;font-family:'Jost',sans-serif;font-size:.98rem;padding:12px 14px;margin:0 0 8px;border:1.5px solid rgba(63,43,61,.18);border-radius:12px;background:#fff;color:#3f2b3d}",
+      ".np-in:focus{outline:none;border-color:#c94f74;box-shadow:0 0 0 3px rgba(201,79,116,.15)}",
+      ".np-err{color:#b0163f;font-size:.8rem;min-height:1em;margin-top:6px}",
+      ".np-ok{background:#fff;border-radius:14px;padding:16px;text-align:center;color:#3f2b3d;font-weight:500}",
       ".np-btn{display:block;width:100%;box-sizing:border-box;background:linear-gradient(120deg,#f7a072,#e0698a 55%,#c94f74);color:#fff;border:0;border-radius:999px;padding:15px 20px;font-family:'Jost',sans-serif;font-size:1rem;font-weight:600;letter-spacing:.03em;cursor:pointer;text-decoration:none;text-align:center;margin-top:6px}",
       ".np-btn:hover{filter:brightness(1.04)}",
       ".np-exist{display:block;margin-top:14px;font-size:.9rem;color:#3f2b3d}",
@@ -63,14 +69,7 @@
     document.head.appendChild(css);
   }
 
-  function loadHubSpot() {
-    if (document.getElementById("serene-hs-embed")) return;
-    var s = document.createElement("script");
-    s.id = "serene-hs-embed";
-    s.src = "https://js-" + CFG.hs.region + ".hsforms.net/forms/embed/" + CFG.hs.portal + ".js";
-    s.defer = true;
-    document.body.appendChild(s);
-  }
+  function loadHubSpot() {}
 
   function close(ov) {
     ov.classList.remove("in");
@@ -98,8 +97,7 @@
           '<h2 class="np-h">Free Consultation <b>+ 20% Off</b><br>Your First Treatment</h2>' +
           '<p class="np-sub">Physician-led care in Hudson, OH. Tell us where to send your offer.</p>' +
           '<div class="np-exp">Offer expires: ' + endOfMonth() + '</div>' +
-          '<div class="np-form"><div class="hs-form-frame" data-region="' + CFG.hs.region +
-            '" data-form-id="' + CFG.hs.form + '" data-portal-id="' + CFG.hs.portal + '"></div></div>' +
+          '<div class="np-form"><form class="np-zf" novalidate><input type="hidden" name="xnQsjsdp" value="' + CFG.zoho.xnq + '"><input type="hidden" name="xmIwtLD" value="' + CFG.zoho.xmi + '"><input type="hidden" name="actionType" value="TGVhZHM="><input type="hidden" name="returnURL" value="' + CFG.zoho.ret + '"><input type="hidden" name="Lead Status" value="Not Contacted"><input type="hidden" name="LEADCF1" value="Website popup: ' + location.host + '"><input type="hidden" name="LEADCF3" value="' + (CFG.location || "") + '"><input type="hidden" name="Description" value="New Client Special popup (free consult + 20% off first treatment)"><input type="text" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><div class="np-row"><input class="np-in" name="First Name" placeholder="First name" autocomplete="given-name"><input class="np-in" name="Last Name" placeholder="Last name" autocomplete="family-name" required></div><input class="np-in" type="email" name="Email" placeholder="Email" autocomplete="email" required><input class="np-in" type="tel" name="Phone" placeholder="Mobile number" autocomplete="tel" required><button type="submit" class="np-btn np-send">Send My Offer &rsaquo;</button><div class="np-err" role="alert"></div></form></div>' +
           '<a class="np-btn" href="' + CFG.book + '" target="_blank" rel="noopener">Continue to Booking &rsaquo;</a>' +
           '<span class="np-exist">Existing client? <a href="' + CFG.book + '" target="_blank" rel="noopener">Book now</a></span>' +
           '<div class="np-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>' +
@@ -113,6 +111,22 @@
     requestAnimationFrame(function () { ov.classList.add("in"); });
 
     ov.querySelector(".np-x").addEventListener("click", function () { close(ov); });
+    var zf = ov.querySelector(".np-zf");
+    if (zf) zf.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var err = zf.querySelector(".np-err"); err.textContent = "";
+      var need = [].slice.call(zf.querySelectorAll("[required]")).filter(function (i) { return !i.value.trim(); });
+      if (need.length) { need[0].focus(); err.textContent = "Please fill in name, email and mobile."; return; }
+      var em = zf.querySelector("[name=Email]");
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(em.value.trim())) { em.focus(); err.textContent = "Please enter a valid email."; return; }
+      var b = zf.querySelector(".np-send"); b.disabled = true; b.textContent = "Sending\u2026";
+      fetch(CFG.zoho.action, { method: "POST", body: new URLSearchParams(new FormData(zf)), mode: "no-cors", credentials: "omit" })
+        .then(function () {
+          zf.outerHTML = '<div class="np-ok">&#10003; Your offer is on its way &mdash; check your email. Book below to lock in your spot.</div>';
+          try { if (window.gtag) gtag("event", "generate_lead", { event_category: "form", event_label: "popup" }); } catch (x) {}
+        })
+        .catch(function () { b.disabled = false; b.textContent = "Send My Offer \u203a"; err.textContent = "Something went wrong \u2014 please call us."; });
+    });
     ov.addEventListener("click", function (e) { if (e.target === ov) close(ov); });
     document.addEventListener("keydown", function esc(e) {
       if (e.key === "Escape") { close(ov); document.removeEventListener("keydown", esc); }

@@ -27,6 +27,7 @@ python3 seo_trim.py
 
 echo "==> Generating sitemap.xml (indexable pages only)"
 python3 build_thankyou.py
+python3 patch_static_consult.py   # hand-built pages + popup.js -> Zoho form
 python3 build_sitemap.py
 
 echo "==> Cache-bust styles.css"
