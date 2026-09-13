@@ -26,7 +26,7 @@ else if(h.indexOf('tel:')===0){gtag('event','call_click',{'send_to':'AW-78890751
 <meta property="og:image" content="https://serenemedspas.com/wp-content/uploads/2024/11/Serene_Logo-1024x574.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/styles.css?v=5d1fb987">
+<link rel="stylesheet" href="/styles.css?v=dc4f0242">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png">
@@ -295,10 +295,53 @@ else if(h.indexOf('tel:')===0){gtag('event','call_click',{'send_to':'AW-78890751
   <div class="wrap">
     <div class="section-head reveal"><div class="eyebrow">Get In Touch</div><h2>Request a Consultation</h2><p>Tell us what you&rsquo;re interested in and our team will reach out to schedule your visit.</p></div>
     <div class="consult-card reveal">
-      <div class="hs-form-frame" data-region="na2" data-form-id="16625e0e-6a46-4664-98c6-2cbf264da060" data-portal-id="242695075"></div>
+      <form class="zf" id="zf-consult" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST" accept-charset="UTF-8" novalidate>
+        <input type="hidden" name="xnQsjsdp" value="29c1b6f4e6219d1e5682cd0434b1ce181ccda55241b6394ae70c33a7f83e1dfa">
+        <input type="hidden" name="xmIwtLD" value="139bc9e7ae4c09a2ea84b820c0c3b10459ed2d907a8c88693956f8d217af21d20ea75c0d1b75b947bf1bf59cc28d7274">
+        <input type="hidden" name="actionType" value="TGVhZHM=">
+        <input type="hidden" name="returnURL" value="https://hudson.serenemedspas.com/thank-you/">
+        <input type="hidden" name="zc_gad" id="zc_gad" value="">
+        <input type="hidden" name="Lead Status" value="Not Contacted">
+        <input type="hidden" name="LEADCF1" id="zf-src" value="Website form: hudson.serenemedspas.com">
+        <input type="text" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" class="zf-hp" aria-hidden="true">
+        <div class="zf-grid">
+          <div class="zf-field"><label for="zf-fn">First name</label><input type="text" id="zf-fn" name="First Name" maxlength="40" autocomplete="given-name"></div>
+          <div class="zf-field"><label for="zf-ln">Last name <span>*</span></label><input type="text" id="zf-ln" name="Last Name" maxlength="80" required autocomplete="family-name"></div>
+          <div class="zf-field"><label for="zf-em">Email <span>*</span></label><input type="email" id="zf-em" name="Email" maxlength="100" required autocomplete="email" inputmode="email"></div>
+          <div class="zf-field"><label for="zf-ph">Phone <span>*</span></label><input type="tel" id="zf-ph" name="Phone" maxlength="30" required autocomplete="tel" inputmode="tel"></div>
+          <div class="zf-field zf-full"><label for="zf-loc">Preferred location</label><select id="zf-loc" name="LEADCF3"><option value="Hudson, OH" selected>Hudson, OH</option><option value="Barboursville, WV">Barboursville, WV</option></select></div>
+          <div class="zf-field zf-full"><label for="zf-msg">What are you interested in?</label><textarea id="zf-msg" name="Description" rows="4" placeholder="e.g. Botox for forehead lines, a weight-loss consult, Morpheus8 &hellip;"></textarea></div>
+        </div>
+        <p class="zf-fine">By submitting, you agree to be contacted by Serene Med Spa about your request. We never sell your information.</p>
+        <div class="zf-actions"><button type="submit" class="btn zf-btn">Request Consultation</button><span class="zf-err" id="zf-err" role="alert"></span></div>
+      </form>
+      <div class="zf-done" id="zf-done" hidden>
+        <div class="zf-done-icon">&#10003;</div>
+        <h3>Thank you &mdash; we got your request.</h3>
+        <p>A member of our team will reach out within one business day. Prefer not to wait? <a href="https://booking.mangomint.com/serenemedspa?serviceId=321" target="_blank" rel="noopener">Book online now</a> or call <a href="tel:+13304605915">(330)&nbsp;460-5915</a>.</p>
+      </div>
     </div>
   </div>
-  <script src="https://js-na2.hsforms.net/forms/embed/242695075.js" defer></script>
+  <script>
+  (function(){
+    var f=document.getElementById('zf-consult'); if(!f) return;
+    var src=document.getElementById('zf-src'); if(src) src.value='Website form: '+location.host+location.pathname;
+    var err=document.getElementById('zf-err'), btn=f.querySelector('.zf-btn');
+    f.addEventListener('submit',function(e){
+      e.preventDefault(); err.textContent='';
+      var bad=[].slice.call(f.querySelectorAll('[required]')).filter(function(i){return !i.value.trim();});
+      var em=document.getElementById('zf-em');
+      if(bad.length){bad[0].focus();err.textContent='Please fill in the required fields.';return;}
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]{2,}$/.test(em.value.trim())){em.focus();err.textContent='Please enter a valid email address.';return;}
+      btn.disabled=true; btn.textContent='Sending…';
+      var data=new FormData(f);
+      fetch(f.action,{method:'POST',body:new URLSearchParams(data),mode:'no-cors',credentials:'omit'}).then(function(){
+        f.hidden=true; var d=document.getElementById('zf-done'); d.hidden=false; d.scrollIntoView({behavior:'smooth',block:'center'});
+        try{ if(window.gtag){ gtag('event','generate_lead',{event_category:'form',event_label:'consult'}); } }catch(x){}
+      }).catch(function(){ f.submit(); });
+    });
+  })();
+  </script>
 </section>
 
 <footer>
