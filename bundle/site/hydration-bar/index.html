@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- meta-pixel -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','475660982946848');fbq('track','PageView');
+(function(){var dl=window.dataLayer=window.dataLayer||[];var op=dl.push.bind(dl);dl.push=function(){try{var a=arguments[0];if(a&&a[0]==='event'&&a[1]==='generate_lead'){fbq('track','Lead');}}catch(e){}return op.apply(null,arguments);};
+if(/^\/thank-you\/?$/.test(location.pathname)){fbq('track','Lead');}
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
+if(h.indexOf('booking.mangomint.com')>-1){fbq('track','Schedule');}else if(h.indexOf('tel:')===0){fbq('track','Contact');}},true);})();
+</script>
+<noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=475660982946848&ev=PageView&noscript=1"></noscript>
+
 <!-- gads-tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-788907512"></script>
 <script>
@@ -236,7 +247,7 @@ else if(h.indexOf('tel:')===0){gtag('event','call_click',{'send_to':'AW-78890751
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <img src="https://serenemedspas.com/wp-content/uploads/2024/11/Serene_Logo-1024x574.png" alt="Serene Med Spa" style="filter:brightness(0) invert(1)" width="1024" height="574">
+        <img src="https://serenemedspas.com/wp-content/uploads/2024/11/Serene_Logo-1024x574.png" alt="Serene Med Spa" style="filter:brightness(0) invert(1)" width="1024" height="574" loading="lazy" decoding="async">
         <p style="max-width:320px">Physician-led medical spa &amp; wellness in Hudson, Ohio, proudly serving Summit, Portage, Cuyahoga &amp; Geauga counties. Natural results, personalized plans, and care you can trust.</p>
       </div>
       <div>
