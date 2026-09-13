@@ -37,3 +37,4 @@ bundle/site/blog/
 
 # pre-Zoho backups (kept locally only)
 *.bak-hubspot
+_to_delete/
