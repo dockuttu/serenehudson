@@ -40,6 +40,7 @@ fi
 echo "==> Build complete: $(find bundle/site -type f | wc -l) files in bundle/site/"
 
 echo "==> Google Ads tag"
+python3 build_wl_ads.py bundle/site   # ads-only /medical-weight-loss/ (noindex, no drug names)
 python3 inject_gtag.py bundle/site
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
