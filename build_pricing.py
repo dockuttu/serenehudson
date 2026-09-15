@@ -41,11 +41,11 @@ CATS.append(("Weight Loss &amp; Wellness",
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Wegovy&reg; or Zepbound&reg; prescribed to your pharmacy when appropriate &mdash; medication billed separately. The visit fee covers your medical consultation.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("Longevity &amp; NAD+",
-  row("Niagen&reg; IV &mdash; 500mg","$649")+row("Niagen&reg; IV &mdash; 250mg","$349")+
-  row("Niagen&reg; Injection (50mg)","$65")+row("Niagen&reg; Injection Series (10)","$599")+
-  row("NAD+ IV &mdash; 250mg","$249")+row("NAD+ IV &mdash; 500mg","$399")+row("NAD+ Injection (50mg)","$49")+
+  row("Niagen&reg; IV &mdash; 500mg","$499")+row("Niagen&reg; IV &mdash; 250mg","$299")+
+  row("Niagen&reg; Injection (50mg)","$55")+row("Niagen&reg; Injection Series (10)","$499")+
+  row("NAD+ IV &mdash; 250mg","$199")+row("NAD+ IV &mdash; 500mg","$299")+row("NAD+ Injection (50mg)","$35")+
   row("Longevity Drip","$149")+row("Glow Drip","$149")+
-  sub("Add-On Injections")+row("Glutathione","$45")+row("CoQ10","$35")+row("Vitamin D3","$35")+
+  sub("Add-On Injections")+row("Glutathione","$35")+row("CoQ10","$25")+row("Vitamin D3","$25")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Prepared by a licensed compounding pharmacy; compounded products are not FDA-approved. Medical screening required. <a href="/longevity/">Learn more</a></span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("Laser &amp; Skin",
@@ -116,7 +116,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
  ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
  ("Laser Hair Removal",59),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("IV Vitamin Infusion",149),
- ("Medical Weight Loss Visit",149),("Niagen IV 500mg",649),("NAD+ IV 500mg",399),("PRP Hair Restoration",800)]
+ ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}
 
