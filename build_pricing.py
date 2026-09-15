@@ -37,7 +37,7 @@ CATS.append(("Weight Loss &amp; Wellness",
   row("Bi&ouml;te Hormone Therapy &mdash; Female","$450")+row("Bi&ouml;te Hormone Therapy &mdash; Male","$650")+
   row("Gonadorelin (men on testosterone therapy)","$109","/mo")+
   row("IV Vitamin Infusions","$149")+
-  sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$20")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
+  sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$25")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
   row("Hyperhidrosis Treatment","$400")+row("Morpheus8 Hyperhidrosis","$600")+
   row("Teeth Grinding Treatment","$360+")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Wegovy&reg; or Zepbound&reg; prescribed to your pharmacy when appropriate &mdash; medication billed separately. The visit fee covers your medical consultation.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
