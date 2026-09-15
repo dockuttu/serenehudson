@@ -19,7 +19,7 @@ _LONGEVITY_PRICING = '''<section id="pricing" class="tint-blush">
       <div class="card reveal" style="text-align:center"><h3>Longevity Consultation</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$99</strong>Labs review &amp; personalized plan</p></div>
     </div>
     <div class="prose reveal" style="text-align:center;max-width:720px;margin:28px auto 0">
-      <p><strong>Add-on injections:</strong> Glutathione $35 &middot; Tri-Immune Boost $35 &middot; CoQ10 $25 &middot; Vitamin D3 $25 &middot; Biotin $25 &middot; Anti-nausea $25</p>
+      <p><strong>Add-on injections:</strong> Glutathione $35 &middot; Tri-Immune Boost $35 &middot; CoQ10 $25 &middot; Vitamin D3 $25 &middot; Biotin $25 &middot; Vitamin B12 $20 &middot; Anti-nausea $25</p>
       <p style="font-size:.95rem;color:var(--ink)">Our Niagen&reg;, NAD+ and sermorelin treatments are prepared by a licensed compounding pharmacy. Monthly programs require a consultation and are prescribed only when appropriate. Compounded products are not FDA-approved, and individual results vary. A medical screening is required before treatment.</p>
     </div>
   </div>

@@ -538,6 +538,7 @@ PAGES2 = [
  "whypara":"Hormone care should be individualized, lab-guided, and physician-supervised &mdash; never one-size-fits-all. At Serene, your care is led by board-certified physicians who take the time to understand your health and goals, right here in Hudson.",
  "faqh2":"Hormone Optimization FAQ",
  "faqs":[
+   ("Do you support men already on testosterone therapy?","Yes. For men on testosterone therapy, your physician may add a monthly medication that helps support your body&rsquo;s own hormone signaling, prescribed only after evaluation and lab review. See our <a href=\"/pricing/\">pricing</a> for details."),
    ("How do I know if hormone optimization is right for me?","It starts with a consultation and appropriate lab testing. Your physician will review your symptoms and results and advise whether it&rsquo;s appropriate for you."),
    ("Is it physician-supervised?","Yes. At Serene, hormone optimization is designed, prescribed, and monitored by our board-certified physicians as individualized medical care."),
    ("Will you run lab tests?","Yes &mdash; appropriate lab testing guides your plan and helps us monitor your progress and safety over time."),

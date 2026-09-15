@@ -35,7 +35,9 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
 CATS.append(("Weight Loss &amp; Wellness",
   row("Medical Weight Loss Visit","$149","/month")+
   row("Bi&ouml;te Hormone Therapy &mdash; Female","$450")+row("Bi&ouml;te Hormone Therapy &mdash; Male","$650")+
+  row("Gonadorelin (men on testosterone therapy)","$109","/mo")+
   row("IV Vitamin Infusions","$149")+
+  sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$20")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
   row("Hyperhidrosis Treatment","$400")+row("Morpheus8 Hyperhidrosis","$600")+
   row("Teeth Grinding Treatment","$360+")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Wegovy&reg; or Zepbound&reg; prescribed to your pharmacy when appropriate &mdash; medication billed separately. The visit fee covers your medical consultation.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
@@ -45,9 +47,9 @@ CATS.append(("Longevity &amp; NAD+",
   row("Niagen&reg; Injection (50mg)","$55")+row("Niagen&reg; Injection Series (10)","$499")+
   row("NAD+ IV &mdash; 250mg","$199")+row("NAD+ IV &mdash; 500mg","$299")+row("NAD+ Injection (50mg)","$35")+
   row("Longevity Drip","$149")+row("Glow Drip","$149")+
-  sub("Monthly Programs")+row("Longevity Consultation","$99")+row("Sermorelin &mdash; Injectable","$199","/mo")+row("Sermorelin &mdash; Tablets","$249","/mo")+row("NAD+ &amp; Sermorelin","$279","/mo")+row("Low-Dose Naltrexone","$59","/mo")+
+  sub("Monthly Programs")+row("Longevity Consultation","$99")+row("Sermorelin &mdash; Injectable","$199","/mo")+row("Sermorelin &mdash; Tablets (Rx)","$249","/mo")+row("NAD+ &amp; Sermorelin","$279","/mo")+row("Low-Dose Naltrexone (Rx)","$59","/mo")+
   sub("Add-On Injections")+row("Glutathione","$35")+row("Tri-Immune Boost","$35")+row("CoQ10","$25")+row("Vitamin D3","$25")+row("Biotin","$25")+row("Anti-Nausea","$25")+
-  '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Prepared by a licensed compounding pharmacy; compounded products are not FDA-approved. Medical screening required. <a href="/longevity/">Learn more</a></span><span class="price-lead"></span><span class="price-val"></span></div>'))
+  '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Prepared by a licensed compounding pharmacy; compounded products are not FDA-approved. Items marked (Rx) are prescribed after your consultation and shipped to you by the pharmacy. Medical screening required. <a href="/longevity/">Learn more</a></span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
