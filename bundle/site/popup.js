@@ -24,6 +24,8 @@
   function dismissedRecently() {
     try {
       var t = parseInt(localStorage.getItem(CFG.storageKey) || "0", 10);
+      var sent = parseInt(localStorage.getItem(CFG.storageKey + "_sent") || "0", 10);
+      if (sent && (Date.now() - sent) < 180 * 864e5) return true;   // already submitted: don't ask again for 6 months
       return t && (Date.now() - t) < CFG.dismissDays * 864e5;
     } catch (e) { return false; }
   }
@@ -54,6 +56,7 @@
       ".np-form{min-height:60px;margin:6px 0 4px;text-align:left}",
       ".np-row{display:flex;gap:8px}",
       ".np-in{width:100%;box-sizing:border-box;font-family:'Jost',sans-serif;font-size:.98rem;padding:12px 14px;margin:0 0 8px;border:1.5px solid rgba(63,43,61,.18);border-radius:12px;background:#fff;color:#3f2b3d}",
+      ".np-loc{appearance:auto;cursor:pointer}",
       ".np-in:focus{outline:none;border-color:#c94f74;box-shadow:0 0 0 3px rgba(201,79,116,.15)}",
       ".np-err{color:#b0163f;font-size:.8rem;min-height:1em;margin-top:6px}",
       ".np-ok{background:#fff;border-radius:14px;padding:16px;text-align:center;color:#3f2b3d;font-weight:500}",
@@ -70,6 +73,15 @@
   }
 
   function loadHubSpot() {}
+
+  // Office picker: defaults to this site's office, but lets the visitor choose the other one.
+  function locOptions() {
+    var o = '<option value="" disabled>Preferred office</option>';
+    ["Hudson, OH", "Barboursville, WV"].forEach(function (l) {
+      o += '<option value="' + l + '"' + (l === CFG.location ? " selected" : "") + ">Serene Med Spa \u2014 " + l + "</option>";
+    });
+    return o;
+  }
 
   function close(ov) {
     ov.classList.remove("in");
@@ -97,7 +109,7 @@
           '<h2 class="np-h">Free Consultation <b>+ 20% Off</b><br>Your First Treatment</h2>' +
           '<p class="np-sub">Physician-led care in Hudson, OH. Tell us where to send your offer.</p>' +
           '<div class="np-exp">Offer expires: ' + endOfMonth() + '</div>' +
-          '<div class="np-form"><form class="np-zf" novalidate><input type="hidden" name="xnQsjsdp" value="' + CFG.zoho.xnq + '"><input type="hidden" name="xmIwtLD" value="' + CFG.zoho.xmi + '"><input type="hidden" name="actionType" value="TGVhZHM="><input type="hidden" name="returnURL" value="' + CFG.zoho.ret + '"><input type="hidden" name="Lead Status" value="Not Contacted"><input type="hidden" name="LEADCF1" value="Website popup: ' + location.host + '"><input type="hidden" name="LEADCF3" value="' + (CFG.location || "") + '"><input type="hidden" name="Description" value="New Client Special popup (free consult + 20% off first treatment)"><input type="text" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><div class="np-row"><input class="np-in" name="First Name" placeholder="First name" autocomplete="given-name"><input class="np-in" name="Last Name" placeholder="Last name" autocomplete="family-name" required></div><input class="np-in" type="email" name="Email" placeholder="Email" autocomplete="email" required><input class="np-in" type="tel" name="Phone" placeholder="Mobile number" autocomplete="tel" required><button type="submit" class="np-btn np-send">Send My Offer &rsaquo;</button><div class="np-err" role="alert"></div></form></div>' +
+          '<div class="np-form"><form class="np-zf" novalidate><input type="hidden" name="xnQsjsdp" value="' + CFG.zoho.xnq + '"><input type="hidden" name="xmIwtLD" value="' + CFG.zoho.xmi + '"><input type="hidden" name="actionType" value="TGVhZHM="><input type="hidden" name="returnURL" value="' + CFG.zoho.ret + '"><input type="hidden" name="Lead Status" value="Not Contacted"><input type="hidden" name="LEADCF1" value="Website popup: ' + location.host + location.pathname + '"><input type="hidden" name="Description" value="New Client Special popup (free consult + 20% off first treatment)"><input type="text" name="aG9uZXlwb3Q" value="" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true"><div class="np-row"><input class="np-in" name="First Name" placeholder="First name" autocomplete="given-name"><input class="np-in" name="Last Name" placeholder="Last name" autocomplete="family-name" required></div><input class="np-in" type="email" name="Email" placeholder="Email" autocomplete="email" required><input class="np-in" type="tel" name="Phone" placeholder="Mobile number" autocomplete="tel" required><select class="np-in np-loc" name="LEADCF3" aria-label="Preferred office">' + locOptions() + '</select><button type="submit" class="np-btn np-send">Send My Offer &rsaquo;</button><div class="np-err" role="alert"></div></form></div>' +
           '<a class="np-btn" href="' + CFG.book + '" target="_blank" rel="noopener">Continue to Booking &rsaquo;</a>' +
           '<span class="np-exist">Existing client? <a href="' + CFG.book + '" target="_blank" rel="noopener">Book now</a></span>' +
           '<div class="np-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>' +
@@ -122,6 +134,7 @@
       var b = zf.querySelector(".np-send"); b.disabled = true; b.textContent = "Sending\u2026";
       fetch(CFG.zoho.action, { method: "POST", body: new URLSearchParams(new FormData(zf)), mode: "no-cors", credentials: "omit" })
         .then(function () {
+          try { localStorage.setItem(CFG.storageKey + "_sent", String(Date.now())); } catch (x) {}
           zf.outerHTML = '<div class="np-ok">&#10003; Your offer is on its way &mdash; check your email. Book below to lock in your spot.</div>';
           try { if (window.gtag) gtag("event", "generate_lead", { event_category: "form", event_label: "popup" }); } catch (x) {}
         })
