@@ -43,7 +43,7 @@ CATS.append(("Weight Loss &amp; Wellness",
 CATS.append(("Longevity &amp; NAD+",
   row("Niagen&reg; IV &mdash; 500mg","$649")+row("Niagen&reg; IV &mdash; 250mg","$349")+
   row("Niagen&reg; Injection (50mg)","$65")+row("Niagen&reg; Injection Series (10)","$599")+
-  row("NAD+ IV &mdash; 500mg","$399")+row("NAD+ Injection (100mg)","$49")+
+  row("NAD+ IV &mdash; 250mg","$249")+row("NAD+ IV &mdash; 500mg","$399")+row("NAD+ Injection (50mg)","$49")+
   row("Longevity Drip","$149")+row("Glow Drip","$149")+
   sub("Add-On Injections")+row("Glutathione","$45")+row("CoQ10","$35")+row("Vitamin D3","$35")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Prepared by a licensed compounding pharmacy; compounded products are not FDA-approved. Medical screening required. <a href="/longevity/">Learn more</a></span><span class="price-lead"></span><span class="price-val"></span></div>'))

@@ -10,8 +10,8 @@ _LONGEVITY_PRICING = '''<section id="pricing" class="tint-blush">
       <div class="card reveal" style="text-align:center"><h3>Niagen&reg; IV &mdash; 500mg</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$649</strong>About a 1-hour infusion</p></div>
       <div class="card reveal" style="text-align:center"><h3>Niagen&reg; IV &mdash; 250mg</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$349</strong>A shorter introductory infusion</p></div>
       <div class="card reveal" style="text-align:center"><h3>Niagen&reg; Injection</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$65</strong>50mg per injection &middot; 10 for $599</p></div>
-      <div class="card reveal" style="text-align:center"><h3>NAD+ IV &mdash; 500mg</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$399</strong>A slower, longer infusion</p></div>
-      <div class="card reveal" style="text-align:center"><h3>NAD+ Injection</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$49</strong>100mg per injection</p></div>
+      <div class="card reveal" style="text-align:center"><h3>NAD+ IV</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$249 / $399</strong>250mg or 500mg &middot; a slower, longer infusion</p></div>
+      <div class="card reveal" style="text-align:center"><h3>NAD+ Injection</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$49</strong>50mg per injection</p></div>
       <div class="card reveal" style="text-align:center"><h3>Longevity &amp; Glow Drips</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$149</strong>Antioxidant &amp; vitamin IV blends</p></div>
     </div>
     <div class="prose reveal" style="text-align:center;max-width:720px;margin:28px auto 0">
@@ -25,7 +25,7 @@ PAGES4 += [
 {
  "slug":"longevity","crumb":"Longevity &amp; NAD+","area_kw":"longevity and NAD+ care",
  "title":"NAD+ &amp; Niagen IV in Hudson, OH | Longevity | Serene Med Spa",
- "desc":"Longevity care in Hudson, OH: Niagen IV in about an hour, NAD+ IV and injections, and antioxidant drips. Physician-led at Serene Med Spa. Book today.",
+ "desc":"Longevity care in Hudson, OH: Niagen IV in about an hour, NAD+ IV from $249, injections from $49, and antioxidant drips. Physician-led at Serene Med Spa.",
  "ogtitle":"Longevity &amp; NAD+ Therapy in Hudson, OH",
  "ogdesc":"Niagen IV, NAD+ IV and injections, and longevity drips in Hudson, Ohio. Physician-led, with published pricing.",
  "proc_name":"NAD+ and Niagen (Nicotinamide Riboside) Therapy","proc_alt":"Longevity IV &amp; Injection Therapy",
@@ -58,8 +58,8 @@ PAGES4 += [
  "faqs":[
    ("What is NAD+?","NAD+ is a molecule your cells need to produce energy and stay healthy. Levels naturally decline with age, which is why supporting healthy NAD+ levels is a focus of longevity care."),
    ("How is Niagen&reg; different from NAD+?","Niagen&reg; is nicotinamide riboside, a form of vitamin B3 your body uses to make NAD+. It is one of the most-researched NAD+ precursors, and Niagen IV infusions typically take about an hour, while NAD+ infusions are usually given more slowly over a longer visit."),
-   ("How much does it cost?","Niagen IV is $649 for 500mg or $349 for 250mg. Niagen injections are $65 each or 10 for $599. NAD+ IV (500mg) is $399, NAD+ injections are $49, and our longevity and glow drips are $149. Add-on glutathione is $45, and CoQ10 or vitamin D3 injections are $35."),
-   ("Who should not have these treatments?","Niagen is not recommended if you have active cancer or a history of cancer, are pregnant or breastfeeding, or have rheumatoid arthritis. Please tell us if you take diabetes medications or blood thinners. We screen every patient before treatment."),
+   ("How much does it cost?","Niagen IV is $649 for 500mg or $349 for 250mg. Niagen injections are $65 each or 10 for $599. NAD+ IV is $249 for 250mg or $399 for 500mg, NAD+ injections (50mg) are $49, and our longevity and glow drips are $149. Add-on glutathione is $45, and CoQ10 or vitamin D3 injections are $35."),
+   ("Who should not have these treatments?","Niagen and NAD+ are not recommended if you have active cancer or a history of cancer, or are pregnant or breastfeeding. Niagen is also not recommended with rheumatoid arthritis, and NAD+ is not recommended with uncontrolled heart disease. Please tell us if you take diabetes medications, blood thinners, blood pressure medications or opioids. We screen every patient before treatment."),
    ("Are these treatments FDA-approved?","Our Niagen&reg; and NAD+ treatments are prepared by a licensed compounding pharmacy. Compounded products are not FDA-approved or evaluated for safety or effectiveness, and results vary. They support general wellness and are not a treatment for any disease."),
    ("How often should I come in?","It depends on your goals. Common plans are a weekly Niagen IV or a Niagen injection every few days as a series. We&rsquo;ll recommend a schedule at your visit."),
  ],
