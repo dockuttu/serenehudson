@@ -47,5 +47,6 @@ python3 inject_gtag.py bundle/site
 python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
+python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
 python3 seo_polish.py bundle/site
 python3 check_pages.py

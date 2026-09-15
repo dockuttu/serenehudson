@@ -57,6 +57,7 @@ CATEGORIES = [
  ("Wellness", [
    ("house-calls","House Calls &amp; Botox Parties"),
    ("iv-therapy","IV Therapy"),
+   ("longevity","Longevity &amp; NAD+"),
    ("hormone-optimization","Hormone Optimization"),
    ("alma-duo","Alma Duo Shockwave"), ("mens-sexual-wellness","Men's Sexual Wellness"), ("womens-sexual-wellness","Women's Sexual Wellness"),
    ("spider-veins","Spider Vein Treatment"),
@@ -246,7 +247,7 @@ HERO_MAP = {
  "laser-nail-fungus":"laser","emsculpt-neo":"room-1","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","lipomelt":"morpheus8","weight-loss":"dr-arora",
  "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted","alma-ted":"hair-ted",
- "iv-therapy":"facial-room","peptide-therapy":"skin-analysis","hormone-optimization":"dr-arora",
+ "iv-therapy":"facial-room","longevity":"room-1","peptide-therapy":"skin-analysis","hormone-optimization":"dr-arora",
  "mens-sexual-wellness":"dr-arora","alma-duo":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }
 def hero_for(slug):
