@@ -78,7 +78,7 @@ CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
   row("Spider Vein","$300+","/session")+row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$250","/tx")+
-  row("EMSCULPT Neo","$750","/tx")))
+  row("EMSCULPT NEO","$400","/tx")+row("EMSCULPT NEO &mdash; Package of 4","$1,500")))
 
 CATS.append(("Sexual Wellness", sub("Female Wellness")+
   rowaka("V-Renew PRP","O-Shot&reg;","$800")+row("VTone (Muscle Strengthening)","$350","/tx")+
@@ -107,7 +107,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 # Offer schema (headline priced services)
 OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
  ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
- ("Laser Hair Removal",59),("EMSCULPT Neo",750),("IV Vitamin Infusion",149),
+ ("Laser Hair Removal",59),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}

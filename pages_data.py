@@ -2,8 +2,8 @@
 PAGES = [
 {
  "slug":"emsculpt-neo","crumb":"EMSCULPT NEO",
- "title":"EMSCULPT NEO in Hudson, OH | Build Muscle &amp; Burn Fat | Serene Med Spa",
- "desc":"Non-invasive EMSCULPT NEO body sculpting in Hudson, Ohio. Build muscle and reduce fat with no surgery and no downtime — physician-led care at Serene Med Spa. Book today.",
+ "title":"EMSCULPT NEO in Hudson, OH | $400 a Session | Serene Med Spa",
+ "desc":"EMSCULPT NEO in Hudson, OH from $400 a session or 4 for $1,500. Build muscle and reduce fat with no surgery or downtime. Physician-led at Serene Med Spa.",
  "ogtitle":"EMSCULPT NEO Body Sculpting in Hudson, OH",
  "ogdesc":"Build muscle and reduce fat with non-invasive EMSCULPT NEO at Serene Med Spa in Hudson. No surgery, no downtime.",
  "proc_name":"EMSCULPT NEO Body Contouring","proc_alt":"Non-Invasive Muscle Building &amp; Fat Reduction",
@@ -12,7 +12,7 @@ PAGES = [
  "eyebrow":"EMSCULPT NEO &middot; Body Sculpting &middot; Hudson, OH",
  "h1":"EMSCULPT NEO in Hudson, Ohio",
  "hero":"Build muscle and reduce stubborn fat at the same time &mdash; no surgery, no needles, and no downtime. Physician-led body sculpting at Serene Med Spa.",
- "trust":["Non-Invasive","No Downtime","Build Muscle + Burn Fat","FDA-Cleared Technology"],
+ "trust":["$400 a Session","4 Sessions for $1,500","No Downtime","Only in Hudson"],
  "introh2":"Build muscle and burn fat &mdash; in one treatment",
  "introlead":"EMSCULPT NEO is the only non-invasive body-sculpting treatment that builds muscle and reduces fat at the same time, using synchronized radiofrequency and high-intensity electromagnetic energy.",
  "intropara":"At Serene Med Spa in Hudson, EMSCULPT NEO is a comfortable treatment you can do while you relax &mdash; no surgery, no needles, and no recovery time. It&rsquo;s a favorite for toning the abdomen and lifting the buttocks, as well as sculpting the arms, thighs, and calves. Results build gradually in the weeks following your sessions, and individual results vary.",
@@ -37,13 +37,30 @@ PAGES = [
  "faqs":[
    ("How does EMSCULPT NEO work?","It pairs radiofrequency heating with high-intensity electromagnetic energy to build muscle and reduce fat in the treated area at the same time &mdash; without surgery."),
    ("Is the treatment painful?","Most people describe it as an intense workout with a warming sensation. It&rsquo;s well tolerated, and you can relax during the session."),
-   ("How many sessions will I need?","A typical plan is a series of sessions spaced over a couple of weeks. We&rsquo;ll recommend a plan for your goals at your consultation."),
+   ("How many sessions will I need?","Most people start with four 30-minute sessions spaced about 5&ndash;10 days apart, then a maintenance session every few months. We&rsquo;ll recommend a plan for your goals at your consultation."),
+   ("How much does EMSCULPT NEO cost in Hudson?","At Serene Med Spa in Hudson, EMSCULPT NEO is $400 per session, or $1,500 for a package of four sessions (that&rsquo;s $375 each). Your consultation is complimentary, and financing is available."),
+   ("Can I do EMSCULPT NEO while I&rsquo;m losing weight?","Yes, for most people. When you&rsquo;re on a medical weight-loss program, EMSCULPT NEO can be added to help strengthen and tone muscle as you lose weight. We&rsquo;ll time your sessions around your program and confirm it&rsquo;s right for you. Results vary."),
    ("Is there any downtime?","No. EMSCULPT NEO is non-invasive, so most people return to their normal day right away."),
    ("Who is a good candidate?","It&rsquo;s a great option for healthy adults looking to tone and strengthen specific areas. We&rsquo;ll confirm it&rsquo;s right for you during your visit."),
  ],
- "related":["morpheus8","weight-loss","fillers"],
+ "related":["weight-loss","morpheus8","fillers"],
+ "area_kw":"EMSCULPT NEO body sculpting",
  "ctah2":"Ready to sculpt and strengthen?",
  "ctapara":"Book an EMSCULPT NEO consultation with our Hudson team and build a plan around your goals.",
+ "pricing_html":'''<section id="pricing" class="tint-blush">
+  <div class="wrap">
+    <div class="section-head reveal"><div class="eyebrow">Investment</div><h2>EMSCULPT NEO Pricing &mdash; Hudson</h2><p>Simple, published pricing &mdash; no surprises. Your consultation is always complimentary, and financing is available.</p></div>
+    <div class="grid">
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Single Session</h3><p><strong>$400</strong><br>One area &middot; about 30 minutes</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Package of 4</h3><p><strong>$1,500</strong><br>Just $375 a session &mdash; the recommended starting series</p></div>
+    </div>
+    <div class="prose reveal" style="text-align:center;max-width:680px;margin:32px auto 0">
+      <p><strong>Losing weight?</strong> EMSCULPT NEO pairs well with our <a href="/weight-loss/">physician-supervised weight-loss program</a> &mdash; ask us how to add sessions to help you stay strong and toned as you lose. EMSCULPT NEO is available at our Hudson location only.</p>
+      <p style="margin-top:18px"><a class="btn" href="https://booking.mangomint.com/serenemedspa?serviceId=324" target="_blank" rel="noopener">Book an EMSCULPT NEO Consultation</a> <a class="btn btn-outline" href="tel:+13304605915">Call (330) 460-5915</a></p>
+    </div>
+  </div>
+</section>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"OfferCatalog","name":"EMSCULPT NEO — Serene Med Spa Hudson","url":"https://hudson.serenemedspas.com/emsculpt-neo/","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"EMSCULPT NEO — single session"},"price":"400","priceCurrency":"USD"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"EMSCULPT NEO — package of 4 sessions"},"price":"1500","priceCurrency":"USD"}]}</script>''',
 },
 {
  "slug":"laser-skin","crumb":"Laser Skin (PICO)",
