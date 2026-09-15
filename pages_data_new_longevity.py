@@ -13,10 +13,14 @@ _LONGEVITY_PRICING = '''<section id="pricing" class="tint-blush">
       <div class="card reveal" style="text-align:center"><h3>NAD+ IV</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$199 / $299</strong>250mg or 500mg &middot; a slower, longer infusion</p></div>
       <div class="card reveal" style="text-align:center"><h3>NAD+ Injection</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$35</strong>50mg per injection</p></div>
       <div class="card reveal" style="text-align:center"><h3>Longevity &amp; Glow Drips</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$149</strong>Antioxidant &amp; vitamin IV blends</p></div>
+      <div class="card reveal" style="text-align:center"><h3>Sermorelin Program</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$199/mo</strong>Injectable &middot; tablets $249/mo</p></div>
+      <div class="card reveal" style="text-align:center"><h3>NAD+ &amp; Sermorelin</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$279/mo</strong>Combined monthly program</p></div>
+      <div class="card reveal" style="text-align:center"><h3>Low-Dose Naltrexone</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$59/mo</strong>Prescribed after your consultation</p></div>
+      <div class="card reveal" style="text-align:center"><h3>Longevity Consultation</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$99</strong>Labs review &amp; personalized plan</p></div>
     </div>
     <div class="prose reveal" style="text-align:center;max-width:720px;margin:28px auto 0">
-      <p><strong>Add-on injections:</strong> Glutathione $35 &middot; CoQ10 $25 &middot; Vitamin D3 $25</p>
-      <p style="font-size:.95rem;color:var(--ink)">Our Niagen&reg; and NAD+ treatments are prepared by a licensed compounding pharmacy. Compounded products are not FDA-approved, and individual results vary. A medical screening is required before treatment.</p>
+      <p><strong>Add-on injections:</strong> Glutathione $35 &middot; Tri-Immune Boost $35 &middot; CoQ10 $25 &middot; Vitamin D3 $25 &middot; Biotin $25 &middot; Anti-nausea $25</p>
+      <p style="font-size:.95rem;color:var(--ink)">Our Niagen&reg;, NAD+ and sermorelin treatments are prepared by a licensed compounding pharmacy. Monthly programs require a consultation and are prescribed only when appropriate. Compounded products are not FDA-approved, and individual results vary. A medical screening is required before treatment.</p>
     </div>
   </div>
 </section>'''
@@ -46,6 +50,9 @@ PAGES4 += [
    ("NAD+ Injections","A convenient in-office NAD+ injection for ongoing support between infusions."),
    ("Longevity Drip","An antioxidant and vitamin blend with N-acetyl cysteine, B12, B-complex and magnesium."),
    ("Glow Drip","Glutathione, vitamin C and alpha-lipoic acid, a favorite for skin and antioxidant support."),
+   ("Sermorelin","A physician-prescribed peptide program that supports your body&rsquo;s own natural growth hormone release, often used for sleep, recovery and body composition goals."),
+   ("Low-Dose Naltrexone","A low-dose prescription some patients use as part of a longevity plan, prescribed after your consultation."),
+   ("Longevity Consultation","A physician visit to review your health, labs and goals and build your personalized longevity plan."),
  ],
  "steps":_steps_l(
    "We review your health history, medications and goals, and confirm which treatment is appropriate for you.",
@@ -60,7 +67,8 @@ PAGES4 += [
    ("How is Niagen&reg; different from NAD+?","Niagen&reg; is nicotinamide riboside, a form of vitamin B3 your body uses to make NAD+. It is one of the most-researched NAD+ precursors, and Niagen IV infusions typically take about an hour, while NAD+ infusions are usually given more slowly over a longer visit."),
    ("How much does it cost?","Niagen IV is $499 for 500mg or $299 for 250mg. Niagen injections are $55 each or 10 for $499. NAD+ IV is $199 for 250mg or $299 for 500mg, NAD+ injections (50mg) are $35, and our longevity and glow drips are $149. Add-on glutathione is $35, and CoQ10 or vitamin D3 injections are $25."),
    ("Who should not have these treatments?","Niagen and NAD+ are not recommended if you have active cancer or a history of cancer, or are pregnant or breastfeeding. Niagen is also not recommended with rheumatoid arthritis, and NAD+ is not recommended with uncontrolled heart disease. Please tell us if you take diabetes medications, blood thinners, blood pressure medications or opioids. We screen every patient before treatment."),
-   ("Are these treatments FDA-approved?","Our Niagen&reg; and NAD+ treatments are prepared by a licensed compounding pharmacy. Compounded products are not FDA-approved or evaluated for safety or effectiveness, and results vary. They support general wellness and are not a treatment for any disease."),
+   ("What is sermorelin?","Sermorelin is a peptide that signals your pituitary gland to release more of your own growth hormone. It is prescribed after a consultation, is not recommended with active cancer or during pregnancy, and is priced as a monthly program: $199 for injections, $249 for tablets, or $279 combined with NAD+."),
+   ("Are these treatments FDA-approved?","Our Niagen&reg;, NAD+ and sermorelin treatments are prepared by a licensed compounding pharmacy. Compounded products are not FDA-approved or evaluated for safety or effectiveness, and results vary. They support general wellness and are not a treatment for any disease."),
    ("How often should I come in?","It depends on your goals. Common plans are a weekly Niagen IV or a Niagen injection every few days as a series. We&rsquo;ll recommend a schedule at your visit."),
  ],
  "related":["hormone-optimization","weight-loss","morpheus8"],
