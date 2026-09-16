@@ -33,6 +33,7 @@ python3 patch_static_consult.py   # hand-built pages + popup.js -> Zoho form
 python3 build_sitemap.py
 
 echo "==> Cache-bust styles.css"
+python3 complimentary_pass.py bundle/site   # "free consultation" -> "complimentary, no-commitment consultation"
 python3 cachebust.py
 
 # Sanity gate: the homepage must exist and be non-trivial, or we refuse to ship.
@@ -55,6 +56,7 @@ python3 home_badges.py bundle/site      # Biote badge on the homepage
 python3 tattoo_pricing.py bundle/site   # tattoo size guide + prices + 5+1 offer on /laser-tattoo-removal/
 python3 home_obagi.py bundle/site       # Obagi authorized-provider logo + skincare band on the homepage
 python3 home_merz.py bundle/site        # Merz Aesthetics ELITE+ provider status on the homepage
+python3 complimentary_pass.py bundle/site   # again, for pages injected after cache-bust
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
 python3 seo_polish.py bundle/site

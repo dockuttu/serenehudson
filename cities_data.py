@@ -63,7 +63,7 @@ CITIES = [
 
  {"slug":"med-spa-stow-oh","city":"Stow","city_state":"Stow, OH","also":["Munroe Falls, OH","Silver Lake, OH","Kent, OH"],
   "title":"Med Spa Near Stow, OH | Botox & Fillers 12 Min Away | Serene",
-  "desc":"Stow's closest physician-led med spa, 12 min up Route 91 in Hudson: Botox $11/unit, Juvéderm, Morpheus8, HydraFacial, laser hair removal. Free consults.",
+  "desc":"Stow's closest physician-led med spa, 12 min up Route 91 in Hudson: Botox $11/unit, Juvéderm, Morpheus8 & HydraFacial. Complimentary consults.",
   "h1":"Stow&rsquo;s closest physician-led med spa &mdash; 12 minutes up Darrow Road",
   "hero":"If you live in Stow, Munroe Falls or Silver Lake, Serene Med Spa is the doctor-run aesthetic practice next door. Straight up Route 91 into downtown Hudson, free parking at the door, and pricing you can read online before you book.",
   "drive":"About 12 minutes",
@@ -126,7 +126,7 @@ CITIES = [
 
  {"slug":"med-spa-solon-oh","city":"Solon","city_state":"Solon, OH","also":["Chagrin Falls, OH","Bainbridge, OH","Bedford, OH","Glenwillow, OH"],
   "title":"Med Spa Near Solon, OH | Physician-Led Botox & Fillers",
-  "desc":"Solon & Chagrin Falls: a physician-led med spa 20 min away in Hudson with Botox $11/unit, Juvéderm fillers, Ultherapy, Morpheus8 & Kybella. Free consults.",
+  "desc":"Solon & Chagrin Falls: a physician-led med spa 20 min away in Hudson: Botox $11/unit, Juvéderm, Ultherapy, Morpheus8 & Kybella. Complimentary consults.",
   "h1":"A physician-led med spa for Solon &amp; Chagrin Falls &mdash; 20 minutes away in Hudson",
   "hero":"Solon has plenty of options for aesthetics. Serene is the one where two board-certified physicians own the practice, do the injecting, and post every price online &mdash; 20 minutes south in downtown Hudson.",
   "drive":"About 20 minutes",
