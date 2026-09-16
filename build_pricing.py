@@ -58,8 +58,8 @@ TATTOO_HTML = ('<div class="sub">Laser Tattoo Removal (PICO) &mdash; per session
   <tr><td>Small &mdash; 1&ndash;4 sq in (up to a 2&times;2&Prime; passport photo)</td><td>$150</td><td>$750</td></tr>
   <tr><td>Medium &mdash; 5&ndash;9 sq in (credit card up to a 3&times;3&Prime; Post-it)</td><td>$250</td><td>$1,250</td></tr>
   <tr><td>Large &mdash; 10&ndash;16 sq in (up to a dollar bill)</td><td>$400</td><td>$2,000</td></tr>
-  <tr><td>Bigger than a dollar bill (sleeves, back pieces)</td><td colspan="2">Quoted at your free consultation</td></tr>
-  <tr><td>Tattoo Removal Consultation</td><td colspan="2"><span class="price-free">Free</span></td></tr>
+  <tr><td>Bigger than a dollar bill (sleeves, back pieces)</td><td colspan="2">Quoted at your complimentary, no-commitment consultation</td></tr>
+  <tr><td>Tattoo Removal Consultation (no commitment)</td><td colspan="2"><span class="price-free">Complimentary</span></td></tr>
   </tbody></table>""")
 
 CATS.append(("Laser &amp; Skin",

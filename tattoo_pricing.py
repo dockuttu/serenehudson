@@ -61,16 +61,16 @@ SECTION = f'''<section class="tp" id="tattoo-pricing" aria-label="Laser tattoo r
     <div class="section-head reveal">
       <div class="eyebrow">Pricing &amp; Size Guide</div>
       <h2>Laser Tattoo Removal Pricing in {CITY}</h2>
-      <p>Tattoo removal is priced <b>per session</b>, based on the size of the tattoo. Not sure of your size? Compare it to something in your wallet &mdash; or just come in: <b>your consultation is always free</b>, and we&rsquo;ll confirm the size and price on the spot.</p>
+      <p>Tattoo removal is priced <b>per session</b>, based on the size of the tattoo. Not sure of your size? Compare it to something in your wallet &mdash; or just come in: <b>your consultation is complimentary, with no commitment</b>, and we&rsquo;ll confirm the size and price on the spot.</p>
     </div>
     <div class="tp-grid">{"".join(card(*z) for z in SIZES)}</div>
     <p class="tp-note reveal">Objects shown to scale. <b>Quick check:</b> lay a dollar bill over your tattoo &mdash; if the whole design fits underneath, it&rsquo;s Large or smaller.</p>
-    <p class="tp-note reveal"><b>Bigger than a dollar bill?</b> Sleeves, back pieces and other large tattoos are priced individually at your free consultation.</p>
+    <p class="tp-note reveal"><b>Bigger than a dollar bill?</b> Sleeves, back pieces and other large tattoos are priced individually at your complimentary, no-commitment consultation.</p>
     <div class="tp-offer reveal">
       <div><div class="tp-badge">Package Offer</div>
       <h3>Buy 5 sessions, get the 6th session free</h3>
       <p>Pay for 5 sessions and your 6th session is free of charge. Package sessions are for the <b>same tattoo</b>.</p></div>
-      <div class="tp-cta"><a class="btn" href="{BOOK}" target="_blank" rel="noopener">Book a Free Consultation</a><a class="btn btn-outline" href="/pricing/#cat-laser-skin">See All Pricing</a></div>
+      <div class="tp-cta"><a class="btn" href="{BOOK}" target="_blank" rel="noopener">Book a Complimentary Consultation</a><a class="btn btn-outline" href="/pricing/#cat-laser-skin">See All Pricing</a></div>
     </div>
   </div>
   <style>
@@ -111,7 +111,7 @@ for n, rng, _, p, _ in SIZES:  # noqa
     r = rng.replace("&ndash;", "-")
     offers.append({"@type": "Offer", "name": f"Laser Tattoo Removal - {n} ({r}), per session", "price": str(p), "priceCurrency": "USD"})
     offers.append({"@type": "Offer", "name": f"Laser Tattoo Removal - {n}, 6-session package (buy 5, 6th free, same tattoo)", "price": str(p * 5), "priceCurrency": "USD"})
-offers.append({"@type": "Offer", "name": "Laser Tattoo Removal Consultation", "price": "0", "priceCurrency": "USD"})
+offers.append({"@type": "Offer", "name": "Laser Tattoo Removal Consultation (complimentary, no commitment)", "price": "0", "priceCurrency": "USD"})
 SCHEMA = {"@context": "https://schema.org", "@type": "Service", "name": f"Laser Tattoo Removal in {CITY}",
           "serviceType": "Laser Tattoo Removal", "url": ORIGIN + "/laser-tattoo-removal/",
           "provider": {"@type": "MedicalBusiness", "name": "Serene Med Spa", "url": ORIGIN + "/"},

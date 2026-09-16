@@ -216,7 +216,7 @@ PAGES3 = [
 {
  "slug":"laser-tattoo-removal","crumb":"Laser Tattoo Removal","area_kw":"laser tattoo removal",
  "title":"Laser Tattoo Removal in Hudson, OH | PICO Technology | Serene Med Spa",
- "desc":"PICO laser tattoo removal in Hudson, OH from $125 per session. Free consultations, and buy 5 sessions, get the 6th free. Book at Serene Med Spa.",
+ "desc":"PICO laser tattoo removal in Hudson, OH from $125/session. Complimentary, no-commitment consultation; buy 5 sessions, get the 6th free.",
  "ogtitle":"Laser Tattoo Removal in Hudson, OH","ogdesc":"Fade unwanted ink with advanced PICO laser tattoo removal in Hudson, Ohio. Physician-led. Book today.",
  "proc_name":"Laser Tattoo Removal","proc_alt":"Picosecond Laser Tattoo Removal",
  "how":"A picosecond laser delivers ultra-short pulses that shatter tattoo ink into tiny particles the body gradually clears over a series of sessions.","body":"Body, Face",
@@ -232,7 +232,7 @@ PAGES3 = [
    ("Many Ink Colors","PICO technology addresses a range of colors, including stubborn ones."),
    ("Priced by Size","Per session from $125 (micro) to $400 (large). Buy 5 sessions, get the 6th free."),
    ("Gradual &amp; Controlled","Ink clears over a series for a safe, steady result."),
-   ("Free Consultation","Every tattoo removal consultation is free &mdash; no need to wait to get a price."),
+   ("Complimentary Consultation","Every tattoo removal consultation is complimentary with no commitment &mdash; no need to wait to get a price."),
    ("Aftercare Support","We guide your healing between every session."),
  ],
  "steps":_steps(
@@ -244,9 +244,9 @@ PAGES3 = [
  "whypara":"Safe, effective tattoo removal depends on the right laser and settings for your skin and ink. At Serene, removal is physician-led with advanced PICO technology, for controlled, careful results — right here in Hudson.",
  "faqh2":"Laser Tattoo Removal FAQ",
  "faqs":[
-   ("How much does laser tattoo removal cost?","Pricing is per session and based on tattoo size: Micro (under 1 sq in) $125, Small (1&ndash;4 sq in) $150, Medium (5&ndash;9 sq in) $250, and Large (10&ndash;16 sq in) $400. Tattoos bigger than a dollar bill (over 16 sq in), such as sleeves and back pieces, are quoted at your free consultation."),
-   ("How do you define micro, small, medium and large tattoos?","We measure the rectangle that fits around the whole design. Micro is under 1 square inch &mdash; it fits under a quarter. Small is 1&ndash;4 sq in &mdash; up to a 2&times;2 inch passport photo. Medium is 5&ndash;9 sq in &mdash; about a credit card or business card, up to a 3&times;3 inch Post-it note. Large is 10&ndash;16 sq in &mdash; up to the size of a dollar bill. Anything bigger than a dollar bill is quoted at your free consultation."),
-   ("Is the tattoo removal consultation free?","Yes. Consultations are always free, so you don&rsquo;t have to wait to find out your tattoo&rsquo;s size, price, and estimated number of sessions."),
+   ("How much does laser tattoo removal cost?","Pricing is per session and based on tattoo size: Micro (under 1 sq in) $125, Small (1&ndash;4 sq in) $150, Medium (5&ndash;9 sq in) $250, and Large (10&ndash;16 sq in) $400. Tattoos bigger than a dollar bill (over 16 sq in), such as sleeves and back pieces, are quoted at your complimentary, no-commitment consultation."),
+   ("How do you define micro, small, medium and large tattoos?","We measure the rectangle that fits around the whole design. Micro is under 1 square inch &mdash; it fits under a quarter. Small is 1&ndash;4 sq in &mdash; up to a 2&times;2 inch passport photo. Medium is 5&ndash;9 sq in &mdash; about a credit card or business card, up to a 3&times;3 inch Post-it note. Large is 10&ndash;16 sq in &mdash; up to the size of a dollar bill. Anything bigger than a dollar bill is quoted at your complimentary, no-commitment consultation."),
+   ("Is the tattoo removal consultation free?","Yes. Consultations are always complimentary with no commitment, so you don&rsquo;t have to wait to find out your tattoo&rsquo;s size, price, and estimated number of sessions."),
    ("Do you offer tattoo removal packages?","Yes. Buy 5 sessions and get the 6th session free for the same tattoo: Micro $625, Small $750, Medium $1,250, or Large $2,000 for 6 sessions."),
    ("How many sessions will it take?","It depends on the tattoo&rsquo;s size, age, colors, and ink depth — often several sessions spaced weeks apart. We&rsquo;ll give you an estimate at your consultation."),
    ("Does it hurt?","Most people describe a snapping sensation. We use cooling and comfort measures, and the area is numbed as needed."),
