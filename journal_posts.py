@@ -16,6 +16,21 @@ JOURNAL = [
   "loc": "hudson"
  },
  {
+  "slug": "hormone-lab-testing-before-treatment-hudson-oh",
+  "w": 1148,
+  "h": 790,
+  "url": "https://blog.serenemedspas.com/hormone-lab-testing-before-treatment-hudson-oh/",
+  "title": "Test First, Then Treat: Why Labs Come Before Hormone Therapy",
+  "cat": "Hormone Optimization",
+  "cat_link": "/hormone-optimization/",
+  "excerpt": "Fatigue, weight gain and low libido have many causes. Here&rsquo;s why every hormone plan should start with blood work, and why the testing doesn&rsquo;t stop once treatment begins.",
+  "img": "https://blog.serenemedspas.com/img/hormone-labs-hudson.jpg",
+  "img_alt": "Dr. Robin Arora, Biote Certified Provider at Serene Med Spa in Hudson, OH, on why lab testing comes before hormone therapy",
+  "date": "2026-09-16",
+  "date_h": "September 16, 2026",
+  "loc": "hudson"
+ },
+ {
   "slug": "medicare-glp-1-bridge-program-barboursville-huntington-wv",
   "w": 1148,
   "h": 790,
@@ -26,6 +41,21 @@ JOURNAL = [
   "excerpt": "Medicare now covers select GLP-1 medications for weight loss at $50 a month. Here&rsquo;s who qualifies, how the program works, and why protecting muscle matters most for adults 65 and older.",
   "img": "https://blog.serenemedspas.com/img/glp1-medicare-barboursville.jpg",
   "img_alt": "Medicare GLP-1 Bridge program guide from Serene Med Spa in Barboursville, WV",
+  "date": "2026-09-16",
+  "date_h": "September 16, 2026",
+  "loc": "barboursville"
+ },
+ {
+  "slug": "wellness-blood-work-explained-barboursville-huntington-wv",
+  "w": 1148,
+  "h": 790,
+  "url": "https://blog.serenemedspas.com/wellness-blood-work-explained-barboursville-huntington-wv/",
+  "title": "Your Blood Work, Explained: What Wellness Labs Reveal",
+  "cat": "Hormone Optimization",
+  "cat_link": "/hormone-optimization/",
+  "excerpt": "Tired, foggy or just not yourself? A physician walks through what a wellness lab panel checks, test by test, and why the trend in your numbers matters as much as any single result.",
+  "img": "https://blog.serenemedspas.com/img/wellness-labs-barboursville.jpg",
+  "img_alt": "Dr. Robin Arora, Biote Certified Provider at Serene Med Spa in Barboursville, WV, explains wellness blood work",
   "date": "2026-09-16",
   "date_h": "September 16, 2026",
   "loc": "barboursville"
