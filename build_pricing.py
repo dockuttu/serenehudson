@@ -54,11 +54,11 @@ CATS.append(("Longevity &amp; NAD+",
 # TATTOO_PRICING — per-session by size; 6-pack = buy 5, 6th free (same tattoo)
 TATTOO_HTML = ('<div class="sub">Laser Tattoo Removal (PICO) &mdash; per session / 6-session package (buy 5, 6th free, same tattoo)</div>'+
   """<table class="lhr-table"><thead><tr><th>Tattoo size</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
-  <tr><td>Micro &mdash; under 1 sq in (fingernail)</td><td>$125</td><td>$625</td></tr>
-  <tr><td>Small &mdash; 1&ndash;4 sq in (postage stamp to business card)</td><td>$150</td><td>$750</td></tr>
-  <tr><td>Medium &mdash; 5&ndash;9 sq in (Post-it note to palm)</td><td>$250</td><td>$1,250</td></tr>
-  <tr><td>Large &mdash; 10&ndash;16 sq in (iPhone size)</td><td>$400</td><td>$2,000</td></tr>
-  <tr><td>Over 16 sq in (sleeves, back pieces)</td><td colspan="2">Quoted at your free consultation</td></tr>
+  <tr><td>Micro &mdash; under 1 sq in (fits under a quarter)</td><td>$125</td><td>$625</td></tr>
+  <tr><td>Small &mdash; 1&ndash;4 sq in (up to a 2&times;2&Prime; passport photo)</td><td>$150</td><td>$750</td></tr>
+  <tr><td>Medium &mdash; 5&ndash;9 sq in (credit card up to a 3&times;3&Prime; Post-it)</td><td>$250</td><td>$1,250</td></tr>
+  <tr><td>Large &mdash; 10&ndash;16 sq in (up to a dollar bill)</td><td>$400</td><td>$2,000</td></tr>
+  <tr><td>Bigger than a dollar bill (sleeves, back pieces)</td><td colspan="2">Quoted at your free consultation</td></tr>
   <tr><td>Tattoo Removal Consultation</td><td colspan="2"><span class="price-free">Free</span></td></tr>
   </tbody></table>""")
 
