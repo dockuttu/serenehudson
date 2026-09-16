@@ -49,6 +49,7 @@ python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
 python3 easypay_inject.py bundle/site   # Easy Pay band + nav/footer links on every page
+python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
 python3 seo_polish.py bundle/site
 python3 check_pages.py
