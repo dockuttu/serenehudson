@@ -22,7 +22,7 @@ def rowaka(name, aka, val, unit=""):
 CATS=[]
 
 CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
-  row("Lip Filler","$500","/syringe")+row("Mini Pout","$300")+row("Cheek Filler","$500","/syringe")+
+  row("Lip Filler &mdash; Full Syringe (1 mL)","$500")+row("Lip Filler &mdash; Half Syringe (0.5 mL, Mini Pout)","$300")+'<div class="price-row" style="border:0"><span class="price-name" style="font-size:.85rem;color:var(--ink)">Lip filler uses Juv&eacute;derm Volbella XC or Ultra XC &mdash; <a href="https://blog.serenemedspas.com/full-syringe-lip-filler-cost-barboursville-wv/" style="text-decoration:underline">which is right for you?</a></span></div>'+row("Cheek Filler","$500","/syringe")+
   row("Under-Eye Filler","$500","/syringe")+row("Jawline Filler","$500","/syringe")+row("Hand Filler","$500","/syringe")+
   row("Radiesse","$500","/syringe")+row("3 Juv&eacute;derm Fillers","$1,400")+
   sub("Neurotoxins")+
@@ -127,7 +127,7 @@ cats_html="\n".join('<div class="price-cat reveal" id="%s"><h3>%s</h3>%s</div>'%
 jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slug(t),t) for t,_ in CATS)+'</div>'
 
 # Offer schema (headline priced services)
-OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
+OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",700),("Kybella",600),
  ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
  ("Laser Hair Removal",59),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",800)]
