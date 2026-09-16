@@ -51,6 +51,17 @@ CATS.append(("Longevity &amp; NAD+",
   sub("Add-On Injections")+row("Glutathione","$35")+row("Tri-Immune Boost","$35")+row("CoQ10","$25")+row("Vitamin D3","$25")+row("Biotin","$25")+row("Anti-Nausea","$25")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Prepared by a licensed compounding pharmacy; compounded products are not FDA-approved. Items marked (Rx) are prescribed after your consultation and shipped to you by the pharmacy. Medical screening required. <a href="/longevity/">Learn more</a></span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
+# TATTOO_PRICING — per-session by size; 6-pack = buy 5, 6th free (same tattoo)
+TATTOO_HTML = ('<div class="sub">Laser Tattoo Removal (PICO) &mdash; per session / 6-session package (buy 5, 6th free, same tattoo)</div>'+
+  """<table class="lhr-table"><thead><tr><th>Tattoo size</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
+  <tr><td>Micro &mdash; under 1 sq in (fingernail)</td><td>$125</td><td>$625</td></tr>
+  <tr><td>Small &mdash; 1&ndash;4 sq in (postage stamp to business card)</td><td>$150</td><td>$750</td></tr>
+  <tr><td>Medium &mdash; 5&ndash;9 sq in (Post-it note to palm)</td><td>$250</td><td>$1,250</td></tr>
+  <tr><td>Large &mdash; 10&ndash;16 sq in (iPhone size)</td><td>$400</td><td>$2,000</td></tr>
+  <tr><td>Over 16 sq in (sleeves, back pieces)</td><td colspan="2">Quoted at your free consultation</td></tr>
+  <tr><td>Tattoo Removal Consultation</td><td colspan="2"><span class="price-free">Free</span></td></tr>
+  </tbody></table>""")
+
 CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+row("Sciton BBL Heroic","$400")+
@@ -78,7 +89,7 @@ CATS.append(("Laser &amp; Skin",
   <tr><td>Chest + Abdomen</td><td>$320</td><td>$1,600</td></tr>
   <tr><td>Full Legs</td><td>$370</td><td>$1,850</td></tr>
   <tr><td>Full Body</td><td>$510</td><td>$2,550</td></tr>
-  </tbody></table>'''))
+  </tbody></table>'''+TATTOO_HTML))
 
 CATS.append(("Acne Clinic",
   row("Acne Consultation (new &amp; follow-up)",None)+row("Acne Peel","$100")+row("Acne Back Peel","$150")))
@@ -118,7 +129,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 # Offer schema (headline priced services)
 OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler",500),("Sculptra",700),("Kybella",600),
  ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",199),("DiamondGlow",175),("Microneedling with PRP",675),
- ("Laser Hair Removal",59),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("IV Vitamin Infusion",149),
+ ("Laser Hair Removal",59),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}
