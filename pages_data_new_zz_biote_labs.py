@@ -4,6 +4,7 @@
 # Public page shows the Labcorp test code and Serene's internal SKU only — no prices.
 # Avoid the bare token "OH" in this file (Barboursville's localizer rewrites it to "WV").
 import os as _os
+exec(open("labs_data.py", encoding="utf-8").read())   # CHIP_SLUG, TESTS
 
 _BL_PANELS = {
  "Women": [
@@ -74,7 +75,7 @@ def _bl_badge():
     return ""
 
 def _bl_card(name, when, code, sku, tests):
-    chips = "".join('<span>%s</span>' % t for t in tests)
+    chips = "".join(('<a href="/labs/%s/">%s</a>' % (CHIP_SLUG[t], t)) if t in CHIP_SLUG else ('<span>%s</span>' % t) for t in tests)
     return ('<div class="bl-card reveal"><div class="bl-when">%s</div><h4>%s</h4>'
             '<div class="bl-codes"><span>Labcorp test <b>%s</b></span><span>Serene SKU <b>%s</b></span></div>'
             '<div class="bl-chips">%s</div></div>') % (when, name, code, sku, chips)
@@ -93,6 +94,9 @@ _BL_CSS = """<style>
 .bl-codes{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
 .bl-codes span{font-size:.92rem;background:var(--blush,#fbeae6);border-radius:8px;padding:5px 10px;color:var(--ink);font-weight:500}
 .bl-chips{display:flex;flex-wrap:wrap;gap:6px}
+.bl-chips a{font-size:.93rem;border:1px solid rgba(201,79,116,.35);border-radius:999px;padding:4px 11px;color:var(--ink);font-weight:500;background:#fff;text-decoration:none;transition:background .15s,border-color .15s}
+.bl-chips a:hover{background:var(--blush,#fbeae6);border-color:var(--rose-deep)}
+.bl-table td a{color:var(--rose-deep);text-decoration:none;border-bottom:1px dotted currentColor}
 .bl-chips span{font-size:.93rem;border:1px solid rgba(63,43,61,.16);border-radius:999px;padding:4px 11px;color:var(--ink);font-weight:500;background:#fff}
 .bl-note{font-size:1rem;color:var(--ink);font-weight:500;margin:16px 0 0;line-height:1.6}
 .bl-table{width:100%;border-collapse:collapse;margin-top:10px;font-size:1.02rem;color:var(--ink)}
@@ -110,7 +114,8 @@ _BL_CSS = """<style>
 def _bl_section():
     women = "".join(_bl_card(*c) for c in _BL_PANELS["Women"])
     men = "".join(_bl_card(*c) for c in _BL_PANELS["Men"])
-    rows = "".join('<tr><td>%s</td><td>%s</td><td>%s</td></tr>' % t for t in _BL_TESTS)
+    _row_slugs = ["cbc","cmp","estradiol","fsh","total-testosterone","free-testosterone","tsh","tpo-antibodies","vitamin-b12","vitamin-d","ferritin","psa","prolactin"]
+    rows = "".join('<tr><td><a href="/labs/%s/">%s</a></td><td>%s</td><td>%s</td></tr>' % ((sl,) + t) for sl, t in zip(_row_slugs, _BL_TESTS))
     return _BL_CSS + '''
 <section class="bl" id="labs">
   <div class="wrap">
@@ -123,7 +128,7 @@ def _bl_section():
     </div>
     <div class="bl-grid" id="bl-women" role="tabpanel">''' + women + '''</div>
     <div class="bl-grid" id="bl-men" role="tabpanel" hidden>''' + men + '''</div>
-    <p class="bl-note">Women&rsquo;s basic panels can add a free testosterone test (Labcorp 70130) when your physician needs it. Your physician chooses the panel that fits your history, symptoms and treatment.</p>
+    <p class="bl-note">Women&rsquo;s basic panels can add a free testosterone test (Labcorp 70130) when your physician needs it. Your physician chooses the panel that fits your history, symptoms and treatment. <strong>Tap any test</strong> to learn what it measures, or browse the <a href="/labs/">full lab test guide</a>.</p>
 
     <div class="section-head reveal" style="margin-top:56px"><div class="eyebrow">What we check</div><h2>What each test tells us</h2></div>
     <div style="overflow-x:auto"><table class="bl-table">
