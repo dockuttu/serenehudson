@@ -18,6 +18,7 @@ python3 build_gallery.py
 python3 build_housecalls.py
 python3 build_hydration.py
 python3 build_rewards.py
+python3 build_easypay.py    # /easy-pay/ (Cherry + CareCredit) + Easy Pay styles
 # NOTE: build_peptides.py is intentionally NOT run — the peptides page stays
 # hidden (noindex/unlinked) until LegitScript certification clears. To bring it
 # back later, add:  python3 build_peptides.py
@@ -47,6 +48,7 @@ python3 inject_gtag.py bundle/site
 python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
+python3 easypay_inject.py bundle/site   # Easy Pay band + nav/footer links on every page
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
 python3 seo_polish.py bundle/site
 python3 check_pages.py
