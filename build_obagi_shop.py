@@ -285,11 +285,14 @@ if len(clean(shop_desc)) > 155:
 shop_body = f'''<section class="svc-hero">
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> &nbsp;&#8250;&nbsp; Shop</div>
-    <div class="svc-hero-txt" style="max-width:860px">
+    <div class="svc-hero-grid">
+    <div class="svc-hero-txt">
       <div class="eyebrow">Medical-Grade Skincare &middot; {CITY}</div>
       <h1>Shop Obagi Medical Skincare in {CITY}</h1>
       <p style="font-size:1.15rem;font-weight:500;color:var(--ink)">Obagi is our main professional skincare line. Reserve your products online, then pay and pick them up at Serene Med Spa, where our physician-led team can help you choose.</p>
       {AUTH_BADGE}
+    </div>
+    <div class="svc-hero-media"><img src="/img/obagi/professional-c-serum-20.webp" alt="Obagi Professional-C Serum 20% at Serene Med Spa {CITY}" width="800" height="800" style="border-radius:24px;max-width:460px;margin-left:auto"></div>
     </div>
   </div>
 </section>
@@ -484,12 +487,15 @@ if len(clean(ob_desc)) > 155:
 ob_body = f'''<section class="svc-hero">
   <div class="wrap">
     <div class="crumbs"><a href="/">Home</a> &nbsp;&#8250;&nbsp; <a href="/shop/">Shop</a> &nbsp;&#8250;&nbsp; Obagi Medical</div>
-    <div class="svc-hero-txt" style="max-width:860px">
+    <div class="svc-hero-grid">
+    <div class="svc-hero-txt">
       <img src="/img/obagi/obagi-medical-logo.webp" alt="Obagi Medical logo" width="173" height="74" style="height:74px;width:auto;margin-bottom:8px">
       <div class="eyebrow">Authorized Obagi Medical Provider &middot; {CITY}</div>
       <h1>Obagi Medical Skincare in {CITY_LONG}</h1>
       <p style="font-size:1.15rem;font-weight:500;color:var(--ink)">Obagi is the professional skincare line we trust most at Serene Med Spa. As an authorized Obagi provider, we help patients across {AREA} choose the right products, and you can reserve them online for in-store pickup.</p>
       <p><a class="btn" href="/shop/">Shop Obagi Products</a> &nbsp; <a class="btn btn-outline" href="{SKIN_BOOK}" target="_blank" rel="noopener">Book a Skin Consult</a></p>
+    </div>
+    <div class="svc-hero-media"><img src="/img/obagi/skin-brightening-system-normal-to-oily.webp" alt="Obagi Nu-Derm Fx system at Serene Med Spa {CITY}" width="800" height="800" style="border-radius:24px;max-width:460px;margin-left:auto"></div>
     </div>
   </div>
 </section>
