@@ -562,13 +562,13 @@ footer ul a:hover{color:var(--gold)}
 .ep-opt:hover{border-color:var(--rose-deep,#c94f74);box-shadow:0 8px 22px rgba(63,43,61,.12);transform:translateY(-2px)}
 .ep-opt span{font-size:.95rem;color:var(--rose-deep,#c94f74)}
 .ep-logo{height:34px;width:auto;display:block}
-.ep-word{font-size:1.7rem;font-weight:700;letter-spacing:-.01em;line-height:34px;color:#1f5f56}
+.ep-word,.ep-opt span.ep-word{font-size:1.7rem;font-weight:700;letter-spacing:-.01em;line-height:34px;color:#1f5f56}
 @media(max-width:640px){.ep-opts{width:100%}.ep-opt{flex:1 1 100%}.ep-copy h3{font-size:1.6rem}}
 /* Easy Pay page */
 .ep-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
 .ep-card{background:#fff;border:1.5px solid rgba(63,43,61,.12);border-radius:20px;padding:30px}
 .ep-card .ep-logo{height:40px;margin-bottom:14px}
-.ep-card .ep-word{font-size:2rem;line-height:40px;margin-bottom:14px;display:block}
+.ep-card .ep-word,.ep-card span.ep-word{font-size:2rem;line-height:40px;margin-bottom:14px;display:block}
 .ep-card ul{margin:10px 0 18px;padding-left:20px}
 .ep-card li,.ep-card p{font-size:1.06rem;line-height:1.6;color:var(--ink,#2b2330);font-weight:500}
 .ep-fine{font-size:.9rem;color:var(--ink,#2b2330);opacity:.8;line-height:1.55;margin-top:18px}
