@@ -46,6 +46,21 @@ JOURNAL = [
   "loc": "barboursville"
  },
  {
+  "slug": "menopause-symptoms-relief-hudson-oh-barboursville-wv",
+  "w": 1148,
+  "h": 790,
+  "url": "https://blog.serenemedspas.com/menopause-symptoms-relief-hudson-oh-barboursville-wv/",
+  "title": "Menopause Symptoms: What&rsquo;s Happening and How to Find Relief",
+  "cat": "Hormone Optimization",
+  "cat_link": "/hormone-optimization/",
+  "excerpt": "Hot flashes, night sweats, brain fog, weight gain and low libido are common, but you don&rsquo;t have to just live with them. Here&rsquo;s what&rsquo;s happening and the options that help.",
+  "img": "https://blog.serenemedspas.com/img/menopause-relief.jpg",
+  "img_alt": "Woman working at a laptop, illustrating menopause symptom relief at Serene Med Spa in Hudson, OH and Barboursville, WV",
+  "date": "2026-09-16",
+  "date_h": "September 16, 2026",
+  "loc": "hudson"
+ },
+ {
   "slug": "wellness-blood-work-explained-barboursville-huntington-wv",
   "w": 1148,
   "h": 790,
