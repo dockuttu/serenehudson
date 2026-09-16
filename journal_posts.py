@@ -91,6 +91,21 @@ JOURNAL = [
   "loc": "hudson"
  },
  {
+  "slug": "ultrasound-hormone-pellet-placement-hudson-oh-barboursville-wv",
+  "w": 1148,
+  "h": 790,
+  "url": "https://blog.serenemedspas.com/ultrasound-hormone-pellet-placement-hudson-oh-barboursville-wv/",
+  "title": "Seeing Beneath the Skin: How Ultrasound Guides Tissue Depth, From the Forehead to Hormone Pellets",
+  "cat": "Hormone Optimization",
+  "cat_link": "/hormone-optimization/",
+  "excerpt": "Two ultrasound images from our office show how much is going on in the first few millimeters under your skin, and why depth matters for skin tightening and for hormone pellet placement.",
+  "img": "https://blog.serenemedspas.com/img/ultrasound-depth-hero.jpg",
+  "img_alt": "Ultherapy DeepSEE ultrasound images from Serene Med Spa showing the forehead at a 1.5 mm focal depth and the flank at a 4.5 mm focal depth",
+  "date": "2026-09-16",
+  "date_h": "September 16, 2026",
+  "loc": "hudson"
+ },
+ {
   "slug": "wellness-blood-work-explained-barboursville-huntington-wv",
   "w": 1148,
   "h": 790,
