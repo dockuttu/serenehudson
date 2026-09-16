@@ -10,7 +10,7 @@ python3 build_cities.py
 
 echo "==> Building section pages"
 python3 build_pricing.py
-python3 build_shop.py
+python3 build_obagi_shop.py   # Obagi store: /shop/, /shop/<product>/, /cart/, /obagi/, shop.js (old build_shop.py retired)
 # blog moved to blog.serenemedspas.com (repo sereneblog); old /blog/ URLs 301 via bundle/nginx.conf
 rm -rf bundle/site/blog 2>/dev/null || true
 python3 fix_blog_links.py
@@ -50,7 +50,9 @@ python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 
 echo "==> Page guard (nav <-> built pages <-> deep links)"
 python3 easypay_inject.py bundle/site   # Easy Pay band + nav/footer links on every page
+python3 shop_inject.py bundle/site      # cart button (shop.js) + Shop nav/footer links on every page
 python3 home_badges.py bundle/site      # Biote badge on the homepage
+python3 home_obagi.py bundle/site       # Obagi authorized-provider logo + skincare band on the homepage
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
 python3 seo_polish.py bundle/site
