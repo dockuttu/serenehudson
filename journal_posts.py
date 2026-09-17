@@ -61,6 +61,21 @@ JOURNAL = [
   "loc": "hudson"
  },
  {
+  "slug": "lip-filler-touch-up-uneven-volbella-hudson-oh-barboursville-wv",
+  "w": 1148,
+  "h": 790,
+  "url": "https://blog.serenemedspas.com/lip-filler-touch-up-uneven-volbella-hudson-oh-barboursville-wv/",
+  "title": "When Lip Filler Fades Unevenly: Why a Small Touch-Up Beats Starting Over",
+  "cat": "Lip Filler",
+  "cat_link": "/lip-filler/",
+  "excerpt": "Three months after her lip filler, a patient noticed a dip in her upper lip when she smiled. She didn&rsquo;t need to start over. Here&rsquo;s why filler can fade unevenly, and how a small touch-up fixed it.",
+  "img": "https://blog.serenemedspas.com/img/lip-filler-touch-up-hero.jpg",
+  "img_alt": "Before and after photos of a Juvederm Volbella XC lip filler touch-up at Serene Med Spa, cropped to the lips",
+  "date": "2026-09-16",
+  "date_h": "September 16, 2026",
+  "loc": "hudson"
+ },
+ {
   "slug": "medicare-glp-1-bridge-program-barboursville-huntington-wv",
   "w": 1148,
   "h": 790,
