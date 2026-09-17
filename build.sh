@@ -60,5 +60,6 @@ python3 complimentary_pass.py bundle/site   # again, for pages injected after ca
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
 python3 seo_polish.py bundle/site
+python3 seo_tech.py bundle/site      # schema cleanup + founder entities, default og:image, branded 404
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
 python3 check_pages.py
