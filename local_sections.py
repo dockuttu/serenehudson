@@ -83,6 +83,12 @@ PAGES = {
  "hydrafacial": ("HydraFacial", None, True), "iv-therapy": ("IV Therapy", "iv", False), "ultherapy": ("Ultherapy", None, False),
  "laser-hair-removal": ("Laser Hair Removal", None, True), "microneedling": ("Microneedling", None, False),
 }
+SHORT = {"botox": "Botox", "fillers": "dermal filler", "lip-filler": "lip filler", "laser-tattoo-removal": "tattoo removal",
+         "morpheus8": "Morpheus8", "weight-loss": "medical weight loss", "hormone-optimization": "hormone care",
+         "hydrafacial": "a HydraFacial", "iv-therapy": "an IV drip", "ultherapy": "Ultherapy",
+         "laser-hair-removal": "laser hair removal", "microneedling": "microneedling"}
+COPY_FIXES = [("Modern medications such as semaglutide-class options, prescribed when clinically appropriate.",
+               "Modern GLP-1 medications, prescribed only when clinically appropriate.")]
 steps = dict(SITE.get("steps", []))
 park = next((v for k, v in SITE.get("steps", []) if "park" in k.lower() or "exit" in k.lower()), "")
 MARK_S, MARK_E = "<!-- local-block:start -->", "<!-- local-block:end -->"
@@ -97,10 +103,11 @@ def block(slug, name, akey, same_day):
     arts = articles(akey)
     arts_html = ('<h3>From the Serene Journal</h3><ul>%s</ul>' % "".join(arts)) if arts else ""
     gallery = ' See real results in our <a href="/before-after/">before &amp; after gallery</a>.' if slug in ("botox", "fillers", "lip-filler", "morpheus8") else ""
-    sd = (f" If you&rsquo;re a good candidate, {name.lower() if name != 'HydraFacial' else name} can often be done the same day as your consultation." if same_day else
-          f" {name} starts with a complimentary, no-commitment consultation so we can build a plan around your goals.")
+    sh = SHORT.get(slug, name)
+    sd = (f" If you&rsquo;re a good candidate, {sh} can often be done the same day as your consultation." if same_day else
+          f" Every {name.lower() if name not in ('Morpheus8', 'Ultherapy') else name} plan starts with a complimentary, no-commitment consultation.")
     pl = price_line(slug)
-    faq = (f'<p><strong>How much is {name} in {LOC}, {STATE}?</strong><br>{pl} <a href="/pricing/">See full {LOC} pricing</a>.</p>'
+    faq = (f'<p><strong>What does {name.lower() if name not in ("Botox", "Morpheus8", "HydraFacial", "Ultherapy") else name} cost in {LOC}, {STATE}?</strong><br>{pl} <a href="/pricing/">See full {LOC} pricing</a>.</p>'
            f'<p><strong>Who performs {name} at Serene {LOC}?</strong><br>{PROVIDERS}.</p>'
            f'<p><strong>Where is the {LOC} office?</strong><br>{SITE["addr1"]}, {SITE["addr2"]}. Call <a href="{SITE["tel"]}">{SITE["phone"]}</a>. Open {H.unescape(SITE["hours"]).replace("<br>", "; ")}.</p>')
     return (MARK_S + CSS +
@@ -122,5 +129,6 @@ for slug, (name, akey, same_day) in PAGES.items():
     i = s.find('<section id="faq"')
     if i < 0: continue
     s = s[:i] + block(slug, name, akey, same_day) + "\n" + s[i:]
+    for a, b in COPY_FIXES: s = s.replace(a, b)
     open(p, "w", encoding="utf-8").write(s); n += 1
 print("local_sections: %s block added to %d page(s)" % (LOC, n))
