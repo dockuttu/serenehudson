@@ -1,16 +1,21 @@
 # form_guard_inject.py — idempotent: load /form-guard.js (spam screening for the Zoho lead forms)
 # on every built page, and keep the popup's lead-source tag in the exact format Zoho's
 # Lead Source rule expects ("Website popup: <host>", no page path).
-import glob, os, sys
+import glob, os, re, sys, hashlib
 BASE = sys.argv[1] if len(sys.argv) > 1 else "bundle/site"
-TAG = '<script src="/form-guard.js" defer></script>'
+V = hashlib.sha256(open(os.path.join(BASE, "form-guard.js"), "rb").read()).hexdigest()[:8]
+TAG = '<script src="/form-guard.js?v=%s" defer></script>' % V
 n = 0
 for p in glob.glob(os.path.join(BASE, "**", "*.html"), recursive=True):
     s = open(p, encoding="utf-8", errors="ignore").read()
-    if "form-guard.js" in s or "</body>" not in s:
+    if "</body>" not in s:
         continue
-    s = s.replace("</body>", TAG + "\n</body>", 1)
-    open(p, "w", encoding="utf-8").write(s); n += 1
+    if "form-guard.js" in s:
+        t2 = re.sub(r'<script src="/form-guard\.js(\?v=[0-9a-f]+)?" defer></script>', TAG, s)
+    else:
+        t2 = s.replace("</body>", TAG + "\n</body>", 1)
+    if t2 != s:
+        open(p, "w", encoding="utf-8").write(t2); n += 1
 pj = os.path.join(BASE, "popup.js")
 if os.path.exists(pj):
     s = open(pj, encoding="utf-8").read()

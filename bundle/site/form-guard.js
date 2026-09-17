@@ -6,7 +6,7 @@
      prefixed so the front desk can skip it. Nothing real is ever silently dropped. */
 (function () {
   var T0 = Date.now();
-  var PITCH = /(seo\b|search engine|online (visibility|presence|performance)|rank(ing)? (higher|on google)|website (audit|design|redesign)|improv\w* (the |your )?(site|website)|backlink|guest post|web ?developer|digital marketing|lead generation|bookkeeping|virtual assistant|merchant (services|cash)|business (loan|funding)|crypto|casino|free spins|wagering|jackpot|interested in (purchasing|buying) (your|a|the) )/i;
+  var PITCH = /(seo\b|search engine|online (visibility|presence|performance)|rank(ing)? (higher|on google)|website (audit|design|redesign)|improv\w* (the |your )?(site|website)|backlink|guest post|web ?developer|digital marketing|lead generation|bookkeeping|virtual assistant|merchant (services|cash)|business (loan|funding)|crypto|casino|free spins|wagering|jackpot|interested in (purchasing|buying)|serious buyer|used (aesthetic |medical )?equipment|\baudit\b|search rankings?|local (search|seo)|noticed (a few|a couple|some) (things|issues|opportunities|areas))/i;
   function suspicious(text, elapsed) {
     if (/[Ѐ-ӿ]/.test(text)) return "non-English script";
     if (/https?:\/\/|www\.|\.(workers\.dev|ru|xyz|top)\b/i.test(text)) return "link in message";
