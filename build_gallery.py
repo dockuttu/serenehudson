@@ -6,6 +6,9 @@ URL="https://hudson.serenemedspas.com/before-after/"
 # category -> (service_link, [ (img, title, desc, link) ])
 CATS = [
  ("Lip Filler", "/lip-filler/", [
+   ("ba-lip-touch-up.jpg", "Volbella XC &mdash; Lip Filler Touch-Up",
+    "Three months after lip filler, the upper lip softened unevenly and showed most in a smile. A small, targeted Volbella XC touch-up restored an even shape (after photos taken the same day).",
+    "https://blog.serenemedspas.com/lip-filler-touch-up-uneven-volbella-hudson-oh-barboursville-wv/?loc=hudson", "Read the case"),
    ("ba-lip-volbella.jpg", "Juv&eacute;derm Volbella &mdash; Male Lip Filler",
     "One syringe, 70/30 upper-to-lower, with symmetry corrected across all four quadrants and a softened Cupid&rsquo;s bow.",
     "https://blog.serenemedspas.com/male-lip-filler-juvederm-volbella/", "Read the case"),
