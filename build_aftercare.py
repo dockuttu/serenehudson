@@ -15,7 +15,7 @@ import html as _h
 import json, os, re, sys
 
 SITE = "bundle/site"
-IMGDIR = "bundle/img"
+IMGDIR = "bundle/site/img"   # images live in the built site dir and are committed with it
 
 ns = {}
 exec(open("common.py", encoding="utf-8").read(), ns)
@@ -123,7 +123,7 @@ def card(p):
     # With a card image the name goes in the label row underneath; without one the typographic
     # tile already carries the name, so repeating it below just reads as a duplicate.
     if src:
-        inner = ('<img loading="lazy" src="%s" alt="%s aftercare instructions" width="480" height="672">'
+        inner = ('<img loading="lazy" src="%s" alt="%s aftercare instructions" width="900" height="1260">'
                  % (src, plain(p["name"])))
         label = '<div class="ac-label">%s</div>' % p["name"]
     else:
@@ -210,7 +210,7 @@ def build_page(p):
                        schema='<script type="application/ld+json">%s</script>\n<script type="application/ld+json">%s</script>'
                               % (json.dumps(schema, ensure_ascii=False), json.dumps(crumb, ensure_ascii=False)),
                        promo=S.get("promo", ""), nav=NAV)
-    hero_img = ('<img class="ac-hero-img" src="%s" alt="%s aftercare card" width="480" height="672">' % (src, plain(p["name"]))) if src else ""
+    hero_img = ('<img class="ac-hero-img" src="%s" alt="%s aftercare card" width="900" height="1260">' % (src, plain(p["name"]))) if src else ""
     body = '''
 <section class="svc-hero"><div class="wrap">
   <div class="crumbs"><a href="/">Home</a> &nbsp;&#8250;&nbsp; <a href="/aftercare/">Aftercare</a> &nbsp;&#8250;&nbsp; %s</div>
