@@ -120,10 +120,16 @@ TAIL = '''
 
 def card(p):
     src = img_for(p["slug"])
-    inner = ('<img loading="lazy" src="%s" alt="%s aftercare instructions" width="480" height="672">' % (src, plain(p["name"]))
-             if src else '<div class="ac-fallback"><span>%s</span></div>' % p["name"])
-    return ('<a class="ac-card reveal" href="/aftercare/%s/">%s<div class="ac-label">%s</div></a>'
-            % (p["slug"], inner, p["name"]))
+    # With a card image the name goes in the label row underneath; without one the typographic
+    # tile already carries the name, so repeating it below just reads as a duplicate.
+    if src:
+        inner = ('<img loading="lazy" src="%s" alt="%s aftercare instructions" width="480" height="672">'
+                 % (src, plain(p["name"])))
+        label = '<div class="ac-label">%s</div>' % p["name"]
+    else:
+        inner = '<div class="ac-fallback"><span>%s</span></div>' % p["name"]
+        label = ""
+    return '<a class="ac-card reveal" href="/aftercare/%s/">%s%s</a>' % (p["slug"], inner, label)
 
 def build_hub():
     url = BASE + "/aftercare/"
