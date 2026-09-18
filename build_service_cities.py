@@ -37,6 +37,9 @@ def _swap(t, old, new):
     return t.replace(old, new)
 
 TEMPLATE = _swap(TEMPLATE,
+    '<b>&#10022;</b> {drive} from {city}',
+    '<b>&#10022;</b> {drive}')
+TEMPLATE = _swap(TEMPLATE,
     '<a href="/#areas">Areas We Serve</a> &nbsp;&#8250;&nbsp; {city}',
     '<a href="{service_url}">{service}</a> &nbsp;&#8250;&nbsp; {city}')
 TEMPLATE = _swap(TEMPLATE,
@@ -44,7 +47,7 @@ TEMPLATE = _swap(TEMPLATE,
     '<div class="eyebrow">Pricing</div>\n      <h2>{service} pricing for {city} patients</h2>')
 TEMPLATE = _swap(TEMPLATE,
     '<p style="text-align:center;margin-top:26px"><a class="btn btn-outline" href="/pricing/">See the full price list</a>',
-    '<p style="font-size:17px;font-weight:500;color:#222;max-width:760px;margin:22px auto 0;text-align:center">Prices are published and identical for every patient. A consultation is always free.</p>\n    <p style="text-align:center;margin-top:26px"><a class="btn btn-outline" href="/pricing/">See the full price list</a>')
+    '<p style="font-size:17px;font-weight:500;color:#222;max-width:760px;margin:22px auto 0;text-align:center">Prices are published and identical for every patient. Consultations are always complimentary, with no commitment.</p>\n    <p style="text-align:center;margin-top:26px"><a class="btn btn-outline" href="/pricing/">See the full price list</a>')
 
 def price_cards(rows):
     out = []
