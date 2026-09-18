@@ -65,7 +65,7 @@ TATTOO_HTML = ('<div class="sub">Laser Tattoo Removal (PICO) &mdash; per session
 CATS.append(("Laser &amp; Skin",
   row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+row("Sciton BBL Heroic","$400")+
-  row("Sciton Moxi","$500")+row("CoolPeel","$400")+row("Deka CO&sup2; Laser","$800")+row("Opus Plasma","$400")+sub("Ultherapy PRIME &mdash; Hudson")+row("Full Face + Neck","$3,500")+row("Full Face","$2,600")+row("Lower Face + Neck","$2,800")+row("Lower Face (Jowls)","$1,900")+row("Neck / Under-Chin","$1,600")+row("Brow Lift","$950")+row("D&eacute;collet&eacute; add-on","$500")+
+  row("Sciton Moxi","$500")+row("CoolPeel","$400")+row("Deka CO&sup2; Laser &mdash; Fractional Resurfacing","$600")+row("Deka CO&sup2; Laser &mdash; Full Resurfacing (Maximum Strength)","$1,000")+row("Opus Plasma","$400")+sub("Ultherapy PRIME &mdash; Hudson")+row("Full Face + Neck","$3,500")+row("Full Face","$2,600")+row("Lower Face + Neck","$2,800")+row("Lower Face (Jowls)","$1,900")+row("Neck / Under-Chin","$1,600")+row("Brow Lift","$950")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub">Laser Hair Removal (Diolaze XL &amp; Alma Harmony) &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
   <tr><td>Side Burns</td><td>$59</td><td>$295</td></tr>
