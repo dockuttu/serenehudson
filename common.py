@@ -214,6 +214,19 @@ REVIEWS_SECTION = '''<section class="tint-blush" id="reviews">
 
 # ---- per-treatment aftercare ----
 exec(open("aftercare_data.py").read())  # AFTERCARE, AC_ALIAS
+
+# ---- Google review CTA (shown at the end of the aftercare block) ----
+# Hudson Business Profile review link, from Google Business Profile > Ask for reviews.
+GOOGLE_REVIEW_URL = "https://g.page/r/CT5jS0zOs22oEBM/review"
+REVIEW_CTA = ('    <div class="reveal" style="margin:28px 0 4px;padding:24px 22px;border-radius:14px;'
+  'background:#f3f7f5;border:1px solid #cfe0d8;text-align:center">'
+  '<p style="font-size:23px;font-weight:800;color:#0f2f26;margin:0 0 6px">How was your visit?</p>'
+  '<p style="font-size:18px;font-weight:500;color:#1a1a1a;margin:0 0 16px">'
+  'If we took good care of you, a quick Google review helps other people in Hudson find us. It takes about thirty seconds.</p>'
+  '<p style="margin:0"><a href="%s" target="_blank" rel="noopener" '
+  'style="display:inline-block;padding:13px 28px;border-radius:999px;background:#1f5c4a;color:#fff;'
+  'font-weight:700;font-size:18px;text-decoration:none">Leave a Google review</a></p></div>') % GOOGLE_REVIEW_URL
+
 def aftercare_html(slug):
     key = AC_ALIAS.get(slug)
     if not key or key not in AFTERCARE: return ""
@@ -233,6 +246,7 @@ def aftercare_html(slug):
                      % "".join("<span>%s</span>" % u for u in d["urgent"]))
     if d.get("results"):
         parts.append('    <p class="ac-results reveal"><strong>Results:</strong> %s</p>' % d["results"])
+    parts.append(REVIEW_CTA)
     parts.append('    <p class="ac-note">General guidance from Serene Med Spa &mdash; always follow the specific instructions your provider gives you. Questions? Call <a href="tel:+13304605915">(330)&nbsp;460-5915</a>.</p>')
     parts += ['  </div>', '</section>']
     return "\n".join(parts)
