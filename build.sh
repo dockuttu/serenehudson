@@ -68,4 +68,5 @@ python3 form_guard_inject.py bundle/site   # spam screening on lead forms + popu
 python3 local_sections.py bundle/site     # location-specific block on the top treatment pages
 python3 review_cta_inject.py bundle/site   # Google review ask at the end of every aftercare block
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
+python3 build_ads_pages.py bundle/site || echo "build_ads_pages: WARNING residual drug terms on an /lp/ page (see above)"   # LAST: ads-only /lp/* copies (noindex, no drug names) for Google Ads
 python3 check_pages.py
