@@ -7,6 +7,7 @@ root = sys.argv[1] if len(sys.argv) > 1 else "bundle/site"
 ANCHOR = 'Visit our WV location &rsaquo;</a></li>'
 ADD = ('\n<li style="margin-top:10px;font-weight:600">Telehealth with Dr. Arora</li>'
        '\n<li><a href="tel:+13307752452">(330) 775-2452</a></li>'
+       '\n<li><a href="sms:+13307752452">Text us: (330) 775-2452</a></li>'
        '\n<li><a href="https://spruce.care/serene-telehealth" target="_blank" rel="noopener">Message Dr. Arora securely &rsaquo;</a></li>')
 n = 0
 for d, _, files in os.walk(root):
