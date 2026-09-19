@@ -61,6 +61,7 @@ python3 home_merz.py bundle/site        # Merz Aesthetics ELITE+ provider status
 python3 complimentary_pass.py bundle/site   # again, for pages injected after cache-bust
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
+python3 footer_telehealth.py bundle/site  # Serene telehealth (Spruce) lines in footers of hand-built pages
 python3 seo_polish.py bundle/site
 python3 seo_tech.py bundle/site      # schema cleanup + founder entities, default og:image, branded 404
 python3 form_guard_inject.py bundle/site   # spam screening on lead forms + popup source tag
