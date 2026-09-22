@@ -71,23 +71,23 @@ CATS.append(("Laser &amp; Skin",
   <tr><td>Side Burns</td><td>$59</td><td>$295</td></tr>
   <tr><td>Areola</td><td>$59</td><td>$295</td></tr>
   <tr><td>Hands</td><td>$60</td><td>$300</td></tr>
-  <tr><td>Upper Lip</td><td>$85</td><td>$425</td></tr>
-  <tr><td>Underarms</td><td>$85</td><td>$425</td></tr>
+  <tr><td>Upper Lip</td><td>$75</td><td>$375</td></tr>
+  <tr><td>Underarms</td><td>$75</td><td>$375</td></tr>
   <tr><td>Chin</td><td>$99</td><td>$495</td></tr>
   <tr><td>Ears</td><td>$99</td><td>$495</td></tr>
   <tr><td>Bikini Line</td><td>$109</td><td>$545</td></tr>
-  <tr><td>Brazilian</td><td>$139</td><td>$695</td></tr>
-  <tr><td>Full Face</td><td>$139</td><td>$695</td></tr>
-  <tr><td>Neck (+ Beard Line)</td><td>$170</td><td>$850</td></tr>
-  <tr><td>Stomach</td><td>$170</td><td>$850</td></tr>
-  <tr><td>Half Arms</td><td>$190</td><td>$950</td></tr>
-  <tr><td>Shoulders</td><td>$190</td><td>$950</td></tr>
-  <tr><td>Upper Legs</td><td>$250</td><td>$1,250</td></tr>
-  <tr><td>Lower Legs</td><td>$250</td><td>$1,250</td></tr>
-  <tr><td>Full Arms</td><td>$290</td><td>$1,450</td></tr>
-  <tr><td>Full Back</td><td>$320</td><td>$1,600</td></tr>
-  <tr><td>Chest + Abdomen</td><td>$320</td><td>$1,600</td></tr>
-  <tr><td>Full Legs</td><td>$370</td><td>$1,850</td></tr>
+  <tr><td>Brazilian</td><td>$89</td><td>$445</td></tr>
+  <tr><td>Full Face</td><td>$99</td><td>$495</td></tr>
+  <tr><td>Neck (+ Beard Line)</td><td>$160</td><td>$800</td></tr>
+  <tr><td>Stomach</td><td>$160</td><td>$800</td></tr>
+  <tr><td>Half Arms</td><td>$180</td><td>$900</td></tr>
+  <tr><td>Shoulders</td><td>$180</td><td>$900</td></tr>
+  <tr><td>Upper Legs</td><td>$240</td><td>$1,200</td></tr>
+  <tr><td>Lower Legs</td><td>$240</td><td>$1,200</td></tr>
+  <tr><td>Full Arms</td><td>$280</td><td>$1,400</td></tr>
+  <tr><td>Full Back</td><td>$310</td><td>$1,550</td></tr>
+  <tr><td>Chest + Abdomen</td><td>$310</td><td>$1,550</td></tr>
+  <tr><td>Full Legs</td><td>$360</td><td>$1,800</td></tr>
   <tr><td>Full Body</td><td>$510</td><td>$2,550</td></tr>
   </tbody></table>'''+TATTOO_HTML))
 
