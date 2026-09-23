@@ -12,3 +12,5 @@ and its certificate for 12+ months so old links, Google Ads final URLs, GBP and 
 
 Design tokens/colors now come from serenemain/site_lib.py; edit page CONTENT in this repo as before.
 Rollback: restore the previous bundle/nginx.conf and remove the v2_merge line from build.sh.
+
+- Sep 23, 2026: nav chevrons + 1040px hamburger breakpoint (shell rebuilt from serenemain).
