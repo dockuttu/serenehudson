@@ -76,3 +76,6 @@ python3 seo_targeting.py bundle/site
 
 echo "==> ABIM board-certification badge in every footer"
 python3 abim_badge.py bundle/site
+
+echo "==> Phase 3: prefix + v2 shell (serenemedspas.com/hudson/)"
+python3 v2_merge.py bundle/site
