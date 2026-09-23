@@ -132,8 +132,9 @@ def build_v2_js():
 HOME_H1 = "Hudson&rsquo;s<br>physician-led med spa"
 HOME_LEDE = ("Botox, fillers, laser and wellness at 50 W Streetsboro St in historic downtown Hudson &mdash; serving Stow, Twinsburg, Aurora, "
              "Cuyahoga Falls, Akron and Cleveland&rsquo;s east side. Board-certified physicians, complimentary consultations, same-week appointments.")
-# the Hudson site was cloned from Barboursville and still carries Barboursville lounge photos; use the one real Hudson shot until new photos land
-HOME_IMG_SWAP = {"/hudson/img/lobby-2.jpg": "/hudson/img/serene-front-desk.jpg", "/hudson/img/room-1.jpg": "/hudson/img/serene-front-desk.jpg", "/hudson/img/lobby.jpg": "/hudson/img/serene-front-desk.jpg"}
+# the Hudson site was cloned from Barboursville and still carried Barboursville lounge/room photos -> real Hudson photos (Sep 23, 2026)
+HOME_IMG_SWAP = {"/hudson/img/lobby-2.jpg": "/hudson/img/hudson-lounge.jpg", "/hudson/img/room-1.jpg": "/hudson/img/hudson-treatment-room.jpg",
+                 "/hudson/img/lobby.jpg": "/hudson/img/hudson-lounge.jpg", "/hudson/img/facial-room.jpg": "/hudson/img/hudson-treatment-room.jpg"}
 
 def localize_home(s):
     s = re.sub(r'<h1>Glow that looks<br>effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
@@ -174,12 +175,14 @@ def main():
         if ext == ".html":
             s = prefix_html(s)
             if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
+            for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
             if os.path.relpath(path, SITE) == "index.html": s = localize_home(s)
         elif ext == ".css":
             s = prefix_css(s)
             for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
         elif ext == ".js":
             s = prefix_js(s)
+            for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
         else:
             s = s.replace(OLD_HOST + "/", NEW_HOST + "/").replace(OLD_HOST, NEW_HOST)
         open(path, "w", encoding="utf-8").write(s); n += 1
