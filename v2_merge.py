@@ -79,6 +79,20 @@ def slice_css(css, start_marker, end_marker):
     a = css.index(start_marker); b = css.index(end_marker, a)
     return css[a:b]
 
+
+GALLERY_CSS = """
+/* Inside our Hudson office — photo mosaic (Sep 23, 2026) */
+.hgal{background:#fff;padding:72px 0}
+.hgal .section-head{margin-bottom:34px}
+.hgal-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:230px;gap:14px;grid-auto-flow:dense}
+.hgal-grid figure{margin:0;position:relative;overflow:hidden;border-radius:18px;background:#ECEDF7}
+.hgal-grid img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.hgal-grid figure:hover img{transform:scale(1.04)}
+.hgal-grid figcaption{position:absolute;left:14px;bottom:12px;background:rgba(16,50,47,.82);color:#fff;font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;padding:7px 12px;border-radius:30px}
+.hgal-grid .tall{grid-row:span 2}.hgal-grid .wide{grid-column:span 2}
+@media (max-width:760px){.hgal{padding:52px 0}.hgal-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:190px;gap:10px}.hgal-grid .tall{grid-row:span 2}.hgal-grid .wide{grid-column:span 2}.hgal-grid figcaption{font-size:.6rem;left:10px;bottom:9px;padding:6px 10px}}
+"""
+
 def build_v2_css():
     main = SL.CSS
     header = slice_css(main, "/* promo + header */", "/* hero */")
@@ -115,7 +129,7 @@ h1,h2{text-transform:uppercase;letter-spacing:.035em;line-height:1.08}
 /* header / footer from the main site (v2) */
 """
     resets = "\n.nav ul{margin:0}.nav img{height:50px}header .wrap{max-width:1240px}.nav ul a{white-space:nowrap}\n"
-    return tokens + header + resets + footer + "\n" + "\n".join(resp) + "\n"
+    return tokens + header + resets + GALLERY_CSS + footer + "\n" + "\n".join(resp) + "\n"
 
 def build_v2_js():
     scr = SL.SCRIPTS
@@ -136,11 +150,34 @@ HOME_LEDE = ("Botox, fillers, laser and wellness at 50 W Streetsboro St in histo
 HOME_IMG_SWAP = {"/hudson/img/lobby-2.jpg": "/hudson/img/hudson-lounge.jpg", "/hudson/img/room-1.jpg": "/hudson/img/hudson-treatment-room.jpg",
                  "/hudson/img/lobby.jpg": "/hudson/img/hudson-lounge.jpg", "/hudson/img/facial-room.jpg": "/hudson/img/hudson-treatment-room.jpg"}
 
+
+HOME_GALLERY = """
+<section class="hgal reveal" id="gallery" aria-label="Inside our Hudson office">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Inside Our Hudson Office</div>
+      <h2>A calm space in downtown Hudson</h2>
+      <p>50 W Streetsboro St, Suite 2 &mdash; in the heart of historic downtown Hudson.</p>
+    </div>
+    <div class="hgal-grid">
+      <figure class="tall"><img src="/hudson/img/hudson-exterior.jpg" alt="Serene Med Spa Hudson storefront at 50 W Streetsboro St, Hudson, Ohio" loading="lazy" decoding="async" width="1125" height="1500"><figcaption>Storefront</figcaption></figure>
+      <figure class="wide"><img src="/hudson/img/hudson-lounge.jpg" alt="Serene Med Spa Hudson lounge and waiting area" loading="lazy" decoding="async" width="1800" height="1012"><figcaption>Lounge</figcaption></figure>
+      <figure class="tall"><img src="/hudson/img/hudson-treatment-room.jpg" alt="Treatment room at Serene Med Spa Hudson" loading="lazy" decoding="async" width="1125" height="2000"><figcaption>Treatment room</figcaption></figure>
+      <figure><img src="/hudson/img/hudson-retail.jpg" alt="Medical-grade skincare retail wall at Serene Med Spa Hudson" loading="lazy" decoding="async" width="1125" height="1500"><figcaption>Medical-grade skincare</figcaption></figure>
+      <figure><img src="/hudson/img/hudson-entrance.jpg" alt="Entrance and hours at Serene Med Spa Hudson" loading="lazy" decoding="async" width="1125" height="1500"><figcaption>Entrance &amp; hours</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+"""
+
 def localize_home(s):
     s = re.sub(r'<h1>Glow that looks<br>effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
     s = re.sub(r'<h1>Glow that looks\s*<br>\s*effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
     s = re.sub(r'<p>Botox, dermal fillers, laser skin treatments, and advanced wellness[^<]*</p>', '<p>' + HOME_LEDE + '</p>', s, count=1)
     for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
+    if 'id="gallery"' not in s:
+        s = s.replace('<section class="location" id="location">', HOME_GALLERY + '<section class="location" id="location">', 1)
     return s
 
 FONTS_RX = re.compile(r'<link href="https://fonts\.googleapis\.com/css2\?family=Cormorant[^"]*" rel="stylesheet">')
