@@ -61,13 +61,18 @@ python3 home_merz.py bundle/site        # Merz Aesthetics ELITE+ provider status
 python3 complimentary_pass.py bundle/site   # again, for pages injected after cache-bust
 python3 fix_charset.py bundle/site      # <meta charset> must be in the first 1024 bytes
 python3 nav_longevity.py bundle/site   # Longevity link in static pages' mega-menu
+python3 footer_telehealth.py bundle/site  # Serene telehealth (Spruce) lines in footers of hand-built pages
 python3 seo_polish.py bundle/site
 python3 seo_tech.py bundle/site      # schema cleanup + founder entities, default og:image, branded 404
 python3 form_guard_inject.py bundle/site   # spam screening on lead forms + popup source tag
 python3 local_sections.py bundle/site     # location-specific block on the top treatment pages
 python3 review_cta_inject.py bundle/site   # Google review ask at the end of every aftercare block
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
+python3 build_ads_pages.py bundle/site || echo "build_ads_pages: WARNING residual drug terms on an /lp/ page (see above)"   # LAST: ads-only /lp/* copies (noindex, no drug names) for Google Ads
 python3 check_pages.py
 
-echo "==> Phase 3: prefix + v2 shell (serenemedspas.com/hudson/)"
-python3 v2_merge.py bundle/site
+echo "==> SEO targeting (final titles/descriptions for search)"
+python3 seo_targeting.py bundle/site
+
+echo "==> ABIM board-certification badge in every footer"
+python3 abim_badge.py bundle/site

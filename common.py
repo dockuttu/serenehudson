@@ -143,6 +143,10 @@ FOOTER = '''<footer>
           <li><a href="/xperience-rewards/">Xperience+ Rewards</a></li>
           <li style="margin-top:10px;font-weight:600">Also in Barboursville, WV</li>
           <li><a href="https://serenemedspas.com/locations/huntington-barboursville-wv/">Visit our WV location &rsaquo;</a></li>
+          <li style="margin-top:10px;font-weight:600">Telehealth with Dr. Arora</li>
+          <li><a href="tel:+13307752452">(330) 775-2452</a></li>
+          <li><a href="sms:+13307752452">Text us: (330) 775-2452</a></li>
+          <li><a href="https://spruce.care/serene-telehealth" target="_blank" rel="noopener">Message Dr. Arora securely &rsaquo;</a></li>
         </ul>
       </div>
     </div>
