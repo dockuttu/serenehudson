@@ -68,3 +68,6 @@ python3 local_sections.py bundle/site     # location-specific block on the top t
 python3 review_cta_inject.py bundle/site   # Google review ask at the end of every aftercare block
 python3 ultherapy_results.py bundle/site   # Ultherapy PRIME before/after (Merz photos)
 python3 check_pages.py
+
+echo "==> Phase 3: prefix + v2 shell (serenemedspas.com/hudson/)"
+python3 v2_merge.py bundle/site
