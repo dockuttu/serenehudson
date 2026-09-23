@@ -16,7 +16,7 @@ hudson. subdomain only 301s (bundle/nginx.conf).
 The serenemain checkout is found via $SERENEMAIN_SRC, else /root/serenemain-src (VPS),
 else ../serenemain (Mac).
 """
-import os, re, sys, hashlib, glob
+import os, re, sys, hashlib, glob, json
 
 SITE = sys.argv[1] if len(sys.argv) > 1 else "bundle/site"
 PREFIX = "/hudson"
@@ -128,7 +128,7 @@ h1,h2{text-transform:uppercase;letter-spacing:.035em;line-height:1.08}
 .hidden{display:none!important}
 /* header / footer from the main site (v2) */
 """
-    resets = "\n.nav ul{margin:0}.nav img{height:50px}header .wrap{max-width:1240px}.nav ul a{white-space:nowrap}\n"
+    resets = "\n.nav ul{margin:0}.nav img{height:50px}header .wrap{max-width:1240px}.nav ul a{white-space:nowrap}\n" + LINKS_CSS
     return tokens + header + resets + GALLERY_CSS + footer + "\n" + "\n".join(resp) + "\n"
 
 def build_v2_js():
@@ -195,6 +195,67 @@ def swap_shell(s, cssv, jsv):
     s = s.replace("</body>", f'<script src="{PREFIX}/v2-shell.js?v={jsv}" defer></script>\n</body>', 1)
     return s
 
+# ------------------------------------------------------------------ internal links (SEO pass 2, Sep 2026)
+def load_guides():
+    for p in (os.path.join(MAIN, "guides.json"), os.path.join(MAIN, "bundle", "site", "guides.json")):
+        if os.path.exists(p):
+            try: return json.load(open(p, encoding="utf-8"))
+            except Exception: pass
+    return {}
+GUIDES = load_guides()
+OFFICE = PREFIX.strip("/")
+
+LINKS_CSS = """
+.guides-block{padding:44px 0;background:#fff;border-top:1px solid var(--rule,#E5E7EB)}
+.guides-block .wrap{max-width:1240px}
+.guides-block h2{font-size:1.6rem;margin:6px 0 14px}
+.guides-block ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px 28px}
+.guides-block li a{color:#1B4A44;text-decoration:underline;text-underline-offset:3px;font-size:1rem}
+.guides-block li a:hover{color:#10322F}
+.area-more{max-width:900px;margin:22px auto 0;font-size:.95rem;color:#4B5563;line-height:1.9}
+.area-more a{color:#1B4A44;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
+"""
+
+def inject_guides(s, rel):
+    """Office treatment page -> 'From our treatment guides' links back to the main-site articles (LOCAL_MAP reversed)."""
+    slug = rel.split("/")[0]
+    g = GUIDES.get(slug)
+    if not g or "guides-block" in s or rel == "index.html": return s
+    name = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
+    name = re.sub(r"<[^>]+>|\s+", " ", name.group(1)).strip() if name else slug.replace("-", " ")
+    name = re.sub(r"\s+in\s+(Hudson|Barboursville|Huntington).*$", "", name, flags=re.I)
+    tele = ' <li><a href="/telehealth/">Telehealth weight &amp; hormone visits (OH, WV, KY, FL)</a></li>' if slug in ("weight-loss", "medical-weight-loss", "hormone-optimization", "longevity") else ""
+    block = ('<section class="guides-block"><div class="wrap"><div class="eyebrow">From our treatment guides</div>'
+             f'<h2>Learn more about {name}</h2><ul>' + "".join(f'<li><a href="{x["url"]}">{x["title"]}</a></li>' for x in g) + tele + '</ul></div></section>\n')
+    for anchor in ('<section id="faq">', '<section class="location"', '<section class="cta">', '</main>'):
+        i = s.find(anchor)
+        if i != -1: return s[:i] + block + s[i:]
+    return s
+
+def inject_area_links(s):
+    """Office home -> link every city/treatment landing page that the 'areas' section doesn't already link."""
+    i = s.find('<section class="areas"')
+    if i == -1 or "area-more" in s: return s
+    j = s.find("</section>", i)
+    sec = s[i:j]
+    pages = []
+    for d in sorted(os.listdir(SITE)):
+        if not re.search(r"-(oh|wv|ky)$", d) or not os.path.exists(os.path.join(SITE, d, "index.html")): continue
+        href = f"{PREFIX}/{d}/"
+        if href in sec: continue
+        h = open(os.path.join(SITE, d, "index.html"), encoding="utf-8", errors="ignore").read()
+        m = re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S)
+        t = re.sub(r"<[^>]+>|\s+", " ", m.group(1)).strip() if m else d.replace("-", " ").title()
+        if len(t) > 48:   # long H1 -> use the page title up to the separator
+            mt = re.search(r"<title>(.*?)</title>", h, re.S)
+            if mt: t = re.split(r"\s+[|\u2013\u2014-]\s+", mt.group(1).strip())[0]
+        if "noindex" in h[:3000]: continue
+        pages.append((href, t))
+    if not pages: return s
+    more = '<p class="area-more"><strong>Treatment pages by city:</strong> ' + " &middot; ".join(f'<a href="{h}">{t}</a>' for h, t in pages) + "</p>"
+    k = sec.rfind("</div>")
+    return s[:i] + sec[:k] + more + sec[k:] + s[j:]
+
 def main():
     v2css = build_v2_css(); v2js = build_v2_js()
     cssv = hashlib.md5(v2css.encode()).hexdigest()[:8]; jsv = hashlib.md5(v2js.encode()).hexdigest()[:8]
@@ -207,13 +268,15 @@ def main():
         if ext not in (".html", ".css", ".js", ".xml", ".txt", ".json"): continue
         if os.path.basename(path) in ("v2.css", "v2-shell.js"): continue
         s = open(path, encoding="utf-8", errors="replace").read()
-        if "/hudson/" in s and OLD_HOST not in s and ext == ".html" and "v2-shell.js" in s:
-            continue  # already merged (idempotent re-run)
+        already = "/hudson/" in s and OLD_HOST not in s and ext == ".html" and "v2-shell.js" in s   # merged on a previous run / template already carries the shell
         if ext == ".html":
-            s = prefix_html(s)
-            if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
-            for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
-            if os.path.relpath(path, SITE) == "index.html": s = localize_home(s)
+            rel = os.path.relpath(path, SITE)
+            if not already:
+                s = prefix_html(s)
+                if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
+                for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
+                if rel == "index.html": s = localize_home(s)
+            s = inject_area_links(s) if rel == "index.html" else inject_guides(s, rel)   # idempotent
         elif ext == ".css":
             s = prefix_css(s)
             for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
