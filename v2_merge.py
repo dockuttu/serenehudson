@@ -122,8 +122,8 @@ def build_v2_js():
     m = re.search(r"<script>\n\(function\(\)\{var LOC=.*?</script>", scr, re.S)
     loc = m.group(0)
     loc = loc.replace("<script>", "").replace("</script>", "")
-    # on a Hudson page the default office is Hudson
-    loc = loc.replace("apply(get());", "if(!get()){try{localStorage.setItem('serene_loc','hudson');}catch(e){}}\napply(get()||'hudson');")
+    # a Hudson page always sets the visitor's office to Hudson (page context wins over the remembered choice)
+    loc = loc.replace("apply(get());", "try{localStorage.setItem('serene_loc','hudson');}catch(e){}\napply('hudson');")
     m2 = re.search(r"document\.querySelectorAll\('\.nav ul li'\)\.forEach\(.*?\}\);\}\);", scr, re.S)
     menu = m2.group(0) if m2 else ""
     return loc + "\n(function(){" + menu + "})();\n"
