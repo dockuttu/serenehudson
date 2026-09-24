@@ -75,7 +75,8 @@ def resolve(name, site="bundle/site"):
             for s in slugs:
                 if os.path.isfile(os.path.join(site, s, "index.html")):
                     return s, ("parent" if s in PARENT_SLUGS else "exact")
-            return None, "missing:" + slugs[0]
+            # page not built yet at pricing-build time (e.g. /ultherapy/ is built after pricing) -> assume the first candidate
+            return slugs[0], ("parent" if slugs[0] in PARENT_SLUGS else "exact")
     return None, "none"
 
 def link_for(name, site="bundle/site"):
