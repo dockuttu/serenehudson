@@ -16,31 +16,46 @@ RULES = [
     (r"^under-eye pr[pf]", ["under-eye-prp"]),
     (r"^jawline filler", ["jawline-filler"]),
     (r"^chin filler", ["chin-filler"]),
-    (r"^hand filler|^radiesse|^3 juv|^filler reversal", ["fillers"]),
-    (r"^botox|^xeomin|^dysport|^daxxify|shoulder slimming|^baby botox|^hyperhidrosis treatment|^teeth grinding", ["botox"]),
+    (r"^hand filler", ["hand-filler", "fillers"]),
+    (r"^radiesse", ["radiesse", "fillers"]),
+    (r"^filler reversal|hyaluronidase", ["filler-dissolver", "fillers"]),
+    (r"^3 juv", ["fillers"]),
+    (r"^hyperhidrosis", ["hyperhidrosis-treatment", "botox"]),
+    (r"^teeth grinding|masseter", ["masseter-botox", "botox"]),
+    (r"^baby botox", ["baby-botox", "botox"]),
+    (r"shoulder slimming|^trap", ["shoulder-slimming-botox", "botox"]),
+    (r"^botox|^xeomin|^dysport|^daxxify", ["botox"]),
     (r"^sculptra bbl", ["sculptra-bbl"]),
     (r"^sculptra", ["sculptra"]),
     (r"^skinvive", ["skinvive"]),
     (r"^kybella", ["kybella"]),
-    (r"^kenalog", ["kenalog"]),
+    (r"^kenalog", ["kenalog", "acne-treatment"]),
     (r"^pdo ", ["thread-lift"]),
     (r"spider vein", ["spider-veins"]),
     # wellness
     (r"^medical weight loss", ["weight-loss", "medical-weight-loss"]),
-    (r"^bi.te|^gonadorelin", ["hormone-optimization"]),
-    (r"^iv vitamin|^vitamin b12|^lipo-b|^amino blend|^lipo shot|^glutathione|^tri-immune|^coq10|^vitamin d3|^biotin|^anti-nausea|^serene (quench|recovery|immune|beauty|reboot|brain|pms|get-up)|^myer|^glow drip|^nad\+ iv|^niagen. iv", ["iv-therapy", "hydration-bar"]),
-    (r"^longevity|^sermorelin|^nad\+ & sermorelin|^low-dose naltrexone|^niagen. injection|^nad\+ injection|^nad\+$", ["longevity", "peptides"]),
-    (r"^bpc-157|^tb-500|^wolverine|^cjc-1295|^tesamorelin|^ghk-cu|^pt-141|^ipamorelin|^thymosin|^semax|^selank", ["peptides", "longevity"]),
+    (r"^bi.te.*(female|women)", ["hormone-therapy-women", "hormone-optimization"]),
+    (r"^bi.te.*(male|men)|^gonadorelin|^testosterone", ["testosterone-therapy-men", "hormone-optimization"]),
+    (r"^bi.te", ["hormone-optimization"]),
+    (r"^vitamin b12|^lipo-b|^amino blend|^lipo shot|^lipo pack|^glutathione (shot|injection)|^niagen. injection|^nad\+ injection|^nad\+$", ["vitamin-injections", "iv-therapy"]),
+    (r"^iv vitamin|^glutathione|^tri-immune|^coq10|^vitamin d3|^biotin|^anti-nausea|^serene (quench|recovery|immune|beauty|reboot|brain|pms|get-up)|^myer|^glow drip|^longevity drip|^nad\+ iv|^niagen. iv", ["iv-drip-menu", "iv-therapy", "hydration-bar"]),
+    (r"^sermorelin|^nad\+ & sermorelin", ["sermorelin", "longevity"]),
+    (r"^low-dose naltrexone|^ldn", ["low-dose-naltrexone", "longevity"]),
+    (r"^longevity", ["longevity", "peptides"]),
+    (r"^bpc-157|^tb-500|^wolverine|^cjc-1295|^tesamorelin|^ghk-cu|^pt-141|^ipamorelin|^thymosin|^semax|^selank", ["longevity", "peptides"]),  # /peptides/ stays unlinked until LegitScript clears
     # skin & laser
     (r"^morpheus8|^morpheusv", ["morpheus8"]),
     (r"^laser facial", ["laser-facial"]),
     (r"^laser nail fungus", ["laser-nail-fungus"]),
     (r"^depigmentation", ["hyperpigmentation"]),
-    (r"chemical peel|^acne peel|^acne back peel", ["chemical-peels"]),
-    (r"^acne consultation", ["medical-facials", "chemical-peels"]),
+    (r"^acne", ["acne-treatment", "chemical-peels"]),
+    (r"chemical peel", ["chemical-peels"]),
     (r"^sciton bbl", ["photofacial"]),
     (r"^alma hybrid", ["alma-hybrid", "laser-skin"]),
-    (r"^sciton moxi|^deka co|^coolpeel|^pico fractional|^clear lift", ["laser-skin"]),
+    (r"^sciton moxi|^moxi", ["sciton-moxi", "laser-skin"]),
+    (r"^deka co", ["deka-co2-laser", "laser-skin"]),
+    (r"^coolpeel", ["coolpeel", "laser-skin"]),
+    (r"^pico fractional|^clear lift", ["pico-fractional-resurfacing", "laser-skin"]),
     (r"^opus plasma", ["opus-plasma"]),
     (r"^full face|^lower face|^neck / under-chin|^brow lift|^d.collet", ["ultherapy"]),   # Ultherapy area rows
     (r"^prp hair", ["prp-hair-restoration"]),
@@ -53,14 +68,27 @@ RULES = [
     # body & intimate
     (r"^evolvex", ["evolve-x"]),
     (r"^emsculpt", ["emsculpt-neo"]),
-    (r"^v-renew|^vtone|^formav", ["womens-sexual-wellness"]),
+    (r"^v-renew", ["v-renew", "womens-sexual-wellness"]),
+    (r"^vtone", ["vtone", "womens-sexual-wellness"]),
+    (r"^formav", ["formav", "womens-sexual-wellness"]),
     (r"^alma duo", ["alma-duo", "mens-sexual-wellness"]),
-    (r"^p-renew|^grow girth", ["mens-sexual-wellness"]),
+    (r"^p-renew", ["p-renew", "mens-sexual-wellness"]),
+    (r"^grow girth", ["grow-girth", "mens-sexual-wellness"]),
     # group headers (sub())
     (r"^ultherapy prime", ["ultherapy"]),
     (r"^laser hair removal", ["laser-hair-removal"]),
     (r"^laser tattoo removal", ["laser-tattoo-removal"]),
     (r"^facials$", ["medical-facials"]),
+    (r"^dermal fillers", ["fillers"]),
+    (r"^neurotoxins", ["botox"]),
+    (r"^collagen & biostimulators", ["sculptra"]),
+    (r"^vitamin & lipo shots", ["vitamin-injections"]),
+    (r"^monthly programs", ["longevity"]),
+    (r"^add-on injections", ["iv-drip-menu"]),
+    (r"^hair restoration", ["prp-hair-restoration"]),
+    (r"^body treatments", ["evolve-x", "body-contouring"]),
+    (r"^female wellness", ["womens-sexual-wellness"]),
+    (r"^male wellness", ["mens-sexual-wellness"]),
 ]
 # rows that resolve to one of these are "covered by a parent page" — a dedicated page is a candidate
 PARENT_SLUGS = {"fillers", "botox", "laser-skin", "iv-therapy", "hydration-bar", "longevity", "peptides", "medical-facials", "chemical-peels", "mens-sexual-wellness", "womens-sexual-wellness", "hormone-optimization"}
@@ -75,8 +103,7 @@ def resolve(name, site="bundle/site"):
             for s in slugs:
                 if os.path.isfile(os.path.join(site, s, "index.html")):
                     return s, ("parent" if s in PARENT_SLUGS else "exact")
-            # page not built yet at pricing-build time (e.g. /ultherapy/ is built after pricing) -> assume the first candidate
-            return slugs[0], ("parent" if slugs[0] in PARENT_SLUGS else "exact")
+            return slugs[0], ("parent" if slugs[0] in PARENT_SLUGS else "exact")  # not built yet (built later in build.sh) — link anyway
     return None, "none"
 
 def link_for(name, site="bundle/site"):

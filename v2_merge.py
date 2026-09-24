@@ -241,6 +241,47 @@ def inject_guides(s, rel):
         if i != -1: return s[:i] + block + s[i:]
     return s
 
+# parent treatment page -> its dedicated sub-pages (built from pages_data_new_zzz_pricing_gaps.py, Sep 2026). Only existing pages are linked.
+SUBPAGES = {
+    "botox": ["baby-botox", "masseter-botox", "shoulder-slimming-botox", "hyperhidrosis-treatment"],
+    "fillers": ["radiesse", "hand-filler", "filler-dissolver"],
+    "hormone-optimization": ["hormone-therapy-women", "testosterone-therapy-men"],
+    "iv-therapy": ["iv-drip-menu", "vitamin-injections"],
+    "hydration-bar": ["iv-drip-menu", "vitamin-injections"],
+    "longevity": ["sermorelin", "low-dose-naltrexone", "iv-drip-menu"],
+    "chemical-peels": ["acne-treatment"],
+    "medical-facials": ["acne-treatment"],
+    "laser-skin": ["sciton-moxi", "coolpeel", "deka-co2-laser", "pico-fractional-resurfacing"],
+    "womens-sexual-wellness": ["v-renew", "vtone", "formav"],
+    "mens-sexual-wellness": ["p-renew", "grow-girth", "alma-duo"],
+    "alma-duo": ["p-renew", "grow-girth"],
+}
+def _page_name(slug):
+    p = os.path.join(SITE, slug, "index.html")
+    if not os.path.exists(p): return None
+    h = open(p, encoding="utf-8", errors="ignore").read()
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S)
+    t = re.sub(r"<[^>]+>|\s+", " ", m.group(1)).strip() if m else slug.replace("-", " ").title()
+    return re.sub(r"\s+in\s+(Hudson|Barboursville|Huntington).*$", "", t, flags=re.I)
+
+def inject_subpages(s, rel):
+    """Parent treatment page -> 'Explore ... options' links to its dedicated sub-pages (so the new pages aren't orphaned)."""
+    slug = rel.split("/")[0]
+    kids = SUBPAGES.get(slug)
+    if not kids or "subpages-block" in s or rel == "index.html": return s
+    items = [(k, _page_name(k)) for k in kids]
+    items = [(k, n) for k, n in items if n]
+    if not items: return s
+    name = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
+    name = re.sub(r"<[^>]+>|\s+", " ", name.group(1)).strip() if name else slug.replace("-", " ")
+    name = re.sub(r"\s+in\s+(Hudson|Barboursville|Huntington).*$", "", name, flags=re.I)
+    block = ('<section class="guides-block subpages-block"><div class="wrap"><div class="eyebrow">Explore your options</div>'
+             f'<h2>More {name} treatments</h2><ul>' + "".join(f'<li><a href="{PREFIX}/{k}/">{n}</a></li>' for k, n in items) + '</ul></div></section>\n')
+    for anchor in ('<section class="guides-block">', '<section id="faq">', '<section class="location"', '<section class="cta">', '</main>'):
+        i = s.find(anchor)
+        if i != -1: return s[:i] + block + s[i:]
+    return s
+
 def inject_area_links(s):
     """Office home -> link every city/treatment landing page that the 'areas' section doesn't already link."""
     i = s.find('<section class="areas"')
@@ -285,7 +326,7 @@ def main():
                 if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
                 for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
                 if rel == "index.html": s = localize_home(s)
-            s = inject_area_links(inject_home_videos(s)) if rel == "index.html" else inject_guides(s, rel)   # idempotent (home videos + area links run even on already-merged pages)
+            s = inject_area_links(inject_home_videos(s)) if rel == "index.html" else inject_subpages(inject_guides(s, rel), rel)   # idempotent (home videos + area links run even on already-merged pages)
         elif ext == ".css":
             s = prefix_css(s)
             for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
