@@ -3,19 +3,21 @@ import os, json
 exec(open("common.py").read())  # NAV, FOOTER, SCRIPTS, LOGO, BOOK, CONSULT_SECTION
 URL="https://hudson.serenemedspas.com/pricing/"
 
+from pricing_links import linked as _plink   # price rows link to their treatment page (see pricing_links.py)
+
 def row(name, val, unit=""):
     u = ' <span class="unit">%s</span>' % unit if unit else ""
     if val is None:  # free
         val_html = '<span class="price-free">Free</span>'
     else:
         val_html = val + u
-    return '<div class="price-row"><span class="price-name">%s</span><span class="price-lead"></span><span class="price-val">%s</span></div>' % (name, val_html)
+    return '<div class="price-row"><span class="price-name">%s</span><span class="price-lead"></span><span class="price-val">%s</span></div>' % (_plink(name), val_html)
 
-def sub(t): return '<div class="sub">%s</div>' % t
+def sub(t): return '<div class="sub">%s</div>' % _plink(t)
 
 def rowaka(name, aka, val, unit=""):
     u = ' <span class="unit">%s</span>' % unit if unit else ""
-    nm = '%s<span style="display:block;font-size:.76rem;color:var(--muted);font-weight:400;margin-top:2px">also known as the %s</span>' % (name, aka)
+    nm = '%s<span style="display:block;font-size:.76rem;color:var(--muted);font-weight:400;margin-top:2px">also known as the %s</span>' % (_plink(name), aka)
     return '<div class="price-row"><span class="price-name">%s</span><span class="price-lead"></span><span class="price-val">%s%s</span></div>' % (nm, val, u)
 
 # ---- categories: (title, inner_html) ----
@@ -168,7 +170,7 @@ HTML=f'''<!DOCTYPE html>
 <script type="application/ld+json">
 {json.dumps(offer_schema)}
 </script>
-</head>
+<style>.price-link{color:inherit;text-decoration:none;border-bottom:1px dotted rgba(0,0,0,.35)}.price-link:hover{color:var(--forest,#1f4f45);border-bottom-color:currentColor}.sub .price-link{border-bottom:0;text-decoration:underline;text-decoration-style:dotted}</style></head>
 <body>
 
 <div class="promo">&#10024; <strong>Menu &amp; Pricing</strong> &mdash; ask about current specials, memberships &amp; package savings. <a href="{BOOK}" target="_blank" rel="noopener">Book a consultation</a> &#10024;</div>
