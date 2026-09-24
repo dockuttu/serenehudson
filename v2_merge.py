@@ -174,14 +174,13 @@ HOME_GALLERY = """
 def inject_home_videos(s):
     """Featured WSAZ video first thing on the home page; newest Vimeo video mid-page (shared blocks from site_lib)."""
     if 'id="studio3"' not in s and hasattr(SL, "featured_video_section"):
-        feat = SL.featured_video_section(book_href="https://booking.mangomint.com/serenemedspa?serviceId=322", book_attrs="", pricing_href="/ultherapy/#pricing")
+        feat = SL.featured_video_section(book_href="https://booking.mangomint.com/serenemedspa?serviceId=322", book_attrs="", pricing_href=PREFIX + "/ultherapy/#pricing")
         s = s.replace('<section class="hero">', feat + '<section class="hero">', 1)
     if 'id="latest-video"' not in s and hasattr(SL, "latest_video_section"):
         s = s.replace('<section class="about" id="about">', SL.latest_video_section() + '<section class="about" id="about">', 1)
     return s
 
 def localize_home(s):
-    s = inject_home_videos(s)
     s = re.sub(r'<h1>Glow that looks<br>effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
     s = re.sub(r'<h1>Glow that looks\s*<br>\s*effortlessly you</h1>', '<h1>' + HOME_H1 + '</h1>', s, count=1)
     s = re.sub(r'<p>Botox, dermal fillers, laser skin treatments, and advanced wellness[^<]*</p>', '<p>' + HOME_LEDE + '</p>', s, count=1)
@@ -286,7 +285,7 @@ def main():
                 if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
                 for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
                 if rel == "index.html": s = localize_home(s)
-            s = inject_area_links(s) if rel == "index.html" else inject_guides(s, rel)   # idempotent
+            s = inject_area_links(inject_home_videos(s)) if rel == "index.html" else inject_guides(s, rel)   # idempotent (home videos + area links run even on already-merged pages)
         elif ext == ".css":
             s = prefix_css(s)
             for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
