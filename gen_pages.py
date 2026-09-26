@@ -258,7 +258,7 @@ exec(open("pages_data.py").read())
 PAGES2=[]; PAGES3=[]; PAGES4=[]; PAGES5=[]; PAGES6=[]
 import glob as _glob
 for _f in sorted(_glob.glob("pages_data_new*.py")): exec(open(_f).read())   # auto-load every pages_data_new*.py
-SKIP={"body-contouring"}
+SKIP={"body-contouring","sciton-moxi"}   # MOXI + BBL HEROic are Barboursville-only (Sep 26, 2026)
 byslug={}
 for p in PAGES+PAGES2+PAGES3+PAGES4+PAGES5+PAGES6:  # later definitions override earlier by slug
     byslug[p["slug"]]=p

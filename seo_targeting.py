@@ -42,7 +42,7 @@ PAGES = {'/': ('Med Spa in Hudson, OH | Near Cleveland & Akron | Serene', 'Physi
  '/hormone-optimization/': (None, 'Biote hormone pellet therapy in Hudson, OH, serving Cleveland and Akron, guided by Labcorp panels for hormones, thyroid and vitamins.'),
  '/photofacial/': (None, 'BBL and IPL photofacials in Hudson, OH, serving Cleveland and Akron, to clear sun spots, redness and rosacea-prone skin.'),
  '/microneedling/': (None, 'Microneedling and microneedling with PRP in Hudson, OH, serving Cleveland and Akron, for texture, acne scars and fine lines.'),
- '/laser-skin/': (None, 'CO2, MOXI, Opus Plasma, CoolPeel and PICO laser resurfacing in Hudson, OH, serving Cleveland and Akron. Smooth texture, lines and sun damage.'),
+ '/laser-skin/': (None, 'CO2, Opus Plasma, CoolPeel and PICO laser resurfacing in Hudson, OH, serving Cleveland and Akron. Smooth texture, lines and sun damage.'),
  '/ultherapy/': (None, 'Ultherapy PRIME in Hudson, OH, serving Cleveland and Akron: non-invasive ultrasound lifting for the brow, chin and neck with no downtime.'),
  '/thread-lift/': (None, 'PDO thread lift in Hudson, OH, serving Cleveland and Akron: a non-surgical lift for the jawline, cheeks and brows. Physician-performed.'),
  '/sculptra/': (None, 'Sculptra collagen stimulator in Hudson, OH, serving Cleveland and Akron, for gradual, natural volume. Physician-injected.'),

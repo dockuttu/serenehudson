@@ -5,9 +5,9 @@ PAGES3 = [
 # ===== LASER SKIN RESURFACING (override laser-skin) =====
 {
  "slug":"laser-skin","crumb":"Laser Skin Resurfacing","area_kw":"laser skin resurfacing",
- "title":"Laser Skin Resurfacing in Hudson, OH | CO2, MOXI &amp; More | Serene Med Spa",
- "desc":"Advanced laser skin resurfacing in Hudson, Ohio at Serene Med Spa — CO2, MOXI, Opus Plasma, Cool Peel & PICO Fractional to smooth texture, lines & sun damage. Book today.",
- "ogtitle":"Laser Skin Resurfacing in Hudson, OH","ogdesc":"Smooth texture, fine lines & sun damage with CO2, MOXI, Opus Plasma & PICO resurfacing in Hudson, Ohio.",
+ "title":"Laser Skin Resurfacing in Hudson, OH | CO2, Opus Plasma &amp; More | Serene Med Spa",
+ "desc":"Advanced laser skin resurfacing in Hudson, Ohio at Serene Med Spa — CO2, Opus Plasma, Cool Peel & PICO Fractional to smooth texture, lines & sun damage. Book today.",
+ "ogtitle":"Laser Skin Resurfacing in Hudson, OH","ogdesc":"Smooth texture, fine lines & sun damage with CO2, Opus Plasma, Cool Peel & PICO resurfacing in Hudson, Ohio.",
  "proc_name":"Laser Skin Resurfacing","proc_alt":"Fractional &amp; Ablative Laser Resurfacing",
  "how":"Fractional and non-ablative lasers deliver precise energy to the skin to remove damaged surface layers and stimulate new collagen for smoother, clearer, firmer-looking skin.","body":"Face, Neck, Chest",
  "eyebrow":"Laser Skin Resurfacing &middot; Hudson, OH","h1":"Laser Skin Resurfacing in Hudson, Ohio",
@@ -15,7 +15,7 @@ PAGES3 = [
  "trust":["Physician-Led","Multiple Laser Options","Collagen Renewal","Tailored Downtime"],
  "introh2":"Resurface, renew, and refine",
  "introlead":"Laser resurfacing removes damaged surface skin and jump-starts collagen, so fresh, smoother, more even skin can take its place. With several devices to choose from, we match the treatment to your skin, your goals, and how much downtime fits your life.",
- "intropara":"At Serene Med Spa in Hudson, we offer a full range of resurfacing options — from gentle, no-downtime treatments like MOXI and Cool Peel to deeper resurfacing with Fractional CO2, Opus Plasma, and PICO Fractional. Your physician selects the right device and depth for your skin type and concerns, whether that&rsquo;s fine lines, scarring, texture, or sun damage. A series may be recommended, and individual results vary.",
+ "intropara":"At Serene Med Spa in Hudson, we offer a full range of resurfacing options — from gentle, no-downtime treatments like Cool Peel to deeper resurfacing with Fractional CO2, Opus Plasma, and PICO Fractional. Your physician selects the right device and depth for your skin type and concerns, whether that&rsquo;s fine lines, scarring, texture, or sun damage. A series may be recommended, and individual results vary.",
  "treyebrow":"What It Improves","treh2":"Concerns We Resurface",
  "cards":[
    ("Fine Lines &amp; Wrinkles","Smooth early lines and refresh crepey, aging skin."),
@@ -35,13 +35,13 @@ PAGES3 = [
  "faqh2":"Laser Resurfacing FAQ",
  "faqs":[
    ("How much does CO2 laser resurfacing cost?","At our Hudson office, fractional DEKA CO2 resurfacing is $600 per session and full, maximum-strength CO2 resurfacing is $1,000 per session. A consultation comes first, and a $200 deposit is applied toward your treatment."),
-   ("Which laser is right for me?","It depends on your skin and goals. We offer options from gentle (MOXI, Cool Peel) to deeper (CO2, Opus Plasma, PICO Fractional), and your physician will recommend the best match."),
+   ("Which laser is right for me?","It depends on your skin and goals. We offer options from gentle (Cool Peel) to deeper (CO2, Opus Plasma, PICO Fractional), and your physician will recommend the best match."),
    ("How much downtime is there?","It varies by device — from none to several days of redness and flaking. We&rsquo;ll tell you exactly what to expect before you book."),
    ("How many treatments will I need?","Some resurfacing is a single session; other approaches build best over a series. We&rsquo;ll tailor a plan to your goals."),
    ("Does it hurt?","We numb the skin as needed and keep you comfortable. Most people tolerate treatment well."),
    ("Is it safe for my skin tone?","Suitability varies by skin type and device. Your physician will evaluate your skin and choose the safest, most effective option for you."),
  ],
- "pricing_html":'<section id="co2-pricing">\n  <div class="wrap">\n    <div class="section-head reveal"><div class="eyebrow">Pricing</div><h2>DEKA CO&sup2; Laser Pricing</h2><p>Flat pricing per treatment session at our Hudson office.</p></div>\n    <div class="grid" style="grid-template-columns:repeat(2,1fr)">\n      <div class="card reveal"><div class="ico">&#10022;</div><h3>Fractional Resurfacing</h3><p style="font-size:34px;font-weight:800;color:#0f2f26;margin:6px 0 10px">$600</p><p style="font-size:18px;font-weight:500;color:#1a1a1a">Early lines, texture, tone and mild scarring. About 5&ndash;7 days of downtime. Often done as a series.</p></div>\n      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Resurfacing &mdash; Maximum Strength</h3><p style="font-size:34px;font-weight:800;color:#0f2f26;margin:6px 0 10px">$1,000</p><p style="font-size:18px;font-weight:500;color:#1a1a1a">Deeper wrinkles, significant sun damage and acne scarring. About 7&ndash;14 days of downtime. Many patients need only one.</p></div>\n    </div>\n    <p class="rev-note" style="font-size:17px;font-weight:500;color:#222">Prices are per treatment session. A consultation is required before your first CO&sup2; treatment, and a $200 deposit is applied toward your treatment. Other resurfacing options &mdash; MOXI $500, Cool Peel $400, Opus Plasma $400 &mdash; are listed on our <a href="/pricing/">pricing page</a>.</p>\n  </div>\n</section>',
+ "pricing_html":'<section id="co2-pricing">\n  <div class="wrap">\n    <div class="section-head reveal"><div class="eyebrow">Pricing</div><h2>DEKA CO&sup2; Laser Pricing</h2><p>Flat pricing per treatment session at our Hudson office.</p></div>\n    <div class="grid" style="grid-template-columns:repeat(2,1fr)">\n      <div class="card reveal"><div class="ico">&#10022;</div><h3>Fractional Resurfacing</h3><p style="font-size:34px;font-weight:800;color:#0f2f26;margin:6px 0 10px">$600</p><p style="font-size:18px;font-weight:500;color:#1a1a1a">Early lines, texture, tone and mild scarring. About 5&ndash;7 days of downtime. Often done as a series.</p></div>\n      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Resurfacing &mdash; Maximum Strength</h3><p style="font-size:34px;font-weight:800;color:#0f2f26;margin:6px 0 10px">$1,000</p><p style="font-size:18px;font-weight:500;color:#1a1a1a">Deeper wrinkles, significant sun damage and acne scarring. About 7&ndash;14 days of downtime. Many patients need only one.</p></div>\n    </div>\n    <p class="rev-note" style="font-size:17px;font-weight:500;color:#222">Prices are per treatment session. A consultation is required before your first CO&sup2; treatment, and a $200 deposit is applied toward your treatment. Other resurfacing options &mdash; Cool Peel $400, Opus Plasma $400 &mdash; are listed on our <a href="/pricing/">pricing page</a>.</p>\n  </div>\n</section>',
  "related":["opus-plasma","harmony-bio-boost","morpheus8"],
  "ctah2":"Ready for smoother, renewed skin?",
  "ctapara":"Book a laser resurfacing consultation with our Hudson physicians and get matched to the right treatment.",

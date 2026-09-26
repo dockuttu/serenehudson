@@ -251,7 +251,7 @@ SUBPAGES = {
     "longevity": ["sermorelin", "low-dose-naltrexone", "iv-drip-menu"],
     "chemical-peels": ["acne-treatment"],
     "medical-facials": ["acne-treatment"],
-    "laser-skin": ["sciton-moxi", "coolpeel", "deka-co2-laser", "pico-fractional-resurfacing"],
+    "laser-skin": ["coolpeel", "deka-co2-laser", "pico-fractional-resurfacing"],
     "womens-sexual-wellness": ["v-renew", "vtone", "formav"],
     "mens-sexual-wellness": ["p-renew", "grow-girth", "alma-duo"],
     "alma-duo": ["p-renew", "grow-girth"],

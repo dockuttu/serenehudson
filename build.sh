@@ -80,3 +80,14 @@ python3 abim_badge.py bundle/site
 
 echo "==> Phase 3: prefix + v2 shell (serenemedspas.com/hudson/)"
 python3 v2_merge.py bundle/site
+
+echo "==> Retired pages: MOXI is Barboursville-only (Sep 26, 2026) — keep the old URL working"
+mkdir -p bundle/site/sciton-moxi
+cat > bundle/site/sciton-moxi/index.html <<'HTML'
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>MOXI Laser | Serene Med Spa</title>
+<meta name="robots" content="noindex,follow"><link rel="canonical" href="https://serenemedspas.com/hudson/laser-skin/">
+<meta http-equiv="refresh" content="0; url=/hudson/laser-skin/"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 20px;line-height:1.6">
+<p>MOXI is offered at our <a href="/barboursville/sciton-moxi/">Barboursville, WV office</a>. For laser resurfacing in Hudson, see <a href="/hudson/laser-skin/">Laser Skin Resurfacing in Hudson</a>.</p>
+<script>location.replace("/hudson/laser-skin/");</script></body></html>
+HTML
