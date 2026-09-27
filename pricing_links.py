@@ -70,6 +70,7 @@ RULES = [
     # body & intimate
     (r"^evolvex", ["evolve-x"]),
     (r"^accutite", ["accutite"]),
+    (r"^lumecca", ["lumecca"]),
     (r"^quantumrf", ["quantumrf"]),
     (r"^facetite", ["facetite"]),
     (r"^bodytite", ["bodytite"]),
