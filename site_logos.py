@@ -22,24 +22,27 @@ TECH_RE = re.compile(r'<div class="tech reveal">\s*<div class="tech-label">.*?</
 changed = 0
 for root, dirs, files in os.walk(SITE):
     rel = os.path.relpath(root, SITE)
-    if rel == "lp" or rel.startswith("lp" + os.sep): continue      # ads-only pages stay minimal
+    is_lp = rel == "lp" or rel.startswith("lp" + os.sep)            # ads-only pages: wording fixes only, no logo strips
     for fn in files:
         if not fn.endswith(".html"): continue
         f = os.path.join(root, fn); s = open(f, encoding="utf-8").read(); o = s
-        if 'class="tech reveal"' in s:
+        if not is_lp and 'class="tech reveal"' in s:
             s = TECH_RE.sub(lambda m: TECH_STRIP.strip(), s, count=1)
         pi = s.find('<div class="partners')
-        if pi != -1 and "inmode-morpheus8-verified" not in s[pi:s.find("</div>", pi)]:
+        if not is_lp and pi != -1 and "inmode-morpheus8-verified" not in s[pi:s.find("</div>", pi)]:
             k = s.find('<span title="Allergan Partner Privileges', pi)
             if k != -1 and k < s.find("</div>", pi):
                 s = s[:k] + INMODE_BADGE + s[k:]
-        if "merz-bronze-preferred" in s or "Bronze Preferred" in s:   # ELITE+ replaced Bronze (home_merz.py); keep every page in step
+        if "merz-bronze-preferred" in s or "Bronze" in s:   # ELITE+ replaced Bronze (home_merz.py); keep every page in step
             s = BRONZE_RE.sub(MERZ_NEW, s)
             s = (s.replace("merz-bronze-preferred.png", "merz-elite-plus.png")
                   .replace("Merz Aesthetics Bronze Preferred Partner", "Merz Aesthetics ELITE+ Provider")
-                  .replace("Merz Bronze Preferred Partner", "Merz Aesthetics ELITE+ Provider"))
+                  .replace("Merz Bronze Preferred Partner", "Merz Aesthetics ELITE+ Provider")
+                  .replace("a Merz Bronze preferred practice", "a Merz Aesthetics ELITE+ provider"))
         slug = rel
-        if slug in STATIC_LOGOS and fn == "index.html":
+        if slug.startswith("morpheus8-") and slug not in STATIC_LOGOS:  # city landing pages (e.g. morpheus8-akron-oh)
+            STATIC_LOGOS[slug] = STATIC_LOGOS["morpheus8"]
+        if not is_lp and slug in STATIC_LOGOS and fn == "index.html":
             seal, bd = hero_seal(slug, STATIC_LOGOS), device_badge(slug, STATIC_LOGOS)
             if seal and "hero-seal" not in s and '<div class="svc-hero-media">' in s:
                 s = s.replace('<div class="svc-hero-media">', '<div class="svc-hero-media">' + seal, 1)
