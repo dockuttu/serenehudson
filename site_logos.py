@@ -11,7 +11,7 @@ SITE = sys.argv[1] if len(sys.argv) > 1 else "bundle/site"
 ns = {}
 exec(open("common.py", encoding="utf-8").read(), ns)
 TECH_STRIP, device_badge, hero_seal = ns["TECH_STRIP"], ns["device_badge"], ns["hero_seal"]
-STATIC_LOGOS = {"morpheus8": ["morpheus8", "m8-verified"],
+STATIC_LOGOS = {"morpheus8": ["morpheus8", "morpheus8-burst", "m8-verified"],
                 "botox": ["botox-cosmetic", "app-platinum"], "fillers": ["juvederm", "app-platinum"]}
 MERZ_NEW = ('<a href="/xperience-rewards/" title="Merz Aesthetics ELITE+ Provider"><img src="/img/badges/merz-elite-plus.png" '
             'alt="Merz Aesthetics ELITE+ Provider" class="badge-round" loading="lazy" width="260" height="260"></a>')

@@ -7,7 +7,7 @@ BOOK = MM % 321                      # Free Consultation — default "Book" ever
 BOOK_MAP = {
  "ultherapy": MM % 322,             # Ultherapy Consultation
  "medical-facials": MM % 323,       # Acne Consultation
- "emsculpt-neo": MM % 324, "evolve-x": MM % 324, "bodytite": MM % 324, "facetite": MM % 324,
+ "emsculpt-neo": MM % 324, "evolve-x": MM % 324, "bodytite": MM % 324, "facetite": MM % 324, "quantumrf": MM % 324, "accutite": MM % 324,
  "forma": MM % 324, "liposuction": MM % 324, "lipomelt": MM % 324,   # Body Contouring Consultation
  "mens-sexual-wellness": MM % 325, "womens-sexual-wellness": MM % 325,  # Sexual Wellness Consultation
  "weight-loss": MM % 326,           # Weight Loss Consultation
@@ -46,7 +46,7 @@ CATEGORIES = [
  ]),
  ("Body &amp; Contouring", [
    ("emsculpt-neo","EMSCULPT NEO"), ("evolve-x","EvolveX"), ("bodytite","BodyTite"),
-   ("facetite","FaceTite"), ("forma","Forma Skin Tightening"),
+   ("facetite","FaceTite"), ("accutite","AccuTite"), ("quantumrf","QuantumRF"), ("forma","Forma Skin Tightening"),
    ("liposuction","Liposuction &amp; Fat Transfer"), ("lipomelt","Lipomelt (Red Light)"),
    ("weight-loss","Medical Weight Loss"), ("sculptra-bbl","Sculptra BBL"),
  ]),
@@ -173,7 +173,7 @@ STICKY_BAR = '''<div class="mbar">
 </div>''' % BOOK
 
 exec(open("tech_logos.py").read())  # Alma device logos (tech_strip / device_badge / TECH_CSS)
-TECH_STRIP = tech_strip(["alma","harmony-bio-boost","opus-plasma","alma-ted","alma-duo"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","diamondglow","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner") + tech_strip(["evolvex","empowerrf","morpheus8","morpheus8v","formav"], "InMode &middot; Morpheus8 Verified Provider") + tech_strip(["biote","obagi"], "Hormones &amp; Medical-Grade Skincare")
+TECH_STRIP = tech_strip(["alma","harmony-bio-boost","opus-plasma","alma-ted","alma-duo"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","diamondglow","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner") + tech_strip(["evolvex","ignite","empowerrf","morpheus8","morpheus8-burst","morpheus8v","formav"], "InMode &middot; Morpheus8 Verified Provider") + tech_strip(["biote","obagi"], "Hormones &amp; Medical-Grade Skincare")
 
 PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
