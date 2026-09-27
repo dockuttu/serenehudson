@@ -573,3 +573,6 @@ footer ul a:hover{color:var(--gold)}
 .ep-card li,.ep-card p{font-size:1.06rem;line-height:1.6;color:var(--ink,#2b2330);font-weight:500}
 .ep-fine{font-size:.9rem;color:var(--ink,#2b2330);opacity:.8;line-height:1.55;margin-top:18px}
 /* ---- /Easy Pay ---- */
+/* InMode Morpheus8 Verified Provider seal (hexagon) */
+.svc-hero-media .hero-seal.hex{top:14px;height:150px;box-shadow:none;border-radius:0;object-fit:contain}
+@media(max-width:560px){.svc-hero-media .hero-seal.hex{height:92px;top:10px}}

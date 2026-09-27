@@ -173,13 +173,14 @@ STICKY_BAR = '''<div class="mbar">
 </div>''' % BOOK
 
 exec(open("tech_logos.py").read())  # Alma device logos (tech_strip / device_badge / TECH_CSS)
-TECH_STRIP = tech_strip(["alma","harmony-bio-boost","opus-plasma","alma-ted","alma-duo"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","diamondglow","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner")
+TECH_STRIP = tech_strip(["alma","harmony-bio-boost","opus-plasma","alma-ted","alma-duo"]) + tech_strip(["botox-cosmetic","juvederm","skinvive","kybella","diamondglow","alle"], "Injectables &amp; Skin &middot; Allergan Platinum Partner") + tech_strip(["empowerrf","morpheus8","morpheus8v","formav"], "InMode &middot; Morpheus8 Verified Provider") + tech_strip(["biote","obagi"], "Hormones &amp; Medical-Grade Skincare")
 
 PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/ultherapy/" title="Ultherapy PRIME provider"><img src="/img/badges/ultherapy-prime.png" alt="Ultherapy PRIME provider" class="badge-wide" loading="lazy"></a>
-      <span title="Merz Aesthetics Bronze Preferred Partner"><img src="/img/badges/merz-bronze-preferred.png" alt="Merz Aesthetics Bronze Preferred Partner" class="badge-round" loading="lazy"></span>
+      <a href="/xperience-rewards/" title="Merz Aesthetics ELITE+ Provider"><img src="/img/badges/merz-elite-plus.png" alt="Merz Aesthetics ELITE+ Provider" class="badge-round" loading="lazy" width="260" height="260"></a>
       <a href="/xperience-rewards/" title="Xperience+ Rewards Program"><img src="/img/badges/xperience-plus.png" alt="Xperience+ Rewards Program by Merz Aesthetics" class="badge-xp" loading="lazy"></a>
       <a href="/hormone-optimization/" title="Biote Certified Provider"><img src="/img/badges/biote-certified-provider.webp" alt="Biote Certified Provider" class="badge-round" loading="lazy"></a>
+      <a href="/morpheus8/" title="InMode Morpheus8 Verified Provider"><img src="/img/badges/inmode-morpheus8-verified.png" alt="InMode Morpheus8 Verified Provider" class="badge-round" loading="lazy"></a>
       <span title="Allergan Partner Privileges — Platinum 2026"><img src="/img/badges/allergan-app-platinum-2026.png" alt="Allergan Partner Privileges — Platinum Partner 2026" class="badge-app" loading="lazy"></span>
     </div>'''
 

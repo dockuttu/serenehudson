@@ -54,6 +54,7 @@ python3 inject_meta_pixel.py bundle/site   # Meta pixel 475660982946848
 echo "==> Page guard (nav <-> built pages <-> deep links)"
 python3 easypay_inject.py bundle/site   # Easy Pay band + nav/footer links on every page
 python3 shop_inject.py bundle/site      # cart button (shop.js) + Shop nav/footer links on every page
+python3 site_logos.py bundle/site      # brand/device logo strips + badges on every page (incl. hand-built)
 python3 home_badges.py bundle/site      # Biote badge on the homepage
 python3 tattoo_pricing.py bundle/site   # tattoo size guide + prices + 5+1 offer on /laser-tattoo-removal/
 python3 home_obagi.py bundle/site       # Obagi authorized-provider logo + skincare band on the homepage

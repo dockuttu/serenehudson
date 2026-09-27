@@ -28,7 +28,13 @@ _EMP_ROWS = [
     ("EmpowerRF Complete", _EMP, "Morpheus8V &times;3 + FormaV &times;3 + VTone &times;6 (reg. $6,000)"),
 ]
 _EMP_NOTE = ('Series and EmpowerRF Complete are standing prices and can&rsquo;t be combined with another discount. '
-             'The consultation is private and complimentary. See the full <a href="/pricing/">price list</a>.')
+             'The consultation is private and complimentary. See the full <a href="/pricing/">price list</a>.'
+             '<br>Prefer to prepay? Buy a series online: '
+             '<a href="https://clients.mangomint.com/serenemedspa/packages/27" target="_blank" rel="noopener">Morpheus8V &times;3</a> &middot; '
+             '<a href="https://clients.mangomint.com/serenemedspa/packages/28" target="_blank" rel="noopener">FormaV &times;3</a> &middot; '
+             '<a href="https://clients.mangomint.com/serenemedspa/packages/29" target="_blank" rel="noopener">VTone &times;6</a> &middot; '
+             '<a href="https://clients.mangomint.com/serenemedspa/packages/30" target="_blank" rel="noopener">EmpowerRF Complete</a>. '
+             'We&rsquo;ll still start with your private consultation.')
 _FDA_NOTE = ('VTone is FDA-cleared to treat stress, urge and mixed urinary incontinence in women. FormaV and Morpheus8V are '
              'FDA-cleared radiofrequency devices; they are not FDA-approved for &ldquo;vaginal rejuvenation,&rdquo; and their use '
              'for intimate wellness is physician-directed. Individual results vary.')
