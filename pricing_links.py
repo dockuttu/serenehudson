@@ -44,7 +44,9 @@ RULES = [
     (r"^longevity", ["longevity", "peptides"]),
     (r"^bpc-157|^tb-500|^wolverine|^cjc-1295|^tesamorelin|^ghk-cu|^pt-141|^ipamorelin|^thymosin|^semax|^selank", ["longevity", "peptides"]),  # /peptides/ stays unlinked until LegitScript clears
     # skin & laser
-    (r"^morpheus8|^morpheusv", ["morpheus8"]),
+    (r"^morpheus8v|^morpheusv", ["morpheus8v", "womens-sexual-wellness"]),   # EmpowerRF (Sep 27, 2026)
+    (r"^empowerrf", ["empowerrf", "womens-sexual-wellness"]),
+    (r"^morpheus8", ["morpheus8"]),
     (r"^laser facial", ["laser-facial"]),
     (r"^laser nail fungus", ["laser-nail-fungus"]),
     (r"^depigmentation", ["hyperpigmentation"]),

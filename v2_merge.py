@@ -253,7 +253,8 @@ SUBPAGES = {
     "chemical-peels": ["acne-treatment"],
     "medical-facials": ["acne-treatment"],
     "laser-skin": ["coolpeel", "deka-co2-laser", "pico-fractional-resurfacing"],
-    "womens-sexual-wellness": ["v-renew", "vtone", "formav"],
+    "womens-sexual-wellness": ["empowerrf", "vtone", "formav", "morpheus8v", "v-renew"],
+    "empowerrf": ["vtone", "formav", "morpheus8v"],
     "mens-sexual-wellness": ["p-renew", "grow-girth", "alma-duo"],
     "alma-duo": ["p-renew", "grow-girth"],
 }

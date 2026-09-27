@@ -105,8 +105,10 @@ CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   row("EMSCULPT NEO","$400","/tx")+row("EMSCULPT NEO &mdash; Package of 4","$1,500")))
 
 CATS.append(("Sexual Wellness", sub("Female Wellness")+
-  rowaka("V-Renew PRP","O-Shot&reg;","$800")+row("VTone (Muscle Strengthening)","$350","/tx")+
-  row("MorpheusV (Remodeling)","$800")+row("FormaV (Tightening)","$500")+
+  rowaka("V-Renew PRP","O-Shot&reg;","$800")+row("VTone (Muscle Strengthening)","$350","/tx")+row("VTone &mdash; Series of 6","$1,500")+
+  row("Morpheus8V (Remodeling)","$800")+row("Morpheus8V &mdash; Series of 3","$2,100")+
+  row("FormaV (Tightening)","$500")+row("FormaV &mdash; Series of 3","$1,350")+
+  row("EmpowerRF Complete &mdash; Morpheus8V &times;3, FormaV &times;3, VTone &times;6","$4,200")+
   sub("Male Wellness")+rowaka("P-Renew PRP","P-Shot&reg;","$1,200")+row("Alma Duo","$500","/tx")+row("Grow Girth","$800","/syringe")))
 
 _HIDDEN_PEPTIDES = (("Peptide Therapy", sub("Priced monthly unless noted")+
