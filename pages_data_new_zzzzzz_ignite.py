@@ -64,8 +64,8 @@ def _ign_price(h2):
 _RFAL_FAQS = [
     ("Is it surgery?", "It&rsquo;s a minimally invasive, in-office procedure. A few tiny openings (about the size of a needle stick) are made, and the "
      "area is numbed with local anesthetic. You&rsquo;re awake, and there are no stitches in most cases. It is still a medical procedure with a short recovery."),
-    ("Is this laser lipo?", "No. IgniteRF uses radiofrequency, not a laser. A thin probe under the skin and an electrode on the surface heat the tissue "
-     "between them to a precise, monitored temperature, which firms the skin from underneath."),
+    ("Is this laser lipo?", "No. IgniteRF uses radiofrequency, not a laser. A slim probe placed under the skin delivers energy to a precise, "
+     "monitored temperature, which firms the tissue from underneath."),
     ("Who performs it?", "Our physicians perform every IgniteRF procedure, after an in-person evaluation to confirm you&rsquo;re a good candidate."),
 ]
 
