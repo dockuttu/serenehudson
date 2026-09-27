@@ -71,6 +71,7 @@ RULES = [
     (r"^evolvex", ["evolve-x"]),
     (r"^accutite", ["accutite"]),
     (r"^lumecca", ["lumecca"]),
+    (r"^define", ["define"]),
     (r"^quantumrf", ["quantumrf"]),
     (r"^facetite", ["facetite"]),
     (r"^bodytite", ["bodytite"]),

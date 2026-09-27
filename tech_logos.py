@@ -64,3 +64,9 @@ TECH_CSS = '''
 .svc-hero-media .hero-seal.hex{top:14px;height:150px;box-shadow:none;border-radius:0;object-fit:contain}
 @media(max-width:560px){.svc-hero-media .hero-seal{height:120px;right:12px}.svc-hero-media .hero-seal.hex{height:92px;top:10px}.tech-row{gap:14px 26px}.tech-row img{max-height:30px}.device-badge{flex-wrap:wrap;gap:10px}.device-badge img{max-height:34px}}
 '''
+
+# ---- Define + OptimasMAX (Sep 27, 2026) ----
+LOGO_H.update({"define":34, "define-cheek":17, "define-chin":17, "forma":16})
+LOGO_ALT.update({"define":"Define by InMode", "define-cheek":"Define Cheek by InMode", "define-chin":"Define Chin by InMode", "forma":"Forma by InMode"})
+LOGO_PAGE.update({"define":"/define/", "define-cheek":"/define/", "define-chin":"/define/", "forma":"/forma/", "optimasmax":"/optimasmax/"})
+LOGO_DIM.update({"define":(1136,322), "define-cheek":(871,129), "define-chin":(735,118), "forma":(560,102)})
