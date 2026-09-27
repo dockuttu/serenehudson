@@ -29,6 +29,9 @@ _DEF1_EACH, _DEF1_SAVE = _p("about $167", "about $150"), _p("$195", "$175")
 _DEF2, _DEF26 = _p("$329", "$279"), _p("$1,699", "$1,399")
 _DEF2_EACH, _DEF2_SAVE = _p("about $283", "about $233"), "$275"
 _M8 = "$800"
+# Mangomint packages (sold online): Hudson 34 one zone / 35 chin + cheek; Barboursville 36 one zone / 37 chin + cheek
+_DEF_BUY1 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("34", "36")
+_DEF_BUY2 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("35", "37")
 _LHR_FROM = _p("$59", "$49")
 
 if "HERO_MAP" in globals():
@@ -63,7 +66,10 @@ _DEF_GALLERY = _gal2("Clinical Photos", "Define before &amp; after", [
 ], sid="define-results")
 
 _DEF_NOTE = ('Each session includes Forma. Series are standing prices and can&rsquo;t be combined with another discount; series sessions don&rsquo;t expire. '
-             'The consultation is complimentary. See the full <a href="/pricing/">price list</a>.')
+             'The consultation is complimentary. See the full <a href="/pricing/">price list</a>.'
+             f'<br>Prefer to prepay? Buy the <a href="{_DEF_BUY1}" target="_blank" rel="noopener">one-zone series of 6</a> or the '
+             f'<a href="{_DEF_BUY2}" target="_blank" rel="noopener">chin + cheek series of 6</a> online. '
+             'We&rsquo;ll still start with a short consultation to confirm your zones.')
 _DEF_ROWS = [
     ("Define &mdash; Chin or Cheek", _DEF1 + " / session", "One zone, hands-free, finished with Forma &middot; about 30&ndash;45 minutes"),
     ("Define &mdash; Series of 6 (one zone)", _DEF16, _DEF1_EACH[0].upper() + _DEF1_EACH[1:] + " a session &middot; save " + _DEF1_SAVE),
@@ -117,7 +123,9 @@ _DEF_PAGE = {
  "faqh2":"Define FAQ",
  "faqs":[
    ("How much does Define cost?", _DEF1 + " a session for one zone (chin or cheek) at Serene Med Spa in Hudson, or " + _DEF16 + " for a series of six. "
-    "Both zones are " + _DEF2 + " a session or " + _DEF26 + " for six. Every session includes Forma."),
+    "Both zones are " + _DEF2 + " a session or " + _DEF26 + " for six. Every session includes Forma. "
+    f"You can buy the <a href=\"{_DEF_BUY1}\" target=\"_blank\" rel=\"noopener\">one-zone series</a> or the "
+    f"<a href=\"{_DEF_BUY2}\" target=\"_blank\" rel=\"noopener\">chin + cheek series</a> online."),
    ("How many sessions will I need?", "Most people do six sessions, about a week apart. InMode&rsquo;s protocols range from four to eight, "
     "depending on your skin and goals. We&rsquo;ll recommend a number at your consultation."),
    ("Does it hurt?", "No. You&rsquo;ll feel steady warmth, a bit like a hot stone massage. The system eases off once your skin reaches the "
