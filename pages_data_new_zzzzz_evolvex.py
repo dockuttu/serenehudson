@@ -15,8 +15,10 @@ if "_steps" not in globals():
 if "_price_block" not in globals():
     def _price_block(eyebrow, h2, rows, note=""): return ""
 
-_EVX, _EVX6 = "$250", "$1,350"
-_EVX_BUY = "https://clients.mangomint.com/serenemedspa/packages/31"
+# Hudson $250 / 6 for $1,350 (package 31); Barboursville $149 / 6 for $799 (package 32) — Robin, Sep 27, 2026
+_EVX, _EVX6 = _p("$250", "$149"), _p("$1,350", "$799")
+_EVX_EACH, _EVX_SAVE = _p("$225", "about $133"), _p("$150", "$95")
+_EVX_BUY = "https://clients.mangomint.com/serenemedspa/packages/" + _p("31", "32")
 
 if "HERO_MAP" in globals():
     HERO_MAP["evolve-x"] = "evolvex-card"
@@ -42,11 +44,11 @@ _EVX_NOTE = ('The series is a standing price and can&rsquo;t be combined with an
 
 def _evolvex(p):
     p["crumb"] = "EvolveX"
-    p["title"] = "EvolveX in Hudson, OH | $250 or 6 for $1,350 | Serene"
+    p["title"] = "EvolveX in Hudson, OH | " + _EVX + " or 6 for " + _EVX6 + " | Serene"
     p["desc"] = ("InMode EvolveX body contouring in Hudson, Ohio: hands-free Tite, Tone and Transform to tighten skin, tone muscle "
-                 "and reduce stubborn fat. $250 a session or 6 for $1,350. No downtime.")
+                 "and reduce stubborn fat. " + _EVX + " a session or 6 for " + _EVX6 + ". No downtime.")
     p["ogtitle"] = "EvolveX in Hudson, OH"
-    p["ogdesc"] = "Hands-free body contouring from InMode: tighten skin, tone muscle, reduce stubborn fat. $250, or 6 sessions for $1,350."
+    p["ogdesc"] = "Hands-free body contouring from InMode: tighten skin, tone muscle, reduce stubborn fat. " + _EVX + ", or 6 sessions for " + _EVX6 + "."
     p["proc_name"] = "EvolveX"
     p["proc_alt"] = "InMode EvolveX Tite, Tone and Transform"
     p["how"] = ("EvolveX by InMode uses hands-free applicators that deliver radiofrequency heat to skin and fat (Tite and Transform) "
@@ -54,8 +56,8 @@ def _evolvex(p):
     p["eyebrow"] = "InMode EvolveX &middot; Body Contouring &middot; Hudson, OH"
     p["h1"] = "EvolveX in Hudson, Ohio"
     p["hero"] = ("Hands-free body contouring from InMode. Tite tightens skin, Tone builds muscle, and Transform works on both "
-                 "while reducing stubborn fat. $250 a session, or six for $1,350.")
-    p["trust"] = ["Hands-Free", "No Downtime", "Tite &middot; Tone &middot; Transform", "6 Sessions for $1,350"]
+                 "while reducing stubborn fat. " + _EVX + " a session, or six for " + _EVX6 + ".")
+    p["trust"] = ["Hands-Free", "No Downtime", "Tite &middot; Tone &middot; Transform", "6 Sessions for " + _EVX6]
     p["introh2"] = "Three treatments on one hands-free platform"
     p["introlead"] = ("EvolveX treats the body in layers. Radiofrequency heat works on skin and fat, and electrical muscle stimulation "
                       "works the muscle underneath, so one visit can target more than one concern.")
@@ -83,7 +85,7 @@ def _evolvex(p):
                     "helps, and tell you plainly what it can and can&rsquo;t do.")
     p["faqh2"] = "EvolveX FAQ"
     faqs = [
-        ("How much does EvolveX cost?", "$250 per session at Serene Med Spa in Hudson, or $1,350 for a series of six ($225 a session). "
+        ("How much does EvolveX cost?", _EVX + " per session at Serene Med Spa in Hudson, or " + _EVX6 + " for a series of six (" + _EVX_EACH + " a session). "
          f"You can <a href=\"{_EVX_BUY}\" target=\"_blank\" rel=\"noopener\">buy the series online</a> or at your visit."),
         ("Is EvolveX a weight-loss treatment?", "No. It tightens skin, tones muscle and reduces stubborn fat in targeted areas. It works alongside "
          "healthy habits or a medical weight-loss plan, not in place of them."),
@@ -106,7 +108,7 @@ def _evolvex(p):
     p["ctapara"] = "Book a free EvolveX consultation with our Hudson team, or buy a six-session series online."
     p["pricing_html"] = _EVX_GALLERY + _price_block("Pricing", "EvolveX pricing", [
         ("EvolveX", _EVX + " / session", "Tite, Tone or Transform &middot; 20&ndash;60 minutes"),
-        ("EvolveX &mdash; Series of 6", _EVX6, "$225 a session &middot; save $150"),
+        ("EvolveX &mdash; Series of 6", _EVX6, _EVX_EACH[0].upper() + _EVX_EACH[1:] + " a session &middot; save " + _EVX_SAVE),
         ("Consultation", "Complimentary", "We match the treatment to your goals"),
     ], _EVX_NOTE)
 
