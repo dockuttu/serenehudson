@@ -31,8 +31,8 @@ _EVX_BA = [
     ("evolvex-ba-arm-2", "Upper arm", "Before and after InMode Evolve treatment of the upper arm"),
 ]
 _EVX_GALLERY = ('<section class="results" id="evolvex-results"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">Clinical Photos</div>'
-                '<h2>EvolveX before &amp; after</h2><p>Clinical photos from InMode. The treating physician is named on each photo.</p></div><div class="res-grid">'
-                + "".join(f'<figure class="res reveal"><img loading="lazy" src="/img/{f}.jpg" alt="{alt}"><figcaption>{cap} &mdash; InMode Evolve</figcaption></figure>' for f, cap, alt in _EVX_BA)
+                '<h2>EvolveX before &amp; after</h2><p>Clinical photos from InMode. The treating physician is named on each photo.</p></div><div class="res-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start">'
+                + "".join(f'<figure class="res reveal"><img loading="lazy" src="/img/{f}.jpg" alt="{alt}" style="height:auto;aspect-ratio:auto"><figcaption>{cap} &mdash; InMode Evolve</figcaption></figure>' for f, cap, alt in _EVX_BA)
                 + '</div><p class="rev-note">Photos courtesy of InMode, from other practices. They are not Serene Med Spa patients. Individual results vary.</p></div></section>')
 
 _EVX_NOTE = ('The series is a standing price and can&rsquo;t be combined with another discount. Series sessions don&rsquo;t expire. '
