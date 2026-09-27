@@ -172,19 +172,19 @@ PAGES3 = [
  "ctah2":"Ready to lose the double chin?",
  "ctapara":"Book a Kybella consultation with our Hudson physicians and sculpt beneath the chin — no surgery.",
 },
-# ===== PHOTOFACIAL (BBL/IPL) =====
+# ===== PHOTOFACIAL (IPL) — Hudson uses IPL only; BBL is Barboursville-only (Sep 26, 2026) =====
 {
- "slug":"photofacial","crumb":"Photofacial (BBL &amp; IPL)","area_kw":"BBL and IPL photofacials",
- "title":"Photofacial (BBL &amp; IPL) in Hudson, OH | Sun Damage &amp; Redness | Serene Med Spa",
- "desc":"BBL & IPL photofacials in Hudson, Ohio at Serene Med Spa — clear sun spots, redness, and rosacea-prone skin for a brighter, more even complexion. Book today.",
- "ogtitle":"Photofacial (BBL & IPL) in Hudson, OH","ogdesc":"Clear sun spots, redness & uneven tone with BBL and IPL photofacials in Hudson, Ohio. Book today.",
- "proc_name":"Photofacial","proc_alt":"BBL &amp; IPL Intense Pulsed Light Therapy",
- "how":"Broadband and intense pulsed light target excess pigment and redness in the skin, breaking them up so the body can clear them for a clearer, more even complexion.","body":"Face, Neck, Chest, Hands",
- "eyebrow":"BBL &amp; IPL Photofacial &middot; Hudson, OH","h1":"Photofacials in Hudson, Ohio",
- "hero":"Clear sun spots, redness, and uneven tone for a brighter, more even complexion — with BBL and IPL light therapy, little downtime.",
+ "slug":"photofacial","crumb":"IPL Photofacial","area_kw":"IPL photofacials",
+ "title":"IPL Photofacial in Hudson, OH | Sun Damage &amp; Redness | Serene Med Spa",
+ "desc":"IPL photofacials in Hudson, Ohio at Serene Med Spa — clear sun spots, redness, and rosacea-prone skin for a brighter, more even complexion. Book today.",
+ "ogtitle":"IPL Photofacial in Hudson, OH","ogdesc":"Clear sun spots, redness & uneven tone with IPL photofacials in Hudson, Ohio. Book today.",
+ "proc_name":"Photofacial","proc_alt":"IPL Intense Pulsed Light Therapy",
+ "how":"Intense pulsed light targets excess pigment and redness in the skin, breaking them up so the body can clear them for a clearer, more even complexion.","body":"Face, Neck, Chest, Hands",
+ "eyebrow":"IPL Photofacial &middot; Hudson, OH","h1":"Photofacials in Hudson, Ohio",
+ "hero":"Clear sun spots, redness, and uneven tone for a brighter, more even complexion — with IPL light therapy and little downtime.",
  "trust":["Little Downtime","Sun Damage &amp; Redness","Brighter Tone","Physician-Led"],
  "introh2":"Even, clear, radiant skin",
- "introlead":"A photofacial uses broadband (BBL) or intense pulsed light (IPL) to target the excess pigment and redness that make skin look aged or blotchy — clearing sun spots and calming redness for a brighter, more even complexion.",
+ "introlead":"An IPL photofacial uses intense pulsed light to target the excess pigment and redness that make skin look aged or blotchy — clearing sun spots and calming redness for a brighter, more even complexion.",
  "intropara":"At Serene Med Spa in Hudson, photofacials are a favorite for sun-damaged and redness-prone skin. The light gently targets brown spots and broken-looking capillaries, which fade as your skin clears them over the following days. There&rsquo;s little downtime, a series delivers the best results, and individual results vary.",
  "treyebrow":"What It Treats","treh2":"Concerns We Target",
  "cards":[
@@ -196,7 +196,7 @@ PAGES3 = [
    ("Chest &amp; Hands","Treat sun damage beyond the face, too."),
  ],
  "steps":_steps(
-   "We assess your skin and concerns and confirm a photofacial (BBL or IPL) is the right fit.",
+   "We assess your skin and concerns and confirm an IPL photofacial is the right fit.",
    "The device is passed over the skin, delivering pulses of light with cooling for comfort.",
    "Brown spots may darken briefly then flake away, and redness fades over the following days.",
    "A series spaced a few weeks apart delivers the best results. We&rsquo;ll plan maintenance and sun protection."),
@@ -204,7 +204,7 @@ PAGES3 = [
  "whypara":"Light-based treatments should be matched to your skin type and concerns for safety and results. At Serene, photofacials are physician-supervised and tailored to you, right here in Hudson.",
  "faqh2":"Photofacial FAQ",
  "faqs":[
-   ("What&rsquo;s the difference between BBL and IPL?","Both are light therapies that target pigment and redness; BBL is an advanced broadband platform. We&rsquo;ll choose the best option for your skin and goals."),
+   ("What is IPL?","IPL (intense pulsed light) delivers a broad spectrum of light that is absorbed by brown pigment and redness in the skin. The treated spots darken, then flake away, and redness fades over the following days."),
    ("Is there downtime?","Little — brown spots may darken and flake for a few days, and mild redness can occur. Most people return to their routine right away."),
    ("How many treatments will I need?","A series usually delivers the best results, then periodic maintenance keeps your skin clear. We&rsquo;ll tailor a plan."),
    ("Does it hurt?","Most people describe a quick, warm snap with each pulse. Cooling helps keep treatment comfortable."),

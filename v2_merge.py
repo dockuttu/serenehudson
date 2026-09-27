@@ -195,6 +195,7 @@ V2_FONTS = '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@30
 def swap_shell(s, cssv, jsv):
     s = re.sub(r'<div class="promo"[^>]*>.*?</div>\s*', "", s, count=1, flags=re.S)
     s = re.sub(r'<header\b.*?</header>', lambda m: SL.NAV, s, count=1, flags=re.S)
+    s = re.sub(r'<div class="promo" data-promo="oct-(?!hud")[a-z]+"[^>]*>.*?</div>', "", s, flags=re.S)  # only this office's Oct banner
     s = re.sub(r'<div class="mbar">.*?</div>\s*', "", s, count=1, flags=re.S)
     s = re.sub(r'<footer\b.*?</footer>', lambda m: SL.FOOTER, s, count=1, flags=re.S)
     s = FONTS_RX.sub(V2_FONTS, s)

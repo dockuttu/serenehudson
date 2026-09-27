@@ -40,7 +40,7 @@ CATEGORIES = [
    ("medical-facials","Medical Facials"), ("hyperpigmentation","Hyperpigmentation & Melasma"),
  ]),
  ("Laser", [
-   ("laser-skin","Laser Skin Resurfacing"), ("opus-plasma","Opus Plasma"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","Photofacial (BBL &amp; IPL)"),
+   ("laser-skin","Laser Skin Resurfacing"), ("opus-plasma","Opus Plasma"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","IPL Photofacial"),
    ("laser-hair-removal","Laser Hair Removal"), ("laser-tattoo-removal","Laser Tattoo Removal"),
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),

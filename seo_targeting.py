@@ -40,7 +40,7 @@ PAGES = {'/': ('Med Spa in Hudson, OH | Near Cleveland & Akron | Serene', 'Physi
  '/morpheus8/': (None, 'Morpheus8 RF microneedling in Hudson, OH, serving Cleveland and Akron. Tighten, smooth and resurface face and body skin with physician-led care.'),
  '/weight-loss/': (None, 'Physician-supervised medical weight loss in Hudson, OH, serving Cleveland and Akron: semaglutide and tirzepatide programs with monthly check-ins.'),
  '/hormone-optimization/': (None, 'Biote hormone pellet therapy in Hudson, OH, serving Cleveland and Akron, guided by Labcorp panels for hormones, thyroid and vitamins.'),
- '/photofacial/': (None, 'BBL and IPL photofacials in Hudson, OH, serving Cleveland and Akron, to clear sun spots, redness and rosacea-prone skin.'),
+ '/photofacial/': (None, 'IPL photofacials in Hudson, OH, serving Cleveland and Akron, to clear sun spots, redness and rosacea-prone skin.'),
  '/microneedling/': (None, 'Microneedling and microneedling with PRP in Hudson, OH, serving Cleveland and Akron, for texture, acne scars and fine lines.'),
  '/laser-skin/': (None, 'CO2, Opus Plasma, CoolPeel and PICO laser resurfacing in Hudson, OH, serving Cleveland and Akron. Smooth texture, lines and sun damage.'),
  '/ultherapy/': (None, 'Ultherapy PRIME in Hudson, OH, serving Cleveland and Akron: non-invasive ultrasound lifting for the brow, chin and neck with no downtime.'),
