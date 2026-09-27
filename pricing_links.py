@@ -69,6 +69,10 @@ RULES = [
     (r"^microneedling", ["microneedling"]),
     # body & intimate
     (r"^evolvex", ["evolve-x"]),
+    (r"^accutite", ["accutite"]),
+    (r"^quantumrf", ["quantumrf"]),
+    (r"^facetite", ["facetite"]),
+    (r"^bodytite", ["bodytite"]),
     (r"^emsculpt", ["emsculpt-neo"]),
     (r"^v-renew", ["v-renew", "womens-sexual-wellness"]),
     (r"^vtone", ["vtone", "womens-sexual-wellness"]),
