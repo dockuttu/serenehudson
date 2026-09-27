@@ -71,7 +71,7 @@ _RFAL_FAQS = [
 
 def _bodytite(p):
     p["crumb"] = "BodyTite"
-    p["title"] = "BodyTite in Hudson, OH | From $4,000 per Area | Serene"
+    p["title"] = "BodyTite in Hudson, OH | From $4,000 | Serene"
     p["desc"] = ("BodyTite in Hudson, Ohio: minimally invasive radiofrequency contouring that firms loose skin and reduces stubborn fat under "
                  "local anesthesia. From " + _BT + " per area. Physician-performed.")
     p["ogtitle"] = "BodyTite in Hudson, OH"
