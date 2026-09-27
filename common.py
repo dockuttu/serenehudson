@@ -45,7 +45,7 @@ CATEGORIES = [
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),
  ("Body &amp; Contouring", [
-   ("emsculpt-neo","EMSCULPT NEO"), ("evolve-x","Evolve X"), ("bodytite","BodyTite"),
+   ("emsculpt-neo","EMSCULPT NEO"), ("evolve-x","EvolveX"), ("bodytite","BodyTite"),
    ("facetite","FaceTite"), ("forma","Forma Skin Tightening"),
    ("liposuction","Liposuction &amp; Fat Transfer"), ("lipomelt","Lipomelt (Red Light)"),
    ("weight-loss","Medical Weight Loss"), ("sculptra-bbl","Sculptra BBL"),
