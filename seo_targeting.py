@@ -52,5 +52,12 @@ PAGES = {'/': ('Med Spa in Hudson, OH | Near Cleveland & Akron | Serene', 'Physi
  '/aftercare/dermal-filler/': (None, 'Dermal filler aftercare from Serene Med Spa Hudson: swelling and bruising tips, activities to avoid, and warning signs that need a call.'),
  '/aftercare/o-shot/': (None, 'O-Shot aftercare from Serene Med Spa Hudson: comfort tips, activity guidance, what is normal after treatment and when to contact us.')}
 
+# ---- Define + OptimasMAX + Forma (Sep 28, 2026) ----
+PAGES.update({
+ '/define/': ('Define by InMode in Hudson, OH | Jawline Contouring | Serene', 'Define by InMode in Hudson, OH, serving Cleveland and Akron: hands-free RF contouring for the jawline, jowls and double chin, finished with Forma. $199 or 6 for $999.'),
+ '/optimasmax/': (None, 'InMode OptimasMAX in Hudson, OH, serving Cleveland and Akron: Lumecca Peak IPL, Morpheus8 Burst, Forma and DiolazeXL / Fusion laser hair removal on one platform.'),
+ '/forma/': (None, 'Forma radiofrequency skin tightening in Hudson, OH, serving Cleveland and Akron. Firms the face and neck with no downtime, and finishes every Define session.'),
+})
+
 if __name__ == "__main__":
     run(PAGES)

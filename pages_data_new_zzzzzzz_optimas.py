@@ -71,7 +71,7 @@ _LUM_PAGE = {
  "hero":"InMode&rsquo;s most powerful IPL for sun spots, freckles, redness and rosacea, with a cooled tip for comfort. Many people see a clear difference after one or two sessions. $400 full face, or three for $1,050.",
  "trust":["Little Downtime","Cooled Tip","Results in 1&ndash;2 Sessions","3 for $1,050"],
  "introh2":"More peak power, fewer sessions",
- "introlead":"Lumecca Peak is the newest IPL on our InMode OptimasMAX. Its higher peak power clears pigment and redness efficiently, so many people need fewer sessions than with older IPL devices.",
+ "introlead":"Lumecca Peak is the newest IPL on our InMode <a href=\"/optimasmax/\">OptimasMAX</a>. Its higher peak power clears pigment and redness efficiently, so many people need fewer sessions than with older IPL devices.",
  "intropara":"At Serene Med Spa in Hudson, Lumecca Peak treats brown spots, freckles, sun damage, redness, rosacea and small facial vessels on the face, neck, chest, hands and arms. A full-face session takes about 20 to 30 minutes. Lumecca is for skin that isn&rsquo;t tanned and suits light to olive skin tones; for deeper skin tones we&rsquo;ll recommend a safer option. For texture and firmness we often pair it with Morpheus8 or Forma. Results vary from person to person.",
  "treyebrow":"What It Treats","treh2":"Common Concerns",
  "cards":[
@@ -99,7 +99,7 @@ _LUM_PAGE = {
    ("Who is not a good candidate?","Lumecca isn&rsquo;t used on tanned skin or on deeper skin tones (skin types V and VI). It&rsquo;s also not ideal for melasma, where results are unpredictable. We&rsquo;ll recommend another option if IPL isn&rsquo;t right for you."),
    ("Can it treat leg veins?","Leg veins respond better to sclerotherapy, which we also offer. Lumecca is best for facial redness and small facial vessels."),
  ],
- "related":["morpheus8","forma","photofacial"],
+ "related":["optimasmax","morpheus8","forma"],
  "pricing_html":_LUM_GALLERY + _price_block("Pricing","Lumecca Peak pricing",_LUM_ROWS,_LUM_NOTE),
  "ctah2":"Ready for clearer, more even skin?","ctapara":"Book a Lumecca Peak photofacial with our Hudson team, or buy a series of three online.",
 }
@@ -108,7 +108,7 @@ if not any(pg.get("slug") == "lumecca" for pg in PAGES6):
 
 _FUSION_SECTION = ('<section class="tint-blush" id="optimasmax-hair"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">InMode OptimasMAX</div>'
     '<h2>DiolazeXL and Fusion Light / Fusion Dark</h2>'
-    '<p>Our InMode OptimasMAX adds two hair-removal technologies. DiolazeXL is a fast diode laser with a large, cooled tip for bigger areas. Fusion uses two '
+    '<p>Our InMode <a href="/optimasmax/">OptimasMAX</a> adds two hair-removal technologies. DiolazeXL is a fast diode laser with a large, cooled tip for bigger areas. Fusion uses two '
     'wavelengths with a continuously cooled tip: Fusion Light for fair to medium skin, and Fusion Dark for coarse hair on deeper skin tones. '
     'Together they let us treat every skin type comfortably. Most people need a series of treatments for long-term hair reduction.</p></div>'
     '<div class="res-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start">'
@@ -127,7 +127,7 @@ def _photofacial(p):
     p["pricing_html"] = _LUM_GALLERY + _price_block("Pricing", "Photofacial pricing", _p(_LUM_ROWS, _LUM_ROWS_BV), _LUM_NOTE)
 
 def _lhr(p):
-    add = (" Our InMode OptimasMAX adds DiolazeXL and Fusion Light / Fusion Dark, so we can treat fair, olive and deeper skin tones with the right technology for each.")
+    add = (" Our InMode <a href=\"/optimasmax/\">OptimasMAX</a> adds DiolazeXL and Fusion Light / Fusion Dark, so we can treat fair, olive and deeper skin tones with the right technology for each.")
     if "OptimasMAX" not in p.get("intropara", ""):
         p["intropara"] = p.get("intropara", "") + add
     p["pricing_html"] = _FUSION_SECTION + p.get("pricing_html", "")
