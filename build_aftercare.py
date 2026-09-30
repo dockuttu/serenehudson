@@ -26,7 +26,10 @@ NAV, FOOTER, BOOK, LOGO = ns["NAV"], ns["FOOTER"], ns["BOOK"], ns["LOGO"]
 SCRIPTS, STICKY_BAR = ns["SCRIPTS"], ns["STICKY_BAR"]
 CONSULT_SECTION = ns["CONSULT_SECTION"]
 S = ns["CITY_SITE"]
-PAGES = ns["AFTERCARE_PAGES"]
+# Barboursville-only devices (Sep 26, 2026): no Hudson aftercare page; /aftercare/moxi/ and /aftercare/bbl-hero/
+# 301 to /hudson/aftercare/ via serenemain gen_site.REDIRECTS (_redirects.map).
+HUDSON_EXCLUDE = {"moxi", "bbl-hero"}
+PAGES = [p for p in ns["AFTERCARE_PAGES"] if p["slug"] not in HUDSON_EXCLUDE]
 
 LOC = S["loc_short"]
 BASE = S["base"]
@@ -35,7 +38,7 @@ PHONE, TEL = S["phone"], S["tel"]
 # treatment -> menu group (hub page filter)
 GROUPS = [
  ("Injectables", ["botox", "dermal-filler", "sculptra", "pdo-threads"]),
- ("Skin &amp; Laser", ["co2-laser", "morpheus8", "opus-plasma", "moxi", "bbl-hero",
+ ("Skin &amp; Laser", ["co2-laser", "morpheus8", "opus-plasma",
                        "pico-resurfacing", "hydrafacial", "chemical-peel", "forma"]),
  ("Laser Removal", ["laser-hair-removal", "tattoo-removal", "laser-toenail-fungus", "waxing"]),
  ("Wellness &amp; Intimate Health", ["hormone-pellets", "alma-duo", "o-shot", "p-shot", "vtone"]),
