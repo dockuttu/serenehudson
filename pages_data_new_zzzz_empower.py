@@ -144,7 +144,7 @@ _EMP_PAGES = [
    ("What is the downtime?","Very little. Avoid intimacy, hot baths and hot tubs for two to three days. Most women return to work the same or next day."),
    ("How many sessions will I need?","Usually three, four to six weeks apart. Some women need one or two; your physician decides based on how your tissue responds."),
    ("How is Morpheus8V different from FormaV?","FormaV is gentle, even warmth with no downtime. Morpheus8V adds micro-needles to place radiofrequency deeper, for more pronounced laxity. They are often combined."),
-   ("Is Morpheus8V FDA-approved for vaginal rejuvenation?","No. Morpheus8V is an FDA-cleared radiofrequency device, and the FDA has cautioned that no energy-based device is approved for intimate or sexual-wellness indications. Its use for intimate wellness is physician-directed, and we&rsquo;ll be candid about expected results."),
+   ("Is Morpheus8V FDA-approved for intimate wellness?","No. Morpheus8V is an FDA-cleared radiofrequency device, and the FDA has cautioned that no energy-based device is approved for intimate or sexual-wellness indications. Its use for intimate wellness is physician-directed, and we&rsquo;ll be candid about expected results."),
    ("Who shouldn&rsquo;t have Morpheus8V?","Anyone pregnant, with a pacemaker or implanted electrical device, an active infection or herpes outbreak in the area, or cancer in the treatment area. Your physician screens for these."),
  ],
  "related":["empowerrf","formav","vtone"],
