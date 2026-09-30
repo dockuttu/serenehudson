@@ -161,7 +161,7 @@ def _patch(slug, fn):
             fn(_pg)
 
 def _vtone(p):
-    p["title"] = "VTone in Hudson, OH | FDA-Cleared for Bladder Leakage | Serene"
+    p["title"] = "VTone Pelvic Floor Treatment in Hudson, OH | Serene"
     p["desc"] = ("VTone in Hudson, Ohio: FDA-cleared electrical muscle stimulation for stress, urge and mixed urinary incontinence in women. "
                  "$350 a session or 6 for $1,500. Painless, no downtime.")
     p["ogdesc"] = "FDA-cleared for bladder leakage in women. Thirty painless minutes, no downtime. $350, or 6 sessions for $1,500."
