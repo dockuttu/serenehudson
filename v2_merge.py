@@ -229,7 +229,7 @@ LINKS_CSS = """
 def inject_guides(s, rel):
     """Office treatment page -> 'From our treatment guides' links back to the main-site articles (LOCAL_MAP reversed)."""
     slug = rel.split("/")[0]
-    g = GUIDES.get(slug)
+    g = [x for x in GUIDES.get(slug, []) if x.get("only") in (None, OFFICE)]   # skip other-office-only device guides (MOXI, BBL HEROic)
     if not g or "guides-block" in s or rel == "index.html": return s
     name = re.search(r"<h1[^>]*>(.*?)</h1>", s, re.S)
     name = re.sub(r"<[^>]+>|\s+", " ", name.group(1)).strip() if name else slug.replace("-", " ")

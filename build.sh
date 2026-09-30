@@ -92,3 +92,24 @@ cat > bundle/site/sciton-moxi/index.html <<'HTML'
 <p>MOXI is offered at our <a href="/barboursville/sciton-moxi/">Barboursville, WV office</a>. For laser resurfacing in Hudson, see <a href="/hudson/laser-skin/">Laser Skin Resurfacing in Hudson</a>.</p>
 <script>location.replace("/hudson/laser-skin/");</script></body></html>
 HTML
+
+# MOXI + BBL HEROic aftercare pages are Barboursville-only too (build_aftercare.py HUDSON_EXCLUDE); the old URLs 301 via
+# serenemain _redirects.map. Stubs keep the tracked bundle/site copies out of the sitemap (noindex) if the map is ever bypassed.
+mkdir -p bundle/site/aftercare/moxi
+cat > bundle/site/aftercare/moxi/index.html <<'HTML'
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>MOXI Aftercare | Serene Med Spa</title>
+<meta name="robots" content="noindex,follow"><link rel="canonical" href="https://serenemedspas.com/hudson/aftercare/">
+<meta http-equiv="refresh" content="0; url=/hudson/aftercare/"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 20px;line-height:1.6">
+<p>MOXI is offered at our <a href="/barboursville/aftercare/moxi/">Barboursville, WV office</a>. See all Hudson post-care guides at <a href="/hudson/aftercare/">Aftercare</a>.</p>
+<script>location.replace("/hudson/aftercare/");</script></body></html>
+HTML
+mkdir -p bundle/site/aftercare/bbl-hero
+cat > bundle/site/aftercare/bbl-hero/index.html <<'HTML'
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>BBL HERO Aftercare | Serene Med Spa</title>
+<meta name="robots" content="noindex,follow"><link rel="canonical" href="https://serenemedspas.com/hudson/aftercare/">
+<meta http-equiv="refresh" content="0; url=/hudson/aftercare/"><meta name="viewport" content="width=device-width,initial-scale=1"></head>
+<body style="font-family:system-ui,sans-serif;max-width:640px;margin:60px auto;padding:0 20px;line-height:1.6">
+<p>BBL HERO is offered at our <a href="/barboursville/aftercare/bbl-hero/">Barboursville, WV office</a>. See all Hudson post-care guides at <a href="/hudson/aftercare/">Aftercare</a>.</p>
+<script>location.replace("/hudson/aftercare/");</script></body></html>
+HTML
