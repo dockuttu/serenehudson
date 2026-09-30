@@ -36,7 +36,7 @@ _GAP_PAGES = [
 # ============================================================ 1. BOTOX ADD-ONS ============================================================
 {
  "slug":"hyperhidrosis-treatment","crumb":"Hyperhidrosis","area_kw":"hyperhidrosis (excessive sweating) treatment",
- "title":"Hyperhidrosis Treatment in Hudson, OH | Botox for Sweating | Serene",
+ "title":"Hyperhidrosis Treatment in Hudson, OH | Serene Med Spa",
  "desc":"Stop excessive underarm, hand or scalp sweating for 4-6 months with Botox at Serene Med Spa in Hudson, Ohio. $400 per treatment, physician-injected. Morpheus8 option for longer-term results.",
  "ogtitle":"Hyperhidrosis (Excessive Sweating) Treatment in Hudson, OH","ogdesc":"Botox for underarm, palm and scalp sweating — dry for 4 to 6 months. $400, physician-injected.",
  "proc_name":"Botox for Hyperhidrosis","proc_alt":"Botulinum toxin injections for axillary and palmar hyperhidrosis",
@@ -162,7 +162,7 @@ _GAP_PAGES = [
 },
 {
  "slug":"shoulder-slimming-botox","crumb":"Shoulder Slimming Botox","area_kw":"trapezius (shoulder slimming) Botox",
- "title":"Shoulder Slimming Botox in Hudson, OH | Trap Botox %s/unit | Serene" % _BOTOX_UNIT,
+ "title":"Trap Botox (Shoulder Slimming) in Hudson, OH | %s/unit" % _BOTOX_UNIT,
  "desc":"Trapezius (shoulder slimming) Botox in Hudson, Ohio: relax bulky traps for a longer neck, softer shoulder line and less tension. %s per unit, physician-injected." % _BOTOX_UNIT,
  "ogtitle":"Shoulder Slimming (Trap) Botox in Hudson, OH","ogdesc":"Relax overworked trapezius muscles for a slimmer shoulder line and less neck tension. %s per unit." % _BOTOX_UNIT,
  "proc_name":"Trapezius Botox","proc_alt":"Botulinum toxin injections to the upper trapezius for shoulder slimming and tension relief",
@@ -206,7 +206,7 @@ _GAP_PAGES = [
 # ============================================================ 2. HORMONES ============================================================
 {
  "slug":"hormone-therapy-women","crumb":"Hormone Therapy for Women","area_kw":"bioidentical hormone therapy for women",
- "title":"Hormone Therapy for Women in Hudson, OH | Bi&ouml;te %s | Serene" % _p("$450", "$405"),
+ "title":"Women&rsquo;s Hormone Therapy in Hudson, OH | Bi&ouml;te %s" % _p("$450", "$405"),
  "desc":"Bioidentical hormone pellet therapy for women in Hudson, Ohio: relief from hot flashes, low energy, weight gain, sleep and mood changes. Certified Bi&ouml;te providers, %s per insertion, physician-led." % _p("$450", "$405"),
  "ogtitle":"Bioidentical Hormone Therapy for Women in Hudson, OH","ogdesc":"Bi&ouml;te pellet therapy for perimenopause and menopause symptoms — energy, sleep, mood, weight, libido. Physician-led.",
  "proc_name":"Bioidentical Hormone Pellet Therapy for Women","proc_alt":"Bi&ouml;te subcutaneous estradiol and testosterone pellet therapy",
@@ -294,7 +294,7 @@ _GAP_PAGES = [
 # ============================================================ 3. IV DRIPS & INJECTIONS ============================================================
 {
  "slug":"iv-drip-menu","crumb":"IV Drip Menu","area_kw":"IV vitamin drips",
- "title":"IV Drip Menu in Hudson, OH | Vitamin Infusions from %s | Serene" % _IV,
+ "title":"IV Drip Menu in Hudson, OH | Infusions from %s | Serene" % _IV,
  "desc":"Serene's IV drip menu in Hudson, Ohio: Myer's Cocktail, Immune Armor, Beauty Glow, Quench+, Brain Boost, NAD+ and Niagen infusions, %s each with add-ons from $25. Physician-formulated." % _IV,
  "ogtitle":"IV Drip Menu in Hudson, OH","ogdesc":"Nine physician-formulated vitamin drips at %s each, plus NAD+ and Niagen infusions. Add-ons from $25." % _IV,
  "proc_name":"IV Vitamin Infusion","proc_alt":"Intravenous micronutrient therapy",
@@ -336,7 +336,7 @@ _GAP_PAGES = [
 },
 {
  "slug":"vitamin-injections","crumb":"Vitamin &amp; Lipo Shots","area_kw":"vitamin B12 and lipo injections",
- "title":"Vitamin B12 &amp; Lipo Injections in Hudson, OH | $25 Shots | Serene",
+ "title":"B12 &amp; Vitamin Injections in Hudson, OH | Serene",
  "desc":"Two-minute vitamin shots in Hudson, Ohio: B12, Lipo-B (MIC + B12), amino blend and NAD+ injections from $25, or a Lipo Shot Pack of five for $99. Walk-in friendly, physician-formulated.",
  "ogtitle":"Vitamin B12 &amp; Lipo Injections in Hudson, OH","ogdesc":"B12, Lipo-B, amino blend and NAD+ shots from $25. Lipo Shot Pack of 5 for $99.",
  "proc_name":"Vitamin Injections","proc_alt":"Intramuscular vitamin B12, lipotropic (MIC) and NAD+ injections",
@@ -508,7 +508,7 @@ _GAP_PAGES = [
 },
 {
  "slug":"radiesse","crumb":"Radiesse","area_kw":"Radiesse filler",
- "title":"Radiesse in Hudson, OH | Collagen-Stimulating Filler $500 | Serene",
+ "title":"Radiesse Filler in Hudson, OH | $500 | Serene Med Spa",
  "desc":"Radiesse in Hudson, Ohio: a calcium-based filler that lifts jawline, cheeks, hands and neck lines while stimulating your own collagen. $500 per syringe, physician-injected.",
  "ogtitle":"Radiesse Filler in Hudson, OH","ogdesc":"Structure now, collagen later. Radiesse for jawline, cheeks, hands and neck lines — $500 per syringe.",
  "proc_name":"Radiesse Dermal Filler","proc_alt":"Calcium hydroxylapatite (CaHA) filler injections",
@@ -550,7 +550,7 @@ _GAP_PAGES = [
 },
 {
  "slug":"hand-filler","crumb":"Hand Filler","area_kw":"hand rejuvenation filler",
- "title":"Hand Filler in Hudson, OH | Rejuvenation $500/Syringe | Serene",
+ "title":"Hand Filler in Hudson, OH | $500/Syringe | Serene",
  "desc":"Hand rejuvenation in Hudson, Ohio: Radiesse or hyaluronic filler to restore volume over tendons and veins, plus laser for sun spots. $500 per syringe, physician-injected, results in one visit.",
  "ogtitle":"Hand Filler &amp; Hand Rejuvenation in Hudson, OH","ogdesc":"Soften bony, veiny hands in one visit. Radiesse or hyaluronic filler, $500 per syringe.",
  "proc_name":"Hand Rejuvenation with Dermal Filler","proc_alt":"Dorsal hand augmentation with Radiesse or hyaluronic acid filler",
@@ -592,7 +592,7 @@ _GAP_PAGES = [
 },
 {
  "slug":"filler-dissolver","crumb":"Filler Dissolver","area_kw":"filler dissolving with hyaluronidase",
- "title":"Filler Dissolver in Hudson, OH | Hyaluronidase $150+ | Serene",
+ "title":"Filler Dissolver in Hudson, OH | From $150 | Serene",
  "desc":"Dissolve unwanted or migrated hyaluronic acid filler in Hudson, Ohio with hyaluronidase. Physician-injected, results in 24-48 hours, from $150. Fix overfilled lips, lumps and old filler.",
  "ogtitle":"Filler Dissolver (Hyaluronidase) in Hudson, OH","ogdesc":"Undo overfilled lips, migration and lumps in 24-48 hours. Physician-injected hyaluronidase from $150.",
  "proc_name":"Filler Dissolving","proc_alt":"Hyaluronidase injection to dissolve hyaluronic acid filler",
@@ -769,7 +769,7 @@ else:
 },
 {
  "slug":"deka-co2-laser","crumb":"Deka CO&sup2; Laser","area_kw":"CO2 laser resurfacing",
- "title":"Deka CO&sup2; Laser in Hudson, OH | Resurfacing from $600 | Serene",
+ "title":"CO&sup2; Laser Resurfacing in Hudson, OH | Serene Med Spa",
  "desc":"Deka CO2 laser resurfacing in Hudson, Ohio for deep wrinkles, acne scars and sun damage. Fractional $600, full-strength $1,000, physician-led, with numbing and comfort medication.",
  "ogtitle":"Deka CO&sup2; Laser Resurfacing in Hudson, OH","ogdesc":"The gold standard for etched lines, acne scars and sun damage. Fractional $600, full resurfacing $1,000.",
  "proc_name":"CO&sup2; Laser Skin Resurfacing","proc_alt":"Fractional and fully ablative carbon-dioxide laser resurfacing (Deka SmartXide Tetra)",
@@ -815,7 +815,7 @@ else:
 _GAP_PAGES += [
 {
  "slug":"v-renew","crumb":"V-Renew PRP","area_kw":"V-Renew PRP intimate rejuvenation",
- "title":"V-Renew PRP in Hudson, OH | Intimate Rejuvenation $800 | Serene",
+ "title":"V-Renew PRP in Hudson, OH | $800 | Serene Med Spa",
  "desc":"V-Renew PRP in Hudson, Ohio: your own platelet-rich plasma injected to improve sensation, arousal, lubrication and mild urinary leakage. $800, physician-performed, no downtime.",
  "ogtitle":"V-Renew PRP Intimate Rejuvenation in Hudson, OH","ogdesc":"PRP for sensation, arousal, lubrication and mild leakage — your own growth factors, no downtime. $800.",
  "proc_name":"V-Renew PRP","proc_alt":"Platelet-rich plasma injection for female sexual wellness (O-Shot&reg;-type procedure)",
@@ -857,7 +857,7 @@ _GAP_PAGES += [
 },
 {
  "slug":"vtone","crumb":"VTone","area_kw":"VTone pelvic floor strengthening",
- "title":"VTone in Hudson, OH | Pelvic Floor Strengthening $350 | Serene",
+ "title":"VTone Pelvic Floor Treatment in Hudson, OH | Serene",
  "desc":"VTone in Hudson, Ohio: gentle electrical muscle stimulation that strengthens the pelvic floor to reduce leakage and improve intimate wellness. $350 per session, painless, no downtime.",
  "ogtitle":"VTone Pelvic Floor Strengthening in Hudson, OH","ogdesc":"Thousands of perfect Kegels in 30 minutes. VTone for bladder control and pelvic strength, $350 per session.",
  "proc_name":"VTone Pelvic Floor Therapy","proc_alt":"Intravaginal electrical muscle stimulation (InMode EmpowerRF VTone)",
@@ -941,7 +941,7 @@ _GAP_PAGES += [
 },
 {
  "slug":"p-renew","crumb":"P-Renew PRP","area_kw":"P-Renew PRP for men",
- "title":"P-Renew PRP in Hudson, OH | Men&rsquo;s PRP Therapy $1,200 | Serene",
+ "title":"P-Renew PRP for Men in Hudson, OH | Serene Med Spa",
  "desc":"P-Renew PRP for men in Hudson, Ohio: your own platelet-rich plasma to improve erectile function, sensation and blood flow. $1,200, physician-performed, minimal downtime. Pairs with Alma Duo.",
  "ogtitle":"P-Renew PRP for Men in Hudson, OH","ogdesc":"Growth factors from your own blood for firmer erections and better sensation. Physician-performed, $1,200.",
  "proc_name":"P-Renew PRP","proc_alt":"Platelet-rich plasma injection for male sexual wellness (P-Shot&reg;-type procedure)",

@@ -61,7 +61,7 @@ _LUM_ROWS_BV = _LUM_ROWS + [("Sciton BBL Heroic Photofacial", "$400 / session", 
 
 _LUM_PAGE = {
  "slug":"lumecca","crumb":"Lumecca Peak","area_kw":"Lumecca Peak IPL photofacial",
- "title":"Lumecca Peak IPL in Hudson, OH | $400 or 3 for $1,050 | Serene",
+ "title":"Lumecca IPL Photofacial in Hudson, OH | Serene",
  "desc":"Lumecca Peak IPL in Hudson, Ohio: InMode's high-power photofacial for sun spots, freckles, redness, rosacea and small facial vessels. $400 full face or 3 for $1,050. Little downtime.",
  "ogtitle":"Lumecca Peak IPL in Hudson, OH","ogdesc":"Clear sun spots and redness, often in 1&ndash;2 sessions. $400 full face, or a series of 3 for $1,050.",
  "proc_name":"Lumecca Peak IPL","proc_alt":"Intense pulsed light (IPL) photorejuvenation, InMode OptimasMAX",

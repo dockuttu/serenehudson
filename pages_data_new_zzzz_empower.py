@@ -66,7 +66,7 @@ _EMP_PAGES = [
 # ============================================================ EmpowerRF hub ============================================================
 {
  "slug":"empowerrf","crumb":"EmpowerRF","area_kw":"EmpowerRF women's wellness",
- "title":"EmpowerRF in Hudson, OH | Morpheus8V, FormaV &amp; VTone | Serene",
+ "title":"EmpowerRF Intimate Wellness in Hudson, OH | Serene",
  "desc":"EmpowerRF women's wellness in Hudson, Ohio: Morpheus8V, FormaV and VTone on one InMode platform. Non-surgical, non-hormonal. Private, complimentary consultation.",
  "ogtitle":"EmpowerRF Women's Wellness in Hudson, OH","ogdesc":"Morpheus8V, FormaV and VTone: non-surgical, non-hormonal care for bladder leakage, comfort and confidence. Series from $1,350.",
  "proc_name":"EmpowerRF Women's Wellness","proc_alt":"InMode EmpowerRF platform: Morpheus8V fractional radiofrequency, FormaV radiofrequency and VTone pelvic-floor electrical muscle stimulation",
