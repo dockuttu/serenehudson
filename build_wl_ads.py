@@ -59,7 +59,10 @@ if i > -1:
 
 # safety net — any remaining drug names anywhere in the page
 DRUGS = r"(?i)\b(semaglutide|tirzepatide|wegovy|zepbound|ozempic|mounjaro|liraglutide|saxenda|glp-?1)\b(\s*&reg;)?"
-s = re.sub(DRUGS, "physician-prescribed treatment", s)
+# text nodes + descriptive attributes only — never href/src (a rewritten URL 404s, e.g. the blog GLP-1 post link)
+_ATTR = re.compile(r'(\b(?:alt|title|content|placeholder|aria-label)=")([^"]*)(")', re.I)
+_fix = lambda t: re.sub(DRUGS, "physician-prescribed treatment", t)
+s = "".join(_ATTR.sub(lambda m: m.group(1) + _fix(m.group(2)) + m.group(3), p) if p.startswith("<") else _fix(p) for p in re.split(r"(<[^>]+>)", s))
 
 # --- URL / indexing -----------------------------------------------------------
 s = s.replace(host + "/weight-loss/", host + "/medical-weight-loss/")
