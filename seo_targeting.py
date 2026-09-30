@@ -54,8 +54,8 @@ PAGES = {'/': ('Med Spa in Hudson, OH | Near Cleveland & Akron | Serene', 'Physi
 
 # ---- Define + OptimasMAX + Forma (Sep 28, 2026) ----
 PAGES.update({
- '/define/': ('Define by InMode in Hudson, OH | Jawline Contouring | Serene', 'Define by InMode in Hudson, OH, serving Cleveland and Akron: hands-free RF contouring for the jawline, jowls and double chin, finished with Forma. $199 or 6 for $999.'),
- '/optimasmax/': (None, 'InMode OptimasMAX in Hudson, OH, serving Cleveland and Akron: Lumecca Peak IPL, Morpheus8 Burst, Forma and DiolazeXL / Fusion laser hair removal on one platform.'),
+ '/define/': ('Define by InMode in Hudson, OH | Jawline Contouring | Serene', 'Define by InMode in Hudson, OH, near Cleveland and Akron: hands-free RF contouring for the jawline, jowls and double chin. $199 or 6 for $999.'),
+ '/optimasmax/': (None, 'InMode OptimasMAX in Hudson, OH: Lumecca IPL for sun spots and redness, Morpheus8 Burst, Forma and long-term hair reduction with DiolazeXL.'),
  '/forma/': (None, 'Forma radiofrequency skin tightening in Hudson, OH, serving Cleveland and Akron. Firms the face and neck with no downtime, and finishes every Define session.'),
 })
 
