@@ -36,7 +36,7 @@ _EMP_NOTE = ('Series and EmpowerRF Complete are standing prices and can&rsquo;t 
              '<a href="https://clients.mangomint.com/serenemedspa/packages/30" target="_blank" rel="noopener">EmpowerRF Complete</a>. '
              'We&rsquo;ll still start with your private consultation.')
 _FDA_NOTE = ('VTone is FDA-cleared to treat stress, urge and mixed urinary incontinence in women. FormaV and Morpheus8V are '
-             'FDA-cleared radiofrequency devices; they are not FDA-approved for &ldquo;vaginal rejuvenation,&rdquo; and their use '
+             'FDA-cleared radiofrequency devices; they are not FDA-approved for intimate or sexual-wellness indications, and their use '
              'for intimate wellness is physician-directed. Individual results vary.')
 
 # hero images (InMode EmpowerRF treatment-room photos, courtesy of InMode) + booking (Sexual Wellness Consultation)
@@ -96,7 +96,7 @@ _EMP_PAGES = [
  "faqh2":"EmpowerRF FAQ",
  "faqs":[
    ("What is EmpowerRF?","EmpowerRF is InMode&rsquo;s women&rsquo;s wellness platform. At Serene it includes three treatments: VTone (pelvic-floor muscle stimulation), FormaV (gentle radiofrequency) and Morpheus8V (radiofrequency microneedling)."),
-   ("Is EmpowerRF FDA-approved?","VTone is FDA-cleared to treat stress, urge and mixed urinary incontinence in women. FormaV and Morpheus8V are FDA-cleared radiofrequency devices, but they are not FDA-approved for &ldquo;vaginal rejuvenation&rdquo;; their use for intimate wellness is physician-directed, and we&rsquo;ll explain the evidence honestly at your consultation."),
+   ("Is EmpowerRF FDA-approved?","VTone is FDA-cleared to treat stress, urge and mixed urinary incontinence in women. FormaV and Morpheus8V are FDA-cleared radiofrequency devices, but they are not FDA-approved for intimate or sexual-wellness indications; their use for intimate wellness is physician-directed, and we&rsquo;ll explain the evidence honestly at your consultation."),
    ("Which treatment do I need?","Leaking points to VTone. Comfort, dryness and mild tone concerns usually start with FormaV. More pronounced laxity is where Morpheus8V comes in. Many women combine two; your physician will recommend a plan after a private consultation."),
    ("How much does EmpowerRF cost?","VTone is $350 a session or $1,500 for six. FormaV is $500 or $1,350 for three. Morpheus8V is $800 or $2,100 for three. EmpowerRF Complete (all three series) is $4,200. The consultation is complimentary."),
    ("Does it hurt?","VTone feels like strong muscle contractions and FormaV like a warm massage; neither needs numbing. Morpheus8V is done with numbing cream and feels like warmth and pressure."),
@@ -120,7 +120,7 @@ _EMP_PAGES = [
  "trust":["Physician-Performed","Numbing for Comfort","3-Session Series","$800 per Session"],
  "introh2":"Remodeling, not just warming",
  "introlead":"Childbirth, menopause and time can leave intimate tissue looser and thinner. Morpheus8V uses the same fractional radiofrequency idea as Morpheus8 on the face: tiny needles place heat below the surface, and the body responds by remodeling collagen over the next weeks.",
- "intropara":"At Serene Med Spa in Hudson, Morpheus8V is performed by our physicians in a private room on the InMode EmpowerRF platform. After numbing cream, a slim handpiece treats the internal and, when needed, external tissue in about 20 to 30 minutes. The usual plan is three sessions four to six weeks apart, often paired with <a href=\"/formav/\">FormaV</a> or <a href=\"/vtone/\">VTone</a>. Many women report improved tone and confidence after the series; individual results vary. Morpheus8V is an FDA-cleared radiofrequency device, but it is not FDA-approved for &ldquo;vaginal rejuvenation,&rdquo; and we&rsquo;ll talk through what the evidence does and doesn&rsquo;t show.",
+ "intropara":"At Serene Med Spa in Hudson, Morpheus8V is performed by our physicians in a private room on the InMode EmpowerRF platform. After numbing cream, a slim handpiece treats the internal and, when needed, external tissue in about 20 to 30 minutes. The usual plan is three sessions four to six weeks apart, often paired with <a href=\"/formav/\">FormaV</a> or <a href=\"/vtone/\">VTone</a>. Many women report improved tone and confidence after the series; individual results vary. Morpheus8V is an FDA-cleared radiofrequency device, but it is not FDA-approved for intimate or sexual-wellness indications, and we&rsquo;ll talk through what the evidence does and doesn&rsquo;t show.",
  "treyebrow":"Who It Helps","treh2":"Good Candidates",
  "cards":[
    ("Laxity After Childbirth","Looser tone that didn&rsquo;t come back, once your OB has cleared you."),
@@ -144,7 +144,7 @@ _EMP_PAGES = [
    ("What is the downtime?","Very little. Avoid intimacy, hot baths and hot tubs for two to three days. Most women return to work the same or next day."),
    ("How many sessions will I need?","Usually three, four to six weeks apart. Some women need one or two; your physician decides based on how your tissue responds."),
    ("How is Morpheus8V different from FormaV?","FormaV is gentle, even warmth with no downtime. Morpheus8V adds micro-needles to place radiofrequency deeper, for more pronounced laxity. They are often combined."),
-   ("Is Morpheus8V FDA-approved for vaginal rejuvenation?","No. Morpheus8V is an FDA-cleared radiofrequency device, and the FDA has cautioned that no energy-based device is approved for &ldquo;vaginal rejuvenation.&rdquo; Its use for intimate wellness is physician-directed, and we&rsquo;ll be candid about expected results."),
+   ("Is Morpheus8V FDA-approved for vaginal rejuvenation?","No. Morpheus8V is an FDA-cleared radiofrequency device, and the FDA has cautioned that no energy-based device is approved for intimate or sexual-wellness indications. Its use for intimate wellness is physician-directed, and we&rsquo;ll be candid about expected results."),
    ("Who shouldn&rsquo;t have Morpheus8V?","Anyone pregnant, with a pacemaker or implanted electrical device, an active infection or herpes outbreak in the area, or cancer in the treatment area. Your physician screens for these."),
  ],
  "related":["empowerrf","formav","vtone"],
@@ -190,7 +190,7 @@ def _formav(p):
     p["introlead"] = ("Childbirth, menopause and time can change intimate tissue and how it feels. FormaV warms the tissue to a precise, "
                       "comfortable temperature, and many women report better comfort, moisture and tone over a series of treatments.")
     p["intropara"] = (p["intropara"].replace("FormaV is performed on the EmpowerRF platform", "FormaV is performed on the <a href=\"/empowerrf/\">EmpowerRF</a> platform")
-                      + " FormaV is an FDA-cleared radiofrequency device, but it is not FDA-approved for &ldquo;vaginal rejuvenation&rdquo;; individual results vary.")
+                      + " FormaV is an FDA-cleared radiofrequency device, but it is not FDA-approved for intimate or sexual-wellness indications; individual results vary.")
     p["cards"] = [(h, d) if h != "Cancer Survivors" else ("Can&rsquo;t Use Estrogen","A non-hormonal option to discuss with your physician &mdash; and your oncologist, if you&rsquo;ve had cancer.")
                   for h, d in p["cards"]]
     p["cards"] = [(h, d.replace("Improved blood flow means improved responsiveness.", "Many women report feeling more responsive after a series."))
@@ -204,7 +204,7 @@ def _formav(p):
             return (q, a.replace("MorpheusV", "<a href=\"/morpheus8v/\">Morpheus8V</a>"))
         return (q, a)
     p["faqs"] = [_fa(q, a) for q, a in p["faqs"]]
-    p["faqs"].append(("Is FormaV FDA-approved for vaginal tightening?","No. FormaV is an FDA-cleared radiofrequency device, and the FDA has cautioned that no energy-based device is approved for &ldquo;vaginal rejuvenation.&rdquo; Its use for intimate wellness is physician-directed, and we&rsquo;ll be candid about what to expect."))
+    p["faqs"].append(("Is FormaV FDA-approved for vaginal tightening?","No. FormaV is an FDA-cleared radiofrequency device, and the FDA has cautioned that no energy-based device is approved for intimate or sexual-wellness indications. Its use for intimate wellness is physician-directed, and we&rsquo;ll be candid about what to expect."))
     p["related"] = ["empowerrf","morpheus8v","vtone"]
     p["pricing_html"] = _price_block("Pricing","FormaV pricing",[("FormaV", _FV + " / session", "About 20 minutes, no downtime"),("FormaV &mdash; Series of 3", _FV3, "The standard program"),("Morpheus8V", _M8V + " / session", "3 for " + _M8V3),("EmpowerRF Complete", _EMP, "FormaV &times;3 + Morpheus8V &times;3 + VTone &times;6")], _EMP_NOTE)
 _patch("formav", _formav)
