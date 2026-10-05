@@ -178,6 +178,8 @@ def inject_home_videos(s):
         s = s.replace('<section class="hero">', feat + '<section class="hero">', 1)
     if 'id="latest-video"' not in s and hasattr(SL, "latest_video_section"):
         s = s.replace('<section class="about" id="about">', SL.latest_video_section() + '<section class="about" id="about">', 1)
+    if hasattr(SL, "inject_local_specials"):
+        s = SL.inject_local_specials(s, "hudson")  # shared specials block (serenemain/local_specials.py), Oct 5 2026
     return s
 
 def localize_home(s):

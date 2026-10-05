@@ -18,6 +18,12 @@ SRC="${SRC:-/root/hudson-src}"      # the git clone (this repo)
 LIVE="${LIVE:-/root/hudson}"        # where docker-compose.yml + live site/ live
 BRANCH="${BRANCH:-main}"
 
+# One deploy of this site at a time: autodeploy and the serenemain deploy (which rebuilds this site so shared
+# code/specials stay in sync, Oct 5 2026) can both start one; the second waits for the first.
+if [ -z "${SERENE_LOCKED:-}" ] && command -v flock >/dev/null 2>&1; then
+  exec env SERENE_LOCKED=1 flock -w 900 "/tmp/serene-deploy-$(basename "$SRC").lock" bash "$0" "$@"
+fi
+
 cd "$SRC"
 
 echo "==> Pulling latest ($BRANCH)"
