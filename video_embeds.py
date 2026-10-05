@@ -10,8 +10,8 @@ import json, os, re, sys
 
 SITE_DIR = sys.argv[1] if len(sys.argv) > 1 else "bundle/site"
 LOC = (sys.argv[2] if len(sys.argv) > 2 else "barboursville").lower()
-SITE_URL = {"barboursville": "https://barboursville.serenemedspas.com",
-            "hudson": "https://hudson.serenemedspas.com"}[LOC]
+SITE_URL = {"barboursville": "https://serenemedspas.com/barboursville",
+            "hudson": "https://serenemedspas.com/hudson"}[LOC]
 
 V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload date)
  "hybrid":  ("1230567201", "5e8f0817e7", "Alma Hybrid: how it works", 119,
@@ -22,6 +22,10 @@ V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload dat
              "2205496420-58f81c270ba609336d361f264f51907b38c42489925e878693aa8bcb08c91610", "2026-09-26T17:09:15-04:00"),
  "opus":    ("1230568009", "6de18ff37b", "Opus Plasma skin resurfacing, explained", 304,
              "2205496772-6a8a5e01354dfcea4b5a0830219e971e3c165355391df6ccb425fbf288f6b76a", "2026-09-26T17:12:32-04:00"),
+ "ted":     ("1230566782", "eab4362a60", "Alma TED: needle-free hair restoration", 94,
+             "2205494975-17f78f4b38334aa0fdaacd74b6e122427f4666262e7df5efd54984aef9d0a3d1", "2026-09-26T17:03:07-04:00"),
+ "duo":     ("1230566915", "bca5deb205", "Alma Duo: how it works", 52,
+             "2205495068-a82403ff001af2f61910801f07c9da73456209e35d9d81f0dd36dded74ef1be4", "2026-09-26T17:03:57-04:00"),
  "sknlab":  ("1230565683", "31f3092344", "The SKNLAB facial", 61,
              "2205494714-1227119e503170a572957ee3a8dfb6b8af1f1b0cd531cbcfd857210814140274", "2026-09-26T17:01:00-04:00"),
 }
@@ -39,8 +43,14 @@ PAGES = {  # slug: (eyebrow, h2, intro paragraph, [video keys], credit)
  "sknlab": ("Watch", "Inside the SKNLAB facial",
    "A one-minute look at the SKNLAB experience: a customized, results-driven facial built around your skin that day.",
    ["sknlab"], "Video courtesy of SKNLAB."),
+ "alma-ted": ("Watch", "Alma TED, in 90 seconds",
+   "TED delivers a hair-growth serum through the scalp with ultrasound and air pressure instead of needles, so there&rsquo;s no injection pain and no downtime. Here&rsquo;s what a session looks like.",
+   ["ted"], "Video courtesy of Alma Lasers. Individual results vary."),
+ "alma-duo": ("Watch", "How Alma Duo works",
+   "A short look at Alma Duo: low-intensity shockwave sessions of about 15 minutes, no needles and no downtime.",
+   ["duo"], "Video courtesy of Alma Lasers. Individual results vary."),
 }
-ONLY = {"barboursville": list(PAGES), "hudson": ["opus-plasma"]}[LOC]
+ONLY = {"barboursville": list(PAGES), "hudson": ["opus-plasma", "alma-ted", "alma-duo"]}[LOC]
 
 CSS = """<style>
 .vid-grid{display:grid;gap:22px;max-width:960px;margin:0 auto}
