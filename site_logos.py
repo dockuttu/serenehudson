@@ -18,6 +18,8 @@ MERZ_NEW = ('<a href="/xperience-rewards/" title="Merz Aesthetics ELITE+ Provide
 BRONZE_RE = re.compile(r'<span title="Merz Aesthetics Bronze Preferred Partner">.*?</span>', re.S)
 INMODE_BADGE = ('<a href="/morpheus8/" title="InMode Morpheus8 Verified Provider"><img src="/img/badges/inmode-morpheus8-verified.png" '
                 'alt="InMode Morpheus8 Verified Provider" class="badge-round" loading="lazy"></a>\n      ')
+GALDERMA_BADGE = ('\n      <span title="Galderma ASPIRE President 2026"><img src="/img/badges/galderma-aspire-president-2026.png" '
+                  'alt="Galderma ASPIRE President 2026 — Galderma Practice Rewards" class="badge-round" loading="lazy" width="440" height="440"></span>')
 TECH_RE = re.compile(r'<div class="tech reveal">\s*<div class="tech-label">.*?</div>\s*<div class="tech-row">.*?</div>\s*</div>(?:\s*<div class="tech reveal">\s*<div class="tech-label">.*?</div>\s*<div class="tech-row">.*?</div>\s*</div>)*', re.S)
 changed = 0
 for root, dirs, files in os.walk(SITE):
@@ -33,6 +35,12 @@ for root, dirs, files in os.walk(SITE):
             k = s.find('<span title="Allergan Partner Privileges', pi)
             if k != -1 and k < s.find("</div>", pi):
                 s = s[:k] + INMODE_BADGE + s[k:]
+        pi = s.find('<div class="partners')
+        if not is_lp and pi != -1 and "galderma-aspire-president" not in s[pi:s.find("</div>", pi)]:   # Galderma ASPIRE President 2026 (Oct 5 2026)
+            k = s.find('<span title="Allergan Partner Privileges', pi)
+            ke = s.find("</span>", k) if k != -1 else -1
+            if k != -1 and ke != -1 and ke < s.find("</div>", pi):
+                s = s[:ke+7] + GALDERMA_BADGE + s[ke+7:]
         if "merz-bronze-preferred" in s or "Bronze" in s:   # ELITE+ replaced Bronze (home_merz.py); keep every page in step
             s = BRONZE_RE.sub(MERZ_NEW, s)
             s = (s.replace("merz-bronze-preferred.png", "merz-elite-plus.png")

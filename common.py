@@ -182,6 +182,7 @@ PARTNER_BADGES = '''<div class="partners reveal">
       <a href="/hormone-optimization/" title="Biote Certified Provider"><img src="/img/badges/biote-certified-provider.webp" alt="Biote Certified Provider" class="badge-round" loading="lazy"></a>
       <a href="/morpheus8/" title="InMode Morpheus8 Verified Provider"><img src="/img/badges/inmode-morpheus8-verified.png" alt="InMode Morpheus8 Verified Provider" class="badge-round" loading="lazy"></a>
       <span title="Allergan Partner Privileges — Platinum 2026"><img src="/img/badges/allergan-app-platinum-2026.png" alt="Allergan Partner Privileges — Platinum Partner 2026" class="badge-app" loading="lazy"></span>
+      <span title="Galderma ASPIRE President 2026"><img src="/img/badges/galderma-aspire-president-2026.png" alt="Galderma ASPIRE President 2026 — Galderma Practice Rewards" class="badge-round" loading="lazy" width="440" height="440"></span>
     </div>'''
 
 STATS_BRANDS = '''<section class="stats">
