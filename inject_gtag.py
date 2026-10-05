@@ -15,7 +15,7 @@ TAG = """<!-- gads-tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-788907512"></script>
 <script>
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());gtag('config','AW-788907512');
+gtag('js',new Date());gtag('config','AW-788907512');if(!window.__sereneGA4){window.__sereneGA4=1;gtag('config','G-BE2Z65PN2X');}
 document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href]');if(!a)return;var h=a.getAttribute('href')||'';
 if(h.indexOf('booking.mangomint.com')>-1){gtag('event','conversion',{'send_to':'AW-788907512/lQdCCL31zvUcEPiLl_gC'});}
 else if(h.indexOf('tel:')===0){gtag('event','call_click',{'send_to':'AW-788907512'});gtag('event','conversion',{'send_to':'AW-788907512/d4kvCJjh6_0cEPiLl_gC'});}},true);
