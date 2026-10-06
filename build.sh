@@ -81,6 +81,7 @@ python3 abim_badge.py bundle/site
 
 echo "==> Phase 3: prefix + v2 shell (serenemedspas.com/hudson/)"
 python3 v2_merge.py bundle/site
+python3 lp_resanitize.py bundle/site || echo "lp_resanitize: WARNING residual drug terms on an /lp/ page (see above)"   # AFTER v2_merge: the main-site shell re-adds Botox/Dysport to /lp/ ad pages
 
 echo "==> Retired pages: MOXI is Barboursville-only (Sep 26, 2026) — keep the old URL working"
 mkdir -p bundle/site/sciton-moxi
