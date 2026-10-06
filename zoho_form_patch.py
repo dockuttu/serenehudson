@@ -48,7 +48,7 @@ FORM = '''<section class="consult" id="consult">
           <div class="zf-field"><label for="zf-em">Email <span>*</span></label><input type="email" id="zf-em" name="Email" maxlength="100" required autocomplete="email" inputmode="email"></div>
           <div class="zf-field"><label for="zf-ph">Phone <span>*</span></label><input type="tel" id="zf-ph" name="Phone" maxlength="30" required autocomplete="tel" inputmode="tel"></div>
           <div class="zf-field zf-full"><label for="zf-loc">Preferred location</label><select id="zf-loc" name="LEADCF3">%(opts)s</select></div>
-          <div class="zf-field zf-full"><label for="zf-msg">What are you interested in?</label><textarea id="zf-msg" name="Description" rows="4" placeholder="e.g. Botox for forehead lines, a weight-loss consult, Morpheus8 &hellip;"></textarea></div>
+          <div class="zf-field zf-full"><label for="zf-msg">What are you interested in?</label><textarea id="zf-msg" name="Description" rows="4" placeholder="e.g. Botox for forehead lines, a weight-loss consult, Morpheus8 &hellip;"></textarea></div><p class="zf-field zf-full zf-privacy" style="margin:-4px 0 0;font-size:13px;line-height:1.45;color:#6b5a68">Please don&rsquo;t include medical details here. For health questions or medical information, use our <a href="https://form.jotform.com/262783362495064" target="_blank" rel="noopener">secure form</a>.</p>
         </div>
         <p class="zf-fine">By submitting, you agree to be contacted by Serene Med Spa about your request. We never sell your information.</p>
         <div class="zf-actions"><button type="submit" class="btn zf-btn">Request Consultation</button><span class="zf-err" id="zf-err" role="alert"></span></div>
