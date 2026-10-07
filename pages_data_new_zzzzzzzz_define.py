@@ -3,7 +3,8 @@
 #   Robin: Define at both offices, priced at the low end. Each Define session = hands-free Define Chin or Define Cheek
 #   headset + Forma finishing (InMode's own Define + Forma bundles). Morpheus8 is an add-on at Morpheus8 pricing.
 #     Hudson:        one zone $199 / 6 for $999;  chin + cheek $329 / 6 for $1,699
-#     Barboursville: one zone $179 / 6 for $899;  chin + cheek $279 / 6 for $1,399
+#     Barboursville (Robin, Oct 6 2026): cheeks $175, chin/jawline $175, cheek + chin $300;
+#                    cheek + chin series of 3 $700, series of 6 $1,200 (no one-zone series)
 #   * new page /define/      (Define Cheek, Define Chin, Forma, Morpheus8 on one workstation)
 #   * new page /optimasmax/  (hub: Lumecca Peak, Morpheus8 Burst / Burst Deep, Forma, DiolazeXL, Fusion Light / Dark)
 #   * /forma/ gets InMode Forma before/afters, a Forma card image and links to Define + OptimasMAX
@@ -24,12 +25,18 @@ if "PAGES6" not in globals():
     PAGES6 = []
 
 # ---- Define prices (Robin, Sep 27, 2026) ----
-_DEF1, _DEF16 = _p("$199", "$179"), _p("$999", "$899")
+_DEF1, _DEF16 = _p("$199", "$175"), _p("$999", "$899")   # BV has no one-zone series (Oct 6)
 _DEF1_EACH, _DEF1_SAVE = _p("about $167", "about $150"), _p("$195", "$175")
-_DEF2, _DEF26 = _p("$329", "$279"), _p("$1,699", "$1,399")
-_DEF2_EACH, _DEF2_SAVE = _p("about $283", "about $233"), "$275"
+_DEF2, _DEF26 = _p("$329", "$300"), _p("$1,699", "$1,200")
+_DEF2_EACH, _DEF2_SAVE = _p("about $283", "$200"), _p("$275", "$600")
+_DEF23, _DEF23_EACH, _DEF23_SAVE = "$700", "about $233", "$200"   # Barboursville only: cheek + chin series of 3
+_DEF_PHRASE = _p(_DEF1 + " a session or 6 for " + _DEF16,
+                 _DEF1 + " a zone, " + _DEF2 + " for cheek + chin, or 6 cheek + chin sessions for " + _DEF26)
+_DEF_TITLE = _p(_DEF1 + " or 6 for " + _DEF16, "From " + _DEF1)
+_DEF_PHRASE2 = _p(_DEF1 + " a session, or six for " + _DEF16, _DEF_PHRASE)
 _M8 = "$800"
-# Mangomint packages (sold online): Hudson 34 one zone / 35 chin + cheek; Barboursville 36 one zone / 37 chin + cheek
+# Mangomint packages (sold online): Hudson 34 one zone / 35 chin + cheek (6 each);
+#   Barboursville 36 = cheek + chin series of 3 ($700), 37 = cheek + chin series of 6 ($1,200)  (Oct 6)
 _DEF_BUY1 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("34", "36")
 _DEF_BUY2 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("35", "37")
 _LHR_FROM = _p("$59", "$49")
@@ -67,25 +74,34 @@ _DEF_GALLERY = _gal2("Clinical Photos", "Define before &amp; after", [
 
 _DEF_NOTE = ('Each session includes Forma. Series are standing prices and can&rsquo;t be combined with another discount; series sessions don&rsquo;t expire. '
              'The consultation is complimentary. See the full <a href="/pricing/">price list</a>.'
-             f'<br>Prefer to prepay? Buy the <a href="{_DEF_BUY1}" target="_blank" rel="noopener">one-zone series of 6</a> or the '
-             f'<a href="{_DEF_BUY2}" target="_blank" rel="noopener">chin + cheek series of 6</a> online. '
+             + _p(f'<br>Prefer to prepay? Buy the <a href="{_DEF_BUY1}" target="_blank" rel="noopener">one-zone series of 6</a> or the '
+                  f'<a href="{_DEF_BUY2}" target="_blank" rel="noopener">chin + cheek series of 6</a> online. ',
+                  f'<br>Prefer to prepay? Buy the <a href="{_DEF_BUY1}" target="_blank" rel="noopener">cheek + chin series of 3</a> or the '
+                  f'<a href="{_DEF_BUY2}" target="_blank" rel="noopener">cheek + chin series of 6</a> online. ') +
              'We&rsquo;ll still start with a short consultation to confirm your zones.')
-_DEF_ROWS = [
+_DEF_ROWS = _p([
     ("Define &mdash; Chin or Cheek", _DEF1 + " / session", "One zone, hands-free, finished with Forma &middot; about 30&ndash;45 minutes"),
     ("Define &mdash; Series of 6 (one zone)", _DEF16, _DEF1_EACH[0].upper() + _DEF1_EACH[1:] + " a session &middot; save " + _DEF1_SAVE),
     ("Define &mdash; Chin + Cheek", _DEF2 + " / session", "Both zones, finished with Forma &middot; about 45&ndash;60 minutes"),
     ("Define &mdash; Series of 6 (chin + cheek)", _DEF26, _DEF2_EACH[0].upper() + _DEF2_EACH[1:] + " a session &middot; save " + _DEF2_SAVE),
+], [
+    ("Define &mdash; Cheeks", _DEF1 + " / session", "Hands-free, finished with Forma &middot; about 30&ndash;45 minutes"),
+    ("Define &mdash; Chin / Jawline", _DEF1 + " / session", "Hands-free, finished with Forma &middot; about 30&ndash;45 minutes"),
+    ("Define &mdash; Cheek + Chin", _DEF2 + " / session", "Both zones, finished with Forma &middot; about 45&ndash;60 minutes"),
+    ("Define &mdash; Cheek + Chin, Series of 3", _DEF23, "About $233 a session &middot; save " + _DEF23_SAVE),
+    ("Define &mdash; Cheek + Chin, Series of 6", _DEF26, _DEF2_EACH + " a session &middot; save " + _DEF2_SAVE),
+]) + [
     ("Add Morpheus8", "From " + _M8, "For texture, lines and deeper tightening &middot; <a href=\"/morpheus8/\">Morpheus8 pricing</a>"),
     ("Consultation", "Complimentary", "We map your zones and build the plan"),
 ]
 
 _DEF_PAGE = {
  "slug":"define","crumb":"Define by InMode","area_kw":"Define by InMode facial contouring",
- "title":"Define by InMode in Hudson, OH | " + _DEF1 + " or 6 for " + _DEF16 + " | Serene",
+ "title":"Define by InMode in Hudson, OH | " + _DEF_TITLE + " | Serene",
  "desc":("Define by InMode in Hudson, Ohio: hands-free radiofrequency that firms the cheeks, jawline and under-chin, finished with Forma. "
-         "No needles, no downtime. " + _DEF1 + " a session or 6 for " + _DEF16 + "."),
+         "No needles, no downtime. " + _DEF_PHRASE + "."),
  "ogtitle":"Define by InMode in Hudson, OH",
- "ogdesc":"Hands-free facial contouring for the cheeks, jawline and under-chin. " + _DEF1 + " a session, or six for " + _DEF16 + ".",
+ "ogdesc":"Hands-free facial contouring for the cheeks, jawline and under-chin. " + _DEF_PHRASE2 + ".",
  "proc_name":"Define by InMode","proc_alt":"Hands-free bipolar radiofrequency facial contouring (Define Cheek, Define Chin) with Forma",
  "how":("Define uses hands-free headsets that deliver bipolar radiofrequency heat to the cheeks, jowls, jawline and under-chin. "
         "The tissue is warmed to a controlled temperature, which firms the skin and remodels the tissue beneath it over a series. "
@@ -93,8 +109,8 @@ _DEF_PAGE = {
  "body":"Cheeks, Jowls, Jawline, Under-Chin, Neck",
  "eyebrow":"Define by InMode &middot; Facial Contouring &middot; Hudson, OH","h1":"Define by InMode in Hudson, Ohio",
  "hero":("Hands-free radiofrequency that firms the cheeks, jowls, jawline and under-chin, finished with Forma. "
-         "No needles and no downtime. " + _DEF1 + " a session, or six for " + _DEF16 + "."),
- "trust":["Hands-Free","No Downtime","Cheeks &middot; Jawline &middot; Under-Chin","6 Sessions for " + _DEF16],
+         "No needles and no downtime. " + _DEF_PHRASE2 + "."),
+ "trust":["Hands-Free","No Downtime","Cheeks &middot; Jawline &middot; Under-Chin","6 Sessions for " + _p(_DEF16, _DEF26)],
  "introh2":"A sharper jawline without surgery",
  "introlead":("Define is InMode&rsquo;s facial contouring workstation. Two hands-free headsets, Define Cheek and Define Chin, warm the "
               "lower face and under-chin evenly while you relax, and Forma finishes the treatment by hand."),
@@ -122,10 +138,14 @@ _DEF_PAGE = {
             "is the right tool for your jawline, and we price Define so a full series is within reach."),
  "faqh2":"Define FAQ",
  "faqs":[
-   ("How much does Define cost?", _DEF1 + " a session for one zone (chin or cheek) at Serene Med Spa in Hudson, or " + _DEF16 + " for a series of six. "
+   ("How much does Define cost?", _p(_DEF1 + " a session for one zone (chin or cheek) at Serene Med Spa in Hudson, or " + _DEF16 + " for a series of six. "
     "Both zones are " + _DEF2 + " a session or " + _DEF26 + " for six. Every session includes Forma. "
     f"You can buy the <a href=\"{_DEF_BUY1}\" target=\"_blank\" rel=\"noopener\">one-zone series</a> or the "
-    f"<a href=\"{_DEF_BUY2}\" target=\"_blank\" rel=\"noopener\">chin + cheek series</a> online."),
+    f"<a href=\"{_DEF_BUY2}\" target=\"_blank\" rel=\"noopener\">chin + cheek series</a> online.",
+    _DEF1 + " a session for the cheeks, or " + _DEF1 + " for the chin and jawline, at Serene Med Spa in Hudson. "
+    "Cheek + chin together is " + _DEF2 + " a session, " + _DEF23 + " for a series of three or " + _DEF26 + " for six. Every session includes Forma. "
+    f"You can buy the <a href=\"{_DEF_BUY1}\" target=\"_blank\" rel=\"noopener\">series of three</a> or the "
+    f"<a href=\"{_DEF_BUY2}\" target=\"_blank\" rel=\"noopener\">series of six</a> online.")),
    ("How many sessions will I need?", "Most people do six sessions, about a week apart. InMode&rsquo;s protocols range from four to eight, "
     "depending on your skin and goals. We&rsquo;ll recommend a number at your consultation."),
    ("Does it hurt?", "No. You&rsquo;ll feel steady warmth, a bit like a hot stone massage. The system eases off once your skin reaches the "
