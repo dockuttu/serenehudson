@@ -335,6 +335,7 @@ def main():
                 for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
                 if rel == "index.html": s = localize_home(s)
             s = inject_area_links(inject_home_videos(s)) if rel == "index.html" else inject_subpages(inject_guides(s, rel), rel)   # idempotent (home videos + area links run even on already-merged pages)
+            if rel != "index.html" and hasattr(SL, "inject_deal_strip"): s = SL.inject_deal_strip(s, "hudson", rel)   # Deal of the Day bar under the header (serenemain/local_specials.py), Oct 8 2026
         elif ext == ".css":
             s = prefix_css(s)
             for a, b in HOME_IMG_SWAP.items(): s = s.replace(a, b)
