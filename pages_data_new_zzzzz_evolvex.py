@@ -39,13 +39,13 @@ _EVX_GALLERY = ('<section class="results" id="evolvex-results"><div class="wrap"
 
 # WSAZ Studio 3 segment (aired Oct 7, 2026; Vimeo 1233802650) — added Oct 8, 2026 at Robin's request
 _EVX_VIDEO = ('<section class="results" id="evolvex-video"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">As Seen on WSAZ Studio 3</div>'
-              '<h2>Watch EvolveX in action</h2><p>Stephanie Welker, NP and Cami, our licensed esthetician, demonstrated EvolveX live on WSAZ&rsquo;s Studio 3 on October 7, 2026: '
+              '<h2>Watch EvolveX in action</h2><p>On WSAZ&rsquo;s Studio 3 on October 7, 2026, Stephanie Welker, FNP-BC walked through EvolveX while Cami, our esthetician, was treated live on air: '
               'how the applicators strap in place, what the heat and muscle contractions feel like, and which areas people treat most.</p></div>'
               '<div class="reveal" style="position:relative;padding-top:56.25%;border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.12);max-width:960px;margin:0 auto;background:#000">'
               '<iframe src="https://player.vimeo.com/video/1233802650?dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" title="EvolveX body contouring demo on WSAZ Studio 3 with Serene Med Spa" '
               'loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
               '<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"EvolveX Body Contouring on WSAZ Studio 3 — Serene Med Spa (Oct 7, 2026)",'
-              '"description":"Stephanie Welker, NP and Cami, licensed esthetician, demonstrate InMode EvolveX body contouring live on WSAZ\'s Studio 3 (aired October 7, 2026).",'
+              '"description":"Stephanie Welker, FNP-BC explains InMode EvolveX body contouring while Cami, an esthetician at Serene Med Spa, is treated live on WSAZ\'s Studio 3 (aired October 7, 2026).",'
               '"thumbnailUrl":["https://i.vimeocdn.com/video/2209598942-dafe73dba86e2fc96168df259f5550126eb356274119792f514578bfbde56aad-d_1280"],'
               '"uploadDate":"2026-10-07T13:29:41-04:00","duration":"PT2M50S","embedUrl":"https://player.vimeo.com/video/1233802650","contentUrl":"https://vimeo.com/1233802650"}</script>'
               '</div></section>')
