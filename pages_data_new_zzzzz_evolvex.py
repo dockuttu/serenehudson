@@ -37,6 +37,19 @@ _EVX_GALLERY = ('<section class="results" id="evolvex-results"><div class="wrap"
                 + "".join(f'<figure class="res reveal"><img loading="lazy" src="/img/{f}.jpg" alt="{alt}" style="height:auto;aspect-ratio:auto"><figcaption>{cap} &mdash; InMode Evolve</figcaption></figure>' for f, cap, alt in _EVX_BA)
                 + '</div><p class="rev-note">Photos courtesy of InMode, from other practices. They are not Serene Med Spa patients. Individual results vary.</p></div></section>')
 
+# WSAZ Studio 3 segment (aired Oct 7, 2026; Vimeo 1233802650) — added Oct 8, 2026 at Robin's request
+_EVX_VIDEO = ('<section class="results" id="evolvex-video"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">As Seen on WSAZ Studio 3</div>'
+              '<h2>Watch EvolveX in action</h2><p>Stephanie Welker, NP and Cami, our licensed esthetician, demonstrated EvolveX live on WSAZ&rsquo;s Studio 3 on October 7, 2026: '
+              'how the applicators strap in place, what the heat and muscle contractions feel like, and which areas people treat most.</p></div>'
+              '<div class="reveal" style="position:relative;padding-top:56.25%;border-radius:18px;overflow:hidden;box-shadow:0 18px 50px rgba(0,0,0,.12);max-width:960px;margin:0 auto;background:#000">'
+              '<iframe src="https://player.vimeo.com/video/1233802650?dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" title="EvolveX body contouring demo on WSAZ Studio 3 with Serene Med Spa" '
+              'loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0"></iframe></div>'
+              '<script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoObject","name":"EvolveX Body Contouring on WSAZ Studio 3 — Serene Med Spa (Oct 7, 2026)",'
+              '"description":"Stephanie Welker, NP and Cami, licensed esthetician, demonstrate InMode EvolveX body contouring live on WSAZ\'s Studio 3 (aired October 7, 2026).",'
+              '"thumbnailUrl":["https://i.vimeocdn.com/video/2209598942-dafe73dba86e2fc96168df259f5550126eb356274119792f514578bfbde56aad-d_1280"],'
+              '"uploadDate":"2026-10-07T13:29:41-04:00","duration":"PT2M50S","embedUrl":"https://player.vimeo.com/video/1233802650","contentUrl":"https://vimeo.com/1233802650"}</script>'
+              '</div></section>')
+
 _EVX_NOTE = ('The series is a standing price and can&rsquo;t be combined with another discount. Series sessions don&rsquo;t expire. '
              'The consultation is complimentary. See the full <a href="/pricing/">price list</a>.'
              f'<br>Prefer to prepay? <a href="{_EVX_BUY}" target="_blank" rel="noopener">Buy the EvolveX series of 6 online</a>. '
@@ -106,7 +119,7 @@ def _evolvex(p):
     p["related"] = ["morpheus8", "weight-loss"] + [s for s in p.get("related", []) if s not in ("morpheus8", "weight-loss", "fillers")][:1]
     p["ctah2"] = "Ready to tighten and tone?"
     p["ctapara"] = "Book a free EvolveX consultation with our Hudson team, or buy a six-session series online."
-    p["pricing_html"] = _EVX_GALLERY + _price_block("Pricing", "EvolveX pricing", [
+    p["pricing_html"] = _EVX_VIDEO + _EVX_GALLERY + _price_block("Pricing", "EvolveX pricing", [
         ("EvolveX", _EVX + " / session", "Tite, Tone or Transform &middot; 20&ndash;60 minutes"),
         ("EvolveX &mdash; Series of 6", _EVX6, _EVX_EACH[0].upper() + _EVX_EACH[1:] + " a session &middot; save " + _EVX_SAVE),
         ("Consultation", "Complimentary", "We match the treatment to your goals"),
