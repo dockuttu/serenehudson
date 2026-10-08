@@ -175,6 +175,8 @@ def inject_home_videos(s):
     """Featured WSAZ video first thing on the home page; newest Vimeo video mid-page (shared blocks from site_lib)."""
     if 'id="studio3"' not in s and hasattr(SL, "featured_video_section"):
         feat = SL.featured_video_section(book_href="https://booking.mangomint.com/serenemedspa?serviceId=322", book_attrs="", pricing_href=PREFIX + "/ultherapy/#pricing")
+        if hasattr(SL, "evolvex_video_section"):
+            feat += SL.evolvex_video_section("hudson", PREFIX)  # WSAZ Studio 3 EvolveX segment, right after the Ultherapy demo (Oct 8, 2026)
         s = s.replace('<section class="hero">', feat + '<section class="hero">', 1)
     if 'id="latest-video"' not in s and hasattr(SL, "latest_video_section"):
         s = s.replace('<section class="about" id="about">', SL.latest_video_section() + '<section class="about" id="about">', 1)
