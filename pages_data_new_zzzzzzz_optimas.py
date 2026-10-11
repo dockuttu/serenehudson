@@ -110,7 +110,7 @@ _FUSION_SECTION = ('<section class="tint-blush" id="optimasmax-hair"><div class=
     '<h2>DiolazeXL and Fusion Light / Fusion Dark</h2>'
     '<p>Our InMode <a href="/optimasmax/">OptimasMAX</a> adds two hair-removal technologies. DiolazeXL is a fast diode laser with a large, cooled tip for bigger areas. Fusion uses two '
     'wavelengths with a continuously cooled tip: Fusion Light for fair to medium skin, and Fusion Dark for coarse hair on deeper skin tones. '
-    'Together they let us treat every skin type comfortably. Most people need a series of treatments for long-term hair reduction.</p></div>'
+    'Together they let us treat every skin type comfortably. ' + _p('We also use the Alma Harmony for laser hair removal, so your provider can choose the device that suits your skin and hair. ', '') + 'Most people need a series of treatments for long-term hair reduction.</p></div>'
     '<div class="res-grid" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start">'
     '<figure class="res reveal"><img loading="lazy" src="/img/fusion-ba-back.jpg" alt="Before and after Fusion laser hair removal on the back" style="height:auto;aspect-ratio:auto"><figcaption>Back &mdash; Fusion</figcaption></figure>'
     '<figure class="res reveal"><img loading="lazy" src="/img/fusion-ba-underarm.jpg" alt="Before and after Fusion laser hair removal of the underarm" style="height:auto;aspect-ratio:auto"><figcaption>Underarm &mdash; Fusion</figcaption></figure>'

@@ -30,7 +30,7 @@ TREATMENTS = [
  ("morpheus8","Morpheus8 RF Microneedling","$800 (3 for $2,100)","Tightens, smooths and rebuilds collagen on the face, neck and body with minimal downtime."),
  ("kybella","Kybella Double-Chin Treatment","$600/vial","The only FDA-approved injectable that permanently dissolves fat under the chin."),
  ("laser-hair-removal","Laser Hair Removal","Per area","Soprano Ice Platinum &mdash; virtually painless, safe for all skin tones, year-round."),
- ("hydrafacial","HydraFacial &amp; DiamondGlow","$150","30-minute, no-downtime facials that cleanse, extract and hydrate."),
+ ("hydrafacial","HydraFacial &amp; DiamondGlow","From $149","30-minute, no-downtime facials that cleanse, extract and hydrate."),
  ("weight-loss","Medical Weight Loss","$149/visit","Physician-supervised semaglutide and tirzepatide programs with monthly check-ins."),
  ("iv-therapy","IV Therapy &amp; NAD+","From $149","Hydration, immune, energy and NAD+ infusions in our IV lounge."),
  ("lip-filler","Lip Filler","$500 (Mini Pout $300)","Natural, proportioned lips with Volbella, Ultra XC or Restylane Kysse."),
