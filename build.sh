@@ -117,3 +117,6 @@ HTML
 
 echo "==> Text option before every Call option (Mangomint texting numbers)"
 python3 add_text_links.py bundle/site || echo "add_text_links: WARNING (see above)"
+
+echo "==> Offer landing pages for Google Ads (stripped-down, noindex; must run LAST)"
+python3 build_offer_lp.py bundle/site hudson
