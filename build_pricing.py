@@ -77,8 +77,8 @@ CATS.append(("Laser &amp; Skin",
   <tr><td>Underarms</td><td>$75</td><td>$375</td></tr>
   <tr><td>Chin</td><td>$99</td><td>$495</td></tr>
   <tr><td>Ears</td><td>$99</td><td>$495</td></tr>
-  <tr><td>Bikini Line</td><td>$99</td><td>$495</td></tr>
-  <tr><td>Brazilian</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Bikini Line</td><td>$69</td><td>$345</td></tr>
+  <tr><td>Brazilian</td><td>$89</td><td>$445</td></tr>
   <tr><td>Full Face</td><td>$99</td><td>$495</td></tr>
   <tr><td>Neck (+ Beard Line)</td><td>$160</td><td>$800</td></tr>
   <tr><td>Stomach</td><td>$160</td><td>$800</td></tr>
