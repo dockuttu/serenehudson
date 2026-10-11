@@ -114,3 +114,6 @@ cat > bundle/site/aftercare/bbl-hero/index.html <<'HTML'
 <p>BBL HERO is offered at our <a href="/barboursville/aftercare/bbl-hero/">Barboursville, WV office</a>. See all Hudson post-care guides at <a href="/hudson/aftercare/">Aftercare</a>.</p>
 <script>location.replace("/hudson/aftercare/");</script></body></html>
 HTML
+
+echo "==> Text option before every Call option (Mangomint texting numbers)"
+python3 add_text_links.py bundle/site || echo "add_text_links: WARNING (see above)"
