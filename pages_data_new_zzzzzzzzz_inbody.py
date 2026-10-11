@@ -18,6 +18,9 @@ if "PAGES6" not in globals():
     PAGES6 = []
 
 _IB_BOOK = "https://booking.mangomint.com/serenemedspa?serviceId=430"
+# Robin, Oct 10 2026: no phone calls for InBody; point people to the Mangomint two-way texting numbers.
+_IB_TEXT, _IB_SMS = _p("(330) 303-2031", "(304) 396-0295"), _p("+13303032031", "+13043960295")
+_IB_TXT = f'<a href="sms:{_IB_SMS}">text us at {_IB_TEXT}</a>'
 if "BOOK_MAP" in globals():
     BOOK_MAP["inbody-body-scan"] = _IB_BOOK
 if "HERO_MAP" in globals():
@@ -63,7 +66,7 @@ _IB_PAGE = {
    ("Basal Metabolic Rate","An estimate of the <strong>calories your body uses at rest</strong>, useful for planning meals."),
  ],
  "steps":[
-   ("Book", "Book a free 15-minute visit online or call us. Come a few hours after eating, before any workout."),
+   ("Book", "Book a free 15-minute visit online or " + _IB_TXT + ". Come a few hours after eating, before any workout."),
    ("Scan", "Take off your shoes and socks, step on the platform and hold the hand electrodes. The scan itself takes about a minute."),
    ("Review", "A member of our team walks you through your printout: muscle, fat, body water and what the numbers mean."),
    ("Re-check", "Scan again every few weeks, at the same time of day, to see how your body composition is changing."),
@@ -82,7 +85,7 @@ _IB_PAGE = {
     "You&rsquo;ll take off your shoes and socks."),
    ("Does it hurt?", "No. The electrical signal is very low and you won&rsquo;t feel it. You simply stand still for about a minute."),
    ("Who shouldn&rsquo;t have an InBody scan?", "Don&rsquo;t have a scan if you have a pacemaker, defibrillator or other implanted electronic "
-    "device. If you&rsquo;re pregnant, please call us before booking. Results can be less reliable during your period or if you&rsquo;re "
+    "device. If you&rsquo;re pregnant, please " + _IB_TXT + " before booking. Results can be less reliable during your period or if you&rsquo;re "
     "dehydrated or swollen."),
    ("Is it accurate?", "The InBody 580 uses multiple frequencies and measures each arm, leg and the trunk separately. Like any body "
     "composition scan, results are estimates, so the most useful view is the trend over repeat scans taken the same way."),
@@ -95,7 +98,7 @@ _IB_PAGE = {
  ], _IB_NOTE),
  "book_label":"Book Your Free Scan",
  "ctah2":"Get your free InBody scan",
- "ctapara":"Book a free 15-minute scan with our Hudson team, starting October 21.",
+ "ctapara":"Book a free 15-minute scan online, starting October 21. Questions? Please " + _IB_TXT + " instead of calling.",
 }
 
 if not any(pg.get("slug") == _IB_PAGE["slug"] for pg in PAGES6):
