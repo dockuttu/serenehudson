@@ -104,7 +104,7 @@ TEMPLATE = '''<!DOCTYPE html>
         <h1>{h1}</h1>
         <p>{hero}</p>
         {device_badge}
-        <a class="btn" href="{book}" target="_blank" rel="noopener">Book Your Consultation</a>
+        <a class="btn" href="{book}" target="_blank" rel="noopener">{booklabel}</a>
         <a class="btn btn-outline" href="tel:+13304605915">Call (330) 460-5915</a>
       </div>
       <div class="svc-hero-media">{hero_seal}<img src="/img/{hero_img}.jpg" alt="{h1} at Serene Med Spa in Hudson, Ohio" width="800" height="800"></div>
@@ -243,7 +243,7 @@ def build_page(p):
     return TEMPLATE.format(
         title=p["title"],desc=p["desc"],url=url,ogtitle=p["ogtitle"],ogdesc=p["ogdesc"],logo=LOGO,
         proc=json.dumps(proc,ensure_ascii=False),crumbjson=json.dumps(crumb,ensure_ascii=False),
-        faq=json.dumps(faq_schema(p["faqs"]),ensure_ascii=False),book=book_for(p["slug"]),nav=NAV,
+        faq=json.dumps(faq_schema(p["faqs"]),ensure_ascii=False),book=book_for(p["slug"]),booklabel=p.get("book_label","Book Your Consultation"),nav=NAV,
         crumbtext=p["crumb"],eyebrow=p["eyebrow"],h1=p["h1"],hero=p["hero"],device_badge=device_badge(p["slug"], DEVICE_LOGOS),hero_seal=hero_seal(p["slug"], DEVICE_LOGOS),
         t1=p["trust"][0],t2=p["trust"][1],t3=p["trust"][2],t4=p["trust"][3],
         introh2=p["introh2"],introlead=p["introlead"],intropara=p["intropara"],
