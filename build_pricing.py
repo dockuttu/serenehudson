@@ -98,7 +98,7 @@ CATS.append(("Acne Clinic",
 
 CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   row("PRP Hair Restoration","$500","/tx")+row("PRP Hair Restoration &mdash; series of 3, prepaid","$1,200")+row("Alma TED","$500","/tx")+row("Alma TED &mdash; series of 3, prepaid","$1,200")+
-  sub("Facials")+row("HydraFacial","$149")+row("DiamondGlow","$150")+row("Facials &amp; Dermaplaning","$100+")+
+  sub("Facials")+row("HydraFacial","$149")+row("DiamondGlow","$149")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$800","/tx")+row("Morpheus8 RF &mdash; Series of 3","$2,100")+
   row("Spider Vein","$300+","/session")+row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$250","/tx")+row("EvolveX &mdash; Series of 6","$1,350")+row("Define &mdash; Chin or Cheek (with Forma)","$199","/tx")+row("Define &mdash; Series of 6 (one zone)","$999")+row("Define &mdash; Chin + Cheek (with Forma)","$329","/tx")+row("Define &mdash; Series of 6 (chin + cheek)","$1,699")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")+
@@ -132,7 +132,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 
 # Offer schema (headline priced services)
 OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",700),("Kybella",600),
- ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",175),("Microneedling with PRP",675),
+ ("Morpheus8 RF",800),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",149),("Microneedling with PRP",675),
  ("Laser Hair Removal",59),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",250),("EvolveX — Series of 6",1350),("Define",199),("Define — Series of 6",999),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),
  ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",800)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,

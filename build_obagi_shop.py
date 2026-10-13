@@ -270,7 +270,7 @@ PREPAY = ""
 if HUDSON:
     ITEMS = [("HydraFacial", "/img/hydrafacial.jpg", 149, 119, "1 HydraFacial"), ("Botox &mdash; 20 Units", "/img/botox-inject.jpg", 220, 198, "20 units of Botox"),
              ("Morpheus8 RF", "/img/morpheus8.jpg", 800, 640, "1 Morpheus8 treatment"), ("Laser Facial", "/img/laser.jpg", 400, 320, "1 Laser Facial"),
-             ("DiamondGlow", "/img/facial-2.jpg", 150, 120, "1 DiamondGlow facial"), ("Microneedling with PRP", "/img/facial-3.jpg", 500, 400, "1 Microneedling + PRP"),
+             ("DiamondGlow", "/img/facial-2.jpg", 149, 119, "1 DiamondGlow facial"), ("Microneedling with PRP", "/img/facial-3.jpg", 500, 400, "1 Microneedling + PRP"),
              ("VI Chemical Peel", "/img/facial-4.jpg", 250, 200, "1 VI Peel"), ("Serene IV Infusion", "/img/iv-therapy-blog.jpg", 149, 119, "1 IV drip of your choice")]
     pc = "".join(f'<div class="ob-card"><div class="ob-img"><img loading="lazy" src="{i}" alt="{clean(n)} at Serene Med Spa, Hudson OH"></div><div class="ob-txt"><div class="ob-col">Prepay &amp; save {round((1 - pre / reg) * 100)}%</div><h3>{n}</h3><div class="ob-size">Redeems for {r} &middot; reg. ${reg}</div><div class="ob-row"><span class="ob-price">${pre}</span><a class="ob-add" href="{BOOK}" target="_blank" rel="noopener">Book now</a></div></div></div>' for n, i, reg, pre, r in ITEMS)
     PREPAY = (f'<div id="prepay"><div class="ob-colhead"><h2>Prepay &amp; Save on Treatments</h2>'
