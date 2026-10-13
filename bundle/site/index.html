@@ -93,25 +93,96 @@ else if(h.indexOf('tel:')===0){gtag('event','call_click',{'send_to':'AW-78890751
 </header>
 
 <a id="top"></a>
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div class="eyebrow">Hudson, Ohio · Physician-Led</div>
-    <h1>Glow that looks<br>effortlessly you</h1>
-    <p>Botox, dermal fillers, laser skin treatments, and advanced wellness — expertly personalized by board-certified physicians in the heart of Hudson.</p>
-    <div class="hero-cta">
-      <a class="btn" href="https://booking.mangomint.com/serenemedspa?serviceId=321" target="_blank" rel="noopener">Book a Consultation</a>
-      <a class="btn btn-ghost" href="/pricing/">View Pricing</a>
-      <a class="btn btn-ghost" href="#services">Explore Services</a>
+<section class="sc" id="showcase" aria-roledescription="carousel" aria-label="Treatments at Serene Med Spa Hudson">
+<style>
+.sc{--sc-card:min(880px,86vw);position:relative;overflow:hidden;padding:56px 0 64px;background:radial-gradient(60% 55% at 12% 30%,rgba(247,160,114,.30),transparent 70%),radial-gradient(55% 60% at 88% 25%,rgba(224,105,138,.28),transparent 70%),radial-gradient(70% 50% at 50% 100%,rgba(224,178,92,.18),transparent 70%),var(--blush);font-family:'Jost',sans-serif}
+.sc-intro{max-width:780px;margin:0 auto;padding:0 16px;text-align:center;display:grid;gap:14px;justify-items:center}
+.sc-eyebrow{font-size:12px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-deep)}
+.sc h1{margin:0;font-family:'Cormorant Garamond',serif;font-weight:600;color:var(--plum);font-size:clamp(34px,5.4vw,58px);line-height:1.04;text-wrap:balance}
+.sc-lede{margin:0;max-width:58ch;font-size:17px;line-height:1.6;color:var(--ink);font-weight:300}
+.sc-ctas{display:flex;flex-wrap:wrap;gap:10px 18px;justify-content:center;align-items:center;margin-top:6px}
+.sc-btn{display:inline-flex;align-items:center;padding:12px 22px;border-radius:999px;background:var(--grad);color:#fff;text-decoration:none;font-weight:500;font-size:15px;box-shadow:0 6px 18px rgba(201,79,116,.28)}
+.sc-link{font-size:15px;color:var(--plum);text-decoration:none}.sc-link b{font-weight:600}.sc-link:hover{color:var(--rose-deep)}
+.sc-tabs{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:32px auto 24px;padding:0 16px;max-width:900px}
+.sc-tab{position:relative;overflow:hidden;border:1px solid rgba(63,43,61,.12);background:rgba(255,255,255,.62);color:var(--plum);font:500 12px/1 'Jost',sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:11px 16px;border-radius:999px;cursor:pointer;transition:background .25s,color .25s,border-color .25s}
+.sc-tab:hover{border-color:var(--rose)}.sc-tab[aria-selected="true"]{background:#fff;border-color:var(--rose);color:var(--rose-deep)}
+.sc-tab .sc-bar{position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--rose)}
+.sc-tab[aria-selected="true"] .sc-bar{animation:scfill 6s linear forwards}.sc.sc-paused .sc-tab[aria-selected="true"] .sc-bar{animation-play-state:paused}
+@keyframes scfill{to{width:100%}}
+.sc-track{display:flex;gap:28px;transition:transform .7s cubic-bezier(.22,.8,.24,1);padding:6px 0 18px}
+.sc-card{flex:0 0 var(--sc-card);display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(63,43,61,.14),0 2px 8px rgba(63,43,61,.06);opacity:.45;transform:scale(.94);transition:opacity .6s,transform .6s;cursor:pointer;text-align:left}
+.sc-card.on{opacity:1;transform:none;cursor:default}
+.sc-photo{position:relative;aspect-ratio:4/5;max-width:100%}.sc-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.sc-chip{position:absolute;left:16px;bottom:16px;right:16px;display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.93);border-radius:14px;padding:11px 14px;box-shadow:0 8px 24px rgba(63,43,61,.18);font-size:13px;line-height:1.35;color:var(--plum);transform:translateY(8px);opacity:0;transition:transform .5s .25s,opacity .5s .25s}
+.sc-card.on .sc-chip{transform:none;opacity:1}
+.sc-chip i{flex:0 0 30px;height:30px;border-radius:50%;background:linear-gradient(135deg,var(--peach),var(--rose));display:grid;place-items:center;color:#fff;font-style:normal;font-weight:600;font-size:14px}.sc-chip b{display:block;font-weight:600}
+.sc-info{padding:34px 34px 30px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.sc-kicker{font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.sc-info h2{margin:0;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(28px,3.2vw,38px);line-height:1.05;color:var(--plum)}
+.sc-info p{margin:0;font-size:15.5px;line-height:1.6;font-weight:300;color:var(--ink)}
+.sc-list{list-style:none;margin:4px 0 0;padding:0;border-top:1px solid rgba(63,43,61,.12)}
+.sc-list a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 2px;border-bottom:1px solid rgba(63,43,61,.12);text-decoration:none;font-size:15px;color:var(--plum)}
+.sc-list a:hover{color:var(--rose-deep)}.sc-list small{font-size:13px;color:var(--muted);white-space:nowrap}
+.sc-more{margin-top:auto;padding-top:8px;font-size:14px;font-weight:500;color:var(--rose-deep);text-decoration:none}.sc-more:hover{text-decoration:underline}
+.sc-ctrl{display:flex;justify-content:center;gap:10px;margin-top:6px}
+.sc-arrow{width:42px;height:42px;border-radius:50%;border:1px solid rgba(63,43,61,.12);background:#fff;color:var(--plum);font-size:18px;cursor:pointer}.sc-arrow:hover{border-color:var(--rose)}
+.sc-badges{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin:30px auto 0;padding:0 16px;max-width:1000px}
+.sc-badges a{display:inline-flex;align-items:center;gap:12px;padding:8px 16px 8px 8px;background:rgba(255,255,255,.85);border:1px solid rgba(63,43,61,.12);border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(63,43,61,.08)}
+.sc-badges img{height:48px;width:auto;display:block}.sc-badges b{display:block;color:var(--ink);font-size:.95rem}.sc-badges small{display:block;color:var(--ink);opacity:.8;font-size:.85rem}
+.sc :focus-visible{outline:2px solid var(--rose-deep);outline-offset:3px}
+@media(max-width:720px){.sc{--sc-card:calc(100vw - 48px);padding:40px 0 48px}.sc-card{grid-template-columns:1fr}.sc-photo{aspect-ratio:5/4}.sc-info{padding:24px 22px}.sc-track{gap:16px}.sc-tabs{gap:6px;margin:24px auto 18px}.sc-tab{padding:10px 12px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.sc-track,.sc-card,.sc-chip{transition:none}.sc-tab .sc-bar{display:none}}
+</style>
+  <div class="sc-intro">
+    <div class="sc-eyebrow">Hudson, Ohio · Physician-Led</div>
+    <h1>Everything you need to look and feel your best</h1>
+    <p class="sc-lede">Injectables, lasers, skin, body, hair and wellness under one roof at 50 W Streetsboro St, with a physician-led team and published prices.</p>
+    <div class="sc-ctas">
+      <a class="sc-btn" href="https://booking.mangomint.com/serenemedspa?serviceId=321" target="_blank" rel="noopener">Book a free consultation</a>
+      <a class="sc-link" href="sms:+13303032031">Text us <b>(330) 303-2031</b></a>
+      <a class="sc-link" href="/pricing/">View pricing &rarr;</a>
     </div>
-    <div class="hero-chips">
-      <span class="chip">✦ Board-Certified MDs</span>
-      <span class="chip">✦ Natural, Tailored Results</span>
-      <span class="chip">✦ Same-Week Appointments</span>
-    </div>
-    <a class="hero-biote" href="/hormone-optimization/" title="Biote Certified Provider"><img src="/img/badges/biote-certified-provider.webp" alt="Biote Certified Provider" width="84" height="84" loading="lazy" decoding="async"><span><b>Biote Certified Provider</b><small>Physician-led hormone optimization &amp; wellness labs</small></span></a><style>.hero-biote{display:inline-flex;align-items:center;gap:14px;margin-top:22px;padding:10px 18px 10px 10px;background:rgba(255,255,255,.85);border:1px solid rgba(63,43,61,.12);border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(63,43,61,.08)}.hero-biote img{width:64px;height:64px;display:block}.hero-biote b{display:block;color:var(--ink);font-size:1.02rem}.hero-biote small{display:block;color:var(--ink);opacity:.8;font-size:.9rem;font-weight:500}</style>
-    <a class="hero-obagi" href="/obagi/" title="Authorized Obagi Medical Provider"><img src="/img/obagi/obagi-medical-logo.webp" alt="Obagi Medical" width="89" height="38" loading="lazy" decoding="async"><span><b>Authorized Obagi Provider</b><small>Our medical-grade skincare line</small></span></a><style>.hero-obagi{display:inline-flex;align-items:center;gap:14px;margin:12px 0 0 10px;padding:10px 18px 10px 14px;background:rgba(255,255,255,.85);border:1px solid rgba(31,42,92,.15);border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(31,42,92,.08);vertical-align:middle}.hero-obagi img{height:38px;width:auto;display:block}.hero-obagi b{display:block;color:#1f2a5c;font-size:1.02rem}.hero-obagi small{display:block;color:var(--ink);opacity:.85;font-size:.9rem;font-weight:500}@media(max-width:600px){.hero-obagi{margin-left:0}}</style>
-    <a class="hero-merz" href="/xperience-rewards/" title="Merz Aesthetics ELITE+ Provider"><img src="/img/badges/merz-elite-plus.png" alt="Merz Aesthetics ELITE+ Provider" width="64" height="64" loading="lazy" decoding="async"><span><b>Merz Aesthetics ELITE+ Provider</b><small>Top-tier status &middot; Xeomin, Radiesse &amp; Ultherapy</small></span></a><style>.hero-merz{display:inline-flex;align-items:center;gap:14px;margin:12px 0 0 10px;padding:8px 18px 8px 8px;background:rgba(255,255,255,.85);border:1px solid rgba(31,42,92,.15);border-radius:999px;text-decoration:none;box-shadow:0 8px 24px rgba(31,42,92,.08);vertical-align:middle}.hero-merz img{width:56px;height:56px;display:block}.hero-merz b{display:block;color:var(--ink);font-size:1.02rem}.hero-merz small{display:block;color:var(--ink);opacity:.85;font-size:.9rem;font-weight:500}@media(max-width:600px){.hero-merz{margin-left:0}}</style>
   </div>
+  <div class="sc-tabs" role="tablist" aria-label="Treatment categories" id="sc-tabs"></div>
+  <div id="sc-stage"><div class="sc-track" id="sc-track"></div></div>
+  <div class="sc-ctrl"><button class="sc-arrow" id="sc-prev" aria-label="Previous category">&#8592;</button><button class="sc-arrow" id="sc-next" aria-label="Next category">&#8594;</button></div>
+  <div class="sc-badges">
+    <a href="/hormone-optimization/" title="Biote Certified Provider"><img src="/img/badges/biote-certified-provider.webp" alt="Biote Certified Provider" width="48" height="48" loading="lazy" decoding="async"><span><b>Biote Certified Provider</b><small>Physician-led hormone optimization &amp; wellness labs</small></span></a>
+    <a href="/obagi/" title="Authorized Obagi Medical Provider"><img src="/img/obagi/obagi-medical-logo.webp" alt="Obagi Medical" width="89" height="38" loading="lazy" decoding="async" style="height:34px;margin-left:6px"><span><b>Authorized Obagi Provider</b><small>Our medical-grade skincare line</small></span></a>
+    <a href="/xperience-rewards/" title="Merz Aesthetics ELITE+ Provider"><img src="/img/badges/merz-elite-plus.png" alt="Merz Aesthetics ELITE+ Provider" width="48" height="48" loading="lazy" decoding="async"><span><b>Merz Aesthetics ELITE+ Provider</b><small>Top-tier status &middot; Xeomin, Radiesse &amp; Ultherapy</small></span></a>
+  </div>
+<noscript><style>#sc-stage,.sc-ctrl,.sc-tabs{display:none}</style><p style="text-align:center;margin:24px 16px"><a href="/#services">Explore all treatments</a></p></noscript>
+<script>
+(function(){
+var S=[
+{t:"Injectables",k:"Wrinkle relaxers & fillers",h:"Natural-looking results, planned with you",p:"Soften lines, restore volume and refine your profile. Every plan starts with a consultation with our physician-led team.",img:"injectables",c:["Same-day treatment","Botox and Skinvive can often be done right after your consult"],l:[["Botox","/botox/","from $11 / unit"],["Lip, cheek & under-eye filler","/fillers/",""],["Skinvive","/skinvive/",""],["Sculptra","/sculptra/",""]],m:["All injectables","/botox/"]},
+{t:"Skin & Facials",k:"Facials & resurfacing",h:"Clearer, brighter skin on your schedule",p:"From a lunch-break HydraFacial to Morpheus8 for deeper texture and tightening, matched to your skin and your downtime.",img:"skin",c:["HydraFacial & DiamondGlow","HydraFacial $149 · DiamondGlow $150"],l:[["HydraFacial","/hydrafacial/","$149"],["DiamondGlow","/diamondglow/","$150"],["Morpheus8","/morpheus8/",""],["Chemical peels","/chemical-peels/",""]],m:["All skin treatments","/medical-facials/"]},
+{t:"Laser",k:"Laser & light",h:"Sun spots, redness and unwanted hair",p:"Lumecca IPL, laser resurfacing, laser hair removal for every skin tone, and tattoo removal, all on site.",img:"laser",c:["Lumecca IPL","$400 full face, or 3 for $1,050"],l:[["Photofacial (BBL & IPL)","/photofacial/","from $400"],["Laser hair removal","/laser-hair-removal/",""],["Laser skin resurfacing","/laser-skin/",""],["Laser tattoo removal","/laser-tattoo-removal/",""]],m:["All laser treatments","/laser-skin/"]},
+{t:"Body",k:"Contouring & tightening",h:"Tone, tighten and track your progress",p:"Build muscle with EMSCULPT NEO, contour with EvolveX, or tighten skin with BodyTite. Free InBody scans show what is changing.",img:"body",c:["Free InBody scan","Muscle, body fat and body water in about a minute"],l:[["EMSCULPT NEO","/emsculpt-neo/","$400 / tx"],["EvolveX","/evolve-x/",""],["BodyTite","/bodytite/","from $4,000 / area"],["Medical weight loss","/weight-loss/",""]],m:["All body treatments","/evolve-x/"]},
+{t:"Hair",k:"Hair restoration",h:"Fuller hair without surgery",p:"Alma TED uses sound waves to deliver a hair serum with no needles. PRP uses your own platelets. Dr. Arora will help you choose.",img:"hair",c:["Alma TED","Needle-free hair treatment"],l:[["Alma TED","/alma-ted/",""],["PRP hair restoration","/prp-hair-restoration/",""]],m:["Hair restoration","/prp-hair-restoration/"]},
+{t:"Wellness",k:"Wellness & longevity",h:"Care that goes beyond the surface",p:"IV therapy, hormone optimization, labs and longevity care, in person in Hudson or by telehealth.",img:"wellness",c:["Telehealth","Available anywhere in Ohio, West Virginia, Kentucky and Florida"],l:[["IV therapy","/iv-therapy/",""],["Hormone optimization","/hormone-optimization/",""],["Longevity & NAD+","/longevity/",""],["House calls","/house-calls/",""]],m:["All wellness services","/longevity/"]}];
+var D=6000,R=matchMedia('(prefers-reduced-motion: reduce)').matches,root=document.getElementById('showcase'),tabs=document.getElementById('sc-tabs'),tr=document.getElementById('sc-track'),cur=0,tm=null,pz=false;
+S.forEach(function(s,i){
+ var b=document.createElement('button');b.className='sc-tab';b.id='sc-tab-'+i;b.setAttribute('role','tab');b.setAttribute('aria-controls','sc-card-'+i);b.innerHTML=s.t+'<span class="sc-bar"></span>';b.onclick=function(){go(i)};tabs.appendChild(b);
+ var c=document.createElement('article');c.className='sc-card';c.id='sc-card-'+i;c.setAttribute('role','tabpanel');c.setAttribute('aria-labelledby','sc-tab-'+i);
+ c.innerHTML='<div class="sc-photo"><img src="/img/showcase/'+s.img+'.webp" alt="'+s.t+' at Serene Med Spa Hudson" width="640" height="800" '+(i?'loading="lazy" ':'fetchpriority="high" ')+'decoding="async"><div class="sc-chip"><i>&#10003;</i><div><b>'+s.c[0]+'</b>'+s.c[1]+'</div></div></div><div class="sc-info"><div class="sc-kicker">'+s.k+'</div><h2>'+s.h+'</h2><p>'+s.p+'</p><ul class="sc-list">'+s.l.map(function(x){return '<li><a href="'+x[1]+'"><span>'+x[0]+'</span><small>'+x[2]+'</small></a></li>'}).join('')+'</ul><a class="sc-more" href="'+s.m[1]+'">'+s.m[0]+' &rarr;</a></div>';
+ c.addEventListener('click',function(e){if(i!==cur&&!e.target.closest('a'))go(i)});tr.appendChild(c);});
+function lay(){var c=tr.children[cur];tr.style.transform='translateX('+(-(c.offsetLeft-(root.clientWidth-c.offsetWidth)/2))+'px)'}
+function go(i){cur=(i+S.length)%S.length;
+ [].forEach.call(tabs.children,function(t,k){t.setAttribute('aria-selected',k===cur);t.tabIndex=k===cur?0:-1;var b=t.firstElementChild||t.querySelector('.sc-bar');b=t.querySelector('.sc-bar');b.style.animation='none';void b.offsetWidth;b.style.animation=''});
+ [].forEach.call(tr.children,function(c,k){c.classList.toggle('on',k===cur);c.setAttribute('aria-hidden',k!==cur);[].forEach.call(c.querySelectorAll('a'),function(a){a.tabIndex=k===cur?0:-1})});
+ lay();sch()}
+function sch(){clearTimeout(tm);if(!R&&!pz)tm=setTimeout(function(){go(cur+1)},D)}
+function pause(p){pz=p;root.classList.toggle('sc-paused',p);if(p)clearTimeout(tm);else sch()}
+document.getElementById('sc-prev').onclick=function(){go(cur-1)};document.getElementById('sc-next').onclick=function(){go(cur+1)};
+tabs.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(cur+1);tabs.children[cur].focus()}if(e.key==='ArrowLeft'){go(cur-1);tabs.children[cur].focus()}});
+var st=document.getElementById('sc-stage');st.addEventListener('mouseenter',function(){pause(true)});st.addEventListener('mouseleave',function(){pause(false)});
+root.addEventListener('focusin',function(){pause(true)});root.addEventListener('focusout',function(e){if(!root.contains(e.relatedTarget))pause(false)});
+var sx=null;st.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;pause(true)},{passive:true});
+st.addEventListener('touchend',function(e){if(sx!==null){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40)go(cur+(dx<0?1:-1))}sx=null;setTimeout(function(){pause(false)},4000)});
+addEventListener('resize',lay);go(0);if(document.fonts)document.fonts.ready.then(lay);
+})();
+</script>
 </section>
 
 <div class="trust">
