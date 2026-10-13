@@ -76,8 +76,6 @@ python3 check_pages.py
 echo "==> SEO targeting (final titles/descriptions for search)"
 python3 seo_targeting.py bundle/site
 
-echo "==> ABIM board-certification badge in every footer"
-python3 abim_badge.py bundle/site
 
 echo "==> Phase 3: prefix + v2 shell (serenemedspas.com/hudson/)"
 python3 v2_merge.py bundle/site
@@ -118,6 +116,8 @@ HTML
 echo "==> Text option before every Call option (Mangomint texting numbers)"
 python3 add_text_links.py bundle/site || echo "add_text_links: WARNING (see above)"
 
+echo "==> ABIM board-certification badge in every footer (after v2_merge, which rebuilds the shell)"
+python3 abim_badge.py bundle/site
 echo "==> HIPAA-compliant patient forms badge in every footer (after v2_merge, which rebuilds the shell)"
 python3 hipaa_badge.py bundle/site /privacy-practices/ || echo "!!! hipaa_badge failed (continuing)" >&2
 
