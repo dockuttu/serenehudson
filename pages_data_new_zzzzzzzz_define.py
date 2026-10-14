@@ -34,7 +34,7 @@ _DEF_PHRASE = _p(_DEF1 + " a session or 6 for " + _DEF16,
                  _DEF1 + " a zone, " + _DEF2 + " for cheek + chin, or 6 cheek + chin sessions for " + _DEF26)
 _DEF_TITLE = _p(_DEF1 + " or 6 for " + _DEF16, "From " + _DEF1)
 _DEF_PHRASE2 = _p(_DEF1 + " a session, or six for " + _DEF16, _DEF_PHRASE)
-_M8 = "$800"
+_M8 = "$600"
 # Mangomint packages (sold online): Hudson 34 one zone / 35 chin + cheek (6 each);
 #   Barboursville 36 = cheek + chin series of 3 ($700), 37 = cheek + chin series of 6 ($1,200)  (Oct 6)
 _DEF_BUY1 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("34", "36")
@@ -178,7 +178,7 @@ _OPT_NOTE = ('Consultations are complimentary. Standing series prices can&rsquo;
              'See the full <a href="/pricing/">price list</a>.')
 _OPT_ROWS = [
     ("Lumecca Peak IPL &mdash; Full Face", "$400 / session", "Series of 3: $1,050 &middot; <a href=\"/lumecca/\">Lumecca Peak</a>"),
-    ("Morpheus8 &amp; Morpheus8 Burst", _M8 + " / session", "Series of 3: $2,100 &middot; <a href=\"/morpheus8/\">Morpheus8</a>"),
+    ("Morpheus8 &amp; Morpheus8 Burst", _M8 + " / session", "Series of 3: $1,700 &middot; <a href=\"/morpheus8/\">Morpheus8</a>"),
     ("Laser Hair Removal", "From " + _LHR_FROM + " / session", "DiolazeXL or Fusion &middot; <a href=\"/laser-hair-removal/\">pricing by area</a>"),
     ("Forma", "Included with Define", "Or as part of a custom plan &middot; <a href=\"/define/\">Define from " + _DEF1 + "</a>"),
 ]

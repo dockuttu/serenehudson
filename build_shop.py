@@ -12,7 +12,6 @@ PH=BOOK
 ITEMS=[
  ("HydraFacial","hydrafacial","/img/hydrafacial.jpg",150,120,"1 HydraFacial",PH),
  ("Botox &mdash; 20 Units","botox","/img/botox-inject.jpg",220,198,"20 units of Botox",PH),
- ("Morpheus8 RF","morpheus8","/img/morpheus8.jpg",800,640,"1 Morpheus8 (per treatment)",PH),
  ("Laser Facial","laser-facial","/img/laser.jpg",400,320,"1 Laser Facial",PH),
  ("DiamondGlow","diamondglow","/img/facial-2.jpg",150,120,"1 DiamondGlow facial",PH),
  ("Microneedling with PRP","microneedling-prp","/img/facial-3.jpg",500,400,"1 Microneedling + PRP",PH),

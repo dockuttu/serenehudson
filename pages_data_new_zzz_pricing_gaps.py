@@ -503,7 +503,7 @@ _GAP_PAGES = [
    ("Is there downtime after an acne peel?","Minimal: mild redness for a few hours and light flaking for two to three days. Wear sunscreen and skip retinoids for a few days."),
  ],
  "related":["morpheus8","botox","fillers"],
- "pricing_html":_price_block("Pricing","Acne treatment pricing",[("Acne Consultation","Complimentary","Physician; new and follow-up"),("Acne Peel","$100","Face"),("Acne Back Peel","$150","Back or chest"),("Kenalog Cyst Injection","$75","Per visit"),("Morpheus8 for Scars","$800 / tx","Series of 3: $2,100")]),
+ "pricing_html":_price_block("Pricing","Acne treatment pricing",[("Acne Consultation","Complimentary","Physician; new and follow-up"),("Acne Peel","$100","Face"),("Acne Back Peel","$150","Back or chest"),("Kenalog Cyst Injection","$75","Per visit"),("Morpheus8 for Scars","$600 / tx","Series of 3: $1,700")]),
  "ctah2":"Ready for clearer skin?","ctapara":"Book a complimentary acne consultation with our Hudson physicians.",
 },
 {
