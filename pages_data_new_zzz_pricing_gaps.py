@@ -8,9 +8,9 @@
 # gen_pages.py defines SITE_LOC; seo_trim.py exec's this file without it, so fall back to the common.py catalogue
 _BV = (globals().get("SITE_LOC") == "barboursville") if "SITE_LOC" in globals() else ("Barboursville" in globals().get("AREA_TOWNS", []))
 def _p(hud, bv): return bv if _BV else hud
-_BOTOX_UNIT = _p("$11", "$10")
-_BABY = _p("$220", "$200")
-_IV = _p("$149", "$99")
+_BOTOX_UNIT = _p("$10", "$10")
+_BABY = _p("$200", "$200")
+_IV = _p("$99", "$99")
 _OFFICE = "Serene Med Spa"
 
 def _steps(a, b, c, d): return [("Consultation", a), ("Treatment", b), ("Results", c), ("Maintenance", d)]
@@ -172,7 +172,7 @@ _GAP_PAGES = [
  "trust":["Slimmer Shoulder Line","Relieves Tension","Results in 4&ndash;8 Weeks","%s per Unit" % _BOTOX_UNIT],
  "introh2":"The muscle that carries your stress",
  "introlead":"The upper trapezius bulks up from desk posture, heavy training and clenched stress. Relaxing it with Botox lets the shoulders sit lower, lengthens the look of the neck and eases the tightness that leads to tension headaches.",
- "intropara":"Our physicians in Hudson palpate the muscle and place several injections across each upper trap, typically 25&ndash;40 units per side, in about 15 minutes. Tension eases within two weeks; the slimming effect develops over four to eight weeks as the muscle de-bulks, and lasts four to six months. Pricing is by unit at <strong>%s</strong>, so a typical treatment runs about %s&ndash;%s. Strength for lifting is preserved &mdash; only the over-active upper fibers relax." % (_BOTOX_UNIT, _p("$550", "$500"), _p("$880", "$800")),
+ "intropara":"Our physicians in Hudson palpate the muscle and place several injections across each upper trap, typically 25&ndash;40 units per side, in about 15 minutes. Tension eases within two weeks; the slimming effect develops over four to eight weeks as the muscle de-bulks, and lasts four to six months. Pricing is by unit at <strong>%s</strong>, so a typical treatment runs about %s&ndash;%s. Strength for lifting is preserved &mdash; only the over-active upper fibers relax." % (_BOTOX_UNIT, _p("$500", "$500"), _p("$800", "$800")),
  "treyebrow":"Who It Helps","treh2":"Good Candidates",
  "cards":[
    ("Chronic Neck &amp; Shoulder Tension","Knots you can&rsquo;t massage out, shoulders that creep toward your ears at a desk."),
@@ -191,7 +191,7 @@ _GAP_PAGES = [
  "whypara":"This is a larger muscle than the face and dosing matters: enough to relax the over-active fibers, not so much that you lose function. Our physicians dose to your build, follow up at two weeks, and publish the price &mdash; %s per unit." % _BOTOX_UNIT,
  "faqh2":"Shoulder Slimming Botox FAQ",
  "faqs":[
-   ("How many units does trap Botox take?","Usually 25&ndash;40 units per side (50&ndash;80 total) depending on muscle size. At %s per unit that is roughly %s&ndash;%s per treatment." % (_BOTOX_UNIT, _p("$550", "$500"), _p("$880", "$800"))),
+   ("How many units does trap Botox take?","Usually 25&ndash;40 units per side (50&ndash;80 total) depending on muscle size. At %s per unit that is roughly %s&ndash;%s per treatment." % (_BOTOX_UNIT, _p("$500", "$500"), _p("$800", "$800"))),
    ("Will I lose strength?","No. Only the upper, over-active portion of the trapezius is treated. Lifting, carrying and workouts continue normally; some patients notice heavy overhead lifts feel slightly different for a few weeks."),
    ("How long until I see slimming?","Tension relief comes first, within two weeks. The visible slimming develops over four to eight weeks as the muscle de-bulks."),
    ("How long does it last?","Four to six months. Repeat treatments tend to last longer and keep the shoulder line slimmer between visits."),
@@ -199,24 +199,24 @@ _GAP_PAGES = [
    ("Does it hurt?","A brief pinch per injection. No numbing is needed and there is no downtime."),
  ],
  "related":["botox","morpheus8","fillers"],
- "pricing_html":_price_block("Pricing","Shoulder slimming Botox pricing",[("Trapezius Botox",_BOTOX_UNIT + " / unit","Typically 50&ndash;80 units total"),("Typical Treatment",_p("$550&ndash;$880", "$500&ndash;$800"),"Both sides"),("Consultation","Complimentary","")]),
+ "pricing_html":_price_block("Pricing","Shoulder slimming Botox pricing",[("Trapezius Botox",_BOTOX_UNIT + " / unit","Typically 50&ndash;80 units total"),("Typical Treatment",_p("$500&ndash;$800", "$500&ndash;$800"),"Both sides"),("Consultation","Complimentary","")]),
  "ctah2":"Ready to drop your shoulders?","ctapara":"Book a complimentary trap Botox consultation with our Hudson physicians.",
 },
 
 # ============================================================ 2. HORMONES ============================================================
 {
  "slug":"hormone-therapy-women","crumb":"Hormone Therapy for Women","area_kw":"bioidentical hormone therapy for women",
- "title":"Women&rsquo;s Hormone Therapy in Hudson, OH | Bi&ouml;te %s" % _p("$450", "$405"),
- "desc":"Bioidentical hormone pellet therapy for women in Hudson, Ohio: relief from hot flashes, low energy, weight gain, sleep and mood changes. Certified Bi&ouml;te providers, %s per insertion, physician-led." % _p("$450", "$405"),
+ "title":"Women&rsquo;s Hormone Therapy in Hudson, OH | Bi&ouml;te %s" % _p("$405", "$405"),
+ "desc":"Bioidentical hormone pellet therapy for women in Hudson, Ohio: relief from hot flashes, low energy, weight gain, sleep and mood changes. Certified Bi&ouml;te providers, %s per insertion, physician-led." % _p("$405", "$405"),
  "ogtitle":"Bioidentical Hormone Therapy for Women in Hudson, OH","ogdesc":"Bi&ouml;te pellet therapy for perimenopause and menopause symptoms — energy, sleep, mood, weight, libido. Physician-led.",
  "proc_name":"Bioidentical Hormone Pellet Therapy for Women","proc_alt":"Bi&ouml;te subcutaneous estradiol and testosterone pellet therapy",
  "how":"After lab work, custom-dosed bioidentical estradiol and/or testosterone pellets are placed under the skin of the hip in a five-minute office procedure, releasing a steady dose of hormone for three to four months.","body":"Systemic",
  "eyebrow":"Women&rsquo;s Hormones &middot; Hudson, OH","h1":"Hormone Therapy for Women in Hudson, Ohio",
  "hero":"Hot flashes, 3 a.m. wake-ups, brain fog, weight that won&rsquo;t move, a libido that left. Perimenopause and menopause are hormonal &mdash; and treatable. Physician-led Bi&ouml;te pellet therapy, dosed to your labs.",
- "trust":["Lab-Based Dosing","Certified Bi&ouml;te Providers","Steady Release for 3&ndash;4 Months","%s per Insertion" % _p("$450", "$405")],
+ "trust":["Lab-Based Dosing","Certified Bi&ouml;te Providers","Steady Release for 3&ndash;4 Months","%s per Insertion" % _p("$405", "$405")],
  "introh2":"Hormones, replaced the way your body released them",
  "introlead":"Bioidentical pellets are compounded estradiol and testosterone, identical to the hormones your ovaries made. Placed under the skin, they release steadily with your blood flow &mdash; no daily pills, no patches, no peaks and crashes.",
- "intropara":"At Serene Med Spa in Hudson, our physicians order a hormone and wellness lab panel first, review your symptoms and history, and dose pellets to your results using the Bi&ouml;te method. Insertion takes about five minutes: a numbed nick in the upper hip, pellets placed, a small dressing. Most women notice better sleep and energy within two to four weeks, with mood, focus, hot flashes and libido improving over the following two months. Pellets last three to four months, then we recheck labs and repeat. Each insertion is <strong>%s</strong>; labs are billed separately (we can order through Labcorp with your insurance). Progesterone, thyroid support and vitamins are added when your labs call for them. Hormone therapy is prescribed only when it is medically appropriate; individual results vary." % _p("$450", "$405"),
+ "intropara":"At Serene Med Spa in Hudson, our physicians order a hormone and wellness lab panel first, review your symptoms and history, and dose pellets to your results using the Bi&ouml;te method. Insertion takes about five minutes: a numbed nick in the upper hip, pellets placed, a small dressing. Most women notice better sleep and energy within two to four weeks, with mood, focus, hot flashes and libido improving over the following two months. Pellets last three to four months, then we recheck labs and repeat. Each insertion is <strong>%s</strong>; labs are billed separately (we can order through Labcorp with your insurance). Progesterone, thyroid support and vitamins are added when your labs call for them. Hormone therapy is prescribed only when it is medically appropriate; individual results vary." % _p("$405", "$405"),
  "treyebrow":"Who It Helps","treh2":"Symptoms We Treat",
  "cards":[
    ("Hot Flashes &amp; Night Sweats","The classic menopause symptoms &mdash; often improved within weeks of the first insertion."),
@@ -235,7 +235,7 @@ _GAP_PAGES = [
  "whypara":"Hormone therapy should be run by a physician who reads the labs, not a franchise protocol. Dr. Robin Arora is board-certified in internal medicine and nephrology, our providers are Bi&ouml;te certified, and every dose is individualized and monitored. Prices are published and the consultation is complimentary.",
  "faqh2":"Women&rsquo;s Hormone Therapy FAQ",
  "faqs":[
-   ("How much does hormone pellet therapy cost?","%s per insertion at Serene Med Spa in Hudson, every three to four months. Lab work is billed separately and can usually go through your insurance at Labcorp. The consultation is complimentary." % _p("$450", "$405")),
+   ("How much does hormone pellet therapy cost?","%s per insertion at Serene Med Spa in Hudson, every three to four months. Lab work is billed separately and can usually go through your insurance at Labcorp. The consultation is complimentary." % _p("$405", "$405")),
    ("Is bioidentical hormone therapy safe?","For most healthy women it is, when dosed to labs and monitored. We review your personal and family history, screen for contraindications, and recheck labs at every cycle. Hormone therapy is not for everyone; your physician will be candid about risks and alternatives."),
    ("How soon will I feel different?","Sleep and energy often improve within two to four weeks. Hot flashes, mood, focus and libido continue to improve over about two months as levels stabilize."),
    ("What is the insertion like?","A quick local anesthetic, a tiny nick in the upper hip, pellets placed, a small dressing. About five minutes. Avoid heavy lower-body exercise and soaking for a few days."),
@@ -243,13 +243,13 @@ _GAP_PAGES = [
    ("What labs are involved?","A baseline panel (CBC, metabolic panel, estradiol, FSH, testosterone, SHBG, thyroid, vitamin D and more) before the first insertion, then a follow-up panel before each cycle. We order through Labcorp."),
  ],
  "related":["hormone-optimization","womens-sexual-wellness","weight-loss"],
- "pricing_html":_price_block("Pricing","Women&rsquo;s hormone therapy pricing",[("Bi&ouml;te Pellet Insertion &mdash; Women",_p("$450", "$405"),"Every 3&ndash;4 months; dosed to your labs"),("Lab Panels","Billed by Labcorp","Insurance usually applies"),("Consultation","Complimentary","")]),
+ "pricing_html":_price_block("Pricing","Women&rsquo;s hormone therapy pricing",[("Bi&ouml;te Pellet Insertion &mdash; Women",_p("$405", "$405"),"Every 3&ndash;4 months; dosed to your labs"),("Lab Panels","Billed by Labcorp","Insurance usually applies"),("Consultation","Complimentary","")]),
  "ctah2":"Ready to feel like yourself again?","ctapara":"Book a complimentary hormone consultation with our Hudson physicians.",
 },
 {
  "slug":"testosterone-therapy-men","crumb":"Testosterone Therapy","area_kw":"testosterone replacement therapy for men",
  "title":"Testosterone Therapy for Men in Hudson, OH | Serene Med Spa",
- "desc":"Physician-led testosterone replacement for men in Hudson, Ohio: bioidentical Bi&ouml;te pellets from %s, lab-based dosing, Gonadorelin to preserve natural production. Energy, drive, muscle, mood." % _p("$650", "$465"),
+ "desc":"Physician-led testosterone replacement for men in Hudson, Ohio: bioidentical Bi&ouml;te pellets from %s, lab-based dosing, Gonadorelin to preserve natural production. Energy, drive, muscle, mood." % _p("$465", "$465"),
  "ogtitle":"Testosterone Therapy for Men in Hudson, OH","ogdesc":"Low T is treatable. Bi&ouml;te pellet therapy dosed to your labs, plus Gonadorelin to protect natural production. Physician-led.",
  "proc_name":"Testosterone Pellet Therapy for Men","proc_alt":"Bi&ouml;te subcutaneous testosterone pellet therapy with optional Gonadorelin",
  "how":"After lab confirmation of low testosterone, bioidentical testosterone pellets are placed under the skin of the hip in a five-minute office procedure, releasing a steady physiologic dose for four to six months; Gonadorelin may be added to maintain the body&rsquo;s own production.","body":"Systemic",
@@ -258,7 +258,7 @@ _GAP_PAGES = [
  "trust":["Lab-Confirmed Low T","Steady Release 4&ndash;6 Months","Gonadorelin Available","Physician-Led"],
  "introh2":"Steady levels, no weekly injections",
  "introlead":"Testosterone pellets release a consistent dose with your blood flow for four to six months &mdash; none of the peaks and troughs of weekly shots or the daily routine of gels. Bi&ouml;te pellets are bioidentical: the same molecule your body makes.",
- "intropara":"At Serene Med Spa in Hudson, treatment starts with a lab panel (total and free testosterone, estradiol, PSA, CBC, metabolic panel, thyroid and more) and a physician visit. If your levels are low and therapy is appropriate, pellets are dosed to your labs and placed under the skin of the upper hip in about five minutes under local anesthetic. Most men notice energy, sleep and mood improve within two to four weeks, with libido, strength and body composition following over two to three months. Insertions are %s and repeat every four to six months. For men who want to preserve natural production and fertility signaling while on therapy, we prescribe <strong>Gonadorelin ($109/month)</strong>. Labs are rechecked every cycle; testosterone is a controlled substance and is prescribed only in person, when medically indicated." % _p("$650 per insertion", "$465 (T100) or $645 (T200) per insertion"),
+ "intropara":"At Serene Med Spa in Hudson, treatment starts with a lab panel (total and free testosterone, estradiol, PSA, CBC, metabolic panel, thyroid and more) and a physician visit. If your levels are low and therapy is appropriate, pellets are dosed to your labs and placed under the skin of the upper hip in about five minutes under local anesthetic. Most men notice energy, sleep and mood improve within two to four weeks, with libido, strength and body composition following over two to three months. Insertions are %s and repeat every four to six months. For men who want to preserve natural production and fertility signaling while on therapy, we prescribe <strong>Gonadorelin ($109/month)</strong>. Labs are rechecked every cycle; testosterone is a controlled substance and is prescribed only in person, when medically indicated." % _p("$465 (T100) or $645 (T200) per insertion", "$465 (T100) or $645 (T200) per insertion"),
  "treyebrow":"Who It Helps","treh2":"Signs of Low Testosterone",
  "cards":[
    ("Fatigue &amp; Poor Recovery","Tired by mid-afternoon; workouts that take days to bounce back from."),
@@ -277,7 +277,7 @@ _GAP_PAGES = [
  "whypara":"Dr. Robin Arora is board-certified in internal medicine and nephrology &mdash; he reads your kidney, liver, blood-count and prostate labs alongside your hormones, and doses accordingly. Our providers are Bi&ouml;te certified, prices are published, and the consultation is complimentary.",
  "faqh2":"Men&rsquo;s Testosterone Therapy FAQ",
  "faqs":[
-   ("How much does testosterone pellet therapy cost?","%s at Serene Med Spa in Hudson, repeated every four to six months. Gonadorelin is $109 per month. Labs are billed separately (usually through insurance at Labcorp). The consultation is complimentary." % _p("$650 per insertion", "$465 for a T100 insertion or $645 for a T200 insertion")),
+   ("How much does testosterone pellet therapy cost?","%s at Serene Med Spa in Hudson, repeated every four to six months. Gonadorelin is $109 per month. Labs are billed separately (usually through insurance at Labcorp). The consultation is complimentary." % _p("$465 for a T100 insertion or $645 for a T200 insertion", "$465 for a T100 insertion or $645 for a T200 insertion")),
    ("Do I need labs first?","Yes. Testosterone is prescribed only when labs confirm a deficiency and a physician has reviewed your history. We recheck labs before every cycle."),
    ("Pellets vs. injections vs. gel?","Pellets give steady levels for four to six months with no weekly needle or daily routine, and no risk of transferring gel to family members. Injections cause peaks and troughs; gels depend on daily compliance."),
    ("What is Gonadorelin for?","On testosterone therapy the body can reduce its own production and testicular size. Gonadorelin signals the pituitary to keep natural production going, which also matters for men who may want children."),
@@ -978,7 +978,7 @@ _GAP_PAGES += [
    ("Will it help with size?","P-Renew is for function and tissue health. For girth, see our Grow Girth filler treatment, which can be discussed at the same consultation."),
  ],
  "related":["mens-sexual-wellness","alma-duo","hormone-optimization"],
- "pricing_html":_price_block("Pricing","P-Renew pricing",[("P-Renew PRP","$1,200","Includes PRP preparation"),("Alma Duo (series of 6)","See price list","Shockwave therapy; pairs with PRP"),("Testosterone Therapy","From " + _p("$650", "$465"),"If labs show low T"),("Consultation","Complimentary &amp; confidential","")]),
+ "pricing_html":_price_block("Pricing","P-Renew pricing",[("P-Renew PRP","$1,200","Includes PRP preparation"),("Alma Duo (series of 6)","See price list","Shockwave therapy; pairs with PRP"),("Testosterone Therapy","From " + _p("$465", "$465"),"If labs show low T"),("Consultation","Complimentary &amp; confidential","")]),
  "ctah2":"Ready to talk, privately?","ctapara":"Book a confidential consultation with our Hudson physicians.",
 },
 {

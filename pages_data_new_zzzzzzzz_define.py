@@ -25,10 +25,10 @@ if "PAGES6" not in globals():
     PAGES6 = []
 
 # ---- Define prices (Robin, Sep 27, 2026) ----
-_DEF1, _DEF16 = _p("$199", "$175"), _p("$999", "$899")   # BV has no one-zone series (Oct 6)
-_DEF1_EACH, _DEF1_SAVE = _p("about $167", "about $150"), _p("$195", "$175")
-_DEF2, _DEF26 = _p("$329", "$300"), _p("$1,699", "$1,200")
-_DEF2_EACH, _DEF2_SAVE = _p("about $283", "$200"), _p("$275", "$600")
+_DEF1, _DEF16 = _p("$175", "$175"), _p("$899", "$899")   # BV has no one-zone series (Oct 6)
+_DEF1_EACH, _DEF1_SAVE = _p("about $150", "about $150"), _p("$175", "$175")
+_DEF2, _DEF26 = _p("$300", "$300"), _p("$1,200", "$1,200")
+_DEF2_EACH, _DEF2_SAVE = _p("$200", "$200"), _p("$600", "$600")
 _DEF23, _DEF23_EACH, _DEF23_SAVE = "$700", "about $233", "$200"   # Barboursville only: cheek + chin series of 3
 _DEF_PHRASE = _p(_DEF1 + " a session or 6 for " + _DEF16,
                  _DEF1 + " a zone, " + _DEF2 + " for cheek + chin, or 6 cheek + chin sessions for " + _DEF26)
@@ -39,7 +39,7 @@ _M8 = "$600"
 #   Barboursville 36 = cheek + chin series of 3 ($700), 37 = cheek + chin series of 6 ($1,200)  (Oct 6)
 _DEF_BUY1 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("34", "36")
 _DEF_BUY2 = "https://clients.mangomint.com/serenemedspa/packages/" + _p("35", "37")
-_LHR_FROM = _p("$59", "$49")
+_LHR_FROM = _p("$49", "$49")
 
 if "HERO_MAP" in globals():
     HERO_MAP.update({"define": "define-hero", "optimasmax": "optimasmax-hero", "forma": "forma-card"})

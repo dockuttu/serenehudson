@@ -34,7 +34,7 @@ SPECIAL_DESCS={
  "fillers/index.html":"Physician-injected dermal fillers in Hudson, Ohio — lip, cheek, jawline & under-eye filler for natural volume and definition. Book your consultation.",
  "morpheus8/index.html":"Morpheus8 RF microneedling in Hudson, Ohio at Serene Med Spa — tighten, smooth, and resurface skin on the face and body. Physician-led. Book today.",
  "weight-loss/index.html":"Physician-supervised medical weight loss in Hudson, Ohio — personalized GLP-1 programs guided by board-certified providers. Book a consultation.",
- "pricing/index.html":"Serene Med Spa Hudson pricing — Botox from $11/unit, fillers, Morpheus8, laser hair removal packages, HydraFacial, weight loss & IV infusions.",
+ "pricing/index.html":"Serene Med Spa Hudson pricing — Botox from $10/unit, fillers, Morpheus8, laser hair removal packages, HydraFacial, weight loss & IV infusions.",
  "emsculpt-neo/index.html":"EMSCULPT NEO in Hudson, OH: $400 a session or 4 for $1,500. Build muscle and reduce fat with no surgery or downtime. Physician-led care.",
 }
 

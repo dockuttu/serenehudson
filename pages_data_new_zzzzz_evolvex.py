@@ -16,8 +16,8 @@ if "_price_block" not in globals():
     def _price_block(eyebrow, h2, rows, note=""): return ""
 
 # Hudson $250 / 6 for $1,350 (package 31); Barboursville $149 / 6 for $799 (package 32) — Robin, Sep 27, 2026
-_EVX, _EVX6 = _p("$250", "$149"), _p("$1,350", "$799")
-_EVX_EACH, _EVX_SAVE = _p("$225", "about $133"), _p("$150", "$95")
+_EVX, _EVX6 = _p("$149", "$149"), _p("$799", "$799")
+_EVX_EACH, _EVX_SAVE = _p("about $133", "about $133"), _p("$95", "$95")
 _EVX_BUY = "https://clients.mangomint.com/serenemedspa/packages/" + _p("31", "32")
 
 if "HERO_MAP" in globals():

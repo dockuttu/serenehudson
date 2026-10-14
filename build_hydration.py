@@ -74,13 +74,13 @@ HTML=f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Serene Hydration Bar &mdash; Find Your IV Drip | Hudson, OH</title>
-<meta name="description" content="Not sure which IV drip is right for you? The Serene Hydration Bar matches a physician-supervised wellness drip to your goals &mdash; every infusion $149, Hudson, OH.">
+<meta name="description" content="Not sure which IV drip is right for you? The Serene Hydration Bar matches a physician-supervised wellness drip to your goals &mdash; every infusion $99, Hudson, OH.">
 <link rel="canonical" href="{URL}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="geo.region" content="US-OH"><meta name="geo.placename" content="Hudson, Ohio"><meta name="geo.position" content="41.2401;-81.4409"><meta name="ICBM" content="41.2401, -81.4409">
 <meta property="og:type" content="website">
 <meta property="og:title" content="The Serene Hydration Bar &mdash; Find Your IV Drip">
-<meta property="og:description" content="Match a physician-supervised wellness drip to your goals. Every infusion $149 in Hudson, Ohio.">
+<meta property="og:description" content="Match a physician-supervised wellness drip to your goals. Every infusion $99 in Hudson, Ohio.">
 <meta property="og:url" content="{URL}">
 <meta property="og:image" content="{SITE}/img/iv-therapy-blog.jpg">
 {HEAD_FONTS}
@@ -96,7 +96,7 @@ HTML=f'''<!DOCTYPE html>
 </head>
 <body>
 
-<div class="promo">&#10024; <strong>The Serene Hydration Bar</strong> &mdash; find the drip that fits your goals. Every infusion $149. <a href="{BOOK}" target="_blank" rel="noopener">Book now</a> &#10024;</div>
+<div class="promo">&#10024; <strong>The Serene Hydration Bar</strong> &mdash; find the drip that fits your goals. Every infusion $99. <a href="{BOOK}" target="_blank" rel="noopener">Book now</a> &#10024;</div>
 
 {NAV}
 
@@ -106,7 +106,7 @@ HTML=f'''<!DOCTYPE html>
     <div class="svc-hero-txt" style="max-width:760px">
       <div class="eyebrow">Find Your Drip</div>
       <h1>The Serene Hydration Bar</h1>
-      <p>Not sure which IV infusion is the best match for you? Tell us how you want to feel, and we&rsquo;ll point you to a drip that fits your goals. Every infusion is <strong>$149</strong> and personalized by our physician-supervised team.</p>
+      <p>Not sure which IV infusion is the best match for you? Tell us how you want to feel, and we&rsquo;ll point you to a drip that fits your goals. Every infusion is <strong>$99</strong> and personalized by our physician-supervised team.</p>
     </div>
   </div>
 </section>
@@ -138,7 +138,7 @@ HTML=f'''<!DOCTYPE html>
 <section id="hb-menu">
   <div class="wrap">
     <div class="hb-menu-head">
-      <div class="eyebrow">Every Drip $149</div>
+      <div class="eyebrow">Every Drip $99</div>
       <h2>The Full Menu</h2>
       <p>All of our infusions are physician-supervised and delivered in a calm, comfortable setting in Hudson.</p>
     </div>

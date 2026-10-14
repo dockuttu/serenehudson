@@ -31,8 +31,8 @@ def run(PAGES):
             open(f, "w", encoding="utf-8").write(new); done += 1
     print("seo_targeting: updated %d pages" % done)
 
-PAGES = {'/': ('Med Spa in Hudson, OH | Near Cleveland & Akron | Serene', 'Physician-led med spa in Hudson, OH, serving Cleveland and Akron: Botox $11/unit, fillers, Morpheus8, EMSCULPT NEO, laser, weight loss and IV wellness.'),
- '/botox/': (None, 'Botox, Dysport and Xeomin from $11/unit in Hudson, OH, serving Cleveland and Akron. Physician-injected for smooth, natural-looking results.'),
+PAGES = {'/': ('Med Spa in Hudson, OH | Near Cleveland & Akron | Serene', 'Physician-led med spa in Hudson, OH, serving Cleveland and Akron: Botox $10/unit, fillers, Morpheus8, EMSCULPT NEO, laser, weight loss and IV wellness.'),
+ '/botox/': (None, 'Botox, Dysport and Xeomin from $10/unit in Hudson, OH, serving Cleveland and Akron. Physician-injected for smooth, natural-looking results.'),
  '/fillers/': (None, 'Physician-injected Juvéderm and Restylane fillers in Hudson, OH, serving Cleveland and Akron: lips, cheeks, jawline and under-eyes.'),
  '/lip-filler/': (None, 'Lip filler in Hudson, OH, serving Cleveland and Akron: $500 full syringe or $300 half syringe, physician-injected for natural shape and volume.'),
  '/under-eye-filler/': (None, 'Physician-injected under-eye filler in Hudson, OH, serving Cleveland and Akron. Softens hollows and dark circles for a rested look.'),

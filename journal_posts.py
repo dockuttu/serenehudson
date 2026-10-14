@@ -1763,7 +1763,7 @@ JOURNAL = [
   "title": "IV Therapy for Immune Support in Hudson &amp; Barboursville",
   "cat": "IV Therapy",
   "cat_link": "/iv-therapy/",
-  "excerpt": "You can&rsquo;t control the season &mdash; but you can give your body better support heading into it. Here&rsquo;s how our $149 physician-led IV drips help you replenish, rehydrate, and support your immune health.",
+  "excerpt": "You can&rsquo;t control the season &mdash; but you can give your body better support heading into it. Here&rsquo;s how our $99 physician-led IV drips help you replenish, rehydrate, and support your immune health.",
   "img": "https://blog.serenemedspas.com/img/iv-therapy-blog.jpg",
   "img_alt": "A physician-supervised team member preparing a custom IV vitamin drip at Serene Med Spa",
   "date": "2026-08-24",

@@ -28,17 +28,17 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
   row("Under-Eye Filler","$500","/syringe")+row("Jawline Filler","$500","/syringe")+row("Hand Filler","$500","/syringe")+
   row("Radiesse","$500","/syringe")+row("3 Juv&eacute;derm Fillers","$1,400")+
   sub("Neurotoxins")+
-  row("Botox","$11","/unit")+row("Xeomin","$11","/unit")+row("Dysport","$3.99","/unit")+row("Daxxify","$11","/unit")+
-  row("Shoulder Slimming Botox","$11","/unit")+row("Baby Botox","$220","/ 20 units")+
+  row("Botox","$10","/unit")+row("Xeomin","$10","/unit")+row("Dysport","$3.99","/unit")+row("Daxxify","$10","/unit")+
+  row("Shoulder Slimming Botox","$10","/unit")+row("Baby Botox","$200","/ 20 units")+
   sub("Collagen &amp; Biostimulators")+
   row("Sculptra","$650","/vial")+row("Sculptra &mdash; 6 vials (1 free)","$3,250")+row("Sculptra &mdash; 8 vials (2 free)","$3,900")+row("Skinvive","$400","/syringe")+row("Under-Eye PRP","$400")+row("Under-Eye PRF","$600")+
   row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")+row("Kenalog Steroid Injection (scar / cyst)","$75")))
 
 CATS.append(("Weight Loss &amp; Wellness",
   row("Medical Weight Loss Visit","$149","/month")+
-  row("Bi&ouml;te Hormone Therapy &mdash; Female","$450")+row("Bi&ouml;te Hormone Therapy &mdash; Male","$650")+
+  row("Bi&ouml;te Hormone Therapy &mdash; Female","$405")+row("Bi&ouml;te Hormone Therapy &mdash; Male","$465&ndash;$645")+
   row("Gonadorelin (Rx) &mdash; men on testosterone therapy","$109","/mo")+
-  row("IV Vitamin Infusions","$149")+
+  row("IV Vitamin Infusions","$99")+
   sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$25")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
   row("Hyperhidrosis Treatment","$400")+row("Morpheus8 Hyperhidrosis","$600")+
   row("Teeth Grinding Treatment","$360+")+
@@ -70,26 +70,26 @@ CATS.append(("Laser &amp; Skin",
   row("CoolPeel","$400")+row("Deka CO&sup2; Laser &mdash; Fractional Resurfacing","$600")+row("Deka CO&sup2; Laser &mdash; Full Resurfacing (Maximum Strength)","$1,000")+row("Opus Plasma","$400")+sub("Ultherapy PRIME &mdash; Hudson")+'<div class="price-row" style="border:0"><span class="price-name" style="font-size:.85rem;color:var(--ink)">&#9654; <a href="/ultherapy/#studio3" style="text-decoration:underline">Watch Dr. Arora&rsquo;s live demo on WSAZ Studio 3</a> &mdash; Studio 3 special: first 20 clients get 30% off through Oct 31, 2026.</span></div>'+row("Full Face + Neck","$3,500")+row("Full Face","$2,600")+row("Lower Face + Neck","$2,800")+row("Lower Face (Jowls)","$1,900")+row("Neck / Under-Chin","$1,600")+row("Brow Lift","$950")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub"><a href="/laser-hair-removal/" class="price-link">Laser Hair Removal (InMode OptimasMAX &amp; Alma Harmony)</a> &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
-  <tr><td>Side Burns</td><td>$59</td><td>$295</td></tr>
-  <tr><td>Areola</td><td>$59</td><td>$295</td></tr>
+  <tr><td>Side Burns</td><td>$49</td><td>$245</td></tr>
+  <tr><td>Areola</td><td>$49</td><td>$245</td></tr>
+  <tr><td>Upper Lip</td><td>$49</td><td>$245</td></tr>
+  <tr><td>Chin</td><td>$49</td><td>$245</td></tr>
   <tr><td>Hands</td><td>$60</td><td>$300</td></tr>
-  <tr><td>Upper Lip</td><td>$75</td><td>$375</td></tr>
-  <tr><td>Underarms</td><td>$75</td><td>$375</td></tr>
-  <tr><td>Chin</td><td>$99</td><td>$495</td></tr>
-  <tr><td>Ears</td><td>$99</td><td>$495</td></tr>
   <tr><td>Bikini Line</td><td>$69</td><td>$345</td></tr>
+  <tr><td>Underarms</td><td>$75</td><td>$375</td></tr>
+  <tr><td>Neck (+ Beard Line)</td><td>$79</td><td>$395</td></tr>
+  <tr><td>Shoulders</td><td>$79</td><td>$395</td></tr>
   <tr><td>Brazilian</td><td>$89</td><td>$445</td></tr>
   <tr><td>Full Face</td><td>$99</td><td>$495</td></tr>
-  <tr><td>Neck (+ Beard Line)</td><td>$160</td><td>$800</td></tr>
-  <tr><td>Stomach</td><td>$160</td><td>$800</td></tr>
-  <tr><td>Half Arms</td><td>$180</td><td>$900</td></tr>
-  <tr><td>Shoulders</td><td>$180</td><td>$900</td></tr>
-  <tr><td>Upper Legs</td><td>$240</td><td>$1,200</td></tr>
-  <tr><td>Lower Legs</td><td>$240</td><td>$1,200</td></tr>
-  <tr><td>Full Arms</td><td>$280</td><td>$1,400</td></tr>
-  <tr><td>Full Back</td><td>$310</td><td>$1,550</td></tr>
-  <tr><td>Chest + Abdomen</td><td>$310</td><td>$1,550</td></tr>
-  <tr><td>Full Legs</td><td>$360</td><td>$1,800</td></tr>
+  <tr><td>Ears</td><td>$99</td><td>$495</td></tr>
+  <tr><td>Stomach</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Half Arms</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Upper Legs</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Lower Legs</td><td>$129</td><td>$645</td></tr>
+  <tr><td>Full Arms</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Full Back</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Chest + Abdomen</td><td>$199</td><td>$995</td></tr>
+  <tr><td>Full Legs</td><td>$199</td><td>$995</td></tr>
   <tr><td>Full Body</td><td>$510</td><td>$2,550</td></tr>
   </tbody></table>'''+TATTOO_HTML))
 
@@ -97,11 +97,11 @@ CATS.append(("Acne Clinic",
   row("Acne Consultation (new &amp; follow-up)",None)+row("Acne Peel","$100")+row("Acne Back Peel","$150")))
 
 CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
-  row("PRP Hair Restoration","$500","/tx")+row("PRP Hair Restoration &mdash; series of 3, prepaid","$1,200")+row("Alma TED","$500","/tx")+row("Alma TED &mdash; series of 3, prepaid","$1,200")+
+  row("PRP Hair Restoration","$500","/tx")+row("PRP Hair Restoration &mdash; series of 3, prepaid","$1,200")+row("Alma TED","$300","/tx")+
   sub("Facials")+row("HydraFacial","$149")+row("DiamondGlow","$149")+row("Facials &amp; Dermaplaning","$100+")+
   sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+
   row("Morpheus8 RF","$600","/tx")+row("Morpheus8 RF &mdash; Series of 3","$1,700")+
-  row("Spider Vein","$300+","/session")+row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$250","/tx")+row("EvolveX &mdash; Series of 6","$1,350")+row("Define &mdash; Chin or Cheek (with Forma)","$199","/tx")+row("Define &mdash; Series of 6 (one zone)","$999")+row("Define &mdash; Chin + Cheek (with Forma)","$329","/tx")+row("Define &mdash; Series of 6 (chin + cheek)","$1,699")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")+
+  row("Spider Vein","$300+","/session")+row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$149","/tx")+row("EvolveX &mdash; Series of 6","$799")+row("Define &mdash; Chin or Cheek (with Forma)","$175","/tx")+row("Define &mdash; Series of 6 (one zone)","$899")+row("Define &mdash; Chin + Cheek (with Forma)","$300","/tx")+row("Define &mdash; Series of 6 (chin + cheek)","$1,200")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")+
   row("EMSCULPT NEO","$400","/tx")+row("EMSCULPT NEO &mdash; Package of 4","$1,500")))
 
 CATS.append(("Sexual Wellness", sub("Female Wellness")+
@@ -120,10 +120,10 @@ _HIDDEN_PEPTIDES = (("Peptide Therapy", sub("Priced monthly unless noted")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Semaglutide &amp; Tirzepatide priced under Weight Loss &amp; Wellness.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("IV Infusions", sub("$149 each")+
-  row("Serene Quench+","$149")+row("Serene Recovery &amp; Performance Pro","$149")+row("Serene Immune Armor","$149")+
+  row("Serene Quench+","$99")+row("Serene Recovery &amp; Performance Pro","$99")+row("Serene Immune Armor","$99")+
   row("Myer&rsquo;s Cocktail","$149")+
-  row("Serene Beauty Glow","$149")+row("Serene Reboot Relief","$149")+row("Serene Brain Boost","$149")+
-  row("Serene PMS Ease","$149")+row("Serene Get-Up-&amp;-Go","$149")))
+  row("Serene Beauty Glow","$99")+row("Serene Reboot Relief","$99")+row("Serene Brain Boost","$99")+
+  row("Serene PMS Ease","$99")+row("Serene Get-Up-&amp;-Go","$99")))
 
 import re as _re
 def _slug(t): return "cat-"+_re.sub(r'[^a-z0-9]+','-', _re.sub(r'&[a-z]+;','',t).lower()).strip('-')
@@ -131,10 +131,10 @@ cats_html="\n".join('<div class="price-cat reveal" id="%s"><h3>%s</h3>%s</div>'%
 jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slug(t),t) for t,_ in CATS)+'</div>'
 
 # Offer schema (headline priced services)
-OFFERS=[("Botox",11),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),
+OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),
  ("Morpheus8 RF",600),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",149),("Microneedling with PRP",675),
- ("Laser Hair Removal",59),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",250),("EvolveX — Series of 6",1350),("Define",199),("Define — Series of 6",999),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",149),
- ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",800)]
+ ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Series of 6",899),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",99),
+ ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",500)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}
 
@@ -148,7 +148,7 @@ HTML=f'''<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pricing &amp; Menu | Serene Med Spa, Hudson OH</title>
-<meta name="description" content="Serene Med Spa Hudson pricing: Botox from $11/unit, dermal fillers, Morpheus8, laser, HydraFacial, weight loss, IV infusions &amp; more. Physician-led care in Hudson, OH.">
+<meta name="description" content="Serene Med Spa Hudson pricing: Botox from $10/unit, dermal fillers, Morpheus8, laser, HydraFacial, weight loss, IV infusions &amp; more. Physician-led care in Hudson, OH.">
 <link rel="canonical" href="{URL}">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="geo.region" content="US-OH"><meta name="geo.placename" content="Hudson, Ohio">
