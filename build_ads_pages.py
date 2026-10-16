@@ -26,6 +26,7 @@ PAGES = {
     "hydrafacial":          "lp/hydrafacial",
     "medical-weight-loss":  "lp/medical-weight-loss",
     "botox":                "lp/wrinkle-relaxer",
+    "pricing":              "lp/pricing",
     "":                     "lp/med-spa",
 }
 
@@ -98,6 +99,8 @@ def build(src_slug, dst_path):
     m = re.search(r'<link rel="canonical" href="(https://[^/"]+)/', s)
     host = m.group(1) if m else "https://hudson.serenemedspas.com"
     s = sanitize(s)
+    # section ids / in-page anchors that carry a drug name (e.g. id="botox-65-off")
+    s = re.sub(r'(\bid="[^"]*?|href="#[^"]*?)botox', r"\1wr", s, flags=re.I)
     old = host + "/" + (src_slug + "/" if src_slug else "")
     new = host + "/" + dst_path + "/"
     s = re.sub(r'(<link rel="canonical" href=")' + re.escape(old) + '"', r"\g<1>" + new + '"', s)
