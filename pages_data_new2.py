@@ -862,16 +862,16 @@ PAGES3 = [
     </div>
     <div class="section-head reveal"><div class="eyebrow">Investment</div><h2>Ultherapy Pricing &mdash; Hudson</h2><p>One session, priced by the area you want to lift. Financing is available, and your consultation is always complimentary.</p></div>
     <div class="grid">
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face + Neck</h3><p><strong>$3,500</strong><br>Our signature full lift</p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face</h3><p><strong>$2,600</strong></p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Lower Face + Neck</h3><p><strong>$2,800</strong></p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Lower Face &middot; Jowls</h3><p><strong>$1,900</strong></p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Neck / Under-Chin</h3><p><strong>$1,600</strong></p></div>
-      <div class="card reveal"><div class="ico">&#10022;</div><h3>Brow Lift</h3><p><strong>$950</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face + Neck</h3><p><strong>$2,900</strong><br>Our signature full lift</p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Full Face</h3><p><strong>$2,200</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Lower Face + Neck</h3><p><strong>$2,400</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Lower Face &middot; Jowls</h3><p><strong>$1,650</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Neck / Under-Chin</h3><p><strong>$1,400</strong></p></div>
+      <div class="card reveal"><div class="ico">&#10022;</div><h3>Brow Lift</h3><p><strong>$850</strong></p></div>
       <div class="card reveal"><div class="ico">&#10022;</div><h3>Décolleté</h3><p><strong>$500</strong> add-on</p></div>
     </div>
     <div class="prose reveal" style="text-align:center;max-width:680px;margin:32px auto 0">
-      <p>&#10024; <strong>Founding Patient offer:</strong> Full Face + Neck for <strong>$2,799</strong> for our first 20 Ultherapy patients &mdash; limited time. Use code <strong>ULTFOUNDER</strong> when you book online, or mention it at your visit. Ask about monthly financing to spread the cost.</p>
+      <p>&#10024; <strong>Founding Patient offer:</strong> Full Face + Neck for <strong>$2,299</strong> for our first 20 Ultherapy patients &mdash; limited time. Use code <strong>ULTFOUNDER</strong> when you book online, or mention it at your visit. Ask about monthly financing to spread the cost.</p>
     <p style="margin-top:18px"><a class="btn" href="https://booking.mangomint.com/serenemedspa?serviceId=340" target="_blank" rel="noopener">Book Ultherapy PRIME &mdash; $250 deposit</a> <a class="btn btn-outline" href="https://booking.mangomint.com/serenemedspa?serviceId=322" target="_blank" rel="noopener">Book a Free Consultation</a></p>
     </div>
   </div>
