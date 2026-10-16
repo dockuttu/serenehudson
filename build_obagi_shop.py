@@ -268,7 +268,7 @@ var h=location.hash.replace('#','');if(h){var c=document.querySelector('.ob-chip
 
 PREPAY = ""
 if HUDSON:
-    ITEMS = [("HydraFacial", "/img/hydrafacial.jpg", 149, 119, "1 HydraFacial"), ("Botox &mdash; 20 Units", "/img/botox-inject.jpg", 220, 198, "20 units of Botox"),
+    ITEMS = [("HydraFacial", "/img/hydrafacial.jpg", 149, 119, "1 HydraFacial"), ("Botox &mdash; 20 Units", "/img/botox-inject.jpg", 200, 180, "20 units of Botox"),
              ("Laser Facial", "/img/laser.jpg", 400, 320, "1 Laser Facial"),
              ("DiamondGlow", "/img/facial-2.jpg", 149, 119, "1 DiamondGlow facial"), ("Microneedling with PRP", "/img/facial-3.jpg", 500, 400, "1 Microneedling + PRP"),
              ("VI Chemical Peel", "/img/facial-4.jpg", 250, 200, "1 VI Peel"), ("Serene IV Infusion", "/img/iv-therapy-blog.jpg", 149, 119, "1 IV drip of your choice")]
