@@ -173,17 +173,12 @@ HOME_GALLERY = """
 
 def inject_home_videos(s):
     """Featured WSAZ video first thing on the home page; newest Vimeo video mid-page (shared blocks from site_lib)."""
-    if 'id="studio3"' not in s and hasattr(SL, "featured_video_section"):
-        feat = SL.featured_video_section(book_href="https://booking.mangomint.com/serenemedspa?serviceId=322", book_attrs="", pricing_href=PREFIX + "/ultherapy/#pricing")
-        if hasattr(SL, "evolvex_video_section"):
-            feat += SL.evolvex_video_section("hudson", PREFIX)  # WSAZ Studio 3 EvolveX segment, right after the Ultherapy demo (Oct 8, 2026)
-        if hasattr(SL, "press_strip"):
-            feat = SL.press_strip(abs_urls=True) + feat  # "As featured on WSAZ" logo strip above the TV segments (Oct 8, 2026)
-        # anchor: the classic hero, or the treatment showcase that replaced it on the Hudson home page (Oct 13, 2026)
+    if 'id="watch-serene"' not in s and hasattr(SL, "home_video_block"):  # "Watch Serene" card slider replaces the separate Ultherapy/EvolveX/newest-video blocks (Oct 16, 2026)
+        s = SL.strip_old_video_blocks(s)
+        feat = SL.home_video_block("hudson", PREFIX)
+        # anchor: the classic hero, or the treatment showcase that replaced it on the home page (Oct 13, 2026)
         anchor = '<section class="hero">' if '<section class="hero">' in s else '<a id="top"></a>\n<section class="sc"'
         s = s.replace(anchor, feat + anchor, 1)
-    if 'id="latest-video"' not in s and hasattr(SL, "latest_video_section"):
-        s = s.replace('<section class="about" id="about">', SL.latest_video_section() + '<section class="about" id="about">', 1)
     if hasattr(SL, "inject_local_specials"):
         s = SL.inject_local_specials(s, "hudson")  # shared specials block (serenemain/local_specials.py), Oct 5 2026
     return s
