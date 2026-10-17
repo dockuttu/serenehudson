@@ -173,7 +173,7 @@ HOME_GALLERY = """
 
 def inject_home_videos(s):
     """Featured WSAZ video first thing on the home page; newest Vimeo video mid-page (shared blocks from site_lib)."""
-    if 'id="watch-serene"' not in s and hasattr(SL, "home_video_block"):  # "Watch Serene" card slider replaces the separate Ultherapy/EvolveX/newest-video blocks (Oct 16, 2026); auto-advances every 10 s with a filling timer bar (site_lib.CAROUSEL_AUTO_MS)
+    if 'id="watch-serene"' not in s and hasattr(SL, "home_video_block"):  # "Watch Serene" card slider replaces the separate Ultherapy/EvolveX/newest-video blocks (Oct 16, 2026); auto-advances every 10 s with a filling timer bar (site_lib.CAROUSEL_AUTO_MS); Ultherapy pinned first
         s = SL.strip_old_video_blocks(s)
         feat = SL.home_video_block("hudson", PREFIX)
         # anchor: the classic hero, or the treatment showcase that replaced it on the home page (Oct 13, 2026)
