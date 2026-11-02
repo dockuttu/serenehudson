@@ -759,7 +759,7 @@ else:
    ("How much does CoolPeel cost?","$400 per treatment at Serene Med Spa in Hudson; a series of three is typical."),
    ("What is the downtime?","One day of pinkness and a mild sunburn feel, then three to five days of light flaking. Makeup by day two or three."),
    ("Does it hurt?","With numbing cream most patients describe warm prickling; no anesthesia is needed."),
-   *([("CoolPeel vs. Moxi?","Both are low-downtime. Moxi is non-ablative and safest for darker skin and melasma; CoolPeel removes a thin surface layer for a stronger effect on pores and texture, best for lighter to medium skin tones.")] if _BV else []),   # MOXI is Barboursville-only
+   ("CoolPeel vs. Moxi?","Both are low-downtime. Moxi is non-ablative and safest for darker skin and melasma; CoolPeel removes a thin surface layer for a stronger effect on pores and texture, best for lighter to medium skin tones."),
    ("Is it safe for darker skin?","CoolPeel is best for Fitzpatrick types I&ndash;III. For deeper skin tones we recommend "+_p("Morpheus8","Moxi or Morpheus8")+"."),
    ("When will I see results?","Within a week of the first treatment, building over the series as collagen remodels."),
  ],

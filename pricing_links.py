@@ -52,6 +52,8 @@ RULES = [
     (r"^depigmentation", ["hyperpigmentation"]),
     (r"^acne", ["acne-treatment", "chemical-peels"]),
     (r"chemical peel", ["chemical-peels"]),
+    (r"^sciton halo", ["halo"]),
+    (r"^bbl \+ moxi", ["sciton-moxi"]),
     (r"^sciton bbl", ["photofacial"]),
     (r"^alma hybrid", ["alma-hybrid", "laser-skin"]),
     (r"^sciton moxi|^moxi", ["sciton-moxi", "laser-skin"]),

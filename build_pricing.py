@@ -67,6 +67,7 @@ TATTOO_HTML = ('<div class="sub"><a href="/laser-tattoo-removal/" class="price-l
 CATS.append(("Laser &amp; Skin",
   row("Lumecca Peak IPL &mdash; Full Face","$400")+row("Lumecca Peak IPL &mdash; Series of 3","$1,050")+row("Lumecca Peak &mdash; Add Neck or Chest","$150")+row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
   row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+
+  row("Sciton Halo &mdash; Full Face (Nov launch, reg. $1,399)","$1,199")+row("Sciton Halo + BBL HEROic &mdash; same visit (Nov launch, reg. $1,799)","$1,399")+row("Sciton BBL HEROic Photofacial","$400")+row("Sciton MOXI","$500")+row("BBL + MOXI &mdash; same visit (reg. $900)","$750")+
   row("CoolPeel","$400")+row("Deka CO&sup2; Laser &mdash; Fractional Resurfacing","$600")+row("Deka CO&sup2; Laser &mdash; Full Resurfacing (Maximum Strength)","$1,000")+row("Opus Plasma","$400")+sub("Ultherapy PRIME &mdash; Hudson")+'<div class="price-row" style="border:0"><span class="price-name" style="font-size:.85rem;color:var(--ink)">&#9654; <a href="/ultherapy/#studio3" style="text-decoration:underline">Watch Dr. Arora&rsquo;s live demo on WSAZ Studio 3</a> &mdash; Studio 3 special: 20% off Ultherapy through Nov 30, 2026.</span></div>'+row("Full Face + Neck","$2,900")+row("Full Face","$2,200")+row("Lower Face + Neck","$2,400")+row("Lower Face (Jowls)","$1,650")+row("Neck / Under-Chin","$1,400")+row("Brow Lift","$850")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub"><a href="/laser-hair-removal/" class="price-link">Laser Hair Removal (InMode OptimasMAX &amp; Alma Harmony)</a> &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
   '''<table class="lhr-table"><thead><tr><th>Area</th><th>Per session</th><th>Package of 6</th></tr></thead><tbody>
@@ -131,7 +132,7 @@ cats_html="\n".join('<div class="price-cat reveal" id="%s"><h3>%s</h3>%s</div>'%
 jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slug(t),t) for t,_ in CATS)+'</div>'
 
 # Offer schema (headline priced services)
-OFFERS=[("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),
+OFFERS=[("Sciton Halo",1199),("Sciton BBL HEROic",400),("Sciton MOXI",500),("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),
  ("Morpheus8 RF",600),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",149),("Microneedling with PRP",675),
  ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Series of 6",899),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",99),
  ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",500)]

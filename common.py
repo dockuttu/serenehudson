@@ -40,7 +40,7 @@ CATEGORIES = [
    ("medical-facials","Medical Facials"), ("hyperpigmentation","Hyperpigmentation & Melasma"),
  ]),
  ("Laser", [
-   ("laser-skin","Laser Skin Resurfacing"), ("opus-plasma","Opus Plasma"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","IPL Photofacial"), ("lumecca","Lumecca Peak IPL"), ("optimasmax","OptimasMAX by InMode"),
+   ("laser-skin","Laser Skin Resurfacing"), ("halo","Halo Hybrid Laser"), ("sciton-moxi","MOXI"), ("opus-plasma","Opus Plasma"), ("harmony-bio-boost","Harmony Bio-Boost"), ("photofacial","BBL &amp; IPL Photofacial"), ("lumecca","Lumecca Peak IPL"), ("optimasmax","OptimasMAX by InMode"),
    ("laser-hair-removal","Laser Hair Removal"), ("laser-tattoo-removal","Laser Tattoo Removal"),
    ("laser-nail-fungus","Laser Nail Fungus"),
  ]),

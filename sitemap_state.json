@@ -1,718 +1,866 @@
 {
 "https://hudson.serenemedspas.com/": [
-"cdc7f99e8f768f5b",
-"2026-09-17"
+"df524d22a2fb0c72",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/accutite/": [
+"d3275c1f0bb852b3",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/acne-treatment/": [
+"db238e8735b547b0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/": [
-"14fb8b38b4e8d52f",
-"2026-09-18"
+"65abd2b6e334dcf7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/alma-duo/": [
-"d6aa78ae8aa94342",
-"2026-09-18"
+"2ddccfdcd9d5d3cf",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/alma-ted/": [
-"eb89dc5eef4aaa20",
-"2026-09-18"
-],
-"https://hudson.serenemedspas.com/aftercare/bbl-hero/": [
-"6bd6b0ac90484831",
-"2026-09-18"
+"41a7c61ba1527afc",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/botox/": [
-"28e3c666f997bca8",
-"2026-09-18"
+"4ea4ed65744279ab",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/brow-tint-lamination/": [
-"b2cd2b764f965906",
-"2026-09-18"
+"ccf3558cac1d62e7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/chemical-peel/": [
-"58e02d1ddbd68b85",
-"2026-09-18"
+"e36ea6dc4e36a0af",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/co2-laser/": [
-"16e08025d2ed70c4",
-"2026-09-18"
+"7d233d2d2c31a05d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/dermal-filler/": [
-"2c8fa7ea0bc80368",
-"2026-09-18"
+"7d51789fbbf47add",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/forma/": [
-"fa56f50261f16e0c",
-"2026-09-18"
+"ca008818a49cfecd",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/hormone-pellets/": [
-"34b6855ce2b83098",
-"2026-09-18"
+"d23651d9e2be96cf",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/hydrafacial/": [
-"5d08566754c23fd0",
-"2026-09-18"
+"6511cbff41effe54",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/laser-hair-removal/": [
-"12f419ee97947651",
-"2026-09-18"
+"87920dde5a540585",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/laser-toenail-fungus/": [
-"858d36994f552904",
-"2026-09-18"
+"31a17847597cff71",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/lash-lift-tint/": [
-"8c1a21926164d23f",
-"2026-09-18"
+"5cc66f847522a3f7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/morpheus8/": [
-"aff9f0874d87e295",
-"2026-09-18"
-],
-"https://hudson.serenemedspas.com/aftercare/moxi/": [
-"37c514118e00c1ef",
-"2026-09-18"
+"fe78524841d78747",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/o-shot/": [
-"7e66c0596e48d72f",
-"2026-09-18"
+"37d3c2b632cc4e0a",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/opus-plasma/": [
-"b0ed6360c821c272",
-"2026-09-18"
+"cdc207db1feda336",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/p-shot/": [
-"e9d7c7516f34753e",
-"2026-09-18"
+"d4dcc395253cc8d0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/pdo-threads/": [
-"32c327e3458e49f3",
-"2026-09-18"
+"5aeb557b8dfa78e4",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/pico-resurfacing/": [
-"69f93459b37fa73a",
-"2026-09-18"
+"0b354486d6904a45",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/sculptra/": [
-"00c99b868388ace0",
-"2026-09-18"
+"5298f57c367c3dae",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/tattoo-removal/": [
-"24d92130334bc496",
-"2026-09-18"
+"60671b217a08b578",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/vtone/": [
-"5bb9dd8689a11ebd",
-"2026-09-18"
+"8c9bb6f5f4474a6e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/aftercare/waxing/": [
-"1080703399c551fd",
-"2026-09-18"
+"fd9a68ce5ec3f4b5",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/alma-duo/": [
-"bdffdf34d39bfa60",
-"2026-09-16"
+"2b166b726ed4e1a1",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/alma-ted/": [
-"c9ff22846a4142dd",
-"2026-09-16"
+"c3a3a9bab5e64be4",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/baby-botox/": [
+"f49942c1b1e15e8b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/before-after/": [
-"f5ec727038c9f7c9",
-"2026-09-16"
+"7365751f830787cf",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/bodytite/": [
-"f70214876aadc91d",
-"2026-09-16"
+"58ea8e8744f69653",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/botox-akron-oh/": [
+"50faa523ee4d7aad",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/botox-cleveland-oh/": [
+"98ff7a958c16f145",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/botox-cuyahoga-falls-oh/": [
-"4c27e93490f830d3",
-"2026-09-18"
+"31ed0123cf624577",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/botox/": [
-"db53da1fcb1b1ab3",
-"2026-09-18"
+"1e49a55f005f9a3b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/cheek-filler/": [
-"2ad43be36ab3a7aa",
-"2026-09-18"
+"8594bee7c692b9ef",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/chemical-peels/": [
-"88cc399914dc91fa",
-"2026-09-18"
+"f1de639e2c7af3dc",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/chin-filler/": [
-"554c4151d63775c2",
-"2026-09-18"
+"2ad01421372846dc",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/coolpeel/": [
+"b0d16ac5518bb639",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/define/": [
+"ddc9fbcc4f84b8f8",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/deka-co2-laser/": [
+"4584bbdc4e5184a9",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/dermal-fillers-akron-oh/": [
-"93b09febd438add3",
-"2026-09-18"
+"923d1d2e17c2ac69",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/dermal-fillers-brooklyn-oh/": [
-"d288e06702698314",
-"2026-09-18"
+"806d4f1f313f17ff",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/diamondglow/": [
-"3d9768f56eef2a3a",
-"2026-09-16"
+"aa5d437ae522fb6f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/easy-pay/": [
-"7260fdff0ef38b47",
-"2026-09-16"
+"98385b5035f41dcc",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/empowerrf/": [
+"53de4db094584d48",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/emsculpt-neo/": [
-"4fea4bd3c0ad7124",
-"2026-09-16"
+"82049e89aa626989",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/evolve-x/": [
-"1ac62dd0fc301d6f",
-"2026-09-16"
+"72100eefd17337b0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/facetite/": [
-"4bdca23a5d341ae6",
-"2026-09-16"
+"0d8dc8a330c115d8",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/filler-dissolver/": [
+"15dce6e76760bb09",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/fillers/": [
-"a26c3154c1bbb806",
-"2026-09-18"
+"d6e919d7f9789a8d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/forma/": [
-"10b6908a2f9b34a8",
-"2026-09-16"
+"644812eb220f7a7d",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/formav/": [
+"5492f34857df5181",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/grow-girth/": [
+"777506d9d15483bf",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/halo/": [
+"1518b2bcf6e9bd8c",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/hand-filler/": [
+"8bae92b975d746c4",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/harmony-bio-boost/": [
-"1051d6ca2b1fccd3",
-"2026-09-16"
+"aeb9fd1cf4a75fc5",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/hormone-optimization/": [
-"7857e5bfc6252b54",
-"2026-09-18"
+"5bb1d27ee4253f3e",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/hormone-therapy-women/": [
+"ae6f3c51fc43a187",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/house-calls/": [
-"cdf9ba2a117dfac1",
-"2026-09-16"
+"3434053033d3b86e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/hydrafacial/": [
-"7bd059ef5da52a68",
-"2026-09-18"
+"6819585e10de41d7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/hydration-bar/": [
-"839d867347682b27",
-"2026-09-16"
+"688b89e47f9a9ed9",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/hyperhidrosis-treatment/": [
+"a2e06e26b9977a4c",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/hyperpigmentation/": [
-"07600fa1e60713b6",
-"2026-09-16"
+"d5356388953cbcc3",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/inbody-body-scan/": [
+"6c8e8608f40a356c",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/iv-drip-menu/": [
+"61d4e3d9052fc9ae",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/iv-therapy/": [
-"b62832546bac1d21",
-"2026-09-16"
+"621be2dda361a71e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/jawline-filler/": [
-"f1d59ab719637c0a",
-"2026-09-18"
+"cfe00cf851bceded",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/kenalog/": [
-"1a2e6679827a6d83",
-"2026-09-16"
+"1820c70a75f020b5",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/kybella-akron-oh/": [
-"0496c68297db374b",
-"2026-09-18"
+"fe2cfdb5da8b6edb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/kybella-cleveland-oh/": [
-"7fb86e91291a3129",
-"2026-09-18"
+"44eacc4202a96a8c",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/kybella/": [
-"cf24259a26646246",
-"2026-09-18"
+"25ba41c64cd530ad",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/": [
-"9c9d0950f7aad2f5",
-"2026-09-16"
+"0a808dedb010edec",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/cbc/": [
-"0aa949e8b3b6ba9d",
-"2026-09-16"
+"0bdf8860ad37f0af",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/cmp/": [
-"36cb0ce0ee424fb4",
-"2026-09-16"
+"a1243bb3f91469c2",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/estradiol/": [
-"b6c7f77364883dd1",
-"2026-09-16"
+"774a7929f9d92582",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/ferritin/": [
-"f67aa5f8481e772c",
-"2026-09-16"
+"50f3cc78d6a0bdb7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/free-t3/": [
-"a765a284e8fb6d9c",
-"2026-09-16"
+"2101996c718585bb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/free-t4/": [
-"6f880303731e2818",
-"2026-09-16"
+"01759ca095525218",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/free-testosterone/": [
-"a8b924acc41d6555",
-"2026-09-16"
+"0d8aa5b3783d68f6",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/fsh/": [
-"ffe9f931d95c27c4",
-"2026-09-16"
+"a7d4fa95da27e381",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/lh/": [
-"898d3438936ba998",
-"2026-09-16"
+"8647042b55722b0d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/prolactin/": [
-"b60093d76e9f80c9",
-"2026-09-16"
+"34d720b32633e50b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/psa/": [
-"721c39d5c390c0d1",
-"2026-09-16"
+"0f0a0c3a9802772f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/shbg/": [
-"36417c91cec29e24",
-"2026-09-16"
+"cc0efe98490b52c6",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/total-testosterone/": [
-"aa777b8bbf5651f4",
-"2026-09-16"
+"b56b1d8aa6fd6fd3",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/tpo-antibodies/": [
-"ac4140cb2292bda8",
-"2026-09-16"
+"e8b6e3afbd8a6e9f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/tsh/": [
-"2b1ef636d77cf784",
-"2026-09-16"
+"9a059aab59fc5a98",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/vitamin-b12/": [
-"b64c3a158d6d63a1",
-"2026-09-16"
+"7ff5c39899876f9a",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/labs/vitamin-d/": [
-"70a815e8832123ff",
-"2026-09-16"
+"8a6a7526767bdbe9",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/laser-facial/": [
-"282f9b4ab40483ca",
-"2026-09-16"
+"f234d872606ddeb0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/laser-hair-removal/": [
-"370386d71eac28b5",
-"2026-09-18"
+"53ab55195f68e5b0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/laser-nail-fungus/": [
-"aaae0320cb7a6275",
-"2026-09-18"
+"fe479295f6325eeb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/laser-skin/": [
-"67b5f2d462bf7a64",
-"2026-09-18"
+"03f587f330e9d493",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/laser-tattoo-removal/": [
-"1785cec2020abc7f",
-"2026-09-18"
+"c9ba910b6f5a2cba",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/lip-filler-akron-oh/": [
+"a87e53aca82346b7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/lip-filler-brooklyn-oh/": [
-"546f89300c7b9c8e",
-"2026-09-18"
+"2a6d73de00a45377",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/lip-filler/": [
-"9fc7f5e9c2cea7f4",
-"2026-09-18"
+"0e531eac6b251a92",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/lipomelt/": [
-"dec0c1389158c91f",
-"2026-09-16"
+"85f8271dcea4d7a2",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/liposuction/": [
-"00fe5051fd01a5fc",
-"2026-09-16"
+"29c824da744fe32f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/longevity/": [
-"6566368f4c168790",
-"2026-09-16"
+"de89f57ac39f3a55",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/low-dose-naltrexone/": [
+"d95300ada782ec66",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/lumecca/": [
+"f06fd88056f52033",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/masseter-botox/": [
+"9a668f4acbdc8d7f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/med-spa-akron-oh/": [
-"820cf9caa17c9dad",
-"2026-09-16"
+"d030e3938a00253e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/med-spa-aurora-oh/": [
-"333e5b6187744500",
-"2026-09-16"
+"376b6e37a92ab666",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/med-spa-cleveland-oh/": [
+"f4267fa5d7b90420",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/med-spa-cuyahoga-falls-oh/": [
-"d1721b72cf441078",
-"2026-09-16"
+"bd7e5f8666386521",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/med-spa-solon-oh/": [
-"2c6fc1c3106e7fa4",
-"2026-09-16"
+"419af79e2433996d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/med-spa-stow-oh/": [
-"3f0e31fa3786102e",
-"2026-09-16"
+"8bea70f268258a03",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/med-spa-twinsburg-oh/": [
-"645207c66d101863",
-"2026-09-16"
+"a7abcc75c72823e3",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/medical-facials/": [
-"e948c48a7effcebd",
-"2026-09-16"
+"034301996a49fe32",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/medical-weight-loss-akron-oh/": [
+"5bbc71662c4d5e41",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/medical-weight-loss-cleveland-oh/": [
+"af99f8df2ffcf1ea",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/mens-health-hudson-oh/": [
-"586a905852a55ee0",
-"2026-09-18"
+"00965f0af7354436",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/mens-sexual-wellness/": [
-"f53227083301a0b3",
-"2026-09-18"
+"282d4241e0e2ace6",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/microneedling/": [
-"be90a0e09474f84a",
-"2026-09-18"
+"2915b33a873455a1",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/morpheus8-akron-oh/": [
-"aae35a8b43b4ee41",
-"2026-09-18"
+"ef92c3c7cdc8033f",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/morpheus8-cleveland-oh/": [
+"4e70c609df13c383",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/morpheus8/": [
-"356f60f2c7d7835f",
-"2026-09-18"
+"531889d0e50d13b5",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/morpheus8v/": [
+"dd4bd16006cd2bb0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/obagi/": [
-"461bf919ebb62c41",
-"2026-09-16"
+"c078b67b920d1df2",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/optimasmax/": [
+"97ce115a3e5d4b53",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/opus-plasma/": [
-"7ed6ec13cd6aa54d",
-"2026-09-16"
+"73066258149cb881",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/p-renew/": [
+"2d683bfb182eaf7d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/pdo-thread-lift-lakewood-oh/": [
-"8a8a6ee180c9d7d9",
-"2026-09-18"
+"88f1b899e6d03024",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/peptide-therapy/": [
-"b51efa249d804fe6",
-"2026-09-16"
+"4a6386bf76d16e0b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/photofacial/": [
-"4ac2674678c00854",
-"2026-09-18"
+"4d03706730930ce5",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/pricing/": [
-"8d6ffd8cb0cb6ed7",
-"2026-09-18"
+"4bcbce198a344c41",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/prp-hair-restoration/": [
-"e814eda58b7a515b",
-"2026-09-16"
+"9e50981e69808766",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/quantumrf/": [
+"2fc07a1f3f1b0896",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/radiesse/": [
+"d9e0195abbf202fd",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/sciton-moxi/": [
+"b8b454c0451f9710",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/sculptra-bbl/": [
-"2299ab0e36c39d68",
-"2026-09-16"
+"b5f62742484e1f75",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/sculptra-warren-oh/": [
-"1c6ad03f811fb985",
-"2026-09-18"
+"24f3d634d6a2d6e8",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/sculptra/": [
-"4e195a51cca3fcfe",
-"2026-09-18"
+"a16d9f9b28e03b7f",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/sermorelin/": [
+"5a449419e2ead08e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/": [
-"757a44f98cbfef84",
-"2026-09-16"
+"2ca2488e2893d6e4",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/clenziderm-acne-therapeutic-system/": [
-"25981da87f1e859f",
-"2026-09-16"
+"4a3d99589c4e04fb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/clenziderm-daily-care-foaming-cleanser/": [
-"ebec5c986e566a90",
-"2026-09-16"
+"692f3a98faba72ac",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/clenziderm-pore-therapy/": [
-"5c3d55433f41bd09",
-"2026-09-16"
+"ea8378e9722e3870",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/clenziderm-therapeutic-lotion/": [
-"0f5be0ba00ab965f",
-"2026-09-16"
+"384262c7eeb33d63",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/clenziderm-therapeutic-moisturizer/": [
-"788d381a1eaa34cb",
-"2026-09-16"
+"ceab8f7a2cfbd429",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/daily-hydro-drops-eye-gel-cream/": [
-"30cd289a32b36bf7",
-"2026-09-16"
+"6a5033efbb19cd1f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/daily-hydro-drops-serum/": [
-"e802cd683411535d",
-"2026-09-16"
+"6f6e3725c6bbe29c",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/elastiderm-advanced-filler-concentrate/": [
-"6041a1b518ea48e3",
-"2026-09-16"
+"16ec09429bc0ddb8",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/elastiderm-eye-serum/": [
-"3c20ab42e5c8351c",
-"2026-09-16"
+"68b09c3abfd3721a",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/elastiderm-facial-serum/": [
-"4df93be3fa88ccfd",
-"2026-09-16"
+"0fd01a4e60c32480",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/elastiderm-firming-eye-cream/": [
-"39f166197674d847",
-"2026-09-16"
+"7e58ea6b5de9f398",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/elastiderm-lift-up-sculpt-moisturizer/": [
-"ecb6b5202c5e4101",
-"2026-09-16"
+"1bdde64c7d9c6827",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/elastiderm-neck-decollete-concentrate/": [
-"01057ea4ef858d73",
-"2026-09-16"
+"7d6ef6baba24fbe5",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/hydrate-light/": [
-"9081f04437647569",
-"2026-09-16"
+"33fe18c21806149f",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/hydrate-luxe/": [
-"e7085a94cdd4a595",
-"2026-09-16"
+"9a53506b41a931cb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/hydrate/": [
-"8d26103cc0ffa6dd",
-"2026-09-16"
+"186997928bb95cfc",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-cil-biostim-scalp-serum/": [
-"1ec387ff1b2400f2",
-"2026-09-16"
+"8e33e787cf719bd7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-cil-eyebrow-boosting-serum/": [
-"a2e3713c00bf41a9",
-"2026-09-16"
+"34f2807f45cda68d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-cil-eyelash-enhancing-serum/": [
-"416b03b2378666a9",
-"2026-09-16"
+"8f63cea72d840adf",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-blend-fx/": [
-"3d208da587e9e284",
-"2026-09-16"
+"fbf40de5d6175b18",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-clear-fx/": [
-"d8f23a808de27009",
-"2026-09-16"
+"bb5b16099c2241da",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-exfoderm-forte/": [
-"99e9258238b9b5aa",
-"2026-09-16"
+"4d2fc811d162aabd",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-exfoderm/": [
-"3214d9654af4d98b",
-"2026-09-16"
+"a85dd5493bd9073a",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-foaming-gel-travel/": [
-"a155d50164ae04be",
-"2026-09-16"
+"4c5a66ee47eff74b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-foaming-gel/": [
-"127b16683e05fe4c",
-"2026-09-16"
+"11dc32a1caa3ad6b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-fx-system-normal-dry/": [
-"d1b06fd04ed4bd50",
-"2026-09-16"
+"450c32d94dac7811",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-fx-system-normal-oily/": [
-"265199a463beb310",
-"2026-09-16"
+"83b7a4fb0206d229",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-gentle-cleanser-travel/": [
-"5a747d3698aa7ce2",
-"2026-09-16"
+"9c08ecbbb25aed95",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-gentle-cleanser/": [
-"f92add4e92a4e52b",
-"2026-09-16"
+"4c1c1da1e8951a1c",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-toner-travel/": [
-"b813f4f3f4650ac4",
-"2026-09-16"
+"1001d80118fa4cc6",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/nu-derm-toner/": [
-"b6895c30bf27884a",
-"2026-09-16"
+"bd2bb050c9629a15",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/obagi-c-balancing-toner/": [
-"79b00be043dea4c8",
-"2026-09-16"
+"a699e8124085ba57",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/obagi-c-cleansing-gel/": [
-"e8157abef6ba3d22",
-"2026-09-16"
+"60c39a65be6e1454",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/obagi-c-exfoliating-day-lotion/": [
-"193631976f560dc2",
-"2026-09-16"
+"c1d1deeae8b9d694",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/obagi-c-fx-c-therapy-night-cream/": [
-"c21164717ce33020",
-"2026-09-16"
+"8f224e0806d1eade",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/obagi-c-fx-clarifying-serum/": [
-"5cd9d6409d1e1036",
-"2026-09-16"
+"ee71e72b137ec68e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-microdermabrasion-polish-mask/": [
-"a261c9046ac2feba",
-"2026-09-16"
+"ad12a7e28e32617b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-peptide-complex/": [
-"c73fe490e488d16a",
-"2026-09-16"
+"c9076f79d732ae22",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-serum-10-travel/": [
-"a810e71a68c2eb82",
-"2026-09-16"
+"56300305c71d4383",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-serum-10/": [
-"c8447fc9e9762f95",
-"2026-09-16"
+"877a78a4d2db01ea",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-serum-15-travel/": [
-"e1fab7673a9a755b",
-"2026-09-16"
+"61e4e37888f90fd2",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-serum-15/": [
-"c29aa65298db2098",
-"2026-09-16"
+"dba3c043d86056f8",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-serum-20-travel/": [
-"9e182bc10d93ca02",
-"2026-09-16"
+"e50ea8c5bfd9e7ce",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/professional-c-serum-20/": [
-"e39231ce3e24e6b0",
-"2026-09-16"
+"15058bf1a313ddeb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/rebalance-skin-barrier-recovery-cream/": [
-"c0c98baf392c7155",
-"2026-09-16"
+"288fd6f3f6415153",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/retinol-0-5/": [
-"54cf385d4f3bfa66",
-"2026-09-16"
+"80ae9d3057c820a4",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/retinol-1-0/": [
-"c98d75ac9a1903af",
-"2026-09-16"
+"a35a4ff785b0ede0",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/retinol-pha-night-cream/": [
-"e24a41565145b9df",
-"2026-09-16"
+"3ae83832f65ded5e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/sun-shield-mineral-spf-50/": [
-"15c6fc9183ef4749",
-"2026-09-16"
+"184a5e10994a7f3e",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/sun-shield-tint-cool-spf-50/": [
-"b04c7e26b02b6785",
-"2026-09-16"
+"4b00a383d9b3fa70",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/sun-shield-tint-warm-spf-50/": [
-"e73a9d2421b0ce5d",
-"2026-09-16"
+"11b6f1626a04d18a",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-acne-cleansing-wipes/": [
-"b509ba2e4250e2a6",
-"2026-09-16"
+"8b1f781b92b9e7b4",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-balancing-toner/": [
-"a8cd305e67c823be",
-"2026-09-16"
+"61cfc0260e79a003",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-claribright/": [
-"bb09ebf7c95a0096",
-"2026-09-16"
+"a689607020c81079",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-cleansing-wipes/": [
-"765d8171872b313f",
-"2026-09-16"
+"11a12f75c956f7a1",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-foaming-cleanser/": [
-"d495bed89e40d507",
-"2026-09-16"
+"199a914dbe7d3ffb",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-intensive-daily-repair/": [
-"82c394e374287908",
-"2026-09-16"
+"1d2deb749ea645d2",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-moisture-restore/": [
-"5eeb7b79ff49639a",
-"2026-09-16"
+"541ea05f6bec5cfa",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-physical-defense-tinted-spf-50/": [
-"12331d98158778e1",
-"2026-09-16"
+"2031032f9ab3cb67",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-retivance/": [
-"9647b51d729ef49e",
-"2026-09-16"
+"19113444bb0e14a2",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/shop/suzanobagimd-super-antioxidant-serum/": [
-"17b0a8032645b4e1",
-"2026-09-16"
+"837c8185089a16d1",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/shoulder-slimming-botox/": [
+"87b35de1d2e9f986",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/skinvive/": [
-"74136d907f5c699c",
-"2026-09-18"
+"af6052a74a4c9d6c",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/spider-veins/": [
-"88730bf11806c4ca",
-"2026-09-16"
+"5c2960a9d17415b1",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/testosterone-therapy-men/": [
+"28dab9250ed7425d",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/thread-lift/": [
-"26f3b73b14955887",
-"2026-09-18"
+"256f29521e1aea18",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/training/": [
-"6425d91833d9bc0e",
-"2026-09-17"
+"d5ee90bd4ee61f9f",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/ultherapy-akron-oh/": [
+"e29144dbda4feec7",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/ultherapy/": [
-"019f6e6f55580038",
-"2026-09-16"
+"dc2a84e2e04428e5",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/under-eye-filler/": [
-"be442622ec1e6f21",
-"2026-09-18"
+"7092109e7d77268b",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/under-eye-prp/": [
-"0d7650c22a0c65b9",
-"2026-09-16"
+"e11db095f8058ad3",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/v-renew/": [
+"ae8fb5ab57d4a23e",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/vitamin-injections/": [
+"ff8da3d34aa6bac0",
+"2026-11-01"
+],
+"https://hudson.serenemedspas.com/vtone/": [
+"92c0d16c8b5877de",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/weight-loss/": [
-"8849387598e50f6c",
-"2026-09-18"
+"6a47ac0d22b8e9c1",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/womens-sexual-wellness/": [
-"34c67cf0ac0061db",
-"2026-09-16"
+"cfe71776c06038c2",
+"2026-11-01"
 ],
 "https://hudson.serenemedspas.com/xperience-rewards/": [
-"1d0f4a20b05a6c90",
-"2026-09-16"
+"3bbd32643fb80b83",
+"2026-11-01"
 ]
 }
