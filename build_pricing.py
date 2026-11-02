@@ -100,7 +100,7 @@ CATS.append(("Acne Clinic",
 CATS.append(("Hair, Face &amp; Body", sub("Hair Restoration")+
   row("PRP Hair Restoration","$500","/tx")+row("PRP Hair Restoration &mdash; series of 3, prepaid","$1,200")+row("Alma TED","$300","/tx")+
   sub("Facials")+row("HydraFacial","$149")+row("DiamondGlow","$149")+row("Facials &amp; Dermaplaning","$100+")+
-  sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP","$500")+row("Microneedling with Exosomes","$199")+row("Microneedling with PDRN (Salmon DNA)","$199")+row("Exosome Add-On to Any Treatment","$100")+
+  sub("Body Treatments")+row("Microneedling","$200")+row("Microneedling with PRP (Vampire Facial)","$299")+row("Vampire Facial &mdash; Series of 3","$799")+row("Microneedling with Exosomes","$199")+row("Microneedling with PDRN (Salmon DNA)","$199")+row("Exosome Add-On to Any Treatment","$100")+
   row("Morpheus8 RF","$600","/tx")+row("Morpheus8 RF &mdash; Series of 3","$1,700")+
   row("Spider Vein","$300+","/session")+row("Sculptra BBL","$6,000")+row("EvolveX Body Contouring","$149","/tx")+row("EvolveX &mdash; Series of 6","$799")+row("Define &mdash; Chin or Cheek (with Forma)","$175","/tx")+row("Define &mdash; Series of 6 (one zone)","$899")+row("Define &mdash; Chin + Cheek (with Forma)","$300","/tx")+row("Define &mdash; Series of 6 (chin + cheek)","$1,200")+row("AccuTite","From $1,500")+row("QuantumRF","From $2,500")+row("FaceTite","From $3,500")+row("BodyTite","From $4,000","/area")+
   row("EMSCULPT NEO","$400","/tx")+row("EMSCULPT NEO &mdash; Package of 4","$1,500")))
@@ -133,7 +133,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 
 # Offer schema (headline priced services)
 OFFERS=[("Sciton Halo",1199),("Sciton BBL HEROic",400),("Sciton MOXI",500),("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),
- ("Morpheus8 RF",600),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",149),("Microneedling with PRP",675),
+ ("Morpheus8 RF",600),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",149),("Microneedling with PRP (Vampire Facial)",299),
  ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Series of 6",899),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",99),
  ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",500)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,

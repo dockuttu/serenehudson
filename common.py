@@ -23,7 +23,7 @@ BOOK_MAP = {
  "sculptra": MM % 331,              # Sculptra
  "kybella": MM % 332,               # Kybella (per vial)
  "thread-lift": MM % 337,           # PDO Thread Lift
- "exosomes": MM % 18, "pdrn": MM % 116,   # Microneedling with Exosomes / with PDRN (direct booking, Nov 2 2026)
+ "exosomes": MM % 18, "pdrn": MM % 116, "microneedling": MM % 16,   # Vampire Facial   # Microneedling with Exosomes / with PDRN (direct booking, Nov 2 2026)
  "spider-veins": MM % 338, "under-eye-prp": MM % 333, "kenalog": MM % 334, "laser-hair-removal": MM % 339,          # Spider Vein Sclerotherapy
 }
 def book_for(slug): return BOOK_MAP.get(slug, BOOK)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # pages_data_new_zzzzzzzzzzz_regenerative.py — Exosome and PDRN regenerative microneedling pages (Nov 2 2026).
 # Prices from Mangomint: Microneedling with Exosomes $199 (serviceId 18), Microneedling with PDRN $199 (116),
-# Vampire Facial / PRP $199 (16), Under-Eye PRP/PRF $400 (333), Exosomes add-on $100 (add-on to any treatment).
+# Vampire Facial / PRP $299, 3 for $799 (16), Under-Eye PRP/PRF $400 (333), Exosomes add-on $100 (add-on to any treatment).
 # Hudson-only file (Hudson, OH).
 
 if "_steps" not in globals():
@@ -11,7 +11,7 @@ if "_price_block" not in globals():
 if "PAGES6" not in globals():
     PAGES6 = []
 
-_EXO, _PDRN, _PRP, _UE, _ADDON = "$199", "$199", "$199", "$400", "$100"
+_EXO, _PDRN, _PRP, _PRP3, _UE, _ADDON = "$199", "$199", "$299", "$799", "$400", "$100"
 
 if "HERO_MAP" in globals():
     HERO_MAP["exosomes"] = "morpheus8"; HERO_MAP["pdrn"] = "morpheus8"
@@ -60,7 +60,7 @@ PAGES6 += [
  "faqs":[
    ("How much does exosome microneedling cost?","Microneedling with exosomes is " + _EXO + " per treatment at Serene Med Spa in Hudson. Adding exosomes to any other treatment &mdash; Morpheus8, Halo, MOXI, CO&sup2; or a chemical peel &mdash; is " + _ADDON + "."),
    ("What are exosomes, exactly?","Exosomes are nano-sized vesicles that cells release to communicate. They carry growth factors, cytokines and microRNA. The exosomes we use are purified from lab-grown stem-cell cultures, sterilized and tested; they contain no cells and no DNA from a donor."),
-   ("Exosomes vs. PRP: which is better?","PRP (the &ldquo;vampire facial&rdquo;) uses growth factors from your own blood, so it depends on your platelets. Exosomes deliver a standardized, higher concentration of signaling molecules and don&rsquo;t require a blood draw. Many patients do best with both: PRP for your own biology, exosomes for consistency. We offer each for " + _PRP + "."),
+   ("Exosomes vs. PRP: which is better?","PRP (the &ldquo;vampire facial&rdquo;) uses growth factors from your own blood, so it depends on your platelets. Exosomes deliver a standardized, higher concentration of signaling molecules and don&rsquo;t require a blood draw. Many patients do best with both: PRP for your own biology, exosomes for consistency. PRP is " + _PRP + "; exosomes are " + _EXO + "."),
    ("Exosomes vs. PDRN?","PDRN (salmon DNA) is a tissue-repair molecule that mainly boosts hydration, elasticity and wound healing. Exosomes carry a broader mix of signals that also calm inflammation and support collagen. For dull, inflamed or post-laser skin we lean toward exosomes; for dehydrated, crepey skin we often start with <a href=\"/pdrn/\">PDRN</a>."),
    ("Is there any downtime?","Expect light pinkness for 12 to 24 hours. Most patients wear makeup the next day. Avoid retinol, acids and heavy sweating for 48 hours."),
    ("How many treatments do I need?","You will see a glow after one. For texture, scarring or lines we recommend a series of three, four to six weeks apart, then maintenance once or twice a year."),
@@ -72,7 +72,7 @@ PAGES6 += [
    ("Microneedling with Exosomes", _EXO + " / treatment", "Face; neck, chest or hands quoted at consultation"),
    ("Exosome Add-On to Any Treatment", _ADDON, "Morpheus8, Halo, MOXI, CO&sup2;, chemical peel"),
    ("Microneedling with PDRN", _PDRN + " / treatment", "Salmon-DNA skin booster"),
-   ("Microneedling with PRP (Vampire Facial)", _PRP + " / treatment", "Your own platelet-rich plasma"),
+   ("Microneedling with PRP (Vampire Facial)", _PRP + " / treatment", "Your own platelet-rich plasma &middot; series of 3 " + _PRP3),
    ("Under-Eye PRP / PRF", _UE, "Dark circles and hollows, no filler"),
    ("Consultation", "Complimentary", "No commitment"),
  ], _REGEN_NOTE),
@@ -124,7 +124,7 @@ PAGES6 += [
    ("Microneedling with PDRN", _PDRN + " / treatment", "Face; neck, chest, hands or under-eyes quoted at consultation"),
    ("Microneedling with Exosomes", _EXO + " / treatment", "Growth-factor signaling"),
    ("Exosome Add-On to Any Treatment", _ADDON, "Stack with PDRN, laser or Morpheus8"),
-   ("Microneedling with PRP (Vampire Facial)", _PRP + " / treatment", "Your own platelet-rich plasma"),
+   ("Microneedling with PRP (Vampire Facial)", _PRP + " / treatment", "Your own platelet-rich plasma &middot; series of 3 " + _PRP3),
    ("Consultation", "Complimentary", "No commitment"),
  ], _REGEN_NOTE),
  "ctah2":"Ready for glass skin?","ctapara":"Book PDRN microneedling online or schedule a complimentary consultation with our Hudson team.",
@@ -136,3 +136,14 @@ for _lst in [globals().get(_n, []) for _n in ("PAGES", "PAGES2", "PAGES3", "PAGE
     for _p in _lst:
         if _p.get("slug") == "microneedling":
             _p["related"] = ["exosomes", "pdrn", "morpheus8"]
+            _p["title"] = "Microneedling &amp; PRP in Hudson, OH | Vampire Facial $299 | Serene"
+            _p["desc"] = "Microneedling ($200) and microneedling with PRP, the vampire facial ($299, or 3 for $799), in Hudson, OH at physician-led Serene Med Spa. Smoother texture, softer scars, fresher skin. Exosome and PDRN options $199."
+            _p["faqs"] = [("How much does microneedling with PRP cost?", "Microneedling with PRP, the vampire facial, is " + _PRP + " per treatment at Serene Med Spa in Hudson, or " + _PRP3 + " for a series of three. Plain microneedling is $200; microneedling with exosomes or PDRN is " + _EXO + ".")] + [q for q in _p.get("faqs", []) if "cost" not in q[0].lower()]
+            _p["pricing_html"] = _price_block("Pricing", "Microneedling pricing in Hudson", [
+                ("Microneedling", "$200 / treatment", "Serene&rsquo;s signature collagen-induction treatment"),
+                ("Microneedling with PRP (Vampire Facial)", _PRP + " / treatment", "Your own platelet-rich plasma"),
+                ("Vampire Facial &mdash; Series of 3", _PRP3, "Four to six weeks apart"),
+                ("Microneedling with Exosomes", _EXO + " / treatment", "Lab-purified growth-factor signals"),
+                ("Microneedling with PDRN", _PDRN + " / treatment", "Salmon-DNA skin booster"),
+                ("Consultation", "Complimentary", ""),
+            ], _REGEN_NOTE)
