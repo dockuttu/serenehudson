@@ -11,9 +11,9 @@
 
   var CFG = {
     book: "https://booking.mangomint.com/serenemedspa?serviceId=321",
-    zoho: { action: "https://crm.zoho.com/crm/WebToLeadForm", xnq: "29c1b6f4e6219d1e5682cd0434b1ce181ccda55241b6394ae70c33a7f83e1dfa", xmi: "139bc9e7ae4c09a2ea84b820c0c3b10459ed2d907a8c88693956f8d217af21d20ea75c0d1b75b947bf1bf59cc28d7274", ret: "https://hudson.serenemedspas.com/thank-you/" },
+    zoho: { action: "https://crm.zoho.com/crm/WebToLeadForm", xnq: "29c1b6f4e6219d1e5682cd0434b1ce181ccda55241b6394ae70c33a7f83e1dfa", xmi: "139bc9e7ae4c09a2ea84b820c0c3b10459ed2d907a8c88693956f8d217af21d20ea75c0d1b75b947bf1bf59cc28d7274", ret: "https://serenemedspas.com/hudson/thank-you/" },
     location: "Hudson, OH",
-    image: "/img/lobby.jpg",
+    image: "/hudson/img/hudson-lounge.jpg",
     dismissDays: 7,      // don't re-show for this many days after close
     delayMs: 7000,       // show after this long on the page...
     storageKey: "serene_np_v1"

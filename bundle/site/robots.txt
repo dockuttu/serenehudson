@@ -1,4 +1,4 @@
+# served under https://serenemedspas.com/hudson/ — see https://serenemedspas.com/robots.txt
 User-agent: *
 Allow: /
-
-Sitemap: https://hudson.serenemedspas.com/sitemap.xml
+Sitemap: https://serenemedspas.com/hudson/sitemap.xml
