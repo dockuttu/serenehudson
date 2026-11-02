@@ -29,7 +29,7 @@ _HALO_NOTE = ('November launch pricing is good through November 30, 2026 and can
 PAGES6 += [
 {
  "slug":"halo","crumb":"Halo","area_kw":"Halo hybrid fractional laser",
- "title":"Halo Laser in Hudson, OH | Sciton Hybrid Resurfacing from $1,199 | Serene",
+ "title":"Halo Laser in Hudson, OH | Sciton Halo from $1,199 | Serene",
  "desc":"Sciton Halo hybrid fractional laser in Hudson, Ohio: ablative and non-ablative wavelengths in one pass for tone, texture, pores, fine lines and sun damage with about 5 days of downtime. November launch pricing $1,199 (regularly $1,399). Physician-led.",
  "ogtitle":"Halo Hybrid Laser in Hudson, OH","ogdesc":"The Halo glow: tone, texture, pores and sun damage in one treatment, about five days of downtime. Now in Hudson from $1,199.",
  "proc_name":"Halo Hybrid Fractional Laser Resurfacing","proc_alt":"Sciton Halo dual-wavelength (1470 nm non-ablative + 2940 nm ablative) fractional laser",

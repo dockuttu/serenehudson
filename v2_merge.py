@@ -345,6 +345,9 @@ def main():
     # robots.txt is only meaningful at the domain root; leave a pointer
     open(os.path.join(SITE, "robots.txt"), "w", encoding="utf-8").write(f"# served under {NEW_HOST}/ — see https://serenemedspas.com/robots.txt\nUser-agent: *\nAllow: /\nSitemap: {NEW_HOST}/sitemap.xml\n")
     print(f"v2_merge: rewrote {n} files under {SITE} for {NEW_HOST}/ (shell from {MAIN})")
+    # shared SEO polish from serenemain (lazy images after the first two, right-sized logo); runs AFTER the shell swap, Nov 2 2026
+    pol = os.path.join(MAIN, "seo_polish.py")
+    if os.path.exists(pol): os.system(f'python3 "{pol}" "{SITE}"')
 
 if __name__ == "__main__":
     main()
