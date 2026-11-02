@@ -23,6 +23,7 @@ BOOK_MAP = {
  "sculptra": MM % 331,              # Sculptra
  "kybella": MM % 332,               # Kybella (per vial)
  "thread-lift": MM % 337,           # PDO Thread Lift
+ "exosomes": MM % 18, "pdrn": MM % 116,   # Microneedling with Exosomes / with PDRN (direct booking, Nov 2 2026)
  "spider-veins": MM % 338, "under-eye-prp": MM % 333, "kenalog": MM % 334, "laser-hair-removal": MM % 339,          # Spider Vein Sclerotherapy
 }
 def book_for(slug): return BOOK_MAP.get(slug, BOOK)
@@ -53,7 +54,7 @@ CATEGORIES = [
    ("weight-loss","Medical Weight Loss"), ("sculptra-bbl","Sculptra BBL"),
  ]),
  ("Regenerative &amp; Hair", [
-   ("microneedling","Microneedling &amp; PRP"), ("thread-lift","PDO Thread Lift"),
+   ("microneedling","Microneedling &amp; PRP"), ("exosomes","Exosome Microneedling"), ("pdrn","PDRN Salmon DNA"), ("thread-lift","PDO Thread Lift"),
    ("prp-hair-restoration","Hair Restoration"), ("alma-ted","Alma TED Hair Restoration"),
  ]),
  ("Wellness", [
@@ -268,7 +269,7 @@ HERO_MAP = {
  "laser-skin":"laser","harmony-bio-boost":"laser","opus-plasma":"laser","photofacial":"laser","laser-hair-removal":"laser","laser-tattoo-removal":"laser",
  "laser-nail-fungus":"laser","emsculpt-neo":"room-1","evolve-x":"morpheus8","bodytite":"morpheus8",
  "facetite":"morpheus8","forma":"morpheus8","liposuction":"dr-arora","lipomelt":"morpheus8","weight-loss":"dr-arora",
- "microneedling":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted","alma-ted":"hair-ted",
+ "microneedling":"morpheus8","exosomes":"morpheus8","pdrn":"morpheus8","thread-lift":"filler-inject","under-eye-prp":"filler-inject","kenalog":"botox-inject","sculptra-bbl":"dr-arora","prp-hair-restoration":"hair-ted","alma-ted":"hair-ted",
  "iv-therapy":"facial-room","longevity":"room-1","peptide-therapy":"skin-analysis","hormone-optimization":"dr-arora",
  "mens-sexual-wellness":"dr-arora","alma-duo":"dr-arora","womens-sexual-wellness":"dr-arora","spider-veins":"laser",
 }
