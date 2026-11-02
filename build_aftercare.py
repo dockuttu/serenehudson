@@ -28,7 +28,7 @@ CONSULT_SECTION = ns["CONSULT_SECTION"]
 S = ns["CITY_SITE"]
 # Barboursville-only devices (Sep 26, 2026): no Hudson aftercare page; /aftercare/moxi/ and /aftercare/bbl-hero/
 # 301 to /hudson/aftercare/ via serenemain gen_site.REDIRECTS (_redirects.map).
-HUDSON_EXCLUDE = {"moxi", "bbl-hero"}
+HUDSON_EXCLUDE = set()   # Nov 1 2026: Sciton MOXI + BBL HEROic now in Hudson
 PAGES = [p for p in ns["AFTERCARE_PAGES"] if p["slug"] not in HUDSON_EXCLUDE]
 
 LOC = S["loc_short"]

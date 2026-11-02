@@ -6,6 +6,8 @@ MM = "https://booking.mangomint.com/serenemedspa?serviceId=%s"
 BOOK = MM % 321                      # Free Consultation — default "Book" everywhere
 BOOK_MAP = {
  "ultherapy": MM % 322,             # Ultherapy Consultation
+ "halo": MM % 444,                  # Sciton Halo Hybrid Laser - Full Face (Nov 1 2026)
+ "sciton-moxi": MM % 446,           # Sciton BBL HEROic + MOXI - Same Visit (Nov 1 2026)
  "medical-facials": MM % 323,       # Acne Consultation
  "emsculpt-neo": MM % 324, "evolve-x": MM % 324, "bodytite": MM % 324, "facetite": MM % 324, "quantumrf": MM % 324, "accutite": MM % 324,
  "forma": MM % 324, "liposuction": MM % 324, "lipomelt": MM % 324,   # Body Contouring Consultation
