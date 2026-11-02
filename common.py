@@ -70,7 +70,7 @@ ALL_SLUGS = [s for _,items in CATEGORIES for s,_ in items]
 
 # local SEO
 AREA_TOWNS = ["Hudson","Stow","Cuyahoga Falls","Twinsburg","Aurora","Streetsboro","Macedonia","Kent","Tallmadge","Northfield", "Akron", "Solon"]
-CITY_LINKS = {"Akron":"/med-spa-akron-oh/", "Stow":"/med-spa-stow-oh/", "Cuyahoga Falls":"/med-spa-cuyahoga-falls-oh/", "Twinsburg":"/med-spa-twinsburg-oh/", "Solon":"/med-spa-solon-oh/", "Aurora":"/med-spa-aurora-oh/"}
+CITY_LINKS = {"Akron":"/med-spa-akron-oh/", "Stow":"/med-spa-stow-oh/", "Cuyahoga Falls":"/med-spa-cuyahoga-falls-oh/", "Twinsburg":"/med-spa-twinsburg-oh/", "Solon":"/med-spa-solon-oh/", "Aurora":"/med-spa-aurora-oh/", "Kent":"/med-spa-kent-oh/", "Streetsboro":"/med-spa-streetsboro-oh/", "Macedonia":"/med-spa-macedonia-oh/", "Brecksville":"/med-spa-brecksville-oh/", "Medina":"/med-spa-medina-oh/", "Chagrin Falls":"/med-spa-chagrin-falls-oh/"}
 def _area_tag(t):
     return ('<a href="%s">%s</a>' % (CITY_LINKS[t], t)) if t in CITY_LINKS else ('<span>%s</span>' % t)
 AREA_SERVED = (
@@ -152,7 +152,7 @@ FOOTER = '''<footer>
         </ul>
       </div>
     </div>
-    <div class="foot-areas">Areas we serve: <a href="/med-spa-akron-oh/">Akron</a> &middot; <a href="/med-spa-stow-oh/">Stow</a> &middot; <a href="/med-spa-cuyahoga-falls-oh/">Cuyahoga Falls</a> &middot; <a href="/med-spa-twinsburg-oh/">Twinsburg</a> &middot; <a href="/med-spa-solon-oh/">Solon</a> &middot; <a href="/med-spa-aurora-oh/">Aurora</a></div>
+    <div class="foot-areas">Areas we serve: <a href="/med-spa-akron-oh/">Akron</a> &middot; <a href="/med-spa-stow-oh/">Stow</a> &middot; <a href="/med-spa-cuyahoga-falls-oh/">Cuyahoga Falls</a> &middot; <a href="/med-spa-twinsburg-oh/">Twinsburg</a> &middot; <a href="/med-spa-solon-oh/">Solon</a> &middot; <a href="/med-spa-aurora-oh/">Aurora</a> &middot; <a href="/med-spa-kent-oh/">Kent</a> &middot; <a href="/med-spa-streetsboro-oh/">Streetsboro</a> &middot; <a href="/med-spa-macedonia-oh/">Macedonia</a> &middot; <a href="/med-spa-brecksville-oh/">Brecksville</a> &middot; <a href="/med-spa-medina-oh/">Medina</a> &middot; <a href="/med-spa-chagrin-falls-oh/">Chagrin Falls</a></div>
     <div class="foot-bottom">&copy; 2026 Serene Med Spa, Hudson OH. All rights reserved.</div>
   </div>
 </footer>''' % (LOGO, FOOTER_TREAT, BOOK)
