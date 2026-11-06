@@ -195,6 +195,8 @@ def localize_home(s):
 FONTS_RX = re.compile(r'<link href="https://fonts\.googleapis\.com/css2\?family=Cormorant[^"]*" rel="stylesheet">')
 V2_FONTS = '<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Noto+Serif+Display:wght@400;500&family=Oooh+Baby&display=swap" rel="stylesheet">'
 
+SHARED_FOOT_RX = re.compile(r'<footer>\s*<div class="wrap">\s*<div class="foot-grid">.*?</footer>', re.S)
+
 def swap_shell(s, cssv, jsv):
     s = re.sub(r'<div class="promo"[^>]*>.*?</div>\s*', "", s, count=1, flags=re.S)
     s = re.sub(r'<header\b.*?</header>', lambda m: SL.NAV, s, count=1, flags=re.S)
@@ -326,6 +328,8 @@ def main():
         already = "/hudson/" in s and OLD_HOST not in s and ext == ".html" and "v2-shell.js" in s   # merged on a previous run / template already carries the shell
         if ext == ".html":
             rel = os.path.relpath(path, SITE)
+            if already and 'class="foot-grid"' in s:   # finished pages saved in the repo still get the CURRENT shared footer (Nov 6 2026: newsletter box removed)
+                s = SHARED_FOOT_RX.sub(lambda m: SL.FOOTER, s, count=1)
             if not already:
                 s = prefix_html(s)
                 if "<header" in s or "<footer" in s: s = swap_shell(s, cssv, jsv)
