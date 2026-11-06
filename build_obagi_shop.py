@@ -420,6 +420,7 @@ f.addEventListener('submit',function(e){e.preventDefault();err.textContent='';va
   fd.append('Lead Status','Not Contacted');fd.append('LEADCF1','Obagi pickup order '+id+' ('+location.host+')');
   ['First Name','Last Name','Email','Phone','LEADCF3','aG9uZXlwb3Q'].forEach(function(n){var el=f.querySelector('[name="'+n+'"]');fd.append(n,el?el.value.trim():'');});
   fd.append('Description',desc);
+  fd.append('g-recaptcha-response',window.SereneCaptcha?window.SereneCaptcha.token(f):'');   // Zoho checks the reCAPTCHA tick (Nov 6 2026)
   btn.disabled=true;btn.textContent='Reserving…';
   var items=keys.map(function(k){return {item_id:k,item_name:s.cat[k].n,item_brand:'Obagi',price:s.cat[k].p,quantity:c[k]};});
   fetch(Z.a,{method:'POST',body:fd,mode:'no-cors',credentials:'omit'}).then(function(){
