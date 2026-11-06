@@ -11,8 +11,8 @@ BOOK = ns["BOOK"]
 SKIN_BOOK = ns.get("BOOK_MAP", {}).get("medical-facials", BOOK)
 PRODUCTS, COLLECTIONS = ns["PRODUCTS"], ns["COLLECTIONS"]
 COLNAME = {k: n for k, n, d in COLLECTIONS}
-ZX = ("29c1b6f4e6219d1e5682cd0434b1ce181ccda55241b6394ae70c33a7f83e1dfa",
-      "139bc9e7ae4c09a2ea84b820c0c3b10459ed2d907a8c88693956f8d217af21d20ea75c0d1b75b947bf1bf59cc28d7274")
+ZX = ("ff0040a42f3fc6f08a315a8f72e7d30dd1a59ddb3d1a5237e10afce9c82ecb24",
+      "77e7273c911d78101fc94f767ac63201d6727d91a14cef9c9f8ee68acfb97214f64b65269f016d47f1c6fdb848dc09f5")
 
 HUDSON = "barboursville" not in os.path.basename(os.getcwd()).lower()
 LOCS = {
