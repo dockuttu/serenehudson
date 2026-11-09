@@ -93,3 +93,6 @@ python3 hipaa_badge.py bundle/site /privacy-practices/ || echo "!!! hipaa_badge 
 
 echo "==> Offer landing pages for Google Ads (stripped-down, noindex; must run LAST)"
 python3 build_offer_lp.py bundle/site hudson
+
+echo "==> Lead forms post to the serenemedspas.com /api/lead relay, not Zoho directly (bot filter, Nov 9 2026; must stay last)"
+python3 lead_relay_rewrite.py bundle/site
