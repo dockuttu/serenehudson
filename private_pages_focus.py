@@ -18,7 +18,7 @@ PAGES = {   # slug -> the price part of the line under the headline (prices are 
 }
 MARK = "data-private-focus"
 STYLE = ('<style ' + MARK + '>.promo,#dotd-strip{display:none!important}'
-         '.hero-private{font-size:1.08rem;font-weight:600;color:#10322F;margin:6px 0 14px;line-height:1.5}</style>')
+         'p.hero-private{font-size:1.1rem!important;font-weight:700!important;color:#10322F!important;margin:8px 0 16px;line-height:1.5}</style>')
 
 def fix(html, price):
     if MARK in html:
