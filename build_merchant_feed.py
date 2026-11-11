@@ -14,7 +14,7 @@ PRODUCTS = [p for p in ns["PRODUCTS"] if not p["rx"] and p.get("price")]
 
 HUDSON_SITE = "https://hudson.serenemedspas.com"
 # Store codes must match the store code on each Google Business Profile listing.
-STORES = {"serene-hudson": "Hudson, OH", "serene-barboursville": "Barboursville, WV"}
+STORES = {"02510083067651444778": "Hudson, OH", "09354968593430860528": "Barboursville, WV"}  # existing Business Profile store codes
 OUT = os.path.join("bundle", "site", "merchant")
 os.makedirs(OUT, exist_ok=True)
 
