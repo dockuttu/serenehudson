@@ -41,6 +41,7 @@ RX = [p for p in PRODUCTS if p["rx"]]
 CAT = {p["slug"]: {"n": clean(p["name"]), "s": p["size"], "p": p["price"], "i": img(p, True)} for p in RETAIL}
 SHOP_JS = r"""/* Serene Med Spa - Obagi reserve & pick-up cart (no payment online) */
 (function(){
+try{var q=new URLSearchParams(location.search).get('store'),h=location.hostname,pa=location.pathname,bv=h.indexOf('barboursville')>=0||pa.indexOf('/barboursville/')===0,o=null;if(q==='serene-barboursville'&&!bv)o='https://serenemedspas.com/barboursville'+pa.replace(/^\/hudson(?=\/)/,'');else if(q==='serene-hudson'&&bv)o='https://serenemedspas.com/hudson'+pa.replace(/^\/barboursville(?=\/)/,'');if(o){location.replace(o);return;}}catch(e){}
 var CAT=%(cat)s, KEY='serene_cart_v1';
 function load(){try{var c=JSON.parse(localStorage.getItem(KEY)||'{}');for(var k in c){if(!CAT[k]||!(c[k]>0))delete c[k];}return c;}catch(e){return {};}}
 function save(c){try{localStorage.setItem(KEY,JSON.stringify(c));}catch(e){} render();}

@@ -13,6 +13,7 @@ python3 build_service_cities.py   # service+city landing pages (Search Console g
 echo "==> Building section pages"
 python3 build_pricing.py
 python3 build_obagi_shop.py   # Obagi store: /shop/, /shop/<product>/, /cart/, /obagi/, shop.js (old build_shop.py retired)
+python3 build_merchant_feed.py  # Google Merchant Center: /merchant/obagi-products.xml + obagi-local-inventory.tsv
 # blog moved to blog.serenemedspas.com (repo sereneblog); old /blog/ URLs 301 via bundle/nginx.conf
 rm -rf bundle/site/blog 2>/dev/null || true
 python3 fix_blog_links.py
