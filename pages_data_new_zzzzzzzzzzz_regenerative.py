@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 # pages_data_new_zzzzzzzzzzz_regenerative.py — Exosome and PDRN regenerative microneedling pages (Nov 2 2026).
-# Prices from Mangomint: Microneedling with Exosomes $199 (serviceId 18), Microneedling with PDRN $199 (116),
+# Prices from Mangomint: Microneedling with Exosomes $299 (serviceId 18), Microneedling with PDRN $299 (116),
 # Vampire Facial / PRP $299, 3 for $799 (16), Under-Eye PRP/PRF $400 (333), Exosomes add-on $100 (add-on to any treatment).
 # Hudson-only file (Hudson, OH).
 
@@ -11,7 +11,7 @@ if "_price_block" not in globals():
 if "PAGES6" not in globals():
     PAGES6 = []
 
-_EXO, _PDRN, _PRP, _PRP3, _UE, _ADDON = "$199", "$199", "$299", "$799", "$400", "$100"
+_EXO, _PDRN, _PRP, _PRP3, _UE, _ADDON = "$299", "$299", "$299", "$799", "$400", "$100"
 
 if "HERO_MAP" in globals():
     HERO_MAP["exosomes"] = "morpheus8"; HERO_MAP["pdrn"] = "morpheus8"
@@ -29,9 +29,9 @@ PAGES6 += [
 # ---------------- EXOSOME MICRONEEDLING ----------------
 {
  "slug":"exosomes","crumb":"Exosome Microneedling","area_kw":"exosome microneedling and regenerative skin treatments",
- "title":"Exosome Microneedling in Hudson, OH | $199 | Serene Med Spa",
- "desc":"Microneedling with exosomes in Hudson, Ohio: lab-derived growth-factor signals applied over fresh micro-channels for faster healing, brighter tone and smoother texture. $199 per treatment, or add exosomes to any laser or Morpheus8 for $100. Physician-led.",
- "ogtitle":"Exosome Microneedling in Hudson, OH","ogdesc":"The regenerative facial: microneedling plus exosomes for smoother, brighter skin with less downtime. $199 at Serene Med Spa.",
+ "title":"Exosome Microneedling in Hudson, OH | $299 | Serene Med Spa",
+ "desc":"Microneedling with exosomes in Hudson, Ohio: lab-derived growth-factor signals applied over fresh micro-channels for faster healing, brighter tone and smoother texture. $299 per treatment, or add exosomes to any laser or Morpheus8 for $100. Physician-led.",
+ "ogtitle":"Exosome Microneedling in Hudson, OH","ogdesc":"The regenerative facial: microneedling plus exosomes for smoother, brighter skin with less downtime. $299 at Serene Med Spa.",
  "proc_name":"Microneedling with Exosomes","proc_alt":"Exosome skin regeneration, exosome facial",
  "how":"Microneedling opens thousands of controlled micro-channels; a topical exosome serum is applied immediately so the growth-factor and signaling cargo inside the exosomes reaches the dermis, where it tells your own cells to calm inflammation, build collagen and repair faster.","body":"Face, neck, chest, hands, scalp",
  "eyebrow":"Exosomes &middot; Regenerative Aesthetics &middot; Hudson, OH","h1":"Exosome Microneedling in Hudson, Ohio",
@@ -81,9 +81,9 @@ PAGES6 += [
 # ---------------- PDRN (SALMON DNA) MICRONEEDLING ----------------
 {
  "slug":"pdrn","crumb":"PDRN Salmon DNA","area_kw":"PDRN salmon DNA skin booster treatments",
- "title":"PDRN Salmon DNA Microneedling in Hudson, OH | $199 | Serene",
- "desc":"PDRN (polydeoxyribonucleotide, the Korean &lsquo;salmon DNA&rsquo; skin booster) delivered by microneedling in Hudson, Ohio. Repairs, hydrates and firms crepey, dehydrated skin. $199 per treatment at physician-led Serene Med Spa.",
- "ogtitle":"PDRN Salmon DNA Microneedling in Hudson, OH","ogdesc":"The K-beauty skin booster is here: PDRN microneedling for hydrated, elastic, glass-skin results. $199 at Serene Med Spa.",
+ "title":"PDRN Salmon DNA Microneedling in Hudson, OH | $299 | Serene",
+ "desc":"PDRN (polydeoxyribonucleotide, the Korean &lsquo;salmon DNA&rsquo; skin booster) delivered by microneedling in Hudson, Ohio. Repairs, hydrates and firms crepey, dehydrated skin. $299 per treatment at physician-led Serene Med Spa.",
+ "ogtitle":"PDRN Salmon DNA Microneedling in Hudson, OH","ogdesc":"The K-beauty skin booster is here: PDRN microneedling for hydrated, elastic, glass-skin results. $299 at Serene Med Spa.",
  "proc_name":"Microneedling with PDRN","proc_alt":"Polydeoxyribonucleotide skin booster, salmon DNA facial, Rejuran-style treatment",
  "how":"PDRN is a chain of DNA fragments purified from salmon that binds to adenosine A2A receptors in skin cells, switching on tissue repair, new blood-vessel growth and collagen production. Microneedling carries it through the skin barrier into the dermis.","body":"Face, neck, chest, hands, under-eyes",
  "eyebrow":"PDRN &middot; Salmon DNA Skin Booster &middot; Hudson, OH","h1":"PDRN Salmon DNA Microneedling in Hudson, Ohio",
@@ -137,7 +137,7 @@ for _lst in [globals().get(_n, []) for _n in ("PAGES", "PAGES2", "PAGES3", "PAGE
         if _p.get("slug") == "microneedling":
             _p["related"] = ["exosomes", "pdrn", "morpheus8"]
             _p["title"] = "Microneedling &amp; PRP in Hudson, OH | Vampire Facial $299 | Serene"
-            _p["desc"] = "Microneedling ($200) and microneedling with PRP, the vampire facial ($299, or 3 for $799), in Hudson, OH at physician-led Serene Med Spa. Smoother texture, softer scars, fresher skin. Exosome and PDRN options $199."
+            _p["desc"] = "Microneedling ($200) and microneedling with PRP, the vampire facial ($299, or 3 for $799), in Hudson, OH at physician-led Serene Med Spa. Smoother texture, softer scars, fresher skin. Exosome and PDRN options $299."
             _p["faqs"] = [("How much does microneedling with PRP cost?", "Microneedling with PRP, the vampire facial, is " + _PRP + " per treatment at Serene Med Spa in Hudson, or " + _PRP3 + " for a series of three. Plain microneedling is $200; microneedling with exosomes or PDRN is " + _EXO + ".")] + [q for q in _p.get("faqs", []) if "cost" not in q[0].lower()]
             _p["pricing_html"] = _price_block("Pricing", "Microneedling pricing in Hudson", [
                 ("Microneedling", "$200 / treatment", "Serene&rsquo;s signature collagen-induction treatment"),
