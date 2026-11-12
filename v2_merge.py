@@ -254,7 +254,7 @@ SUBPAGES = {
     "hormone-optimization": ["hormone-therapy-women", "testosterone-therapy-men"],
     "iv-therapy": ["iv-drip-menu", "vitamin-injections"],
     "hydration-bar": ["iv-drip-menu", "vitamin-injections"],
-    "longevity": ["sermorelin", "low-dose-naltrexone", "iv-drip-menu"],
+    "longevity": ["sermorelin", "iv-drip-menu"],
     "chemical-peels": ["acne-treatment"],
     "medical-facials": ["acne-treatment"],
     "laser-skin": ["coolpeel", "deka-co2-laser", "pico-fractional-resurfacing"],

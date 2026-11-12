@@ -13,9 +13,8 @@ _LONGEVITY_PRICING = '''<section id="pricing" class="tint-blush">
       <div class="card reveal" style="text-align:center"><h3>NAD+ IV</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$199 / $299</strong>250mg or 500mg &middot; a slower, longer infusion</p></div>
       <div class="card reveal" style="text-align:center"><h3>NAD+ Injection</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$35</strong>50mg per injection</p></div>
       <div class="card reveal" style="text-align:center"><h3>Longevity &amp; Glow Drips</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$149</strong>Antioxidant &amp; vitamin IV blends</p></div>
-      <div class="card reveal" style="text-align:center"><h3>Sermorelin Program</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$199/mo</strong>Injectable or tablets ($249/mo) &middot; prescription shipped to you</p></div>
-      <div class="card reveal" style="text-align:center"><h3>NAD+ &amp; Sermorelin</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$279/mo</strong>Monthly prescription shipped to you</p></div>
-      <div class="card reveal" style="text-align:center"><h3>Low-Dose Naltrexone</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$59/mo</strong>Prescribed after your consultation</p></div>
+      <div class="card reveal" style="text-align:center"><h3>Sermorelin Program</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$199/mo</strong>Nightly injection &middot; prescribed after your consultation</p></div>
+      <div class="card reveal" style="text-align:center"><h3>NAD+ &amp; Sermorelin</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$279/mo</strong>Monthly program &middot; prescribed after your consultation</p></div>
       <div class="card reveal" style="text-align:center"><h3>Longevity Consultation</h3><p><strong style="display:block;font-size:2.4rem;line-height:1.15;color:var(--plum);font-weight:600;margin:6px 0">$99</strong>Labs review &amp; personalized plan</p></div>
     </div>
     <div class="prose reveal" style="text-align:center;max-width:720px;margin:28px auto 0">
@@ -51,7 +50,6 @@ PAGES4 += [
    ("Longevity Drip","An antioxidant and vitamin blend with N-acetyl cysteine, B12, B-complex and magnesium."),
    ("Glow Drip","Glutathione, vitamin C and alpha-lipoic acid, a favorite for skin and antioxidant support."),
    ("Sermorelin","A physician-prescribed peptide program that supports your body&rsquo;s own natural growth hormone release, often used for sleep, recovery and body composition goals."),
-   ("Low-Dose Naltrexone","A low-dose prescription some patients use as part of a longevity plan, prescribed after your consultation."),
    ("Longevity Consultation","A physician visit to review your health, labs and goals and build your personalized longevity plan."),
  ],
  "steps":_steps_l(
