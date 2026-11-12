@@ -651,7 +651,7 @@ PAGES3 = [
  "trust":["Physician-Supervised","Personalized Plans","Quality Products","Ongoing Guidance"],
  "introh2":"Targeted wellness, physician-guided",
  "introlead":"Peptides and vitamin injections have become popular tools for supporting energy, recovery, metabolism, and overall wellness. Done right, they&rsquo;re personalized and physician-supervised — not one-size-fits-all.",
- "intropara":"At Serene Med Spa in Hudson, peptide therapy begins with an evaluation so your plan fits your goals and health. We offer options such as B12, NAD+, Sermorelin, BPC-157, glutathione, and more, selected where clinically appropriate and monitored by our physicians. These therapies support general wellness goals; they are individualized medical care, and appropriateness and results depend on your health and are determined with your physician.",
+ "intropara":"At Serene Med Spa in Hudson, peptide therapy begins with an evaluation so your plan fits your goals and health. We offer options such as B12, NAD+, sermorelin and glutathione, selected where clinically appropriate and monitored by our physicians. These therapies support general wellness goals; they are individualized medical care, and appropriateness and results depend on your health and are determined with your physician.",
  "treyebrow":"Common Goals","treh2":"How People Use It",
  "cards":[
    ("Energy &amp; Vitality","Support everyday energy and combat fatigue."),
@@ -672,7 +672,7 @@ PAGES3 = [
  "faqs":[
    ("What are peptides?","Peptides are short chains of amino acids used to support various wellness goals. We offer selected options where clinically appropriate under physician supervision."),
    ("Is it physician-supervised?","Yes — at Serene, peptide and vitamin therapies are evaluated, selected, and monitored by our board-certified physicians as individualized care."),
-   ("What options do you offer?","Options include B12, NAD+, Sermorelin, BPC-157, glutathione, and more — chosen based on your goals and health."),
+   ("What options do you offer?","Options include B12, NAD+, sermorelin and glutathione — chosen based on your goals and health."),
    ("Are results guaranteed?","No — these therapies support general wellness goals, and results are individual and depend on your health. Your physician will set realistic expectations."),
    ("How do I start?","It begins with a consultation to review your goals and health, so we can recommend an appropriate, personalized plan."),
  ],
