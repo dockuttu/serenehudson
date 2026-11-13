@@ -35,13 +35,13 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
   row("Kybella Fat Dissolver","$600","/vial")+row("Filler Reversal","$150+")+row("Kenalog Steroid Injection (scar / cyst)","$75")))
 
 CATS.append(("Weight Loss &amp; Wellness",
-  row("Medical Weight Loss Visit","$149","/month")+
+  row("Medical Weight Loss Visit &mdash; Brand-Name Medication","$75","/month")+row("Compounded Semaglutide Program (medication included)","From $150","/month")+row("Compounded Tirzepatide Program (medication included)","From $300","/month")+
   row("Bi&ouml;te Hormone Therapy &mdash; Female","$405")+row("Bi&ouml;te Hormone Therapy &mdash; Male","$465&ndash;$645")+
   row("IV Vitamin Infusions","$99")+
   sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$25")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
   row("Hyperhidrosis Treatment","$400")+row("Morpheus8 Hyperhidrosis","$600")+
   row("Teeth Grinding Treatment","$360+")+
-  '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Wegovy&reg; or Zepbound&reg; prescribed to your pharmacy when appropriate &mdash; medication billed separately. The visit fee covers your medical consultation.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
+  '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Brand-name medication: when appropriate, the prescription goes to the manufacturer&rsquo;s self-pay pharmacy (or your own pharmacy if insured) and you pay the pharmacy directly; the $75 monthly visit covers your care. Compounded semaglutide and tirzepatide: prepared by an FDA-registered 503B outsourcing pharmacy, medication included, priced by dose. Compounded medications are not FDA-approved. Medical screening required.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
 CATS.append(("Longevity &amp; NAD+",
   row("Niagen&reg; IV &mdash; 500mg","$499")+row("Niagen&reg; IV &mdash; 250mg","$299")+
@@ -134,7 +134,7 @@ jump_html='<div class="price-jump reveal">'+"".join('<a href="#%s">%s</a>'%(_slu
 OFFERS=[("Sciton Halo",1199),("Sciton BBL HEROic",400),("Sciton MOXI",500),("Botox",10),("Dermal Fillers",500),("Lip Filler - Full Syringe (1 mL)",500),("Lip Filler - Half Syringe (0.5 mL)",300),("Sculptra",650),("Kybella",600),
  ("Morpheus8 RF",600),("Ultherapy PRIME",950),("HydraFacial",149),("DiamondGlow",149),("Microneedling with PRP (Vampire Facial)",299),
  ("Laser Hair Removal",49),("Laser Tattoo Removal",125),("EMSCULPT NEO",400),("EMSCULPT NEO — Package of 4",1500),("Lumecca Peak IPL",400),("Lumecca Peak IPL — Series of 3",1050),("EvolveX",149),("EvolveX — Series of 6",799),("Define",175),("Define — Series of 6",899),("AccuTite",1500),("QuantumRF",2500),("FaceTite",3500),("BodyTite",4000),("IV Vitamin Infusion",99),
- ("Medical Weight Loss Visit",149),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",500)]
+ ("Medical Weight Loss Visit",75),("Niagen IV 500mg",499),("NAD+ IV 500mg",299),("PRP Hair Restoration",500)]
 offer_schema={"@context":"https://schema.org","@type":"OfferCatalog","name":"Serene Med Spa Hudson — Menu & Pricing","url":URL,
  "itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":n},"price":str(p),"priceCurrency":"USD"} for n,p in OFFERS]}
 
