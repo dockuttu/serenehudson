@@ -6,6 +6,12 @@ URL="https://hudson.serenemedspas.com/before-after/"
 # category -> (service_link, [ (img, title, desc, link) ])
 CATS = [
  ("Lip Filler", "/lip-filler/", [
+   ("ba-lip-fuller-front.jpg", "Lip Filler &mdash; Fuller, Smoother Lips",
+    "Volume added to both lips and fine vertical lip lines softened, keeping a natural shape. After photo taken right after treatment; mild swelling is normal.", "/lip-filler/#lip-results", "See more angles"),
+   ("ba-lip-define-front.jpg", "Lip Filler &mdash; Natural Volume &amp; Definition",
+    "A balanced boost to the upper and lower lip with a crisper border. After photo taken right after treatment; mild swelling is normal.", "/lip-filler/#lip-results", "See more angles"),
+   ("ba-lip-define-left.jpg", "Lip Filler &mdash; Side View",
+    "Soft projection from the side that still looks like her own lips.", "/lip-filler/#lip-results", "See more angles"),
    ("ba-lip-touch-up.jpg", "Volbella XC &mdash; Lip Filler Touch-Up",
     "Three months after lip filler, the upper lip softened unevenly and showed most in a smile. A small, targeted Volbella XC touch-up restored an even shape (after photos taken the same day).",
     "https://blog.serenemedspas.com/lip-filler-touch-up-uneven-volbella-hudson-oh-barboursville-wv/?loc=hudson", "Read the case"),
