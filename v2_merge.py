@@ -179,6 +179,10 @@ def inject_home_videos(s):
         # anchor: the classic hero, or the treatment showcase that replaced it on the home page (Oct 13, 2026)
         anchor = '<section class="hero">' if '<section class="hero">' in s else '<a id="top"></a>\n<section class="sc"'
         s = s.replace(anchor, feat + anchor, 1)
+    elif 'id="watch-serene"' in s and hasattr(SL, "video_carousel_section"):
+        # home page is a tracked file with the slider baked in: refresh it from site_lib so new segments show up (Nov 16, 2026)
+        s = re.sub(r'<section id="press".*?</section>\n?', lambda m: SL.press_strip(abs_urls=True), s, count=1, flags=re.S)
+        s = re.sub(r'<section id="watch-serene" class="wsc">.*?</section>\n?', lambda m: SL.video_carousel_section("hudson", PREFIX), s, count=1, flags=re.S)
     if hasattr(SL, "inject_local_specials"):
         s = SL.inject_local_specials(s, "hudson")  # shared specials block (serenemain/local_specials.py), Oct 5 2026
     return s
