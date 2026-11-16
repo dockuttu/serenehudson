@@ -14,6 +14,8 @@ SITE_URL = {"barboursville": "https://serenemedspas.com/barboursville",
             "hudson": "https://serenemedspas.com/hudson"}[LOC]
 
 V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload date)
+ "m8studio3": ("1247335324", "", "Morpheus8 live on WSAZ Studio 3 with Stephanie Welker, FNP-BC", 293,
+             "2227075254-89b652f27a08abe36dd45607a5624809071383baa65cf32cf495df8253439726", "2026-11-16T12:25:19-05:00"),
  "hybrid":  ("1230567201", "5e8f0817e7", "Alma Hybrid: how it works", 119,
              "2205496920-4fedb8c344507eec1ad229203f9f4010ef840648154e6183f1d5260d955852e4", "2026-09-26T17:05:50-04:00"),
  "soprano": ("1230567248", "d7900eb4e2", "Soprano laser hair removal", 60,
@@ -31,6 +33,9 @@ V = {  # key: (vimeo id, unlisted hash, title, seconds, thumbnail id, upload dat
 }
 
 PAGES = {  # slug: (eyebrow, h2, intro paragraph, [video keys], credit)
+ "morpheus8": ("As seen on WSAZ Studio 3", "Morpheus8, live on TV",
+   "Stephanie Welker, FNP-BC demonstrated Morpheus8 on WSAZ&rsquo;s Studio 3 (aired November 11, 2026): microneedling with radiofrequency heat for sun damage, fine lines and loose skin, with Michelle treated live on air. See how numbing, treatment time, downtime and the three-session plan work.",
+   ["m8studio3"], "Studio 3 segment aired on WSAZ, November 11, 2026. Individual results vary."),
  "alma-hybrid": ("Watch", "See Alma Hybrid in action",
    "Two lasers in one treatment: a gentle 1570 nm pass for tone and a CO&#8322; pass for texture, blended to your skin and your downtime. Here&rsquo;s a two-minute look at how it works.",
    ["hybrid"], "Video courtesy of Alma Lasers."),
@@ -50,7 +55,7 @@ PAGES = {  # slug: (eyebrow, h2, intro paragraph, [video keys], credit)
    "A short look at Alma Duo: low-intensity shockwave sessions of about 15 minutes, no needles and no downtime.",
    ["duo"], "Video courtesy of Alma Lasers. Individual results vary."),
 }
-ONLY = {"barboursville": list(PAGES), "hudson": ["opus-plasma", "alma-ted", "alma-duo"]}[LOC]
+ONLY = {"barboursville": list(PAGES), "hudson": ["morpheus8", "opus-plasma", "alma-ted", "alma-duo"]}[LOC]
 
 CSS = """<style>
 .vid-grid{display:grid;gap:22px;max-width:960px;margin:0 auto}
@@ -69,7 +74,7 @@ def block(slug, page_url):
     figs, schema = [], []
     for k in keys:
         vid, h, title, secs, thumb, up = V[k]
-        src = "https://player.vimeo.com/video/%s?h=%s&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" % (vid, h)
+        src = "https://player.vimeo.com/video/%s?%sdnt=1&amp;title=0&amp;byline=0&amp;portrait=0" % (vid, ("h=%s&amp;" % h) if h else "")
         figs.append('<figure class="vid-card reveal"><div class="vid-wrap"><iframe src="%s" title="%s" loading="lazy" '
                     'allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>%s</figure>'
                     % (src, title, ("<figcaption>%s</figcaption>" % title) if len(keys) > 1 else ""))
@@ -77,7 +82,7 @@ def block(slug, page_url):
                        "description": "%s — %s" % (title, re.sub(r"&[a-z#0-9]+;", "", lead)[:200]),
                        "thumbnailUrl": ["https://i.vimeocdn.com/video/%s-d_1280" % thumb],
                        "uploadDate": up, "duration": iso_dur(secs),
-                       "embedUrl": "https://player.vimeo.com/video/%s?h=%s" % (vid, h),
+                       "embedUrl": "https://player.vimeo.com/video/%s%s" % (vid, ("?h=%s" % h) if h else ""),
                        "publisher": {"@type": "Organization", "name": "Serene Med Spa", "url": SITE_URL + "/"}})
     return ("<!--video-embeds-->\n<section id=\"watch\" class=\"tint-sand\"><div class=\"wrap\">\n"
             "  <div class=\"section-head reveal\"><div class=\"eyebrow\">%s</div><h2>%s</h2>\n"
