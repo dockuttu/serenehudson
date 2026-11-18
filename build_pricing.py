@@ -37,7 +37,7 @@ CATS.append(("Injectables", sub("Dermal Fillers &mdash; Juv&eacute;derm") +
 CATS.append(("Weight Loss &amp; Wellness",
   row("Medical Weight Loss Visit &mdash; Brand-Name Medication","$75","/month")+row("Compounded Semaglutide Program (medication included)","From $150","/month")+row("Compounded Tirzepatide Program (medication included)","From $300","/month")+
   row("Bi&ouml;te Hormone Therapy &mdash; Female","$405")+row("Bi&ouml;te Hormone Therapy &mdash; Male","$465&ndash;$645")+
-  row("IV Vitamin Infusions","$99")+
+  row("IV Vitamin Infusions","From $99")+
   sub("Vitamin &amp; Lipo Shots")+row("Vitamin B12 Injection","$25")+row("Lipo-B Injection (MIC + B12)","$25")+row("Amino Blend Injection","$25")+row("Lipo Shot Pack (5)","$99")+
   row("Hyperhidrosis Treatment","$400")+row("Morpheus8 Hyperhidrosis","$600")+
   row("Teeth Grinding Treatment","$360+")+
@@ -65,7 +65,7 @@ TATTOO_HTML = ('<div class="sub"><a href="/laser-tattoo-removal/" class="price-l
 
 CATS.append(("Laser &amp; Skin",
   row("Lumecca Peak IPL &mdash; Full Face","$400")+row("Lumecca Peak IPL &mdash; Series of 3","$1,050")+row("Lumecca Peak &mdash; Add Neck or Chest","$150")+row("Laser Facial","$400")+row("Laser Nail Fungus","$150+")+row("Depigmentation Treatment","$200+")+
-  row("VI Chemical Peels","$250+")+row("PDO Thread Face Lift","$500+")+
+  row("VI Chemical Peels","$250+")+row("PDO Thread Lift","From $300")+
   row("Sciton Halo &mdash; Full Face (Nov launch, reg. $1,399)","$1,199")+row("Sciton Halo + BBL HEROic &mdash; same visit (Nov launch, reg. $1,799)","$1,399")+row("Sciton BBL HEROic Photofacial","$400")+row("Sciton MOXI","$500")+row("BBL + MOXI &mdash; same visit (reg. $900)","$750")+
   row("CoolPeel","$400")+row("Deka CO&sup2; Laser &mdash; Fractional Resurfacing","$600")+row("Deka CO&sup2; Laser &mdash; Full Resurfacing (Maximum Strength)","$1,000")+row("Opus Plasma","$400")+sub("Ultherapy PRIME &mdash; Hudson")+'<div class="price-row" style="border:0"><span class="price-name" style="font-size:.85rem;color:var(--ink)">&#9654; <a href="/ultherapy/#studio3" style="text-decoration:underline">Watch Dr. Arora&rsquo;s live demo on WSAZ Studio 3</a> &mdash; Studio 3 special: 20% off Ultherapy through Nov 30, 2026.</span></div>'+row("Full Face + Neck","$2,900")+row("Full Face","$2,200")+row("Lower Face + Neck","$2,400")+row("Lower Face (Jowls)","$1,650")+row("Neck / Under-Chin","$1,400")+row("Brow Lift","$850")+row("D&eacute;collet&eacute; add-on","$500")+
   '<div class="sub"><a href="/laser-hair-removal/" class="price-link">Laser Hair Removal (InMode OptimasMAX &amp; Alma Harmony)</a> &mdash; per session / 6-session package (buy 5, 6th free)</div>'+
@@ -119,7 +119,7 @@ _HIDDEN_PEPTIDES = (("Peptide Therapy", sub("Priced monthly unless noted")+
   row("NAD+","$250","/vial")+row("Glutathione","$50","IV add-on")+
   '<div class="price-row" style="border:0"><span class="price-name" style="font-size:.8rem;color:var(--muted)">Semaglutide &amp; Tirzepatide priced under Weight Loss &amp; Wellness.</span><span class="price-lead"></span><span class="price-val"></span></div>'))
 
-CATS.append(("IV Infusions", sub("$149 each")+
+CATS.append(("IV Infusions", 
   row("Serene Quench+","$99")+row("Serene Recovery &amp; Performance Pro","$99")+row("Serene Immune Armor","$99")+
   row("Myer&rsquo;s Cocktail","$149")+
   row("Serene Beauty Glow","$99")+row("Serene Reboot Relief","$99")+row("Serene Brain Boost","$99")+
