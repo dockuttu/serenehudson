@@ -332,6 +332,8 @@ def main():
         already = "/hudson/" in s and OLD_HOST not in s and ext == ".html" and "v2-shell.js" in s   # merged on a previous run / template already carries the shell
         if ext == ".html":
             rel = os.path.relpath(path, SITE)
+            if already and hasattr(SL, "_BFBAR") and SL.PROMO.startswith(SL._BFBAR) and 'id="bfbar"' not in s:   # Black Friday gift card bar on finished pages saved in the repo too (Nov 20 2026)
+                s = s.replace('<div class="promo"', SL._BFBAR + '<div class="promo"', 1)
             if already and 'class="foot-grid"' in s:   # finished pages saved in the repo still get the CURRENT shared footer (Nov 6 2026: newsletter box removed)
                 s = SHARED_FOOT_RX.sub(lambda m: SL.FOOTER, s, count=1)
             if not already:
