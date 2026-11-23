@@ -101,7 +101,7 @@ PAGES4 = [
  "trust":["No Surgery","Builds Your Own Collagen","Smooths Cellulite &amp; Hip Dips","Physician-Performed"],
  "introh2":"Lift and shape &mdash; without the operating room",
  "introlead":"A Sculptra BBL uses poly-L-lactic acid, the same collagen biostimulator we use in the face, in larger amounts across the buttocks and hip dips. Over the following months it prompts your body to build its own collagen, gradually adding volume, lift and smoother skin texture.",
- "intropara":"At Serene Med Spa in Hudson, Sculptra BBL is performed by our board-certified physicians for patients who want a subtle-to-moderate improvement in shape, hip dips or crepey, dimpled skin without the risks and downtime of surgical fat transfer. Results are gradual and natural-looking &mdash; nobody will know you had anything done &mdash; and typically last around two years. Sculptra is FDA-approved for the face; buttock treatment is an off-label use performed by physicians. Sculptra BBL starts at $6,000 and is planned at a consultation, not booked online, because the number of vials depends on your anatomy and goals.",
+ "intropara":"At Serene Med Spa in Hudson, Sculptra BBL is performed by our board-certified physicians for patients who want a subtle-to-moderate improvement in shape, hip dips or crepey, dimpled skin without the risks and downtime of surgical fat transfer. Results are gradual and natural-looking &mdash; nobody will know you had anything done &mdash; and typically last around two years. Sculptra is FDA-approved for the face; buttock treatment is an off-label use performed by physicians. Sculptra BBL is $6,000 and includes 8 vials, the amount most patients need. It is planned at a consultation, not booked online, and if your goals call for more vials we quote them before you commit.",
  "treyebrow":"What It Improves","treh2":"Good Candidates",
  "cards":[
    ("Hip Dips","Fill the indentation between the hip and thigh for a smoother curve."),
@@ -124,7 +124,7 @@ PAGES4 = [
    ("How many vials will I need?","Most patients use 10 to 20 vials over 2&ndash;3 sessions depending on their anatomy and goals. We&rsquo;ll give you an exact plan and price at your consultation."),
    ("When will I see results?","Collagen builds over 3&ndash;6 months, with improvement continuing after your final session. Early swelling gives a preview that settles within a few days."),
    ("Is there downtime?","Very little. Expect some swelling, tenderness and possible bruising for a few days. We&rsquo;ll ask you to massage the area for 5 days and avoid intense exercise for 48 hours."),
-   ("How much does it cost?","Sculptra BBL starts at $6,000 and is priced by the number of vials in your plan. We&rsquo;ll give you an exact quote at your consultation."),
+   ("How much does it cost?","Sculptra BBL is $6,000 for 8 vials, which covers most patients. If your plan needs more, we&rsquo;ll give you an exact quote at your consultation."),
  ],
  "related":["morpheus8","fillers","botox"],
  "ctah2":"Curious about a non-surgical lift?",
